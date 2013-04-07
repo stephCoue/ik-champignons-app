@@ -1,0 +1,19 @@
+/*SPLASH*/
+#splash .texte {
+	height: 240px;
+	overflow-y: scroll;
+}
+
+.ui-footer {
+	background: transparent;
+	border: 0;
+}
+
+.logo {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.ui-footer img {
+	max-width: 100%;
+}

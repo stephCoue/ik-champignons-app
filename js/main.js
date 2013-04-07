@@ -20,5 +20,18 @@ require.config({
 });
 
 require(['app'], function(App){
-	App.initialize();
+
+	$(document).on("mobileinit", function(){
+		// Empêche toute manipulation de clic sur les ancres
+		$.mobile.linkBindingEnabled = false;
+		// Empêche jQuery Mobile de traiter des changements de hash
+		$.mobile.hashListeningEnabled = false;
+	});
+
+	document.addEventListener("deviceready", function(event){
+		require( [ "mobile" ], function() {
+			console.log("jquery mobile chargé");
+			App.initialize();
+		});
+	}, false);
 });

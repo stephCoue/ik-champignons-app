@@ -8,20 +8,30 @@ define([
 
 		var AppRouter = Backbone.Router.extend({
 			initialize: function(){
+
+				// Configuration de jquery mobile
+				$( "#splash" ).fixedtoolbar({ tapToggle: false });
+
 				this.champignonsListView = new ChampignonsListView();
 				this.criteresListView = new CriteresListView();
 				console.log("Router initialize");
 			},
 
 			routes: {
-				"": "toHome",
+				"":"splash",
+				"home": "home",
 				"critere/:cid": "filterList",
 				"champignon/:id": "getChampignon",
 				"*actions": "toDefault"
 			},
 
-			toHome: function() {
+			splash: function(){
+				console.log("Splashscreen !");
+			},
+
+			home: function() {
 				console.log("route toHome !");
+				$.mobile.changePage( "#home" , { reverse: false, changeHash: false } );
 			},
 
 			filterList: function(id) {
