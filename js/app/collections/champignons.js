@@ -7,24 +7,24 @@ define([
 
 		model: Champignon,
 		url: "js/app/data/champignons.js",
-		
+
 		selection: function(ids){
 			if(ids === 0)
 				ids = this.getModelsIds();
-			
+
 			_.each(this.models, function(model){
-				if( _.indexOf(ids, parseInt(model.get("id"))) > -1 ) {
+				if( _.indexOf(ids, parseInt(model.get("id"), 10)) > -1 ) {
 					model.set("selected", true);
 				} else {
 					model.set("selected", false);
 				}
 			});
 		},
-		
+
 		getModelsIds: function() {
-			var t = new Array();
+			var t = [];
 			_.each(this.models, function(model){
-				t.push( parseInt(model.id) );
+				t.push( parseInt(model.id, 10) );
 			});
 			return t;
 		}
