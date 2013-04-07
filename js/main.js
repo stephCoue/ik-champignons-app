@@ -19,13 +19,15 @@ require.config({
 	}
 });
 
-require(['app'], function(App){
+require(['app', 'fastclick'], function(App){
 
 	$(document).on("mobileinit", function(){
 		// Empêche toute manipulation de clic sur les ancres
 		$.mobile.linkBindingEnabled = false;
 		// Empêche jQuery Mobile de traiter des changements de hash
 		$.mobile.hashListeningEnabled = false;
+		// Configuration splashscreen
+		//$( "#splash" ).fixedtoolbar({ tapToggle: false });
 	});
 
 	document.addEventListener("deviceready", function(event){
@@ -34,4 +36,13 @@ require(['app'], function(App){
 			App.initialize();
 		});
 	}, false);
+
+	if (navigator.userAgent.match(/(iPad|iPhone|Android)/)) {
+		console.log("On est sur ", navigator.userAgent);
+	} else {
+		console.log("On est sur ", navigator.userAgent);
+		require( [ "mobile" ], function() {
+			App.initialize();
+		});
+	}
 });

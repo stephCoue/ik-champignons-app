@@ -8,10 +8,6 @@ define([
 
 		var AppRouter = Backbone.Router.extend({
 			initialize: function(){
-
-				// Configuration de jquery mobile
-				$( "#splash" ).fixedtoolbar({ tapToggle: false });
-
 				this.champignonsListView = new ChampignonsListView();
 				this.criteresListView = new CriteresListView();
 				console.log("Router initialize");
@@ -20,18 +16,47 @@ define([
 			routes: {
 				"":"splash",
 				"home": "home",
+				"tous": "tous",
+				"determiner": "determiner",
+				"mycologie": "mycologie",
+				"infos": "infos",
 				"critere/:cid": "filterList",
 				"champignon/:id": "getChampignon",
 				"*actions": "toDefault"
 			},
 
 			splash: function(){
-				console.log("Splashscreen !");
+				console.log("Router : Splashscreen !");
 			},
 
 			home: function() {
-				console.log("route toHome !");
-				$.mobile.changePage( "#home" , { reverse: false, changeHash: false } );
+				console.log("Router: Home");
+				$.mobile.changePage( "#home" , { transition:"slidedown", reverse: false, changeHash: false } );
+			},
+
+			tous: function(){
+				console.log("Router : Tous les champignons");
+				$.mobile.changePage( "#tous" , { transition:"slide", reverse: false, changeHash: false } );
+			},
+
+			determiner: function(){
+				console.log("Router : Déterminer");
+				$.mobile.changePage( "#determiner" , { transition:"slide", reverse: false, changeHash: false } );
+			},
+
+			mycologie: function(){
+				console.log("Router : Mycologie");
+				$.mobile.changePage( "#mycologie" , { transition:"slide", reverse: false, changeHash: false } );
+			},
+
+			infos: function(){
+				console.log("Router : Infos");
+				$.mobile.changePage( "#infos" , { transition:"slide", reverse: false, changeHash: false } );
+			},
+
+			cueillette: function() {
+				console.log("Router : Cueillette");
+				$.mobile.changePage( "#cueillette" , { transition:"slide", reverse: false, changeHash: false } );
 			},
 
 			filterList: function(id) {
