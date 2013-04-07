@@ -26,9 +26,15 @@ require(['app', 'fastclick'], function(App){
 		$.mobile.linkBindingEnabled = false;
 		// Empêche jQuery Mobile de traiter des changements de hash
 		$.mobile.hashListeningEnabled = false;
+		// délai du tap
+		$.mobile.buttonMarkup.hoverDelay = 0;
+		// Pushstate
+		$.mobile.pushStateEnabled = false;
 		// Configuration splashscreen
-		//$( "#splash" ).fixedtoolbar({ tapToggle: false });
+		$( "div[data-role='page']" ).fixedtoolbar({ tapToggle: false });
 	});
+
+	$(document).delegate(".ui-content", "scrollstart", false);
 
 	document.addEventListener("deviceready", function(event){
 		require( [ "mobile" ], function() {
@@ -38,9 +44,9 @@ require(['app', 'fastclick'], function(App){
 	}, false);
 
 	if (navigator.userAgent.match(/(iPad|iPhone|Android)/)) {
-		console.log("On est sur ", navigator.userAgent);
+		console.log("main.js : On est sur ", navigator.userAgent);
 	} else {
-		console.log("On est sur ", navigator.userAgent);
+		console.log("main.js : On est sur ", navigator.userAgent);
 		require( [ "mobile" ], function() {
 			App.initialize();
 		});
