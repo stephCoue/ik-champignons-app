@@ -26,10 +26,20 @@ require(['app', 'fastclick'], function(App){
 		$.mobile.linkBindingEnabled = false;
 		// Empêche jQuery Mobile de traiter des changements de hash
 		$.mobile.hashListeningEnabled = false;
+		// Annulation des appels ajax de JQM
+		$.mobile.ajaxEnabled = false;
+		// Empécher l'initialisation automatique de la page d'accueil
+		$.mobile.autoInitializePage = false;
+		// Empecher JQM de gérer le cache des pages
+		$.mobile.page.prototype.options.domCache = false;
 		// délai du tap
 		$.mobile.buttonMarkup.hoverDelay = 60;
-		// Pushstate
+		// Pushstate non supporté par tous les navigateurs
 		$.mobile.pushStateEnabled = false;
+		// Compatibilité sur les boutons back avec phonegap
+		$.mobile.phonegapNavigationEnabled = true;
+		// Conflits possibles avec les datepickers (au cas où)
+		$.mobile.page.prototype.options.degradeInputs.date = true;
 		// Configuration splashscreen
 		$( "div[data-role='page']" ).fixedtoolbar({ tapToggle: false });
 
