@@ -27,11 +27,13 @@ require(['app', 'fastclick'], function(App){
 		// Empêche jQuery Mobile de traiter des changements de hash
 		$.mobile.hashListeningEnabled = false;
 		// délai du tap
-		$.mobile.buttonMarkup.hoverDelay = 0;
+		$.mobile.buttonMarkup.hoverDelay = 60;
 		// Pushstate
 		$.mobile.pushStateEnabled = false;
 		// Configuration splashscreen
 		$( "div[data-role='page']" ).fixedtoolbar({ tapToggle: false });
+
+		$.mobile.touchOverflowEnabled = true;
 	});
 
 	$(document).delegate(".ui-content", "scrollstart", false);

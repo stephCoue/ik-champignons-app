@@ -1,19 +1,24 @@
+body {
+	overflow: hidden;
+}
+
+.splash, .home {
+	background: url(../img/logo-ik.png) center bottom no-repeat;
+	background-size: 40%;
+}
+
 /*SPLASH*/
-#splash .texte {
+/*.splash .texte {
 	height: 240px;
 	overflow-y: scroll;
 }
-
-.ui-footer {
-	background: transparent;
-	border: 0;
+*/
+.ui-mobile-viewport .splash .ui-link {
+	color: #333;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-.logo {
-	width: 40%;
-	margin: 0 auto;
-}
-
-.ui-footer img {
-	max-width: 100%;
+.ui-mobile, .ui-mobile .ui-page {
+	min-height: 0;
 }

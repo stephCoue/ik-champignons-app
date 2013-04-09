@@ -75,7 +75,8 @@ define([
 			},
 
 			toDefault: function(){
-				console.log("route inconnue !");
+				console.log("route inconnue ! retour au splashscreen");
+				$.mobile.changePage( "#splash" , { transition:"fade", reverse: true, changeHash: false } );
 			}
 		});
 
