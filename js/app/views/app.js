@@ -14,6 +14,12 @@ function($, _, Backbone){
 		},
 
 		changePage: function(page) {
+
+			// cleanage si élément déjà créé
+			if( $("#" + page.id).length >= 0 )
+				$("#" + page.id).detach();
+
+			// Ajout de la page dans le DOM
 			$(this.el).append($(page.el));
 
 			if(!this.firstPageAdded) {

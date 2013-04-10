@@ -4,20 +4,20 @@ define([
 	"backbone",
 	"views/app",
 	"views/pageHome",
-	"views/champignons",
+	"views/pageTous",
 	"views/criteres"
-	], function($, _, Backbone, AppView, PageHomeView, ChampignonsListView, CriteresListView){
+	], function($, _, Backbone, AppView, PageHomeView, PageTousView, CriteresListView){
 
 		var AppRouter = Backbone.Router.extend({
 			initialize: function(){
 				this.appView = new AppView();
-				this.champignonsListView = new ChampignonsListView();
 				this.criteresListView = new CriteresListView();
 				console.log("Router initialize");
 			},
 
 			routes: {
 				"":"home",
+				"home":"home",
 				"tous": "tous",
 				"determiner": "determiner",
 				"mycologie": "mycologie",
@@ -34,7 +34,7 @@ define([
 
 			tous: function(){
 				console.log("Router : Tous les champignons");
-				$.mobile.changePage( "#tous" , { changeHash: false } );
+				this.appView.changePage(new PageTousView());
 			},
 
 			determiner: function(){
