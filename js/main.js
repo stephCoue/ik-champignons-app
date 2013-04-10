@@ -47,17 +47,8 @@ require(["app"], function(App){
 		$.mobile.touchOverflowEnabled = true;
 	});
 
-	document.addEventListener("deviceready", function(event){
-		require( [ "mobile" ], function() {
-			App.initialize();
-		});
-	}, false);
+	require( [ "mobile" ], function() {
+		App.initialize();
+	});
 
-	if (navigator.userAgent.match(/(iPad|iPhone|Android)/)) {
-		console.log("main.js : On est sur ", navigator.userAgent);
-	} else {
-		require( [ "mobile" ], function() {
-			App.initialize();
-		});
-	}
 });
