@@ -6,12 +6,19 @@ define(["jquery",
 
 	var pageHome = Backbone.View.extend({
 
+		initialize: function() {
+			this.render();
+		},
+
 		id: "home",
 		template: _.template(pageHomeTemplate),
 
 		render: function(){
 			$(this.el).html(this.template());
-			$(this.el).attr('data-role', 'page');
+			$(this.el).attr({
+				'data-role':'page',
+				'data-url':'#home'
+			});
 			return this;
 		}
 	});

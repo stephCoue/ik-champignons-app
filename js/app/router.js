@@ -76,10 +76,7 @@ define([
 			},
 
 			changePage: function(page, id, transition) {
-				page.render();
-				$('body').append($(page.el));
-				console.log("page id = ", id);
-				$(id).page();
+				$('#app').append($(page.el));
 				$.mobile.initializePage();
 				$.mobile.changePage(id, {changeHash:false, transition: transition});
 			}
