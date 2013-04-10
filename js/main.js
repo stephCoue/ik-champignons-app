@@ -15,12 +15,16 @@ require.config({
 		"backbone": {
 			deps: ["underscore", "jquery"],
 			exports: "Backbone"
+		},
+		"mobile": {
+			exports: "jquerymobile"
 		}
 	}
 });
 
-require(['app', 'fastclick'], function(App){
+require(['app'], function(App){
 
+	// configuration de JQM
 	$(document).on("mobileinit", function(){
 		// Empêche toute manipulation de clic sur les ancres
 		$.mobile.linkBindingEnabled = false;
@@ -40,13 +44,11 @@ require(['app', 'fastclick'], function(App){
 		$.mobile.phonegapNavigationEnabled = true;
 		// Conflits possibles avec les datepickers (au cas où)
 		$.mobile.page.prototype.options.degradeInputs.date = true;
-		// Configuration splashscreen
+		// Empeche les barres de titre et de ped d'être masquées/affichées au tap
 		$( "div[data-role='page']" ).fixedtoolbar({ tapToggle: false });
 
 		$.mobile.touchOverflowEnabled = true;
 	});
-
-	$(document).delegate(".ui-content", "scrollstart", false);
 
 	document.addEventListener("deviceready", function(event){
 		require( [ "mobile" ], function() {

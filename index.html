@@ -2,123 +2,13 @@
 <html lang="fr">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="format-detection" content="telephone=no" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.0.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/champignons.css" />
-	<style type="text/css">
-        .scrollable > * {
-            -webkit-transform: translateZ(0px);
-        }
-    </style>
 	<title>Les champignons</title>
 </head>
 <body>
-
-	<div data-role="page" id="splash" class="splash ik">
-		<div data-role="header" data-position="fixed">
-			<h1>Les champignons</h1>
-		</div>
-		<div data-role="content">
-			<a href="#home">
-			<div class="texte" data-inset="true">
-				<h2>À propos…</h2>
-				<p>Lipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-			</div>
-			</a>
-		</div>
-	</div> <!-- /#splash -->
-	
-	<div data-role="page" id="home" class="home ik">
-		<div data-role="header" data-position="fixed">
-			<h1>Les champignons</h1>
-		</div>
-		<div data-role="content">
-			<ul data-role="listview" data-inset="true" data-theme="b">
-				<li><a href="#tous">Tous les champignons</a></li>
-				<li><a href="#determiner">Aide à la détermination</a></li>
-			</ul>
-			<div data-role="collapsible-set" data-inset="true" data-theme="b" data-content-theme="d" data-iconpos="right">
-				<div data-role="collapsible">
-					<h3>Leçon de mycologie</h3>
-					<ul data-role="listview">
-						<li><a href="">Les bonnes pratiques</a></li>
-						<li><a href="">Reconnaître les champignons</a></li>
-						<li><a href="">Glossaire</a></li>
-					</ul>
-				</div>
-				<div data-role="collapsible">
-					<h3>Informations pratiques</h3>
-					<ul data-role="listview">
-						<li data-theme="e"><a href="#splash">Centres anti-poisons</a></li>
-						<li><a href="#splash">À propos</a></li>
-						<li><a href="#splash">Crédits</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div> <!-- /#home -->
-	
-	<div data-role="page" id="tous" class="tous">
-		<div data-role="footer" data-id="navbar" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home">Accueil</a></li>
-					<li><a href="#tous" class="ui-btn-active ui-state-persist">Tous</a></li>
-					<li><a href="#determiner">Déterminer</a></li>
-					<li><a href="#cueillette">Cueillette</a></li>
-				</ul>
-			</div>
-		</div>
-	</div> <!-- /#tous -->
-	
-	<div data-role="page" id="determiner" class="determiner">
-		<div data-role="footer" data-id="navbar" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home">Accueil</a></li>
-					<li><a href="#tous">Tous</a></li>
-					<li><a href="#determiner" class="ui-btn-active ui-state-persist">Déterminer</a></li>
-					<li><a href="#cueillette">Cueillette</a></li>
-				</ul>
-			</div>
-		</div>
-	</div> <!-- /#determiner -->
-	
-	<div data-role="page" id="mycologie" class="mycologie">
-		<div data-role="footer" data-id="navbar" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home">Accueil</a></li>
-					<li><a href="#tous">Tous</a></li>
-					<li><a href="#determiner" class="ui-btn-active ui-state-persist">Déterminer</a></li>
-					<li><a href="#cueillette">Cueillette</a></li>
-				</ul>
-			</div>
-		</div>
-	</div> <!-- /#mycologie -->
-	
-	<div data-role="page" id="infos" class="info">
-		<div data-role="header">
-			<a href="#home" data-icon="home">Retour</a>
-			<h1>Les champignons</h1>
-		</div>
-	</div> <!-- /#infos -->
-	
-	<div data-role="page" id="cueillette" class="cueillette">
-		<div data-role="footer" data-id="navbar" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home">Accueil</a></li>
-					<li><a href="#tous">Tous</a></li>
-					<li><a href="#determiner">Déterminer</a></li>
-					<li><a href="#cueillette" class="ui-btn-active ui-state-persist">Cueillette</a></li>
-				</ul>
-			</div>
-		</div>
-	</div> <!-- /#infos -->
-	
 	<script type="text/javascript" src="js/libs/cordova-2.5.0.js"></script>
 	<script data-main="js/main" src="js/libs/require.js"></script>
 </body>

@@ -2,9 +2,10 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
+	"views/pageHome",
 	"views/champignons",
 	"views/criteres"
-	], function($, _, Backbone, ChampignonsListView, CriteresListView){
+	], function($, _, Backbone, pageHomeView, ChampignonsListView, CriteresListView){
 
 		var AppRouter = Backbone.Router.extend({
 			initialize: function(){
@@ -14,8 +15,7 @@ define([
 			},
 
 			routes: {
-				"":"splash",
-				"home": "home",
+				"":"home",
 				"tous": "tous",
 				"determiner": "determiner",
 				"mycologie": "mycologie",
@@ -25,38 +25,34 @@ define([
 				"*actions": "toDefault"
 			},
 
-			splash: function(){
-				console.log("Router : Splashscreen !");
-			},
-
 			home: function() {
 				console.log("Router: Home");
-				$.mobile.changePage( "#home" , { transition:"slidedown", reverse: false, changeHash: false } );
+				this.changePage(new pageHomeView(), "#home", "fade");
 			},
 
 			tous: function(){
 				console.log("Router : Tous les champignons");
-				$.mobile.changePage( "#tous" , { transition:"slide", reverse: false, changeHash: false } );
+				$.mobile.changePage( "#tous" , { changeHash: false } );
 			},
 
 			determiner: function(){
 				console.log("Router : Déterminer");
-				$.mobile.changePage( "#determiner" , { transition:"slide", reverse: false, changeHash: false } );
+				$.mobile.changePage( "#determiner" , { changeHash: false } );
 			},
 
 			mycologie: function(){
 				console.log("Router : Mycologie");
-				$.mobile.changePage( "#mycologie" , { transition:"slide", reverse: false, changeHash: false } );
+				$.mobile.changePage( "#mycologie" , { changeHash: false } );
 			},
 
 			infos: function(){
 				console.log("Router : Infos");
-				$.mobile.changePage( "#infos" , { transition:"slide", reverse: false, changeHash: false } );
+				$.mobile.changePage( "#infos" , { changeHash: false } );
 			},
 
 			cueillette: function() {
 				console.log("Router : Cueillette");
-				$.mobile.changePage( "#cueillette" , { transition:"slide", reverse: false, changeHash: false } );
+				$.mobile.changePage( "#cueillette" , { changeHash: false } );
 			},
 
 			filterList: function(id) {
@@ -77,6 +73,15 @@ define([
 			toDefault: function(){
 				console.log("route inconnue ! retour au splashscreen");
 				$.mobile.changePage( "#splash" , { transition:"fade", reverse: true, changeHash: false } );
+			},
+
+			changePage: function(page, id, transition) {
+				page.render();
+				$('body').append($(page.el));
+				console.log("page id = ", id);
+				$(id).page();
+				$.mobile.initializePage();
+				$.mobile.changePage(id, {changeHash:false, transition: transition});
 			}
 		});
 
