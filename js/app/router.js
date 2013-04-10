@@ -2,16 +2,12 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
-	"views/app",
-	"views/pageHome",
-	"views/pageTous",
-	"views/criteres"
-	], function($, _, Backbone, AppView, PageHomeView, PageTousView, CriteresListView){
+	"views/app"
+	], function($, _, Backbone, AppView){
 
 		var AppRouter = Backbone.Router.extend({
 			initialize: function(){
 				this.appView = new AppView();
-				this.criteresListView = new CriteresListView();
 				console.log("Router initialize");
 			},
 
@@ -29,12 +25,12 @@ define([
 
 			home: function() {
 				console.log("Router: Home");
-				this.appView.changePage(new PageHomeView());
+				this.appView.changePage("pageHome", "#home");
 			},
 
 			tous: function(){
 				console.log("Router : Tous les champignons");
-				this.appView.changePage(new PageTousView());
+				this.appView.changePage("pageTous", "#tous");
 			},
 
 			determiner: function(){
@@ -74,7 +70,7 @@ define([
 
 			toDefault: function(){
 				console.log("route inconnue ! retour au splashscreen");
-				$.mobile.changePage( "#splash" , { transition:"fade", reverse: true, changeHash: false } );
+				$.mobile.changePage( "#home" , { transition:"fade", reverse: true, changeHash: false } );
 			}
 		});
 

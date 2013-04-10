@@ -13,25 +13,39 @@ function($, _, Backbone){
 			this.firstPageAdded = false;
 		},
 
-		changePage: function(page) {
+		changePage: function(type, id) {
 
-			// cleanage si élément déjà créé
-			if( $("#" + page.id).length >= 0 )
-				$("#" + page.id).detach();
-
-			// Ajout de la page dans le DOM
-			$(this.el).append($(page.el));
-
-			if(!this.firstPageAdded) {
-				$.mobile.initializePage();
-				this.firstPageAdded = true;
+			if( $(id).length > 0 ) {
+				this.transition(id);
 			} else {
-				$("#" + page.id).page();
-				$.mobile.changePage("#" + page.id, {
-					changeHash: false,
-					role: "page"
-				});
+				this.createPage(type);
 			}
+
+		},
+
+		transition: function(id) {
+			$.mobile.changePage(id, {
+				changeHash: false,
+				role: "page"
+			});
+		},
+
+		createPage: function(type) {
+
+			var self = this;
+
+			require(["views/" + type], function(Page){
+
+				var page = new Page();
+				$(self.el).append($(page.el));
+
+				if(!self.firstPageAdded) {
+					$.mobile.initializePage();
+					self.firstPageAdded = true;
+				}
+
+				self.transition( $("#" + page.id) );
+			});
 		}
 	});
 
