@@ -15,14 +15,11 @@ require.config({
 		"backbone": {
 			deps: ["underscore", "jquery"],
 			exports: "Backbone"
-		},
-		"mobile": {
-			exports: "jquerymobile"
 		}
 	}
 });
 
-require(['app'], function(App){
+require(["app"], function(App){
 
 	// configuration de JQM
 	$(document).on("mobileinit", function(){
@@ -52,7 +49,6 @@ require(['app'], function(App){
 
 	document.addEventListener("deviceready", function(event){
 		require( [ "mobile" ], function() {
-			console.log("jquery mobile chargé");
 			App.initialize();
 		});
 	}, false);
@@ -60,7 +56,6 @@ require(['app'], function(App){
 	if (navigator.userAgent.match(/(iPad|iPhone|Android)/)) {
 		console.log("main.js : On est sur ", navigator.userAgent);
 	} else {
-		console.log("main.js : On est sur ", navigator.userAgent);
 		require( [ "mobile" ], function() {
 			App.initialize();
 		});
