@@ -2,7 +2,7 @@ require.config({
 	baseUrl: "js/app/",
 	paths: {
 		jquery: "../libs/jquery-1.9.1.min",
-		mobile: "../libs/jquery.mobile-1.3.0.min",
+		mobile: "../libs/jquery.mobile-1.3.1.min",
 		underscore: "../libs/underscore-min",
 		backbone: "../libs/backbone-min",
 		fastclick: "../libs/fastclick",

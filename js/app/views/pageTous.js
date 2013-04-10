@@ -16,8 +16,7 @@ define(["jquery",
 		render: function(){
 			$(this.el).html(this.template());
 			$(this.el).attr({
-				'data-role':'page',
-				'data-url':'#tous'
+				'data-role':'page'
 			});
 			return this;
 		}

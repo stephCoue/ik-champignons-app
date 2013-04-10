@@ -13,6 +13,19 @@ function($, _, Backbone){
 			this.firstPageAdded = false;
 		},
 
+		events: {
+			"click a": "onAction"
+		},
+
+		onAction: function(event) {
+			this.sens = $(event.currentTarget).attr("data-transition");
+
+			if( $(event.currentTarget).attr("data-direction") !== undefined )
+				this.reverse = true;
+			else
+				this.reverse = false;
+		},
+
 		changePage: function(type, id) {
 
 			if( $(id).length > 0 ) {
@@ -26,7 +39,9 @@ function($, _, Backbone){
 		transition: function(id) {
 			$.mobile.changePage(id, {
 				changeHash: false,
-				role: "page"
+				role: "page",
+				transition: this.sens,
+				reverse: this.reverse
 			});
 		},
 
