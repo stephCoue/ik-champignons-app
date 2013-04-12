@@ -9,11 +9,6 @@ define([
 		model: Champignon,
 		url: "js/app/data/champignons.js",
 
-		// initialize: function() {
-		// 	this.models = data;
-		// 	console.log("ChampignonsCollection.models = ", this.models, data);
-		// },
-
 		selection: function(ids){
 			if(ids === 0)
 				ids = this.getModelsIds();

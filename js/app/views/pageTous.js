@@ -7,22 +7,22 @@ define(["jquery",
 
 	var PageTous = Backbone.View.extend({
 
+		id: "tous",
+		template: _.template(pageTousTemplate),
+
 		initialize: function() {
 			this.listView = new ChampignonsListView();
 			this.render();
 		},
 
-		id: "tous",
-		template: _.template(pageTousTemplate),
-
 		render: function(){
+
 			$(this.el).html(this.template());
 
 			$(this.el).attr({
 				'data-role':'page'
 			});
 
-			console.log(this.listView);
 			this.$el.find("div:jqmData(role='content')").append(this.listView.$el);
 			return this;
 		}

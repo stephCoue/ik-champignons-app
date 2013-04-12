@@ -8,8 +8,11 @@ define([
 
 	var ChampignonsListView = Backbone.View.extend({
 
+		tagName: "ul",
+
 		initialize: function(){
 			this.gridMode = true;
+
 			this.collection = new ChampignonsCollection();
 			this.collection.on("sync", this.render, this);
 			this.collection.fetch();
@@ -34,11 +37,23 @@ define([
 		render: function(){
 
 			if(this.gridMode) {
-				this.$el.attr("class", "ui-grid-b");
-				this.renderGrig();
+				this.$el.addClass("grid");
 			} else {
-				this.renderList();
+				this.removeClass("grid");
 			}
+
+			this.$el.attr({
+				"data-role":"listview",
+				"data-filter":"true",
+				"data-filter-placeholder":"Rechercher"
+			});
+
+			_.each(this.collection.models, function(champignon){
+				var champignonItem = new ChampignonItem({model:champignon});
+				this.$el.append(champignonItem.el);
+			}, this);
+
+			this.$el.listview();
 
 		}
 

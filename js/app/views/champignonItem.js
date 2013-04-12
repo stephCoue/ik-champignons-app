@@ -8,6 +8,8 @@ define([
 
 	var ChampignonItem = Backbone.View.extend({
 
+		tagName: "li",
+
 		template: _.template( champignonTemplate ),
 
 		initialize: function() {
@@ -16,19 +18,6 @@ define([
 		},
 
 		render: function() {
-			if(this.tagName === "div") {
-				switch(this.model.collection.indexOf(this.model) % 3) {
-					case 0:
-					this.$el.attr("class", "ui-block-a");
-					break;
-					case 1:
-					this.$el.attr("class", "ui-block-b");
-					break;
-					case 2:
-					this.$el.attr("class", "ui-block-c");
-					break;
-				}
-			}
 			this.$el.html(this.template(this.model.toJSON()));
 			return this;
 		},
