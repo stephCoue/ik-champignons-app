@@ -2,8 +2,9 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
+	"collections/champignons",
 	"views/app"
-	], function($, _, Backbone, AppView){
+	], function($, _, Backbone, ChampignonsCollection, AppView){
 
 		var AppRouter = Backbone.Router.extend({
 			initialize: function(){
@@ -66,6 +67,7 @@ define([
 
 			getChampignon: function(id) {
 				console.log("route champignon id = ", id);
+				this.appView.changePage("pageChampignon", "#champignon");
 			},
 
 			toDefault: function(){

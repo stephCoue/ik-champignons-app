@@ -1,0 +1,40 @@
+<div data-role="header" data-position="fixed">
+	<h1>Les champignons</h1>
+</div>
+
+<div data-role="content">
+	<h2><%= nom %></h2>
+	<h3><%= nomlatin %></h3>
+	<div class="diaporama">
+		<img src="<%= image %>">
+	</div>
+	<div class="chapeau">
+		<%= description.chapeau %>
+	</div>
+	<div class="hymenium">
+		<%= description.hymenium %>
+	</div>
+	<div class="pied">
+		<%= description.pied %>
+	</div>
+	<div class="chair">
+		<%= description.chair %>
+	</div>
+	<div class="ecologie">
+		<%= description.ecologie %>
+	</div>
+	<div class="remarques">
+		<%= description.remarques %>
+	</div>
+</div>
+
+<div data-role="footer" data-id="navbar" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#home" data-transition="slide" data-direction="reverse">Accueil</a></li>
+			<li><a href="#tous" data-transition="slide" data-direction="reverse">Tous</a></li>
+			<li><a href="#determiner" data-transition="slide">Déterminer</a></li>
+			<li><a href="#cueillette" data-transition="slide">Cueillette</a></li>
+		</ul>
+	</div>
+</div>

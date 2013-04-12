@@ -26,18 +26,18 @@ function($, _, Backbone){
 				this.reverse = false;
 		},
 
-		changePage: function(type, id) {
+		changePage: function(type, page) {
 
-			if( $(id).length > 0 ) {
-				this.transition(id);
+			if( $(page).length > 0 ) {
+				this.transition(page);
 			} else {
 				this.createPage(type);
 			}
 
 		},
 
-		transition: function(id) {
-			$.mobile.changePage(id, {
+		transition: function(page) {
+			$.mobile.changePage(page, {
 				changeHash: false,
 				role: "page",
 				transition: this.sens,
