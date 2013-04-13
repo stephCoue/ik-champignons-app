@@ -14,7 +14,8 @@ function($, _, Backbone){
 		},
 
 		events: {
-			"click a": "onAction"
+			"click a": "onAction",
+			"click #backbutton": "onBackButton"
 		},
 
 		onAction: function(event) {
@@ -26,8 +27,17 @@ function($, _, Backbone){
 				this.reverse = false;
 		},
 
+		onBackButton: function(event) {
+			history.go(-1);
+			return false;
+		},
+
 		changePage: function(page) {
-console.log("#" + page.id);
+
+			// Suppression d'un éventuel doublon
+			if($("#" + page.id).length > 0)
+				$("#" + page.id).detach();
+
 			this.$el.append(page.$el);
 
 			if(!this.firstPageAdded) {

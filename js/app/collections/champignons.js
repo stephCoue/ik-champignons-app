@@ -9,6 +9,10 @@ define([
 		model: Champignon,
 		url: "js/app/data/champignons.js",
 
+		initialize: function() {
+			// 
+		},
+
 		getOne: function(id) {
 			this.selection = this.get(id);
 			return this.selection;

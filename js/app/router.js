@@ -41,7 +41,7 @@ define([
 			},
 
 			getChampignon: function(id) {
-				console.log("route champignon id = ", id);
+				console.log("route champignon id = ", id, this.champignons.getOne(id));
 				var pageChampignon = new PageChampignonView({model:this.champignons.getOne(id)});
 				this.appView.changePage(pageChampignon);
 			},

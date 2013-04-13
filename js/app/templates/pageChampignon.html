@@ -1,4 +1,5 @@
 <div data-role="header" data-position="fixed">
+	<a href="#" id="backbutton" data-rel="back" data-transition="slide" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Retour</a>
 	<h1>Les champignons</h1>
 </div>
 
@@ -6,7 +7,7 @@
 	<h2><%= nom %></h2>
 	<h3><%= nomlatin %></h3>
 	<div class="diaporama">
-		<img src="<%= image %>">
+		<img src="<%= vignette %>">
 	</div>
 	<% if(description.chapeau.length > 0) { %>
 	<div class="chapeau">

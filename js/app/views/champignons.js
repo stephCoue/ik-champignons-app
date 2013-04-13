@@ -12,7 +12,6 @@ define([
 
 		initialize: function(){
 			this.gridMode = true;
-			//this.collection = new ChampignonsCollection();
 			this.collection.on("sync", this.render, this);
 			this.collection.fetch();
 		},

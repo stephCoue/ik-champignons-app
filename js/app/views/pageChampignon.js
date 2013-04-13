@@ -15,6 +15,15 @@ define([
 			this.render();
 		},
 
+		events: {
+			//"click #backbutton" : "onBackButton"
+		},
+
+		onBackButton: function(event) {
+			history.go(-1);
+			return false;
+		},
+
 		render: function() {
 
 			$(this.el).html(this.template(this.model.toJSON()));
