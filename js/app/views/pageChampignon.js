@@ -15,23 +15,19 @@ define([
 			this.render();
 		},
 
-		events: {
-			//"click #backbutton" : "onBackButton"
-		},
-
-		onBackButton: function(event) {
-			history.go(-1);
-			return false;
-		},
-
 		render: function() {
 
 			$(this.el).html(this.template(this.model.toJSON()));
+
 			$(this.el).attr({
 				"id":this.id,
 				"class":"fiche-champignon",
 				'data-role':'page'
 			});
+
+			if(window.location.hash.indexOf("tous") > 0)
+				this.$el.find("#tous-button").addClass("class=ui-btn-active ui-state-persist");
+
 			return this;
 		}
 

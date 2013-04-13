@@ -22,6 +22,7 @@ define([
 				"":"home",
 				"home":"home",
 				"tous": "tous",
+				"tous/:id":"getChampignon",
 				"determiner": "determiner",
 				"mycologie": "mycologie",
 				"infos": "infos",
@@ -41,7 +42,7 @@ define([
 			},
 
 			getChampignon: function(id) {
-				console.log("route champignon id = ", id, this.champignons.getOne(id));
+				console.log("route champignon id = ", id);
 				var pageChampignon = new PageChampignonView({model:this.champignons.getOne(id)});
 				this.appView.changePage(pageChampignon);
 			},

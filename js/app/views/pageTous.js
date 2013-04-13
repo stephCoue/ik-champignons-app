@@ -12,6 +12,7 @@ define(["jquery",
 
 		initialize: function() {
 			this.listView = new ChampignonsListView({collection:this.collection});
+			this.listView.parent = this;
 			this.render();
 		},
 

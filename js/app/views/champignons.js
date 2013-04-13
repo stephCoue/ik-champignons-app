@@ -29,14 +29,13 @@ define([
 				"data-filter":"true",
 				"data-filter-placeholder":"Rechercher"
 			});
-
 			_.each(this.collection.models, function(champignon){
 				var champignonItem = new ChampignonItem({model:champignon});
-				this.$el.append(champignonItem.el);
+				champignonItem.parent = this;
+				this.$el.append(champignonItem.render().el);
 			}, this);
 
-			//this.$el.listview();
-
+			return this;
 		}
 
 	});
