@@ -11,6 +11,7 @@ define([
 
 		getOne: function(id) {
 			this.selection = this.get(id);
+			return this.selection;
 		},
 
 		selection: function(ids){

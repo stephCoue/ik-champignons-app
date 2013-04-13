@@ -26,41 +26,22 @@ function($, _, Backbone){
 				this.reverse = false;
 		},
 
-		changePage: function(type, page) {
+		changePage: function(page) {
+console.log("#" + page.id);
+			this.$el.append(page.$el);
 
-			if( $(page).length > 0 ) {
-				this.transition(page);
-			} else {
-				this.createPage(type);
+			if(!this.firstPageAdded) {
+				$.mobile.initializePage();
+				this.firstPageAdded = true;
 			}
 
-		},
-
-		transition: function(page) {
-			$.mobile.changePage(page, {
+			$.mobile.changePage("#" + page.id, {
 				changeHash: false,
 				role: "page",
 				transition: this.sens,
 				reverse: this.reverse
 			});
-		},
 
-		createPage: function(type) {
-
-			var self = this;
-
-			require(["views/" + type], function(Page){
-
-				var page = new Page();
-				$(self.el).append($(page.el));
-
-				if(!self.firstPageAdded) {
-					$.mobile.initializePage();
-					self.firstPageAdded = true;
-				}
-
-				self.transition( $("#" + page.id) );
-			});
 		}
 	});
 

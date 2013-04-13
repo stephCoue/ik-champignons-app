@@ -11,7 +11,7 @@ define(["jquery",
 		template: _.template(pageTousTemplate),
 
 		initialize: function() {
-			this.listView = new ChampignonsListView();
+			this.listView = new ChampignonsListView({collection:this.collection});
 			this.render();
 		},
 
