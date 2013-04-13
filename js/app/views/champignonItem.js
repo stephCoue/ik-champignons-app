@@ -13,11 +13,11 @@ define([
 		template: _.template( champignonTemplate ),
 
 		initialize: function() {
-			this.render();
 			this.model.on('change', this.setVisibility, this);
 		},
 
 		render: function() {
+			this.model.set("url", "#" + this.parent.parent.id + "/" + this.model.id);
 			this.$el.html(this.template(this.model.toJSON()));
 			return this;
 		},

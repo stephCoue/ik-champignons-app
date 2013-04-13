@@ -1,36 +1,41 @@
 define([
-"jquery",
-"underscore",
-"backbone",
-"collections/champignons",
-"views/champignonItem"
+	"jquery",
+	"underscore",
+	"backbone",
+	"collections/champignons",
+	"views/champignonItem"
 ], function($, _, Backbone, ChampignonsCollection, ChampignonItem){
 
 	var ChampignonsListView = Backbone.View.extend({
 
-		el: $("#listeChampignons"),
-
 		tagName: "ul",
 
-		initialize: function() {
-			this.collection = new ChampignonsCollection();
+		initialize: function(){
+			this.gridMode = true;
 			this.collection.on("sync", this.render, this);
 			this.collection.fetch();
 		},
 
-		add: function(champignon) {
-			console.log("ChampignonsListView champignon added : ", champignon.get('nom'));
-		},
+		render: function(){
 
-		remove: function(champignon){
-			console.log("ChampignonsListView champignon removed : ", champignon.get('nom'));
-		},
+			if(this.gridMode) {
+				this.$el.addClass("grid");
+			} else {
+				this.removeClass("grid");
+			}
 
-		render: function() {
+			this.$el.attr({
+				"data-role":"listview",
+				"data-filter":"true",
+				"data-filter-placeholder":"Rechercher"
+			});
 			_.each(this.collection.models, function(champignon){
 				var champignonItem = new ChampignonItem({model:champignon});
+				champignonItem.parent = this;
 				this.$el.append(champignonItem.render().el);
 			}, this);
+
+			return this;
 		}
 
 	});

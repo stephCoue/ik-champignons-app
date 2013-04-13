@@ -1,14 +1,5 @@
-<div class="champignon">
-	
-		<div class="vignette">
-			<a href="<%= url %>">
-				<img src="<%= vignette %>" />
-			</a>
-		</div>
-		<p class="legende">
-			<strong><%= nom %></strong>
-			<br>
-			<em><%= nomlatin %></em>
-		</p>
-		
-</div>
+<a href="<%= url %>" data-transition="slide">
+	<img src="<%= vignette %>" />
+	<h2><%= nom %></h2>
+	<p><%= nomlatin %></p>
+</a>

@@ -1,23 +1,30 @@
 define(["jquery",
 	"underscore",
 	"backbone",
+	"views/champignons",
 	"text!templates/pageTous.html"
-], function($, _, Backbone, pageTousTemplate){
+], function($, _, Backbone, ChampignonsListView, pageTousTemplate){
 
 	var PageTous = Backbone.View.extend({
-
-		initialize: function() {
-			this.render();
-		},
 
 		id: "tous",
 		template: _.template(pageTousTemplate),
 
+		initialize: function() {
+			this.listView = new ChampignonsListView({collection:this.collection});
+			this.listView.parent = this;
+			this.render();
+		},
+
 		render: function(){
+
 			$(this.el).html(this.template());
+
 			$(this.el).attr({
 				'data-role':'page'
 			});
+
+			this.$el.find("div:jqmData(role='content')").append(this.listView.$el);
 			return this;
 		}
 	});

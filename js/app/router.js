@@ -2,12 +2,19 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
-	"views/app"
-	], function($, _, Backbone, AppView){
+	"collections/champignons",
+	"views/app",
+	"views/pageHome",
+	"views/pageTous",
+	"views/pageChampignon"
+	], function($, _, Backbone, ChampignonsCollection, AppView, PageHomeView, PageTousView, PageChampignonView){
 
 		var AppRouter = Backbone.Router.extend({
 			initialize: function(){
+				this.champignons = new ChampignonsCollection();
 				this.appView = new AppView();
+				this.homeView = new PageHomeView();
+				this.tousView = new PageTousView({collection:this.champignons});
 				console.log("Router initialize");
 			},
 
@@ -15,6 +22,7 @@ define([
 				"":"home",
 				"home":"home",
 				"tous": "tous",
+				"tous/:id":"getChampignon",
 				"determiner": "determiner",
 				"mycologie": "mycologie",
 				"infos": "infos",
@@ -25,12 +33,18 @@ define([
 
 			home: function() {
 				console.log("Router: Home");
-				this.appView.changePage("pageHome", "#home");
+				this.appView.changePage(this.homeView);
 			},
 
 			tous: function(){
 				console.log("Router : Tous les champignons");
-				this.appView.changePage("pageTous", "#tous");
+				this.appView.changePage(this.tousView);
+			},
+
+			getChampignon: function(id) {
+				console.log("route champignon id = ", id);
+				var pageChampignon = new PageChampignonView({model:this.champignons.getOne(id)});
+				this.appView.changePage(pageChampignon);
 			},
 
 			determiner: function(){
@@ -62,10 +76,6 @@ define([
 					var champignons = this.criteresListView.collection.getChampignons(id);
 					this.champignonsListView.collection.selection(champignons);
 				}
-			},
-
-			getChampignon: function(id) {
-				console.log("route champignon id = ", id);
 			},
 
 			toDefault: function(){

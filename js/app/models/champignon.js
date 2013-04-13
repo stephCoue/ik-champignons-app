@@ -13,7 +13,10 @@ define([
 		},
 
 		initialize: function() {
-			this.set("nomlatin", this.get('genre') + " " + this.get('espece').toLowerCase());
+			this.set({
+				"nomlatin": this.get('genre') + " " + this.get('espece').toLowerCase(),
+				"url": "#champignon/" + this.id
+			});
 		}
 
 	});

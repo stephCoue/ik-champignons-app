@@ -14,7 +14,8 @@ function($, _, Backbone){
 		},
 
 		events: {
-			"click a": "onAction"
+			"click a": "onAction",
+			"click #backbutton": "onBackButton"
 		},
 
 		onAction: function(event) {
@@ -26,41 +27,31 @@ function($, _, Backbone){
 				this.reverse = false;
 		},
 
-		changePage: function(type, id) {
-
-			if( $(id).length > 0 ) {
-				this.transition(id);
-			} else {
-				this.createPage(type);
-			}
-
+		onBackButton: function(event) {
+			history.go(-1);
+			return false;
 		},
 
-		transition: function(id) {
-			$.mobile.changePage(id, {
+		changePage: function(page) {
+
+			// Suppression d'un éventuel doublon
+			if($("#" + page.id).length > 0)
+				$("#" + page.id).detach();
+
+			this.$el.append(page.$el);
+
+			if(!this.firstPageAdded) {
+				$.mobile.initializePage();
+				this.firstPageAdded = true;
+			}
+
+			$.mobile.changePage("#" + page.id, {
 				changeHash: false,
 				role: "page",
 				transition: this.sens,
 				reverse: this.reverse
 			});
-		},
 
-		createPage: function(type) {
-
-			var self = this;
-
-			require(["views/" + type], function(Page){
-
-				var page = new Page();
-				$(self.el).append($(page.el));
-
-				if(!self.firstPageAdded) {
-					$.mobile.initializePage();
-					self.firstPageAdded = true;
-				}
-
-				self.transition( $("#" + page.id) );
-			});
 		}
 	});
 

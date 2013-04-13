@@ -1,12 +1,22 @@
 define([
 	"backbone",
-	"models/champignon"
-], function(Backbone, Champignon){
+	"models/champignon",
+	"data/champignons"
+], function(Backbone, Champignon, data){
 
 	var ChampignonsCollection = Backbone.Collection.extend({
 
 		model: Champignon,
 		url: "js/app/data/champignons.js",
+
+		initialize: function() {
+			// 
+		},
+
+		getOne: function(id) {
+			this.selection = this.get(id);
+			return this.selection;
+		},
 
 		selection: function(ids){
 			if(ids === 0)
