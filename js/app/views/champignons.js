@@ -10,19 +10,7 @@ define([
 
 		tagName: "ul",
 
-		initialize: function(){
-			this.gridMode = true;
-			this.collection.on("sync", this.render, this);
-			this.collection.fetch();
-		},
-
 		render: function(){
-
-			if(this.gridMode) {
-				this.$el.addClass("grid");
-			} else {
-				this.removeClass("grid");
-			}
 
 			this.$el.attr({
 				"data-role":"listview",

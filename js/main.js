@@ -6,7 +6,8 @@ require.config({
 		underscore: "../libs/underscore-min",
 		backbone: "../libs/backbone-min",
 		fastclick: "../libs/fastclick",
-		text: "../libs/text"
+		text: "../libs/text",
+		json: "../libs/json"
 	},
 	shim: {
 		"underscore": {
