@@ -2,15 +2,22 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
-	"router"
-	], function($, _, Backbone, Router){
+	"marionette",
+	"routers/appRouter",
+	"controllers/appController"
+	], function($, _, Backbone, Marionette, AppRouter, AppController){
 
-	var initialize = function() {
-		Router.initialize();
-	};
+	var App = new Backbone.Marionette.Application();
 
-	return {
-		initialize: initialize
-	};
+	App.addInitializer(function(){
+		this.controller = new AppController();
+		this.router = new AppRouter({controller: this.controller});
+	});
+
+	App.on("start", function(options){
+		Backbone.history.start();
+	});
+
+	return App;
 
 });
