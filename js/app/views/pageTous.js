@@ -13,6 +13,7 @@ define(["jquery",
 		initialize: function() {
 			this.listView = new ChampignonsListView({collection:this.collection});
 			this.listView.parent = this;
+			this.listView.render();
 			this.render();
 		},
 
@@ -25,6 +26,7 @@ define(["jquery",
 			});
 
 			this.$el.find("div:jqmData(role='content')").append(this.listView.$el);
+
 			return this;
 		}
 	});

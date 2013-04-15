@@ -2,20 +2,27 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
+	"json",
 	"collections/champignons",
+	"json!data/champignons.js",
 	"views/app",
 	"views/pageHome",
 	"views/pageTous",
 	"views/pageChampignon"
-	], function($, _, Backbone, ChampignonsCollection, AppView, PageHomeView, PageTousView, PageChampignonView){
+	], function($, _, Backbone, json, ChampignonsCollection, dataChampignons, AppView, PageHomeView, PageTousView, PageChampignonView){
 
 		var AppRouter = Backbone.Router.extend({
 			initialize: function(){
+
+				// La collection de champignons
 				this.champignons = new ChampignonsCollection();
+				this.champignons.set(dataChampignons);
+
+				// Les vues
 				this.appView = new AppView();
 				this.homeView = new PageHomeView();
 				this.tousView = new PageTousView({collection:this.champignons});
-				console.log("Router initialize");
+
 			},
 
 			routes: {
