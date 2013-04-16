@@ -20,7 +20,7 @@ define([
 		champignon: function(id){
 			console.log("AppController : route champignon ", id);
 		}
-		
+
 	});
 
 	return AppController;
