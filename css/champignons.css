@@ -11,6 +11,11 @@
 	width: 100%;
 }
 
+.content-main > div {
+	position: absolute;
+	left: 100%;
+}
+
 .content-header {
 	position: fixed;
 	top: 0;

@@ -1,13 +1,14 @@
 define([
 	"jquery",
+	"transit",
 	"underscore",
 	"backbone",
 	"marionette"
-], function($, _, Backbone, Marionette){
+], function($, transit, _, Backbone, Marionette){
 
 	var TransitionRegion = Backbone.Marionette.Region.extend({
 
-		show: function(view, sens){
+		show: function(view){
 
 			this.ensureEl();
 
@@ -37,19 +38,31 @@ define([
 			}
 
 			var that = this;
-			view.$el.fadeOut("fast", function(){
+
+			view.$el.transition({ left: "-100%" }, function(){
 				if (view.close) { view.close(); }
 				that.trigger("view:closed", view);
 				if (callback){ callback.call(that); }
 			});
+
+			// view.$el.fadeOut("fast", function(){
+			// 	if (view.close) { view.close(); }
+			// 	that.trigger("view:closed", view);
+			// 	if (callback){ callback.call(that); }
+			// });
 		},
 
 		open: function(view, callback){
 			var that = this;
 			this.$el.html(view.$el.hide());
-			view.$el.fadeIn("fast", function(){
+
+			view.$el.show().transition({ left: 0 }, function(){
 				callback.call(that);
 			});
+
+			// view.$el.fadeIn("fast", function(){
+			// 	callback.call(that);
+			// });
 		}
 
 	});

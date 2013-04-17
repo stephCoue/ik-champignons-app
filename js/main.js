@@ -5,7 +5,7 @@ require.config({
 		underscore: "../libs/underscore-min",
 		backbone: "../libs/backbone-min",
 		marionette: "../libs/backbone.marionette.min",
-		// mobile: "../libs/jquery.mobile-1.3.1.min",
+		transit: "../libs/jquery.transit.min",
 		fastclick: "../libs/fastclick",
 		text: "../libs/text",
 		json: "../libs/json"
