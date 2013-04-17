@@ -28,6 +28,7 @@ define([
 
 		champignon: function(id){
 			console.log("AppController : route champignon ", id);
+			this.app.appView.swapView("champignon");
 		}
 
 	});

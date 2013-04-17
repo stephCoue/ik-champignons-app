@@ -11,7 +11,7 @@ define([
 			"":"home",
 			"home":"home",
 			"tous":"tous",
-			"champignon:id":"champignon",
+			"champignon/:id":"champignon",
 			"*action":"home"
 		}
 

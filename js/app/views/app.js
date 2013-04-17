@@ -5,9 +5,10 @@ define([
 	"fastclick",
 	"transit",
 	"views/pageHome",
-	"views/pageTous"
+	"views/pageTous",
+	"views/pageChampignon"
 ],
-function($, _, Backbone, fastclick, transit, PageHome, PageTous){
+function($, _, Backbone, fastclick, transit, PageHome, PageTous, PageChampignon){
 
 	var AppView = Backbone.View.extend({
 
@@ -41,6 +42,8 @@ function($, _, Backbone, fastclick, transit, PageHome, PageTous){
 				case "tous":
 				this.nextView = new PageTous();
 				break;
+				case "champignon":
+				this.nextView = new PageChampignon();
 			}
 
 			if(this.currentView.id === this.nextView.id) {

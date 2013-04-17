@@ -12,6 +12,7 @@ define([
 		template: _.template(PageChampignonTemplate),
 
 		initialize: function() {
+			this.level = 10;
 			this.id = "champignon" + this.model.id;
 			this.render();
 		},
