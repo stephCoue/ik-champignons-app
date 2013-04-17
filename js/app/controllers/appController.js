@@ -10,26 +10,20 @@ define([
 	var AppController = Marionette.Controller.extend({
 
 		initialize: function(options){
-
 			// référence sur l'application
 			this.app = this.options.app;
-
-			// Les vues
-			this.pageHome = new PageHome();
-			this.pageTous = new PageTous({collection:this.app.champignonsCollection});
-
 		},
 
 		// routes
 
 		home: function(){
 			console.log("AppController : route home");
-			this.app.appContent.show(this.pageHome);
+			this.app.appView.swapView("home");
 		},
 
 		tous: function(){
 			console.log("AppController : route tous");
-			this.app.appContent.show(this.pageTous);
+			this.app.appView.swapView("tous");
 		},
 
 		champignon: function(id){

@@ -13,6 +13,9 @@
 
 .content-main > div {
 	position: absolute;
+}
+
+.page-tous {
 	left: 100%;
 }
 
