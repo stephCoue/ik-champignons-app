@@ -2,25 +2,22 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
-	"collections/champignons",
 	"views/champignonItem"
-], function($, _, Backbone, ChampignonsCollection, ChampignonItem){
+], function($, _, Backbone, ChampignonItem){
 
 	var ChampignonsListView = Backbone.View.extend({
 
 		tagName: "ul",
 
+		initialize: function() {
+			this.render();
+		},
+
 		render: function(){
 
-			this.$el.attr({
-				"data-role":"listview",
-				"data-filter":"true",
-				"data-filter-placeholder":"Rechercher"
-			});
 			_.each(this.collection.models, function(champignon){
 				var champignonItem = new ChampignonItem({model:champignon});
-				champignonItem.parent = this;
-				this.$el.append(champignonItem.render().el);
+				this.$el.append(champignonItem.$el);
 			}, this);
 
 			return this;

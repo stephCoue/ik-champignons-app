@@ -11,21 +11,17 @@ define(["jquery",
 		template: _.template(pageTousTemplate),
 
 		initialize: function() {
-			this.listView = new ChampignonsListView({collection:this.collection});
-			this.listView.parent = this;
-			this.listView.render();
 			this.render();
 		},
 
 		render: function(){
+			this.listView = new ChampignonsListView({collection:this.collection});
+			this.listView.parent = this;
+			//this.listView.render();
 
 			$(this.el).html(this.template());
 
-			$(this.el).attr({
-				'data-role':'page'
-			});
-
-			this.$el.find("div:jqmData(role='content')").append(this.listView.$el);
+			this.$el.find("#list-view").append(this.listView.$el);
 
 			return this;
 		}

@@ -1,8 +1,7 @@
 define([
 	"backbone",
-	"models/champignon",
-	"data/champignons"
-], function(Backbone, Champignon, data){
+	"models/champignon"
+], function(Backbone, Champignon){
 
 	var ChampignonsCollection = Backbone.Collection.extend({
 
