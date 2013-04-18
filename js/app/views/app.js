@@ -2,13 +2,14 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
+	"jqmtouch",
 	"fastclick",
 	"transit",
 	"views/pageHome",
 	"views/pageTous",
 	"views/pageChampignon"
 ],
-function($, _, Backbone, fastclick, transit, PageHome, PageTous, PageChampignon){
+function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageChampignon){
 
 	var AppView = Backbone.View.extend({
 
@@ -43,6 +44,10 @@ function($, _, Backbone, fastclick, transit, PageHome, PageTous, PageChampignon)
 			// On affiche
 			this.render();
 
+		},
+
+		events: {
+			"swipeleft .page": "onSwipeLeft"
 		},
 
 		swapView: function(options) {
@@ -89,6 +94,10 @@ function($, _, Backbone, fastclick, transit, PageHome, PageTous, PageChampignon)
 
 		onTransitionEnd: function(event) {
 			console.log(event.currentTarget.id + " a fini la transition");
+		},
+
+		onSwipeLeft: function(event){
+			console.log(event.currentTarget);
 		},
 
 		render: function() {

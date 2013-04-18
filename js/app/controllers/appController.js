@@ -3,22 +3,15 @@ define([
 	"underscore",
 	"backbone",
 	"marionette",
-	"collections/champignons",
 	"views/pageHome",
 	"views/pageTous"
-], function($, _, Backbone, Marionette, ChampignonsCollection, PageHome, PageTous){
+], function($, _, Backbone, Marionette, PageHome, PageTous){
 
 	var AppController = Marionette.Controller.extend({
 
 		initialize: function(options){
-
 			// référence sur l'application
 			this.app = this.options.app;
-
-			// Collections
-			this.champignons = new ChampignonsCollection();
-			this.champignons.on("change:current", this.onChampignonsChange, this);
-
 		},
 
 		// routes
@@ -30,18 +23,12 @@ define([
 
 		tous: function(){
 			console.log("AppController : route tous");
-			this.app.appView.swapView({id:"tous", collection: this.champignons});
+			this.app.appView.swapView({id:"tous", collection: this.app.champignons});
 		},
 
 		champignon: function(id){
 			console.log("AppController : route champignon ", id);
-			this.app.appView.swapView({id:"champignon", model: this.champignons.getOne(id)});
-		},
-
-		// Fonctions
-
-		onChampignonsChange: function(event){
-			this.app.router.navigate("#champignon/" + this.champignons.current.get('id'), {trigger: true});
+			this.app.appView.swapView({id:"champignon", model: this.app.champignons.getOne(id)});
 		}
 
 	});

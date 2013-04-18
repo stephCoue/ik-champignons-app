@@ -18,19 +18,6 @@ define([
 			this.render();
 		},
 
-		events: {
-			"swipeleft": "onSwipeLeft",
-			"swiperight": "onSwipeRight"
-		},
-
-		onSwipeLeft: function(event){
-			this.model.collection.getNext();
-		},
-
-		onSwipeRight: function(event){
-			this.model.collection.getPrev();
-		},
-
 		render: function() {
 
 			$(this.el).html(this.template(this.model.toJSON()));
