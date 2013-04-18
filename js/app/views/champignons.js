@@ -12,8 +12,6 @@ define([
 		tagName: "ul",
 
 		initialize: function() {
-			//this.collection = new ChampignonsCollection();
-			//this.collection.set(data);
 			this.render();
 		},
 

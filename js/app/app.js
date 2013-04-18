@@ -22,7 +22,7 @@ define([
 		this.router = new AppRouter({controller: this.controller});
 
 		// La vue générale de l'application
-		this.appView = new AppView();
+		this.appView = new AppView({app:this});
 
 	});
 

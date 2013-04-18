@@ -15,7 +15,9 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 
 		el: $("#app-container"),
 
-		initialize: function(){
+		initialize: function(options){
+			// référence vers l'application
+			this.app = options.app;
 
 			// références vers les blocs de vue
 			this.$content = this.$el.find("#content");
@@ -47,7 +49,45 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 		},
 
 		events: {
-			"swipeleft .page": "onSwipeLeft"
+			"swipeleft .page": "onPageNext",
+			"swiperight .page": "onPagePrev"
+		},
+
+		onPageNext: function(event){
+			this.nextView = new PageChampignon({model: this.app.champignons.getNext()});
+			this.showNext(true);
+		},
+
+		onPagePrev: function(event){
+			this.nextView = new PageChampignon({model: this.app.champignons.getPrev()});
+			this.showNext(false);
+		},
+
+		showNext: function(toleft){
+			this.currentView.$el.one("transitionend", {self:this}, this.clearView);
+			if(toleft) {
+				this.currentView.$el.addClass("toright");
+				this.nextView.$el.addClass("toleft").appendTo(this.$content);
+			} else {
+				this.currentView.$el.addClass("toleft");
+				this.nextView.$el.addClass("toright").appendTo(this.$content);
+			}
+
+			//this.nextView.$el.removeClass("toleft toright");
+		},
+
+		clearView: function(event){
+
+			var self = event.data.self;
+			self.nextView.$el.removeClass("toleft toright");
+
+			self.currentView.remove();
+			self.currentView = self.nextView;
+			self.nextView = null;
+			if(self.showNav)
+				self.$footer.addClass("footer-on");
+			else
+				self.$footer.removeClass("footer-on");
 		},
 
 		swapView: function(options) {
@@ -74,30 +114,15 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 			var self = this;
 
 			if(this.nextView.level >= this.currentView.level){
-				this.$content.append(this.nextView.$el.css({"-webkit-transform":"translate3d(100%,0,0)"}));
-				this.currentView.$el.transition({"-webkit-transform":"translate3d(-100%,0,0)"});
+				this.showNext(true);
 			} else {
-				this.$content.append(this.nextView.$el.css({"-webkit-transform":"translate3d(-100%,0,0)"}));
-				this.currentView.$el.transition({"-webkit-transform":"translate3d(100%,0,0)"});
+				this.showNext(false);
 			}
 
-			this.nextView.$el.transition({"-webkit-transform":"translate3d(0,0,0)"}, function(){
-				self.currentView.remove();
-				self.currentView = self.nextView;
-				self.nextView = null;
-				if(self.showNav)
-					self.$footer.addClass("footer-on");
-				else
-					self.$footer.removeClass("footer-on");
-			});
 		},
 
 		onTransitionEnd: function(event) {
 			console.log(event.currentTarget.id + " a fini la transition");
-		},
-
-		onSwipeLeft: function(event){
-			console.log(event.currentTarget);
 		},
 
 		render: function() {

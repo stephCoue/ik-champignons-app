@@ -19,18 +19,16 @@ define([
 
 		getNext: function(){
 			var currentIndex = _.indexOf(this.models, this.current);
-			console.log(currentIndex);
 			var next = this.at(currentIndex + 1);
 			this.current = next;
-			this.trigger("change:current");
+			return this.current;
 		},
 
 		getPrev: function(){
 			var currentIndex = _.indexOf(this.models, this.current);
-			console.log(currentIndex);
 			var prev = this.at(currentIndex - 1);
 			this.current = prev;
-			this.trigger("change:current");
+			return this.current;
 		},
 
 		selection: function(ids){
