@@ -1,62 +1,44 @@
-<div data-role="header" data-position="fixed">
-	<a href="#" id="backbutton" data-rel="back" data-transition="slide" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Retour</a>
-	<h1>Les champignons</h1>
+<h2><%= nom %></h2>
+<h3><%= nomlatin %></h3>
+<div class="diaporama">
+	<img src="<%= vignette %>">
 </div>
-
-<div data-role="content">
-	<h2><%= nom %></h2>
-	<h3><%= nomlatin %></h3>
-	<div class="diaporama">
-		<img src="<%= vignette %>">
-	</div>
-	<% if(description.chapeau.length > 0) { %>
-	<div class="chapeau">
-		<h3>Chapeau</h3>
-		<%= description.chapeau %>
-	</div>
-	<% } %>
-	<% if(description.hymenium.length > 0) { %>
-	<div class="hymenium">
-		<h3>
-			<% if(typeof(lames) !== "undefined") { %> Lames <% } %>
-			<% if(typeof(pores) !== "undefined") { %> Pores <% } %>
-		</h3>
-		<%= description.hymenium %>
-	</div>
-	<% } %>
-	<% if(description.pied.length > 0) { %>
-	<div class="pied">
-		<h3>Pied</h3>
-		<%= description.pied %>
-	</div>
-	<% } %>
-	<% if(description.chair.length > 0) { %>
-	<div class="chair">
-		<h3>Chair</h3>
-		<%= description.chair %>
-	</div>
-	<% } %>
-	<% if(description.ecologie.length > 0) { %>
-	<div class="ecologie">
-		<h3>Écologie</h3>
-		<%= description.ecologie %>
-	</div>
-	<% } %>
-	<% if(description.remarques.length > 0) { %>
-	<div class="remarques">
-		<h3>Remarques</h3>
-		<%= description.remarques %>
-	</div>
-	<% } %>
+<% if(description.chapeau.length > 0) { %>
+<div class="chapeau">
+	<h3>Chapeau</h3>
+	<%= description.chapeau %>
 </div>
-
-<div data-role="footer" data-id="navbar" data-position="fixed">
-	<div data-role="navbar">
-		<ul>
-			<li><a href="#home" data-transition="slide" data-direction="reverse">Accueil</a></li>
-			<li><a id="tous-button" href="#tous" data-transition="slide" data-direction="reverse">Tous</a></li>
-			<li><a href="#determiner" data-transition="slide">Déterminer</a></li>
-			<li><a href="#cueillette" data-transition="slide">Cueillette</a></li>
-		</ul>
-	</div>
+<% } %>
+<% if(description.hymenium.length > 0) { %>
+<div class="hymenium">
+	<h3>
+		<% if(typeof(lames) !== "undefined") { %> Lames <% } %>
+		<% if(typeof(pores) !== "undefined") { %> Pores <% } %>
+	</h3>
+	<%= description.hymenium %>
 </div>
+<% } %>
+<% if(description.pied.length > 0) { %>
+<div class="pied">
+	<h3>Pied</h3>
+	<%= description.pied %>
+</div>
+<% } %>
+<% if(description.chair.length > 0) { %>
+<div class="chair">
+	<h3>Chair</h3>
+	<%= description.chair %>
+</div>
+<% } %>
+<% if(description.ecologie.length > 0) { %>
+<div class="ecologie">
+	<h3>Écologie</h3>
+	<%= description.ecologie %>
+</div>
+<% } %>
+<% if(description.remarques.length > 0) { %>
+<div class="remarques">
+	<h3>Remarques</h3>
+	<%= description.remarques %>
+</div>
+<% } %>

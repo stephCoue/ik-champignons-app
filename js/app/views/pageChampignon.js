@@ -7,7 +7,7 @@ define([
 
 	var PageChampignon = Backbone.View.extend({
 
-		class: "champignon",
+		className: "page page-champignon",
 
 		template: _.template(PageChampignonTemplate),
 
@@ -20,12 +20,6 @@ define([
 		render: function() {
 
 			$(this.el).html(this.template(this.model.toJSON()));
-
-			$(this.el).attr({
-				"id":this.id,
-				"class":"fiche-champignon",
-				'data-role':'page'
-			});
 
 			if(window.location.hash.indexOf("tous") > 0)
 				this.$el.find("#tous-button").addClass("class=ui-btn-active ui-state-persist");

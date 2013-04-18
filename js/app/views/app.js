@@ -15,35 +15,51 @@ function($, _, Backbone, fastclick, transit, PageHome, PageTous, PageChampignon)
 		el: $("#app-container"),
 
 		initialize: function(){
+
+			// références vers les blocs de vue
+			this.$content = this.$el.find("#content");
+			this.$header = this.$el.find("#header");
+			this.$footer = this.$el.find("#footer");
+
+			// écouteurs sur les transitions
+			this.$footer.on("transitionend", this.onTransitionEnd);
+
 			// on masque le div au début
 			this.$el.css("opacity", "0");
 
 			// gestion des vues
 			this.currentView = null;
-			this.prevView = null;
 			this.nextView = null,
 
-			// Les vues
+			// La vue par défaut
 			this.homeView = new PageHome();
+
+			// état des barres de nav
+			this.showNav = false;
 
 			// touchevents
 			this.click = new FastClick(document.body);
 
 			// On affiche
 			this.render();
+
 		},
 
-		swapView: function(next) {
+		swapView: function(options) {
 
-			switch(next){
+			switch(options.id){
 				case "home":
 				this.nextView = new PageHome();
+				this.showNav = false;
 				break;
 				case "tous":
-				this.nextView = new PageTous();
+				this.nextView = new PageTous({collection:options.collection});
+				this.showNav = true;
 				break;
 				case "champignon":
-				this.nextView = new PageChampignon();
+				this.nextView = new PageChampignon({model: options.model});
+				this.showNav = true;
+				break;
 			}
 
 			if(this.currentView.id === this.nextView.id) {
@@ -53,24 +69,35 @@ function($, _, Backbone, fastclick, transit, PageHome, PageTous, PageChampignon)
 			var self = this;
 
 			if(this.nextView.level > this.currentView.level){
-				this.$el.find("#content").append(this.nextView.$el.css("left", "100%"));
-				this.currentView.$el.transition({left:"-100%"});
+				this.$content.append(this.nextView.$el.css({"-webkit-transform":"translate3d(100%,0,0)"}));
+				this.currentView.$el.transition({"-webkit-transform":"translate3d(-100%,0,0)"});
 			} else {
-				this.$el.find("#content").append(this.nextView.$el.css("left", "-100%"));
-				this.currentView.$el.transition({left:"100%"});
+				this.$content.append(this.nextView.$el.css({"-webkit-transform":"translate3d(-100%,0,0)"}));
+				this.currentView.$el.transition({"-webkit-transform":"translate3d(100%,0,0)"});
 			}
 
-			this.nextView.$el.transition({left:0}, function(){
+			this.nextView.$el.transition({"-webkit-transform":"translate3d(0,0,0)"}, function(){
 				self.currentView.remove();
 				self.currentView = self.nextView;
 				self.nextView = null;
+				if(self.showNav)
+					self.$footer.addClass("footer-on");
+				else
+					self.$footer.removeClass("footer-on");
 			});
+		},
+
+		onTransitionEnd: function(event) {
+			console.log(event.currentTarget.id + " a fini la transition");
 		},
 
 		render: function() {
 
 			this.$el.height( $(window).height() );
-			this.$el.find("#content").append(this.homeView.$el);
+			//this.$header.css("top", "-" + this.$header.height() + "px");
+			//this.$footer.css("bottom", "-" + this.$footer.height() + "px");
+
+			this.$content.append(this.homeView.$el);
 			this.currentView = this.homeView;
 
 			this.$el.transition({opacity: 100});

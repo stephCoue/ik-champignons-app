@@ -8,7 +8,7 @@ define(["jquery",
 	var PageTous = Backbone.View.extend({
 
 		id: "tous",
-		className: "page-tous",
+		className: "page page-tous",
 		template: _.template(pageTousTemplate),
 
 		initialize: function() {
@@ -17,7 +17,7 @@ define(["jquery",
 		},
 
 		render: function(){
-			this.listView = new ChampignonsListView();
+			this.listView = new ChampignonsListView({collection:this.collection});
 			$(this.el).html(this.template());
 
 			this.$el.find("#list-view").append(this.listView.$el);

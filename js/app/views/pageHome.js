@@ -8,7 +8,7 @@ define(["jquery",
 	var PageHome = Backbone.View.extend({
 
 		id: "home",
-		className: "page-home",
+		className: "page page-home",
 		template: _.template(pageHomeTemplate),
 
 		initialize: function() {
