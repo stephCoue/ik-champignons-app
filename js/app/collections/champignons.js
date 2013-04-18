@@ -13,8 +13,23 @@ define([
 		},
 
 		getOne: function(id) {
-			this.selection = this.get(id);
-			return this.selection;
+			this.current = this.get(id);
+			return this.current;
+		},
+
+		getNext: function(){
+			var currentIndex = _.indexOf(this.models, this.current);
+			console.log("currentIndex = ", currentIndex);
+			var next = this.at(currentIndex + 1);
+			this.current = next;
+			console.log(this.current.id);
+			return this.current;
+		},
+
+		getPrev: function(){
+			var prev = this.at(_.indexOf(this.current) - 1);
+			this.current = prev;
+			return this.current;
 		},
 
 		selection: function(ids){

@@ -2,11 +2,12 @@ require.config({
 	baseUrl: "js/app/",
 	paths: {
 		jquery: "../libs/jquery-1.9.1.min",
+		jqmtouch: "../libs/jquery.mobile.custom.min",
 		underscore: "../libs/underscore-min",
 		backbone: "../libs/backbone-min",
 		marionette: "../libs/backbone.marionette.min",
-		transit: "../libs/jquery.transit.min",
 		fastclick: "../libs/fastclick",
+		transit: "../libs/jquery.transit.min",
 		text: "../libs/text",
 		json: "../libs/json"
 	},

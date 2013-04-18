@@ -34,7 +34,7 @@ define([
 
 		champignon: function(id){
 			console.log("AppController : route champignon ", id);
-			this.app.appView.swapView({id:"champignon", model: this.champignons.get(id)});
+			this.app.appView.swapView({id:"champignon", model: this.champignons.getOne(id)});
 		}
 
 	});

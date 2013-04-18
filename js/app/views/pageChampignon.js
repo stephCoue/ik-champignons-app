@@ -2,8 +2,9 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
+	"jqmtouch",
 	"text!templates/pageChampignon.html"
-], function($, _, Backbone, PageChampignonTemplate){
+], function($, _, Backbone, touch, PageChampignonTemplate){
 
 	var PageChampignon = Backbone.View.extend({
 
@@ -15,6 +16,19 @@ define([
 			this.level = 10;
 			this.id = "champignon" + this.model.id;
 			this.render();
+		},
+
+		events: {
+			"swipeleft": "onSwipeLeft",
+			"swiperight": "onSwipeRight"
+		},
+
+		onSwipeLeft: function(event){
+			console.log("Swipe vers la gauche", this.model.collection.getNext().id);
+		},
+
+		onSwipeRight: function(event){
+			console.log("Swipe vers la droite");
 		},
 
 		render: function() {
