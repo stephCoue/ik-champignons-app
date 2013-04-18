@@ -24,11 +24,11 @@ define([
 		},
 
 		onSwipeLeft: function(event){
-			console.log("Swipe vers la gauche", this.model.collection.getNext().id);
+			this.model.collection.getNext();
 		},
 
 		onSwipeRight: function(event){
-			console.log("Swipe vers la droite");
+			this.model.collection.getPrev();
 		},
 
 		render: function() {

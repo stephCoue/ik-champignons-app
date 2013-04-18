@@ -17,6 +17,7 @@ define([
 
 			// Collections
 			this.champignons = new ChampignonsCollection();
+			this.champignons.on("change:current", this.onChampignonsChange, this);
 
 		},
 
@@ -35,6 +36,12 @@ define([
 		champignon: function(id){
 			console.log("AppController : route champignon ", id);
 			this.app.appView.swapView({id:"champignon", model: this.champignons.getOne(id)});
+		},
+
+		// Fonctions
+
+		onChampignonsChange: function(event){
+			this.app.router.navigate("#champignon/" + this.champignons.current.get('id'), {trigger: true});
 		}
 
 	});

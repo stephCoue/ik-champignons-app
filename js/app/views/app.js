@@ -68,7 +68,7 @@ function($, _, Backbone, fastclick, transit, PageHome, PageTous, PageChampignon)
 
 			var self = this;
 
-			if(this.nextView.level > this.currentView.level){
+			if(this.nextView.level >= this.currentView.level){
 				this.$content.append(this.nextView.$el.css({"-webkit-transform":"translate3d(100%,0,0)"}));
 				this.currentView.$el.transition({"-webkit-transform":"translate3d(-100%,0,0)"});
 			} else {
