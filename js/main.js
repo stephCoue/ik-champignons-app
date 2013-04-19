@@ -5,6 +5,7 @@ require.config({
 		jqmtouch: "../libs/jquery.mobile.custom.min",
 		underscore: "../libs/underscore-min",
 		backbone: "../libs/backbone-min",
+		localstorage: "../libs/backbone.localStorage",
 		marionette: "../libs/backbone.marionette.min",
 		fastclick: "../libs/fastclick",
 		transit: "../libs/jquery.transit.min",
