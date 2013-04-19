@@ -119,7 +119,7 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 				this.showHeader = false;
 				break;
 				case "tous":
-				this.nextView = new PageTous({collection:options.collection});
+				this.nextView = new PageTous({collection:options.collection, settings:this.app.settings});
 				this.showNav = true;
 				this.showHeader = true;
 				break;

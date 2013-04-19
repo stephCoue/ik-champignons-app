@@ -10,6 +10,7 @@ define([
 
 		initialize: function(options){
 			this.app = options.app;
+			this.render();
 		},
 
 		events: {
@@ -22,16 +23,23 @@ define([
 			event.preventDefault();
 			this.app.settings.set("liststyle", "grille");
 			this.app.settings.save();
+			this.render();
 		},
 
 		onListe: function(event){
 			event.preventDefault();
 			this.app.settings.set("liststyle", "liste");
 			this.app.settings.save();
+			this.render();
 		},
 
 		onBouton: function(event){
 			event.preventDefault();
+		},
+
+		render: function() {
+			this.$el.find("." + this.app.settings.get("liststyle"))
+			.parent().addClass("on").siblings().removeClass("on");
 		}
 
 	});

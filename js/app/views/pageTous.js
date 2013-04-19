@@ -1,4 +1,5 @@
-define(["jquery",
+define([
+	"jquery",
 	"underscore",
 	"backbone",
 	"views/champignons",
@@ -11,8 +12,9 @@ define(["jquery",
 		className: "page page-tous",
 		template: _.template(pageTousTemplate),
 
-		initialize: function() {
+		initialize: function(options) {
 			this.level = 1;
+			this.liststyle = options.settings.get('liststyle');
 			this.render();
 		},
 
@@ -20,7 +22,10 @@ define(["jquery",
 			this.listView = new ChampignonsListView({collection:this.collection});
 			$(this.el).html(this.template());
 
-			this.$el.find("#list-view").append(this.listView.$el);
+			this.$el.find("#list-view")
+			.removeClass("grille liste")
+			.addClass(this.liststyle)
+			.append(this.listView.$el);
 
 			return this;
 		}
