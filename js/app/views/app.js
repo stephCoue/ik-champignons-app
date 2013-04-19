@@ -49,22 +49,32 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 		},
 
 		events: {
-			"swipeleft .page": "onPageNext",
-			"swiperight .page": "onPagePrev"
+			"swipeleft .page-champignon": "onPageNext",
+			"swiperight .page-champignon": "onPagePrev"
 		},
 
 		onPageNext: function(event){
-			this.nextView = new PageChampignon({model: this.app.champignons.getNext()});
-			this.showNext(true);
+			var nextModel = this.app.champignons.getNext();
+			if(nextModel !== null) {
+				this.nextView = new PageChampignon({model: nextModel});
+				this.showNext(true);
+			} else {
+				return;
+			}
 		},
 
 		onPagePrev: function(event){
-			this.nextView = new PageChampignon({model: this.app.champignons.getPrev()});
-			this.showNext(false);
+			var nextModel = this.app.champignons.getPrev();
+			if(nextModel !== null) {
+				this.nextView = new PageChampignon({model: nextModel});
+				this.showNext(false);
+			} else {
+				return;
+			}
 		},
 
 		showNext: function(toleft){
-			this.currentView.$el.one("transitionend", {self:this}, this.clearView);
+			this.currentView.$el.one("transitionend webkitTransitionEnd", {self:this}, this.clearView);
 			if(toleft) {
 				this.currentView.$el.addClass("toright");
 				this.nextView.$el.addClass("toleft").appendTo(this.$content);
@@ -72,8 +82,6 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 				this.currentView.$el.addClass("toleft");
 				this.nextView.$el.addClass("toright").appendTo(this.$content);
 			}
-
-			//this.nextView.$el.removeClass("toleft toright");
 		},
 
 		clearView: function(event){

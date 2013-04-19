@@ -18,17 +18,21 @@ define([
 		},
 
 		getNext: function(){
-			var currentIndex = _.indexOf(this.models, this.current);
-			var next = this.at(currentIndex + 1);
-			this.current = next;
-			return this.current;
+			if( (_.indexOf(this.models, this.current) + 1) < this.models.length) {
+				this.current = this.at(_.indexOf(this.models, this.current) + 1);
+				return this.current;
+			} else {
+				return null;
+			}
 		},
 
 		getPrev: function(){
-			var currentIndex = _.indexOf(this.models, this.current);
-			var prev = this.at(currentIndex - 1);
-			this.current = prev;
-			return this.current;
+			if( (_.indexOf(this.models, this.current) - 1) > -1) {
+				this.current = this.at(_.indexOf(this.models, this.current) - 1);
+				return this.current;
+			} else {
+				return null;
+			}
 		},
 
 		selection: function(ids){
