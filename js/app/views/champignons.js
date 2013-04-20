@@ -10,6 +10,7 @@ define([
 	var ChampignonsListView = Backbone.View.extend({
 
 		tagName: "ul",
+		className: "liste-champignons",
 
 		initialize: function() {
 			this.render();

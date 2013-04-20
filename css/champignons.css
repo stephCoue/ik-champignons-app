@@ -6,6 +6,11 @@ body {
 	line-height: 1.2em;
 }
 
+h1, h2, h3, h4, p {
+	margin: 0;
+	margin-bottom: 0.5em;
+}
+
 a {
 	text-decoration: none;
 	color: #202020;
@@ -109,13 +114,56 @@ li {
 
 /*LISTES DE CHAMPIGNONS*/
 
-
+.liste-champignons a {
+	display: block;
+}
 
 /*VUE EN GRILLE*/
 
 .grille li {
 	width: 33.33%;
 	float: left;
+	font-size: 0.80em;
+	line-height: 1.1em;
+}
+
+.grille li:nth-child(3n+4) {
+	clear: left;
+}
+
+.grille li:last-child {
+	margin-bottom: 50px;
+}
+
+.grille .inner {
+	margin: 5%;
+}
+
+/*VUE EN LISTE*/
+
+.liste li {
+	border: 1px solid #aaa;
+	border-width: 1px 0;
+	clear: both;
+	margin-bottom: -1px;
+}
+
+.liste .inner {
+	margin: 5px 0;
+	display: table;
+}
+
+.liste .vignette, .liste .textes {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.liste .textes {
+	padding-left: 10px;
+}
+
+.liste .vignette {
+	width: 24%;
 }
 
 /*HEADER*/
