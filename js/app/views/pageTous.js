@@ -22,7 +22,8 @@ define([
 		},
 
 		events: {
-			"click .filtres a": "onFiltre"
+			"click .filtres a": "onFiltre",
+			"touchstart .filtres a": "onFiltre"
 		},
 
 		onFiltre: function(event){
@@ -35,6 +36,7 @@ define([
 		},
 
 		onListModeChange: function(){
+			this.liststyle = this.app.settings.get('liststyle');
 			this.$el.find("#list-view").removeClass("grille liste").addClass(this.app.settings.get('liststyle'));
 		},
 
