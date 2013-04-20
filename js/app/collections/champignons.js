@@ -10,7 +10,6 @@ define([
 		sort_key: "nom",
 
 		initialize: function() {
-			//this.sort_key = options.settings.get("sortkey");
 			this.set(data);
 		},
 
@@ -21,6 +20,13 @@ define([
 		filtrerPar: function(filtre){
 			this.sort_key = filtre;
 			this.sort();
+		},
+
+		rechercher: function(exp){
+			var result = this.filter(function(item){
+				return item.get('nom').toLowerCase().search(exp) != -1 || item.get('nomlatin').toLowerCase().search(exp) != -1;
+			});
+			return result;
 		},
 
 		getOne: function(id) {

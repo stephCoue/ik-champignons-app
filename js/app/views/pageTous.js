@@ -23,7 +23,8 @@ define([
 
 		events: {
 			"click .filtres a": "onFiltre",
-			"touchstart .filtres a": "onFiltre"
+			"touchstart .filtres a": "onFiltre",
+			"keyup": "search"
 		},
 
 		onFiltre: function(event){
@@ -33,6 +34,13 @@ define([
 			this.app.settings.save();
 			this.collection.filtrerPar( $(event.currentTarget).attr("href") );
 			this.render();
+		},
+
+		search: function(event){
+			var searchString = $(".search input").val();
+
+			this.listView.collection = new Backbone.Collection(this.collection.rechercher(searchString));
+			this.listView.render();
 		},
 
 		onListModeChange: function(){

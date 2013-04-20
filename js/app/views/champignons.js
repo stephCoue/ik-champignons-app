@@ -18,6 +18,8 @@ define([
 
 		render: function(){
 
+			this.$el.empty();
+
 			_.each(this.collection.models, function(champignon){
 				var champignonItem = new ChampignonItem({model:champignon});
 				this.$el.append(champignonItem.$el);
