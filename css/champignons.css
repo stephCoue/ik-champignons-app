@@ -118,6 +118,33 @@ li {
 	display: block;
 }
 
+.filtres {
+	margin: 0 -10px;
+	background-color: #999;
+}
+
+.filtres .cell {
+	width: 33.333%;
+}
+
+.filtres a {
+	display: block;
+	padding: 4px 0;
+	text-align: center;
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+
+.filtres a:active {
+	font-weight: bold;
+}
+
+.filtres .on a {
+	font-weight: bold;
+	background-color: #666;
+	color: #fff;
+}
+
 /*VUE EN GRILLE*/
 
 .grille li {
@@ -182,6 +209,7 @@ li {
 	margin: 5px 10px;
 	line-height: 40px;
 	text-align: left;
+	font-size: 1.2em;
 }
 
 .header-on {
@@ -214,7 +242,7 @@ li {
 .header-tous a {
 	width: 24px;
 	height: 24px;
-	margin-left: 10px;
+	margin-left: 20px;
 	background-image: url(images/boutons-tous.png);
 	background-repeat: no-repeat;
 }

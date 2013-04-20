@@ -16,12 +16,13 @@ define([
 
 	App.addInitializer(function(){
 
-		// Les collections
-		this.champignons = new ChampignonsCollection();
-
 		// Les préférences de l'utilisateur
 		this.settings = new Settings({id:1});
 		this.settings.fetch();
+
+		// Les collections
+		this.champignons = new ChampignonsCollection();
+		this.champignons.filtrerPar(this.settings.get("sortkey"));
 
 		// La vue générale de l'application
 		this.appView = new AppView({app:this});

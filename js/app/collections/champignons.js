@@ -7,9 +7,20 @@ define([
 	var ChampignonsCollection = Backbone.Collection.extend({
 
 		model: Champignon,
+		sort_key: "nom",
 
 		initialize: function() {
+			//this.sort_key = options.settings.get("sortkey");
 			this.set(data);
+		},
+
+		comparator: function(item){
+			return item.get(this.sort_key);
+		},
+
+		filtrerPar: function(filtre){
+			this.sort_key = filtre;
+			this.sort();
 		},
 
 		getOne: function(id) {

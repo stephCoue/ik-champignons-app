@@ -8,6 +8,7 @@ define([
 
 		defaults: {
 			"liststyle":"grille",
+			"sortkey":"nom",
 			"cueillette":[]
 		}
 
