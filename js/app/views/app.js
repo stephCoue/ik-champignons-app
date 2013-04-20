@@ -142,8 +142,6 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 		render: function() {
 
 			this.$el.height( $(window).height() );
-			//this.$header.css("top", "-" + this.$header.height() + "px");
-			//this.$footer.css("bottom", "-" + this.$footer.height() + "px");
 
 			this.$content.append(this.homeView.$el);
 			this.currentView = this.homeView;

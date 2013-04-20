@@ -18,6 +18,10 @@ define([
 			this.render();
 		},
 
+		updateListView: function(options){
+			this.$el.find("#list-view").removeClass("grille liste").addClass(options.liststyle);
+		},
+
 		render: function(){
 			this.listView = new ChampignonsListView({collection:this.collection});
 			$(this.el).html(this.template());

@@ -24,6 +24,7 @@ define([
 			this.app.settings.set("liststyle", "grille");
 			this.app.settings.save();
 			this.render();
+			this.app.appView.currentView.updateListView({liststyle: this.app.settings.get("liststyle")});
 		},
 
 		onListe: function(event){
@@ -31,6 +32,7 @@ define([
 			this.app.settings.set("liststyle", "liste");
 			this.app.settings.save();
 			this.render();
+			this.app.appView.currentView.updateListView({liststyle: this.app.settings.get("liststyle")});
 		},
 
 		onBouton: function(event){
@@ -40,6 +42,9 @@ define([
 		render: function() {
 			this.$el.find("." + this.app.settings.get("liststyle"))
 			.parent().addClass("on").siblings().removeClass("on");
+
+
+			return this;
 		}
 
 	});

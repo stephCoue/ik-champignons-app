@@ -107,6 +107,17 @@ li {
 	margin: 50px 10px;
 }
 
+/*LISTES DE CHAMPIGNONS*/
+
+
+
+/*VUE EN GRILLE*/
+
+.grille li {
+	width: 33.33%;
+	float: left;
+}
+
 /*HEADER*/
 
 .content-header {
