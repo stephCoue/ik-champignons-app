@@ -14,12 +14,14 @@ define([
 
 		initialize: function(options) {
 			this.level = 1;
-			this.liststyle = options.settings.get('liststyle');
+			this.app = options.app;
+			this.liststyle = this.app.settings.get('liststyle');
+			this.listenTo(this.options.app, "listModeChange", this.onListModeChange);
 			this.render();
 		},
 
-		updateListView: function(options){
-			this.$el.find("#list-view").removeClass("grille liste").addClass(options.liststyle);
+		onListModeChange: function(){
+			this.$el.find("#list-view").removeClass("grille liste").addClass(this.app.settings.get('liststyle'));
 		},
 
 		render: function(){

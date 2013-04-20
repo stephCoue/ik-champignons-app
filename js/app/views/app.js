@@ -51,7 +51,10 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 
 		events: {
 			"swipeleft .page-champignon": "onPageNext",
-			"swiperight .page-champignon": "onPagePrev"
+			"swiperight .page-champignon": "onPagePrev",
+			"click .content-header .grille": "onGrille",
+			"click .content-header .liste": "onListe",
+			"click .content-header .diapo": "onBouton"
 		},
 
 		onPageNext: function(event){
@@ -72,6 +75,24 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 			} else {
 				return;
 			}
+		},
+
+		onGrille: function(event){
+			event.preventDefault();
+			this.app.settings.set("liststyle", "grille");
+			this.app.settings.save();
+			this.app.trigger("listModeChange");
+		},
+
+		onListe: function(event){
+			event.preventDefault();
+			this.app.settings.set("liststyle", "liste");
+			this.app.settings.save();
+			this.app.trigger("listModeChange");
+		},
+
+		onBouton: function(event){
+			event.preventDefault();
 		},
 
 		showNext: function(toleft){
@@ -119,7 +140,7 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 				this.showHeader = false;
 				break;
 				case "tous":
-				this.nextView = new PageTous({collection:options.collection, settings:this.app.settings});
+				this.nextView = new PageTous({collection:options.collection, app:this.app});
 				this.showNav = true;
 				this.showHeader = true;
 				break;
