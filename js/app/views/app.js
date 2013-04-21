@@ -55,7 +55,9 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 			"swiperight .page-champignon": "onPagePrev",
 			"click .content-header .grille": "onGrille",
 			"click .content-header .liste": "onListe",
-			"click .content-header .diapo": "onBouton"
+			"click .content-header .diapo": "onBouton",
+			"click .content-header .back": "onBackButton",
+			"click .content-header .cueillette": "onCueillette"
 		},
 
 		onPageNext: function(event){
@@ -93,6 +95,15 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 		},
 
 		onBouton: function(event){
+			event.preventDefault();
+		},
+
+		onBackButton: function(event){
+			event.preventDefault();
+			window.history.go(-1);
+		},
+
+		onCueillette: function(event){
 			event.preventDefault();
 		},
 
