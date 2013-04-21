@@ -39,6 +39,10 @@ define([
 
 		search: function(event){
 			var searchString = $(".search input").val().toLowerCase();
+			if(searchString.length > 0)
+				this.$el.find(".search a").fadeIn(100);
+			else
+				this.$el.find(".search a").fadeOut(100);
 
 			this.listView.collection = new Backbone.Collection(this.collection.rechercher(searchString));
 			this.listView.render();
@@ -47,6 +51,7 @@ define([
 		reset: function(event){
 			event.preventDefault();
 			$(".search input").val('');
+			this.$el.find(".search a").fadeOut(100);
 			this.listView.collection = this.collection;
 			this.listView.render();
 		},

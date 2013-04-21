@@ -118,6 +118,8 @@ li {
 	display: block;
 }
 
+/* FILTRES */
+
 .filtres {
 	margin: 0 -10px;
 	background-color: #999;
@@ -143,6 +145,48 @@ li {
 	font-weight: bold;
 	background-color: #666;
 	color: #fff;
+}
+
+/*CHAMPS RECHERCHE*/
+
+.search {
+	position: relative;
+	margin: 1px -10px;
+	padding: 10px 0;
+	background-color: #999;
+}
+
+.search .inner {
+	margin: 0 10px;
+}
+
+.search input {
+	display: block;
+	width: 97%;
+	padding: 4px 5px;
+	margin: 0 auto;
+	border: 0 none;
+	border-radius: 4px;
+	font-size: 0.8em;
+}
+
+.search .bouton {
+	display: none;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: 6px;
+	top: 50%;
+	margin-top: -15px;
+	background-image: url(images/close.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60%;
+	opacity: 0.3;
+}
+
+.search .bouton:active {
+	opacity: 1.0;
 }
 
 /*VUE EN GRILLE*/
