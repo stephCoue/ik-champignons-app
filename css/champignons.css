@@ -288,6 +288,10 @@ li {
 	color: #aaa;
 }
 
+.content-footer .on a, .content-footer a:active {
+	color: #fff;
+}
+
 .footer-on {
 	bottom: 0;
 }

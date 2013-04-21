@@ -136,11 +136,13 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 			switch(options.id){
 				case "home":
 				this.nextView = new PageHome();
+				this.$footer.find("li").removeClass("on");
 				this.showNav = false;
 				this.showHeader = false;
 				break;
 				case "tous":
 				this.nextView = new PageTous({collection:options.collection, app:this.app});
+				this.$footer.find(".tous").addClass("on").siblings().removeClass("on");
 				this.showNav = true;
 				this.showHeader = true;
 				break;
