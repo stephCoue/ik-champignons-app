@@ -174,7 +174,7 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 					this.showHeader = true;
 					break;
 			}
-console.log("test : ", this.currentView.id, this.nextView.id);
+
 			if(this.currentView.id === this.nextView.id)
 				return;
 			else
