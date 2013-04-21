@@ -34,8 +34,9 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 			this.currentView = null;
 			this.nextView = null,
 
-			// La vue par défaut
-			this.homeView = new PageHome();
+			// Les subviews
+			this.pageHome = new PageHome();
+			this.pageTous = null;
 
 			// état des barres de nav
 			this.showNav = false;
@@ -96,13 +97,15 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 		},
 
 		showNext: function(toleft){
+
 			this.currentView.$el.one("transitionend webkitTransitionEnd", {self:this}, this.clearView);
+
 			if(toleft) {
 				this.currentView.$el.addClass("toright");
-				this.nextView.$el.addClass("toleft").appendTo(this.$content);
+				this.nextView.$el.show().addClass("toleft").appendTo(this.$content);
 			} else {
 				this.currentView.$el.addClass("toleft");
-				this.nextView.$el.addClass("toright").appendTo(this.$content);
+				this.nextView.$el.show().addClass("toright").appendTo(this.$content);
 			}
 		},
 
@@ -111,7 +114,10 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 			var self = event.data.self;
 			self.nextView.$el.removeClass("toleft toright");
 
-			self.currentView.remove();
+			if(self.currentView.$el.hasClass("page-champignon"))
+				self.currentView.remove();
+			else
+				self.currentView.$el.hide();
 			self.currentView = self.nextView;
 			self.nextView = null;
 
@@ -135,22 +141,27 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 
 			switch(options.id){
 				case "home":
-				this.nextView = new PageHome();
-				this.$footer.find("li").removeClass("on");
-				this.showNav = false;
-				this.showHeader = false;
-				break;
+					this.nextView = this.pageHome;
+					this.$footer.find("li").removeClass("on");
+					this.showNav = false;
+					this.showHeader = false;
+					break;
 				case "tous":
-				this.nextView = new PageTous({collection:options.collection, app:this.app});
-				this.$footer.find(".tous").addClass("on").siblings().removeClass("on");
-				this.showNav = true;
-				this.showHeader = true;
-				break;
+					if(this.pageTous === null) {
+						this.pageTous = new PageTous({collection:options.collection, app:this.app});
+						this.nextView = this.pageTous;
+					} else {
+						this.nextView = this.pageTous;
+					}
+					this.$footer.find(".tous").addClass("on").siblings().removeClass("on");
+					this.showNav = true;
+					this.showHeader = true;
+					break;
 				case "champignon":
-				this.nextView = new PageChampignon({model: options.model});
-				this.showNav = true;
-				this.showHeader = true;
-				break;
+					this.nextView = new PageChampignon({model: options.model});
+					this.showNav = true;
+					this.showHeader = true;
+					break;
 			}
 
 			if(this.currentView.id === this.nextView.id) return;
@@ -166,8 +177,8 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 
 			this.$el.height( $(window).height() );
 
-			this.$content.append(this.homeView.$el);
-			this.currentView = this.homeView;
+			this.$content.append(this.pageHome.$el);
+			this.currentView = this.pageHome;
 
 			this.$el.transition({opacity: 100});
 
