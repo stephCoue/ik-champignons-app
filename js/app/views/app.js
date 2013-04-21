@@ -109,7 +109,7 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 
 		showNext: function(toleft){
 
-			this.currentView.$el.one("transitionend webkitTransitionEnd", {self:this}, this.clearView);
+			this.currentView.$el.one("webkitTransitionEnd", {self:this}, this.clearView);
 
 			if(toleft) {
 				this.currentView.$el.addClass("toright");
@@ -174,10 +174,11 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 					this.showHeader = true;
 					break;
 			}
-
-			if(this.currentView.id === this.nextView.id) return;
-
-			this.showNext( this.nextView.level >= this.currentView.level );
+console.log("test : ", this.currentView.id, this.nextView.id);
+			if(this.currentView.id === this.nextView.id)
+				return;
+			else
+				this.showNext( this.nextView.level >= this.currentView.level );
 		},
 
 		onTransitionEnd: function(event) {
