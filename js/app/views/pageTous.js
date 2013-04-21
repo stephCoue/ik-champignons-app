@@ -24,7 +24,8 @@ define([
 		events: {
 			"click .filtres a": "onFiltre",
 			"touchstart .filtres a": "onFiltre",
-			"keyup": "search"
+			"keyup": "search",
+			"click .search a": "reset"
 		},
 
 		onFiltre: function(event){
@@ -40,6 +41,13 @@ define([
 			var searchString = $(".search input").val().toLowerCase();
 
 			this.listView.collection = new Backbone.Collection(this.collection.rechercher(searchString));
+			this.listView.render();
+		},
+
+		reset: function(event){
+			event.preventDefault();
+			$(".search input").val('');
+			this.listView.collection = this.collection;
 			this.listView.render();
 		},
 
