@@ -37,7 +37,7 @@ define([
 		},
 
 		search: function(event){
-			var searchString = $(".search input").val();
+			var searchString = $(".search input").val().toLowerCase();
 
 			this.listView.collection = new Backbone.Collection(this.collection.rechercher(searchString));
 			this.listView.render();
