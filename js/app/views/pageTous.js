@@ -58,10 +58,12 @@ define([
 		},
 
 		onGrille: function(){
+			this.liststyle = "grille";
 			this.$el.find("#list-view").removeClass("grille liste").addClass("grille");
 		},
 
 		onListe: function(){
+			this.liststyle = "liste";
 			this.$el.find("#list-view").removeClass("grille liste").addClass("liste");
 		},
 
