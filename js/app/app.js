@@ -28,7 +28,7 @@ define([
 		this.appView = new AppView({app:this});
 
 		// La vue du header
-		this.header = new Header({app:this});
+		this.header = new Header({liststyle: this.settings.get("liststyle")});
 
 		// Création du router et du controller associé
 		this.controller = new AppController({app:this});

@@ -14,10 +14,12 @@ define([
 
 		initialize: function(options) {
 			this.level = 1;
-			this.app = options.app;
-			this.liststyle = this.app.settings.get('liststyle');
-			this.order = this.app.settings.get('sortkey');
-			this.listenTo(this.options.app, "listModeChange", this.onListModeChange);
+			this.liststyle = options.liststyle;
+			this.order = options.sortkey;
+
+			Backbone.on("onGrille", this.onGrille, this);
+			Backbone.on("onListe", this.onListe, this);
+
 			this.render();
 		},
 
@@ -25,15 +27,14 @@ define([
 			"click .filtres a": "onFiltre",
 			"touchstart .filtres a": "onFiltre",
 			"keyup": "search",
-			"click .search a": "reset"
+			"click .search a": "clearSearch"
 		},
 
 		onFiltre: function(event){
 			event.preventDefault();
 			this.order = $(event.currentTarget).attr("href");
-			this.app.settings.set("sortkey", $(event.currentTarget).attr("href"));
-			this.app.settings.save();
-			this.collection.filtrerPar( $(event.currentTarget).attr("href") );
+			Backbone.trigger("filter", this.order);
+			this.collection.filtrerPar( this.order );
 			this.render();
 		},
 
@@ -48,7 +49,7 @@ define([
 			this.listView.render();
 		},
 
-		reset: function(event){
+		clearSearch: function(event){
 			event.preventDefault();
 			$(".search input").val('');
 			this.$el.find(".search a").fadeOut(100);
@@ -56,9 +57,12 @@ define([
 			this.listView.render();
 		},
 
-		onListModeChange: function(){
-			this.liststyle = this.app.settings.get('liststyle');
-			this.$el.find("#list-view").removeClass("grille liste").addClass(this.app.settings.get('liststyle'));
+		onGrille: function(){
+			this.$el.find("#list-view").removeClass("grille liste").addClass("grille");
+		},
+
+		onListe: function(){
+			this.$el.find("#list-view").removeClass("grille liste").addClass("liste");
 		},
 
 		render: function(){

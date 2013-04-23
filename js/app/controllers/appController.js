@@ -12,6 +12,11 @@ define([
 		initialize: function(options){
 			// référence sur l'application
 			this.app = this.options.app;
+
+			// écouteurs sur préférences
+			Backbone.on("filter", this.filterSave, this);
+			Backbone.on("onGrille", this.onGrille, this);
+			Backbone.on("onListe", this.onListe, this);
 		},
 
 		// routes
@@ -29,6 +34,23 @@ define([
 		champignon: function(id){
 			console.log("AppController : route champignon ", id);
 			this.app.appView.swapView({id:"champignon", model: this.app.champignons.getOne(id)});
+		},
+
+		// Préférences
+
+		filterSave: function(sortkey){
+			this.app.settings.set("sortkey", sortkey);
+			this.app.settings.save();
+		},
+
+		onGrille: function(){
+			this.app.settings.set("liststyle", "grille");
+			this.app.settings.save();
+		},
+
+		onListe: function(){
+			this.app.settings.set("liststyle", "liste");
+			this.app.settings.save();
 		}
 
 	});

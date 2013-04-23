@@ -52,12 +52,7 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 
 		events: {
 			"swipeleft .page-champignon": "onPageNext",
-			"swiperight .page-champignon": "onPagePrev",
-			"click .content-header .grille": "onGrille",
-			"click .content-header .liste": "onListe",
-			"click .content-header .diapo": "onBouton",
-			"click .content-header .back": "onBackButton",
-			"click .content-header .cueillette": "onCueillette"
+			"swiperight .page-champignon": "onPagePrev"
 		},
 
 		onPageNext: function(event){
@@ -78,33 +73,6 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 			} else {
 				return;
 			}
-		},
-
-		onGrille: function(event){
-			event.preventDefault();
-			this.app.settings.set("liststyle", "grille");
-			this.app.settings.save();
-			this.app.trigger("listModeChange");
-		},
-
-		onListe: function(event){
-			event.preventDefault();
-			this.app.settings.set("liststyle", "liste");
-			this.app.settings.save();
-			this.app.trigger("listModeChange");
-		},
-
-		onBouton: function(event){
-			event.preventDefault();
-		},
-
-		onBackButton: function(event){
-			event.preventDefault();
-			window.history.go(-1);
-		},
-
-		onCueillette: function(event){
-			event.preventDefault();
 		},
 
 		showNext: function(toleft){
@@ -159,7 +127,7 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 					break;
 				case "tous":
 					if(this.pageTous === null) {
-						this.pageTous = new PageTous({collection:options.collection, app:this.app});
+						this.pageTous = new PageTous({collection:options.collection, liststyle:this.app.settings.get("liststyle"), sortkey: this.app.settings.get("sortkey")});
 						this.nextView = this.pageTous;
 					} else {
 						this.nextView = this.pageTous;

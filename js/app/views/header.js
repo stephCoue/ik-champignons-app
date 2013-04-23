@@ -9,15 +9,46 @@ define([
 		el: $("#header"),
 
 		initialize: function(options){
-			this.app = options.app;
-			this.listenTo(this.app, "listModeChange", this.render);
+			this.liststyle = options.liststyle;
 			this.render();
 		},
 
-		render: function() {
-			this.$el.find("." + this.app.settings.get("liststyle"))
-			.parent().addClass("on").siblings().removeClass("on");
+		events: {
+			"click .grille": "onGrille",
+			"click .liste": "onListe",
+			"click .diapo": "onDiapo",
+			"click .back": "onBackButton",
+			"click .cueillette": "onCueillette"
+		},
 
+		onGrille: function(event){
+			event.preventDefault();
+			Backbone.trigger("onGrille");
+			$(event.currentTarget).parent().addClass("on").siblings().removeClass("on");
+		},
+
+		onListe: function(event){
+			event.preventDefault();
+			Backbone.trigger("onListe");
+			$(event.currentTarget).parent().addClass("on").siblings().removeClass("on");
+		},
+
+		onDiapo: function(event){
+			event.preventDefault();
+			Backbone.trigger("onDiapo");
+		},
+
+		onBackButton: function(event){
+			event.preventDefault();
+			window.history.go(-1);
+		},
+
+		onCueillette: function(event){
+			event.preventDefault();
+		},
+
+		render: function() {
+			$("." + this.liststyle).parent().addClass("on").siblings().removeClass("on");
 			return this;
 		}
 
