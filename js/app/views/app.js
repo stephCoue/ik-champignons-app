@@ -138,7 +138,6 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 					this.showHeader = true;
 					break;
 				case "champignon":
-					console.log(this.pageTous.collection);
 					this.nextView = new PageChampignon({model: this.pageTous.collection.current});
 					this.showNav = true;
 					this.showHeader = true;
