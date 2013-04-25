@@ -23,17 +23,17 @@ define([
 
 		home: function(){
 			console.log("AppController : route home");
-			this.app.appView.swapView({id:"home"});
+			this.app.appView.swapView({page:"home"});
 		},
 
 		tous: function(){
 			console.log("AppController : route tous");
-			this.app.appView.swapView({id:"tous", collection: this.app.champignons});
+			this.app.appView.swapView({page:"tous"});
 		},
 
 		champignon: function(id){
 			console.log("AppController : route champignon ", id);
-			this.app.appView.swapView({id:"champignon", model: this.app.champignons.getOne(id)});
+			this.app.appView.swapView({page:"champignon", id: id});
 		},
 
 		// Préférences

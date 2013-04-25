@@ -2,9 +2,10 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
+	"collections/champignons",
 	"views/champignons",
 	"text!templates/pageTous.html"
-], function($, _, Backbone, ChampignonsListView, pageTousTemplate){
+], function($, _, Backbone, ChampignonsCollection, ChampignonsListView, pageTousTemplate){
 
 	var PageTous = Backbone.View.extend({
 
@@ -14,8 +15,14 @@ define([
 
 		initialize: function(options) {
 			this.level = 1;
-			this.liststyle = options.liststyle;
-			this.order = options.sortkey;
+
+			this.liststyle = options.settings.get("liststyle");
+			this.order = options.settings.get("sortkey");
+
+			this.collection = new ChampignonsCollection();
+			this.collection.filtrerPar(this.order);
+
+			this.completeCollection = new ChampignonsCollection();
 
 			Backbone.on("onGrille", this.onGrille, this);
 			Backbone.on("onListe", this.onListe, this);
@@ -25,7 +32,6 @@ define([
 
 		events: {
 			"click .filtres a": "onFiltre",
-			"touchstart .filtres a": "onFiltre",
 			"keyup": "search",
 			"click .search a": "clearSearch"
 		},
@@ -45,16 +51,14 @@ define([
 			else
 				this.$el.find(".search a").fadeOut(100);
 
-			this.listView.collection = new Backbone.Collection(this.collection.rechercher(searchString));
-			this.listView.render();
+			this.collection.reset( this.completeCollection.rechercher(searchString) );
 		},
 
 		clearSearch: function(event){
 			event.preventDefault();
 			$(".search input").val('');
 			this.$el.find(".search a").fadeOut(100);
-			this.listView.collection = this.collection;
-			this.listView.render();
+			this.collection.reset( this.completeCollection.models );
 		},
 
 		onGrille: function(){

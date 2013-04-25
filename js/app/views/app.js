@@ -56,7 +56,7 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 		},
 
 		onPageNext: function(event){
-			var nextModel = this.app.champignons.getNext();
+			var nextModel = this.pageTous.collection.getNext();
 			if(nextModel !== null) {
 				this.nextView = new PageChampignon({model: nextModel});
 				this.showNext(true);
@@ -66,7 +66,7 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 		},
 
 		onPagePrev: function(event){
-			var nextModel = this.app.champignons.getPrev();
+			var nextModel = this.pageTous.collection.getPrev();
 			if(nextModel !== null) {
 				this.nextView = new PageChampignon({model: nextModel});
 				this.showNext(false);
@@ -118,7 +118,7 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 
 		swapView: function(options) {
 
-			switch(options.id){
+			switch(options.page){
 				case "home":
 					this.nextView = this.pageHome;
 					this.$footer.find("li").removeClass("on");
@@ -127,17 +127,19 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 					break;
 				case "tous":
 					if(this.pageTous === null) {
-						this.pageTous = new PageTous({collection:options.collection, liststyle:this.app.settings.get("liststyle"), sortkey: this.app.settings.get("sortkey")});
+						this.pageTous = new PageTous({settings:this.app.settings});
 						this.nextView = this.pageTous;
 					} else {
 						this.nextView = this.pageTous;
 					}
+					this.champignonsCollection = this.pageTous.collection;
 					this.$footer.find(".tous").addClass("on").siblings().removeClass("on");
 					this.showNav = true;
 					this.showHeader = true;
 					break;
 				case "champignon":
-					this.nextView = new PageChampignon({model: options.model});
+					console.log(this.pageTous.collection);
+					this.nextView = new PageChampignon({model: this.pageTous.collection.current});
 					this.showNav = true;
 					this.showHeader = true;
 					break;

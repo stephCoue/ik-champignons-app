@@ -29,11 +29,6 @@ define([
 			return result;
 		},
 
-		getOne: function(id) {
-			this.current = this.get(id);
-			return this.current;
-		},
-
 		getNext: function(){
 			if( (_.indexOf(this.models, this.current) + 1) < this.models.length) {
 				this.current = this.at(_.indexOf(this.models, this.current) + 1);

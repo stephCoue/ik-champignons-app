@@ -22,9 +22,6 @@ define([
 
 			$(this.el).html(this.template(this.model.toJSON()));
 
-			// if(window.location.hash.indexOf("tous") > 0)
-			// 	this.$el.find("#tous-button").addClass("class=ui-btn-active ui-state-persist");
-
 			return this;
 		}
 

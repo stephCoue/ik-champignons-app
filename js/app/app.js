@@ -4,13 +4,11 @@ define([
 	"backbone",
 	"marionette",
 	"models/settings",
-	"collections/champignons",
-	"collections/criteres",
 	"routers/appRouter",
 	"controllers/appController",
 	"views/app",
 	"views/header"
-], function($, _, Backbone, Marionette, Settings, ChampignonsCollection, CriteresCollection, AppRouter, AppController, AppView, Header){
+], function($, _, Backbone, Marionette, Settings, AppRouter, AppController, AppView, Header){
 
 	var App = new Marionette.Application();
 
@@ -19,10 +17,6 @@ define([
 		// Les préférences de l'utilisateur
 		this.settings = new Settings({id:1});
 		this.settings.fetch();
-
-		// Les collections
-		this.champignons = new ChampignonsCollection();
-		this.champignons.filtrerPar(this.settings.get("sortkey"));
 
 		// La vue générale de l'application
 		this.appView = new AppView({app:this});

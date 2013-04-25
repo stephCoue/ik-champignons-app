@@ -15,6 +15,15 @@ define([
 			this.render();
 		},
 
+		events: {
+			"click a": "onClick"
+		},
+
+		onClick: function(){
+			this.collection.current = this.model;
+			console.log(this.collection.length);
+		},
+
 		render: function() {
 			this.$el.html(this.template(this.model.toJSON()));
 			return this;

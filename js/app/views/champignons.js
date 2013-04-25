@@ -14,6 +14,7 @@ define([
 
 		initialize: function() {
 			this.render();
+			this.collection.on("reset", this.render, this);
 		},
 
 		render: function(){
@@ -21,7 +22,7 @@ define([
 			this.$el.empty();
 
 			_.each(this.collection.models, function(champignon){
-				var champignonItem = new ChampignonItem({model:champignon});
+				var champignonItem = new ChampignonItem({model:champignon, collection:this.collection});
 				this.$el.append(champignonItem.$el);
 			}, this);
 
