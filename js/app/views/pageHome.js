@@ -7,12 +7,10 @@ define(["jquery",
 
 	var PageHome = Backbone.View.extend({
 
-		id: "home",
-		className: "page page-home",
+		el: $("#home"),
 		template: _.template(pageHomeTemplate),
 
 		initialize: function() {
-			this.level = 0; // pour la gestion du sens des transitions
 			this.render();
 		},
 

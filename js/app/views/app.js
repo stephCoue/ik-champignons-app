@@ -19,6 +19,10 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 			// référence vers l'application
 			this.app = options.app;
 
+			// sous-vues
+			this.homeView = new PageHome();
+			//this.tousView = new PageTous();
+
 			// références vers les blocs de vue
 			this.$content = this.$el.find("#content");
 			this.$header = this.$el.find("#header");
@@ -161,7 +165,7 @@ function($, _, Backbone, touch, fastclick, transit, PageHome, PageTous, PageCham
 			this.$content.append(this.pageHome.$el);
 			this.currentView = this.pageHome;
 
-			this.$el.transition({opacity: 100});
+			this.$el.css({opacity: 1});
 
 			return this;
 		}

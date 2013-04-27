@@ -9,8 +9,7 @@ define([
 
 	var PageTous = Backbone.View.extend({
 
-		id: "tous",
-		className: "page page-tous",
+		el: $("#tous"),
 		template: _.template(pageTousTemplate),
 
 		initialize: function(options) {

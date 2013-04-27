@@ -8,8 +8,7 @@ define([
 
 	var PageChampignon = Backbone.View.extend({
 
-		className: "page page-champignon",
-
+		el: $("#champignons"),
 		template: _.template(PageChampignonTemplate),
 
 		initialize: function() {
