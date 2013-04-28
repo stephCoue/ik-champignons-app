@@ -21,7 +21,7 @@ define([
 
 		onClick: function(){
 			this.collection.current = this.model;
-			console.log(this.collection.length);
+			Backbone.trigger("onChampignon", this.model);
 		},
 
 		render: function() {

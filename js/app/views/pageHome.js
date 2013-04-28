@@ -14,6 +14,14 @@ define(["jquery",
 			this.render();
 		},
 
+		pageClose: function(){
+			this.$el.fadeOut();
+		},
+
+		pageOpen: function(){
+			this.$el.fadeIn();
+		},
+
 		render: function(){
 			this.$el.html(this.template());
 			return this;

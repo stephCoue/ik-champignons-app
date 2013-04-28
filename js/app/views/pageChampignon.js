@@ -2,29 +2,32 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
-	"jqmtouch",
+	"swiper",
+	"mixins/pageMixin",
 	"text!templates/pageChampignon.html"
-], function($, _, Backbone, touch, PageChampignonTemplate){
+], function($, _, Backbone, Swiper, PageMixin, PageChampignonTemplate){
 
 	var PageChampignon = Backbone.View.extend({
 
-		el: $("#champignons"),
+		el: $("#champignon"),
 		template: _.template(PageChampignonTemplate),
 
 		initialize: function() {
-			this.level = 10;
-			this.id = "champignon" + this.model.id;
-			this.render();
+			this.$el.hide();
+			Backbone.on("onChampignon", this.initSwiper, this);
+		},
+
+		initSwiper: function(champignon){
+			console.log("champignon = ", champignon.get("nom"), new Swiper(this.$el));
 		},
 
 		render: function() {
-
-			$(this.el).html(this.template(this.model.toJSON()));
-
 			return this;
 		}
 
 	});
+
+	_.extend(PageChampignon.prototype, PageMixin);
 
 	return PageChampignon;
 

@@ -10,8 +10,12 @@ define([
 	var AppController = Marionette.Controller.extend({
 
 		initialize: function(options){
+
 			// référence sur l'application
 			this.app = this.options.app;
+
+			// Lecture des préférences
+			Backbone.trigger("settings:change", this.app.settings.toJSON());
 
 			// écouteurs sur préférences
 			Backbone.on("filter", this.filterSave, this);
@@ -23,17 +27,17 @@ define([
 
 		home: function(){
 			console.log("AppController : route home");
-			this.app.appView.swapView({page:"home"});
+			this.app.appView.showPage({page:"home"});
 		},
 
 		tous: function(){
 			console.log("AppController : route tous");
-			this.app.appView.swapView({page:"tous"});
+			this.app.appView.showPage({page:"tous"});
 		},
 
-		champignon: function(id){
-			console.log("AppController : route champignon ", id);
-			this.app.appView.swapView({page:"champignon", id: id});
+		champignon: function(){
+			console.log("AppController : route champignon ");
+			this.app.appView.showPage({page:"champignon"});
 		},
 
 		// Préférences

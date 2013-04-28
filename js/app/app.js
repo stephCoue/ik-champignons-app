@@ -6,7 +6,7 @@ define([
 	"models/settings",
 	"routers/appRouter",
 	"controllers/appController",
-	"views/app",
+	"views/appview",
 	"views/header"
 ], function($, _, Backbone, Marionette, Settings, AppRouter, AppController, AppView, Header){
 
@@ -16,19 +16,10 @@ define([
 
 		// Les préférences de l'utilisateur
 		this.settings = new Settings({id:1});
-		this.settings.on("change", function(){
-			console.log("Settings chargés ! ", this.settings);
-		}, this);
-		this.settings.on("error", function(event){
-			console.log("settings erreur ! ", event);
-		});
 		this.settings.fetch();
 
 		// La vue générale de l'application
-		this.appView = new AppView({app:this});
-
-		// La vue du header
-		this.header = new Header({liststyle: this.settings.get("liststyle")});
+		this.appView = new AppView();
 
 		// Création du router et du controller associé
 		this.controller = new AppController({app:this});

@@ -3,29 +3,24 @@ define([
 	"underscore",
 	"backbone",
 	"collections/champignons",
+	"mixins/pageMixin",
 	"views/champignons",
 	"text!templates/pageTous.html"
-], function($, _, Backbone, ChampignonsCollection, ChampignonsListView, pageTousTemplate){
+], function($, _, Backbone, ChampignonsCollection, PageMixin, ChampignonsListView, pageTousTemplate){
 
 	var PageTous = Backbone.View.extend({
 
 		el: $("#tous"),
 		template: _.template(pageTousTemplate),
 
-		initialize: function(options) {
-			this.level = 1;
+		initialize: function() {
+			// Création de la vue de la liste des champignons
+			this.listView = new ChampignonsListView();
 
-			this.liststyle = options.settings.get("liststyle");
-			this.order = options.settings.get("sortkey");
+			// On se cache au départ !
+			this.$el.hide();
 
-			this.collection = new ChampignonsCollection();
-			this.collection.filtrerPar(this.order);
-
-			this.completeCollection = new ChampignonsCollection();
-
-			Backbone.on("onGrille", this.onGrille, this);
-			Backbone.on("onListe", this.onListe, this);
-
+			// On rend le template
 			this.render();
 		},
 
@@ -37,10 +32,14 @@ define([
 
 		onFiltre: function(event){
 			event.preventDefault();
-			this.order = $(event.currentTarget).attr("href");
-			Backbone.trigger("filter", this.order);
-			this.collection.filtrerPar( this.order );
-			this.render();
+
+			// mise à jour de la vue liste
+			this.listView.sortCollection( $(event.currentTarget).attr("href") );
+
+			// Mise à jour de l'état des boutons
+			$(event.currentTarget).parent().addClass("on").siblings().removeClass("on");
+
+			//Backbone.trigger("filter", $(event.currentTarget).attr("href"));
 		},
 
 		search: function(event){
@@ -50,29 +49,19 @@ define([
 			else
 				this.$el.find(".search a").fadeOut(100);
 
-			this.collection.reset( this.completeCollection.rechercher(searchString) );
+			this.listView.search(searchString);
 		},
 
 		clearSearch: function(event){
 			event.preventDefault();
 			$(".search input").val('');
 			this.$el.find(".search a").fadeOut(100);
-			this.collection.reset( this.completeCollection.models );
-		},
-
-		onGrille: function(){
-			this.liststyle = "grille";
-			this.$el.find("#list-view").removeClass("grille liste").addClass("grille");
-		},
-
-		onListe: function(){
-			this.liststyle = "liste";
-			this.$el.find("#list-view").removeClass("grille liste").addClass("liste");
+			this.listView.clearSearch();
 		},
 
 		render: function(){
+
 			this.$el.empty();
-			this.listView = new ChampignonsListView({collection:this.collection});
 			this.$el.html(this.template());
 
 			this.$el.find("#list-view")
@@ -80,11 +69,13 @@ define([
 			.addClass(this.liststyle)
 			.append(this.listView.$el);
 
-			this.$el.find("#" + this.order).parent().addClass("on").siblings().removeClass("on");
+			this.$el.find("#" + this.listView.collection.sort_key).parent().addClass("on").siblings().removeClass("on");
 
 			return this;
 		}
 	});
+
+	_.extend(PageTous.prototype, PageMixin);
 
 	return PageTous;
 

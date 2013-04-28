@@ -8,9 +8,9 @@ define([
 
 		el: $("#header"),
 
-		initialize: function(options){
-			this.liststyle = options.liststyle;
-			this.render();
+		initialize: function(){
+			this.hide();
+			this.$el.css("top","auto");
 		},
 
 		events: {
@@ -47,8 +47,19 @@ define([
 			event.preventDefault();
 		},
 
+		show: function(contexte){
+			this.$el.removeClass("header-tous header-champignon");
+			this.$el.addClass("header-" + contexte);
+			this.$el.css("-webkit-transform","translate3d(0,0,0)");
+		},
+
+		hide: function(){
+			this.$el.removeClass("header-tous header-champignon");
+			this.$el.css("-webkit-transform","translate3d(0,-" + this.$el.outerHeight() + "px,0)");
+		},
+
 		render: function() {
-			$("." + this.liststyle).parent().addClass("on").siblings().removeClass("on");
+			//$("." + this.liststyle).parent().addClass("on").siblings().removeClass("on");
 			return this;
 		}
 
