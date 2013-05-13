@@ -2,10 +2,10 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
-	"swiper",
+	"swipe",
 	"mixins/pageMixin",
 	"text!templates/pageChampignon.html"
-], function($, _, Backbone, Swiper, PageMixin, PageChampignonTemplate){
+], function($, _, Backbone, Swipe, PageMixin, PageChampignonTemplate){
 
 	var PageChampignon = Backbone.View.extend({
 
@@ -18,7 +18,7 @@ define([
 		},
 
 		initSwiper: function(champignon){
-			console.log("champignon = ", champignon.get("nom"), new Swiper(this.$el));
+			console.log("champignon = ", champignon.get("nom"), champignon.collection.getPrev().get("nom"), champignon.collection.getNext().get("nom") );
 		},
 
 		render: function() {
