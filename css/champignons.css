@@ -63,6 +63,7 @@ li {
 	background-color: #fff;
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 	overflow-y: scroll;
+	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 	-webkit-transition: -webkit-transform .2s ease;
 	-webkit-transform-style: preserve-3d;
@@ -366,4 +367,20 @@ li {
 .vignette img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* FICHES CHAMPIGNON */
+
+.page .slides {
+	float: left;
+	display: inline;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.page .slide {
+	float: left;
+	padding: 50px 0;
+	-webkit-transform: translate3d(0,0,0);
 }

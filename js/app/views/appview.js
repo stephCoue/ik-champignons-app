@@ -2,7 +2,7 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
-	"jqmtouch",
+	"touchswipe",
 	"fastclick",
 	"views/header",
 	"views/footer",
@@ -10,7 +10,7 @@ define([
 	"views/pageTous",
 	"views/pageChampignon"
 ],
-function($, _, Backbone, touch, fastclick, Header, Footer, PageHome, PageTous, PageChampignon){
+function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTous, PageChampignon){
 
 	var AppView = Backbone.View.extend({
 
