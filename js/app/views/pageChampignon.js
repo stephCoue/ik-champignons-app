@@ -12,43 +12,45 @@ define([
 
 		initialize: function() {
 			this.$el.hide();
+			this.slides = $("#slides");
 			this.currentFiche = 1;
 			this.speed = 300;
+			this.slides.swipe({
+				triggerOnTouchEnd: true,
+				swipeStatus: function(){}
+			});
 			Backbone.on("onChampignon", this.onChampignon, this);
-			this.initSwipeEvents();
 		},
 
-		initSwipeEvents: function(){
-			var _this = this;
-			this.$el.find(".slides").swipe({
-				triggerOnTouchEnd: true,
-				allowPageScroll: "vertical",
-				swipeStatus: function(event, phase, direction, distance, fingers){
-					if(phase == "move" && (direction == "left" || direction == "right") ){
-						var duration = 0;
-						if(direction == "left")
-							_this.scrollFiche( $(window).width() * _this.currentFiche + distance, duration );
-						else if(direction == "right")
-							_this.scrollFiche( $(window).width() * _this.currentFiche - distance, duration );
-					}
-					else if(phase == "cancel")
-						_this.scrollFiche( $(window).width() * _this.currentFiche - distance, _this.speed );
-					else if(phase == "end") {
-						if(distance > $(window).width() / 4){
-							if(direction == "left")
-								_this.nextFiche();
-							else if(direction == "right")
-								_this.prevFiche();
-						} else {
-							_this.scrollFiche( $(window).width() * _this.currentFiche, _this.speed );
-						}
-					}
-				}
-			});
+		events: {
+			"swipeStatus #slides": "onSwipeStatus",
+			"webkitTransitionEnd #slides": "onTransitionEnd"
+		},
 
-			this.$el.on("transitionend", ".slides", function(event){
-				_this.onChampignon(_this.champignons[_this.currentFiche]);
-			});
+		onSwipeStatus: function(event, phase, direction, distance, fingers){
+			if(phase == "move" && (direction == "left" || direction == "right") ){
+				var duration = 0;
+				if(direction == "left" && distance > 50)
+					this.scrollFiche( $(window).width() * this.currentFiche + distance, duration );
+				else if(direction == "right" && distance > 50)
+					this.scrollFiche( $(window).width() * this.currentFiche - distance, duration );
+			}
+			else if(phase == "cancel")
+				this.scrollFiche( $(window).width() * this.currentFiche - distance, this.speed );
+			else if(phase == "end") {
+				if(distance > $(window).width() / 4){
+					if(direction == "left")
+						this.nextFiche();
+					else if(direction == "right")
+						this.prevFiche();
+				} else {
+					this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
+				}
+			}
+		},
+
+		onTransitionEnd: function(event){
+			this.onChampignon(this.champignons[this.currentFiche]);
 		},
 
 		scrollFiche: function(distance, duration){
