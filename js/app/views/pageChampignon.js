@@ -28,21 +28,22 @@ define([
 		},
 
 		onSwipeStatus: function(event, phase, direction, distance, fingers){
-			console.log(direction);
 			switch(phase){
 				case "move":
-					if (direction == "left" || direction == "right"){
-						if(direction == "left" && distance > 50)
+					if (direction === "left" || direction === "right"){
+						if(direction === "left" && distance > 30)
 							this.scrollFiche( $(window).width() * this.currentFiche + distance, 0 );
-						else if(direction == "right" && distance > 50)
+						else if(direction === "right" && distance > 30)
 							this.scrollFiche( $(window).width() * this.currentFiche - distance, 0 );
+					} else {
+						this.scrollFiche($(window).width() * this.currentFiche, 0);
 					}
 					break;
 				case "cancel":
 					this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
 					break;
 				case "end":
-					if(distance > $(window).width() / 4){
+					if(distance > $(window).width() / 3){
 						if(direction == "left")
 							this.nextFiche();
 						else if(direction == "right")
