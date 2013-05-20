@@ -12,11 +12,11 @@ define([
 
 		initialize: function() {
 			this.$el.hide();
-			this.slides = $("#slides");
 			this.currentFiche = 1;
 			this.speed = 300;
-			this.slides.swipe({
+			this.$el.find("#slides").swipe({
 				triggerOnTouchEnd: true,
+				allowPageScroll:"vertical",
 				swipeStatus: function(){}
 			});
 			Backbone.on("onChampignon", this.onChampignon, this);
@@ -28,24 +28,31 @@ define([
 		},
 
 		onSwipeStatus: function(event, phase, direction, distance, fingers){
-			if(phase == "move" && (direction == "left" || direction == "right") ){
-				var duration = 0;
-				if(direction == "left" && distance > 50)
-					this.scrollFiche( $(window).width() * this.currentFiche + distance, duration );
-				else if(direction == "right" && distance > 50)
-					this.scrollFiche( $(window).width() * this.currentFiche - distance, duration );
-			}
-			else if(phase == "cancel")
-				this.scrollFiche( $(window).width() * this.currentFiche - distance, this.speed );
-			else if(phase == "end") {
-				if(distance > $(window).width() / 4){
-					if(direction == "left")
-						this.nextFiche();
-					else if(direction == "right")
-						this.prevFiche();
-				} else {
+			console.log(direction);
+			switch(phase){
+				case "move":
+					if (direction == "left" || direction == "right"){
+						if(direction == "left" && distance > 50)
+							this.scrollFiche( $(window).width() * this.currentFiche + distance, 0 );
+						else if(direction == "right" && distance > 50)
+							this.scrollFiche( $(window).width() * this.currentFiche - distance, 0 );
+					}
+					break;
+				case "cancel":
 					this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
-				}
+					break;
+				case "end":
+					if(distance > $(window).width() / 4){
+						if(direction == "left")
+							this.nextFiche();
+						else if(direction == "right")
+							this.prevFiche();
+						else
+							this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
+					} else {
+						this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
+					}
+					break;
 			}
 		},
 
@@ -54,7 +61,7 @@ define([
 		},
 
 		scrollFiche: function(distance, duration){
-			var $slides = this.$el.find(".slides");
+			var $slides = this.$el.find("#slides");
 			var delta = (distance<0 ? "" : "-") + Math.abs(distance).toString();
 			$slides.css("-webkit-transition-duration", (duration/1000).toFixed(1) + "s");
 			$slides.css("-webkit-transform", "translate3d(" + delta + "px,0px,0px)");
@@ -96,7 +103,7 @@ define([
 		},
 
 		render: function() {
-			var $slides = this.$el.find(".slides");
+			var $slides = this.$el.find("#slides");
 			$slides.empty();
 			$slides.width($(window).width() * this.champignons.length);
 			_.each(this.champignons, function(champignon){
