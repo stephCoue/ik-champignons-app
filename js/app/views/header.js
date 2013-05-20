@@ -10,6 +10,7 @@ define([
 
 		initialize: function(){
 			this.hide();
+			Backbone.on("settings:change", this.onSettings, this);
 			this.$el.css("top","auto");
 		},
 
@@ -19,6 +20,13 @@ define([
 			"click .diapo": "onDiapo",
 			"click .back": "onBackButton",
 			"click .cueillette": "onCueillette"
+		},
+
+		onSettings: function(settings){
+			if(settings.liststyle === "grille")
+				this.$el.find(".grille").parent().addClass("on").siblings().removeClass("on");
+			else if(settings.liststyle === "liste")
+				this.$el.find(".liste").parent().addClass("on").siblings().removeClass("on");
 		},
 
 		onGrille: function(event){

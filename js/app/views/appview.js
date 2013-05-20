@@ -8,9 +8,10 @@ define([
 	"views/footer",
 	"views/pageHome",
 	"views/pageTous",
-	"views/pageChampignon"
+	"views/pageChampignon",
+	"views/pageDeterminer"
 ],
-function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTous, PageChampignon){
+function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTous, PageChampignon, PageDeterminer){
 
 	var AppView = Backbone.View.extend({
 
@@ -22,6 +23,7 @@ function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTo
 			this.pageHome = new PageHome();
 			this.pageTous = new PageTous();
 			this.pageChampignon = new PageChampignon();
+			this.pageDeterminer = new PageDeterminer();
 
 			// Barres
 			this.header = new Header();

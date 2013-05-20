@@ -36,8 +36,13 @@ define([
 		},
 
 		champignon: function(){
-			console.log("AppController : route champignon ");
+			console.log("AppController : route champignon");
 			this.app.appView.showPage({page:"champignon"});
+		},
+
+		determiner: function(){
+			console.log("AppController : route determiner");
+			//this.app.appView.showPage({page:"determiner"});
 		},
 
 		// Préférences

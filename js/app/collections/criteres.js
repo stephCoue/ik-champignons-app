@@ -1,13 +1,17 @@
 define([
 	"underscore",
 	"backbone",
-	"models/critere"
-], function(_, Backbone, Critere) {
+	"models/critere",
+	"json!data/criteres.json"
+], function(_, Backbone, Critere, data) {
 
 	var CriteresCollection = Backbone.Collection.extend({
 
 		model: Critere,
-		url: "js/app/data/criteres.js",
+
+		initialize: function(){
+			this.set(data);
+		},
 
 		getEnfants: function(id){
 			var enfants = this.where({parent:id});
@@ -31,4 +35,5 @@ define([
 	});
 
 	return CriteresCollection;
+
 });

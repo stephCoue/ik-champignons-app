@@ -12,6 +12,7 @@ define([
 			"home":"home",
 			"tous":"tous",
 			"champignon":"champignon",
+			"determiner":"determiner",
 			"*action":"home"
 		}
 
