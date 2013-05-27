@@ -6,7 +6,8 @@ module.exports = function(grunt) {
       compile: {
         options: {
           'include css': true,
-          'paths': ['css']
+          'paths': ['css'],
+          'compress': true
         },
         files: {
           'css/champignons.css': 'css/champignons.styl'
