@@ -5,6 +5,8 @@ global-reset()
 *
   box-sizing: border-box
 
+@import 'webfonts'
+
 // Variables
 
 $primary = #BBD029 || rgb(187,208,41); // green claire
@@ -17,7 +19,7 @@ $infoBulleNotification = #d0470a || rgb(208,71,10); // rouge
 /*  COMMUN  */
 
 body
-  font-family: "Scada-Bold"
+  font-family: "scadabold"
   -webkit-font-smoothing: antialiased
   line-height: 1.2em
   color: $titreColor // #534741
@@ -89,23 +91,24 @@ footer
     background-repeat:no-repeat;
     background-size: contain;
     background-position: center bottom
-    min-height: 85px //288px
-    width: 70%
+    min-height: 88px //288px
+    width: 72%
     centerBlock()
 
 .logo
-  min-height:  57px // 340px;
+  min-height:  75px // 340px;
   background: url('images/logo-ik-couleur.png');
   background-repeat:no-repeat;
   background-size: contain;
   background-position: center
-  width: 17%;
-  height: auto;
+  width: 23%;
+  // height: auto;
   centerBlock()
 
 
 .nav-main
-  font-size: 140%
+  font-size: 130%
+  text-shadow: 0 2px 2px #000
   margin: 4% auto
   span
     text-transform: uppercase
@@ -116,11 +119,24 @@ footer
     width: 90%
     centerBlock()
   li
-    padding: .7em 0
-    border-top-image: url("images/nav-main-hr.png") 100% repeat
+    border-image:  url("images/nav-main-hr.png")  100% 0 0
+    border-width: 5px
+
+    &:last-child
+      border-image: url("images/nav-main-hr.png") 100% 0 100% 0
+
+    &:hover,
+    &:active
+      // background: -webkit-linear-gradient(left, rgba(#e2e2e0, .12) 3%, rgba(#c4ce7b , .6) 21%, rgba($primary, .9) 50%, rgba(#c4ce7b , .6) 77%, rgba(#e2e2e0, .12) 97%)
+      background: -webkit-linear-gradient(left, rgba(#e2e2e0, 0) 2%,rgba(#e2e2e0, .08) 3%,rgba(#e2e2e0, .12) 16%,rgba(#c4ce7b , .6) 32%,rgba($primary, .9) 50%,rgba(#c4ce7b , .6) 75%,rgba(#e2e2e0, .12) 90%,rgba(#e2e2e0, .08) 97%, rgba(#e2e2e0, 0) 98%)
+      & a,
+      & span
+        color: $titreColor
+        text-shadow: 0 1px 1px #fff
 
   a
     color: $secondColor
+    padding: .4em 0
     position: relative
     padding-left: 35%
 
@@ -134,7 +150,7 @@ footer
       width: 57px
       height: 57px
       left: 9%
-      top: - .4em
+      top: 0.2em
 
     &.tous:before
       background-position: -57px 0
@@ -190,12 +206,12 @@ footer
 // }
 
 .nav-main ul {
-  background: rgba(red,.3)
+  // background: rgba(red,.3)
 }
 
 .nav-main li {
   margin: 1px 0;
-  background: rgba(blue, .2);
+  // background: rgba(blue, .2);
 }
 
 // .nav-main a {
