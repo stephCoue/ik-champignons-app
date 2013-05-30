@@ -1,44 +1,46 @@
-<h2><%= nom %></h2>
-<h3><%= nomlatin %></h3>
-<div class="diaporama">
-	<img src="<%= vignette %>">
+<div class="slide-inner">
+	<h2><%= nom %></h2>
+	<h3><%= nomlatin %></h3>
+	<div class="diaporama">
+		<img src="<%= vignette %>">
+	</div>
+	<% if(description.chapeau.length > 0) { %>
+	<div class="chapeau">
+		<h3>Chapeau</h3>
+		<%= description.chapeau %>
+	</div>
+	<% } %>
+	<% if(description.hymenium.length > 0) { %>
+	<div class="hymenium">
+		<h3>
+			<% if(typeof(lames) !== "undefined") { %> Lames <% } %>
+			<% if(typeof(pores) !== "undefined") { %> Pores <% } %>
+		</h3>
+		<%= description.hymenium %>
+	</div>
+	<% } %>
+	<% if(description.pied.length > 0) { %>
+	<div class="pied">
+		<h3>Pied</h3>
+		<%= description.pied %>
+	</div>
+	<% } %>
+	<% if(description.chair.length > 0) { %>
+	<div class="chair">
+		<h3>Chair</h3>
+		<%= description.chair %>
+	</div>
+	<% } %>
+	<% if(description.ecologie.length > 0) { %>
+	<div class="ecologie">
+		<h3>Écologie</h3>
+		<%= description.ecologie %>
+	</div>
+	<% } %>
+	<% if(description.remarques.length > 0) { %>
+	<div class="remarques">
+		<h3>Remarques</h3>
+		<%= description.remarques %>
+	</div>
+	<% } %>
 </div>
-<% if(description.chapeau.length > 0) { %>
-<div class="chapeau">
-	<h3>Chapeau</h3>
-	<%= description.chapeau %>
-</div>
-<% } %>
-<% if(description.hymenium.length > 0) { %>
-<div class="hymenium">
-	<h3>
-		<% if(typeof(lames) !== "undefined") { %> Lames <% } %>
-		<% if(typeof(pores) !== "undefined") { %> Pores <% } %>
-	</h3>
-	<%= description.hymenium %>
-</div>
-<% } %>
-<% if(description.pied.length > 0) { %>
-<div class="pied">
-	<h3>Pied</h3>
-	<%= description.pied %>
-</div>
-<% } %>
-<% if(description.chair.length > 0) { %>
-<div class="chair">
-	<h3>Chair</h3>
-	<%= description.chair %>
-</div>
-<% } %>
-<% if(description.ecologie.length > 0) { %>
-<div class="ecologie">
-	<h3>Écologie</h3>
-	<%= description.ecologie %>
-</div>
-<% } %>
-<% if(description.remarques.length > 0) { %>
-<div class="remarques">
-	<h3>Remarques</h3>
-	<%= description.remarques %>
-</div>
-<% } %>

@@ -1,3 +1,4 @@
+
 [
 	{
 		"id":"2",
@@ -51,7 +52,7 @@
 		"id":"11",
 		"label":"Champignons avec pied et chapeau, chair non coriace (tendre), lames sous le chapeau",
 		"parent":"0",
-		"champignons":[2,3,6,10,11,18,38,39,40,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63]
+		"champignons":[1,2,3,5,6,7,8,9,10,11,12,13,17,18,19,20,38,39,40,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,79,80,81,82,83,84,86,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116]
 	},
 	{
 		"id":"12",
@@ -135,30 +136,30 @@
 		"id":"25",
 		"label":"Chair fibreuse (le pied se déchire à la torsion ou élastique)",
 		"parent":"11",
-		"champignons":[6,10,11,62,63]
+		"champignons":[1,5,6,7,8,9,10,11,12,13,17,19,20,62,63,64,65,66,67,68,69,70,72,73,74,75,76,79,80,81,82,83,84,86,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116]
 	},
 	{
 		"id":"26",
 		"label":"Chapeau blanc",
 		"parent":"25",
-		"champignons":[6,10,11,62,63]
+		"champignons":[6,7,8,9,10,11,13,62,63,79,82,89,90]
 	},
 	{
 		"id":"27",
-		"label":"Sporée claires&nbsp;: blanche ou rose",
+		"label":"Sporée sombre&nbsp;: ocre, rouille, pourpre, noire",
 		"parent":"26",
-		"champignons":[6,10]
+		"champignons":[8,11,13,62,63]
 	},
 	{
 		"id":"28",
-		"label":"Lames libres rose-violet (spores pourpres), anneau",
+		"label":"Sporée claire&nbsp;: blanche ou rose",
 		"parent":"26",
-		"champignons":[11,62,63]
+		"champignons":[6,7,9,10,79,82,89,90]
 	},
 	{
 		"id":"29",
 		"label":"Champignons blancs jaunissant au toucher",
-		"parent":"28",
+		"parent":"52",
 		"champignons":[11,62,63]
 	},
 	{
@@ -247,8 +248,368 @@
 	},
 	{
 		"id":"47",
-		"label":"Lames libres blanches ou roses avec ou sans anneau, avec ou sans volve en sac",
+		"label":"Lames libres, spores blanches, anneau et volve membraneuse en sac",
+		"parent":"99",
+		"champignons":[6,7,10]
+	},
+	{
+		"id":"48",
+		"label":"Lames plus ou moins libres, blanches / roses / noires plus ou moins déliquescentes. Anneau plus ou moins fugace",
 		"parent":"27",
-		"champignons":[6,10]
+		"champignons":[13]
+	},
+	{
+		"id":"49",
+		"label":"Champignons blancs dont la chair rosit",
+		"parent":"52",
+		"champignons":[8]
+	},
+	{
+		"id":"50",
+		"label":"Lames blanches, spores blanches",
+		"parent":"28",
+		"champignons":[9,89,90]
+	},
+	{
+		"id":"51",
+		"label":"Lames subdécurrentes blanches ou roses, pied nu.",
+		"parent":"28",
+		"champignons":[79,82]
+	},
+	{
+		"id":"52",
+		"label":"Lames libres pourpre, anneau fixe",
+		"parent":"27",
+		"champignons":[8,11,62,63]
+	},
+	{
+		"id":"54",
+		"label":"Chapeau blanchâtre (crème, beige) à gris plus ou moins foncé",
+		"parent":"25",
+		"champignons":[5,12,74,81,83,84,91,92,93,94,95,96,97,98,99,100]
+	},
+	{
+		"id":"55",
+		"label":"Lames échancrées",
+		"parent":"58",
+		"champignons":[5,91,92,93,94,95,96,97]
+	},
+	{
+		"id":"56",
+		"label":"Spores claires roses, lames roses",
+		"parent":"54",
+		"champignons":[83,84]
+	},
+	{
+		"id":"57",
+		"label":"Spores noires",
+		"parent":"54",
+		"champignons":[12]
+	},
+	{
+		"id":"58",
+		"label":"Spores claires blanches, lames blanches",
+		"parent":"54",
+		"champignons":[5,74,81,91,92,93,94,95,96,97,98,99,100]
+	},
+	{
+		"id":"59",
+		"label":"Lames décurrentes",
+		"parent":"58",
+		"champignons":[81,98,99,100]
+	},
+	{
+		"id":"60",
+		"label":"Lames libres, volve en sac",
+		"parent":"58",
+		"champignons":[74]
+	},
+	{
+		"id":"61",
+		"label":"Lames échancrées, pied nu",
+		"parent":"56",
+		"champignons":[83,84]
+	},
+	{
+		"id":"63",
+		"label":"Chapeau rose, lilas, bleu, violet",
+		"parent":"25",
+		"champignons":[101]
+	},
+	{
+		"id":"64",
+		"label":"Sporée claire, blanche ou rose",
+		"parent":"63",
+		"champignons":[101]
+	},
+	{
+		"id":"66",
+		"label":"Chapeau jaune, vert, gris-vert, gris-jaune",
+		"parent":"25",
+		"champignons":[1,5,67,70,76,91,92,102,103,104]
+	},
+	{
+		"id":"67",
+		"label":"Lames libres blanches à jaune pâle, anneau et volve",
+		"parent":"69",
+		"champignons":[1,67,70]
+	},
+	{
+		"id":"68",
+		"label":"Sporée sombre, pourpre ou ocre-rouille",
+		"parent":"66",
+		"champignons":[104]
+	},
+	{
+		"id":"69",
+		"label":"Sporée claire, blanche",
+		"parent":"66",
+		"champignons":[1,5,67,70,76,91,92,102,103]
+	},
+	{
+		"id":"70",
+		"label":"Lames échancrées, pied nu plein, unicolore",
+		"parent":"69",
+		"champignons":[5,91,92,102,103]
+	},
+	{
+		"id":"71",
+		"label":"Lames subdécurrentes, armille ou pied nu",
+		"parent":"69",
+		"champignons":[76]
+	},
+	{
+		"id":"72",
+		"label":"Sporée pourpre",
+		"parent":"68",
+		"champignons":[104]
+	},
+	{
+		"id":"74",
+		"label":"Chapeau orange, rouge",
+		"parent":"25",
+		"champignons":[20,68,73,80,86,105,106]
+	},
+	{
+		"id":"75",
+		"label":"Sporée claire, blanche",
+		"parent":"74",
+		"champignons":[68,73,80]
+	},
+	{
+		"id":"76",
+		"label":"Sporée sombre, pourpre ou ocre-rouille",
+		"parent":"74",
+		"champignons":[20,86,105,106]
+	},
+	{
+		"id":"77",
+		"label":"Lames libres",
+		"parent":"75",
+		"champignons":[68,73]
+	},
+	{
+		"id":"78",
+		"label":"Lames décurrentes",
+		"parent":"75",
+		"champignons":[80]
+	},
+	{
+		"id":"80",
+		"label":"Sporée ocre-rouille, présence d&#8217;une cortine, poussant sur le sol",
+		"parent":"76",
+		"champignons":[20]
+	},
+	{
+		"id":"81",
+		"label":"Sporée ocre-rouille, absence de cortine, lignicoles",
+		"parent":"76",
+		"champignons":[86,105]
+	},
+	{
+		"id":"82",
+		"label":"Sporée pourpre, présence d&#8217;un cortine, lignicoles",
+		"parent":"76",
+		"champignons":[106]
+	},
+	{
+		"id":"83",
+		"label":"Chapeau couleur beige, rougeâtre, marron",
+		"parent":"25",
+		"champignons":[17,19,64,65,66,69,72,75,83,84,86,93,107,108,109,110,111,112,113,114,115,116]
+	},
+	{
+		"id":"84",
+		"label":"Sporée claire, blanche",
+		"parent":"83",
+		"champignons":[19,69,72,75,93,107,108,109,110,111]
+	},
+	{
+		"id":"85",
+		"label":"Sporée claire, rose",
+		"parent":"83",
+		"champignons":[83,84]
+	},
+	{
+		"id":"86",
+		"label":"Sporée sombre, pourpre, noire ou ocre-rouille",
+		"parent":"83",
+		"champignons":[17,64,65,66,86,112,113,114,115,116]
+	},
+	{
+		"id":"87",
+		"label":"Pied nu, robuste, port de tricholome, lames échancrées",
+		"parent":"84",
+		"champignons":[93,107,108]
+	},
+	{
+		"id":"88",
+		"label":"Pied nu, fragiles",
+		"parent":"84",
+		"champignons":[109]
+	},
+	{
+		"id":"89",
+		"label":"Pied avec anneau et volve, lames libres blanches, chapeau sans écaille",
+		"parent":"84",
+		"champignons":[69,72,75]
+	},
+	{
+		"id":"90",
+		"label":"Pied avec anneau coulissant ou fugace, lames libres blanches, chapeau avec écailles",
+		"parent":"84",
+		"champignons":[19,110,111]
+	},
+	{
+		"id":"92",
+		"label":"Lames échancrées",
+		"parent":"85",
+		"champignons":[83,84]
+	},
+	{
+		"id":"94",
+		"label":"Sporée pourpre, anneau fixe, lames libres roses à pourpre, chapeau avec écailles",
+		"parent":"86",
+		"champignons":[64,65,66]
+	},
+	{
+		"id":"95",
+		"label":"Sporée noire, lames plus ou moins gris foncé, noir",
+		"parent":"86",
+		"champignons":[112]
+	},
+	{
+		"id":"96",
+		"label":"Sporée ocre-rouille, lames terreuses, absence de cortine",
+		"parent":"86",
+		"champignons":[17,86,113,114,115,116]
+	},
+	{
+		"id":"97",
+		"label":"Champignons poussant sur le sol",
+		"parent":"96",
+		"champignons":[17,113]
+	},
+	{
+		"id":"98",
+		"label":"Champignons lignicoles",
+		"parent":"96",
+		"champignons":[86,114,115,116]
+	},
+	{
+		"id":"99",
+		"label":"Lames libres blanches ou roses avec ou sans anneau, avec ou sans volve en sac",
+		"parent":"28",
+		"champignons":[6,7,10]
+	},
+	{
+		"id":"100",
+		"label":"Lames libres blanches (roses), spores blanches, anneau coulissant",
+		"parent":"99",
+		"champignons":[7]
+	},
+	{
+		"id":"103",
+		"label":"Lames échancrées, espèces robustes, trapues, pied nu",
+		"parent":"50",
+		"champignons":[9,89,90]
+	},
+	{
+		"id":"105",
+		"label":"Petits à moyens",
+		"parent":"51",
+		"champignons":[79,82]
+	},
+	{
+		"id":"107",
+		"label":"Lames déliquescentes",
+		"parent":"48",
+		"champignons":[13]
+	},
+	{
+		"id":"109",
+		"label":"Port de tricholome, espèce robuste",
+		"parent":"61",
+		"champignons":[84]
+	},
+	{
+		"id":"110",
+		"label":"Port de collybie, espèce moyenne",
+		"parent":"61",
+		"champignons":[83]
+	},
+	{
+		"id":"111",
+		"label":"Pied plein",
+		"parent":"55",
+		"champignons":[5,91,92,94,95,96,97]
+	},
+	{
+		"id":"112",
+		"label":"Chapeau écailleux, gris",
+		"parent":"111",
+		"champignons":[94,95,96,97]
+	},
+	{
+		"id":"113",
+		"label":"Chapeau lisse, gris, jaunâtre",
+		"parent":"111",
+		"champignons":[5,91,92]
+	},
+	{
+		"id":"114",
+		"label":"Pied creux, lisse, cartilagineux",
+		"parent":"55",
+		"champignons":[93]
+	},
+	{
+		"id":"115",
+		"label":"Chapeau lisse, jaune",
+		"parent":"70",
+		"champignons":[102,103]
+	},
+	{
+		"id":"116",
+		"label":"Chapeau vergeté, gris, jaunâtre",
+		"parent":"70",
+		"champignons":[5,91,92]
+	},
+	{
+		"id":"117",
+		"label":"Lignicoles en touffe",
+		"parent":"71",
+		"champignons":[76]
+	},
+	{
+		"id":"119",
+		"label":"Champignons de grande taille",
+		"parent":"90",
+		"champignons":[110,111]
+	},
+	{
+		"id":"121",
+		"label":"Champignons de petite taille",
+		"parent":"90",
+		"champignons":[19]
 	}
 ]
