@@ -52,10 +52,6 @@ li {
 
 /*ZONE DE CONTENUS*/
 
-.conten-main {
-	width: 100%;
-}
-
 .page {
 	position: absolute;
 	width: 100%;
@@ -75,10 +71,6 @@ li {
 }
 
 /*PAGE HOME*/
-
-.page-home h1 {
-	margin: 30px 0;
-}
 
 .nav-main {
 	text-align: center;
@@ -101,12 +93,6 @@ li {
 
 .nav-main a:active {
 	color: #fff;
-}
-
-/* PAGE TOUS */
-
-.page-tous .page-inner {
-	margin: 50px 10px;
 }
 
 /*LISTES DE CHAMPIGNONS*/
@@ -251,10 +237,6 @@ li {
 	line-height: 40px;
 	text-align: left;
 	font-size: 1.2em;
-}
-
-.header-on {
-	top: 0;
 }
 
 .header-tous .champignons {

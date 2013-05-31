@@ -1,18 +1,14 @@
-
 [
     {
         "id": "63",
         "rubrique": ["31"],
-        "url": "Agaric-des-bois",
         "vignette":"img/vignettes/champignonon63.jpg",
         "nom": "Agaric des bois",
         "genre": "Agaricus",
         "espece": "Sylvicola",
         "famille": "Agaricaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": ["Marron, brun, rouille"],
         "description":{
             "chapeau": "<p>Blanch\u00e2tre \u00e0 jaune orang\u00e9 intense chez sp\u00e9cimens \u00e2g\u00e9s. Glabre, lisse. Convexe puis \u00e9tal\u00e9 \u00e0 plat (5-10 cm).<\/p>",
             "hymenium": "<p>Libres, rose p\u00e2le \u00e0 gris brun. Spor\u00e9e pourpre.<\/p>",
@@ -20,51 +16,18 @@
             "chair": "<p>Blanche, puis jaunissante \u00e0 odeur anis\u00e9e.<\/p>",
             "ecologie": "<p>Feuillus, parfois conif\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanc","Jaune"],
-            "forme": "Convexe",
-            "surface": "lisse",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"libres",
-    "densite":"",
-    "couleur": ["Gris","Brun","Rose"]
-},
-        "pied": {
-            "forme": "bulbeux",
-            "anneau": "avec anneau",
-            "volve": "",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "agréable",
-            "saveur": "agréable",
-            "couleur": ["Blanc","Jaune"],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": ["Bois"],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "64",
         "rubrique": ["94"],
-        "url": "Agaric-des-forets",
         "vignette":"img/vignettes/champignonon64.jpg",
         "nom": "Agaric des forêts",
         "genre": "Agaricus",
         "espece": "Silvaticus",
         "famille": "Agaricaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Squames (ou \u00e9cailles) serr\u00e9es brun roux sur fond plus clair. H\u00e9misph\u00e9rique \u00e0 convexe, peu charnu [5-1 (15) cm].<\/p>",
             "hymenium": "<p>Libres, rose gris \u00e0 brun gris, pied et chapeau s\u00e9parables. Spor\u00e9e pourpre.<\/p>",
@@ -72,51 +35,18 @@
             "chair": "<p>Blanche \u00e0 rosissement vineux p\u00e2le, odeur agr\u00e9able.<\/p>",
             "ecologie": "<p>For\u00eats de conif\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "62",
         "rubrique": ["31"],
-        "url": "Agaric-des-jacheres",
         "vignette":"img/vignettes/champignonon62.jpg",
         "nom": "Agaric des jachères",
         "genre": "Agaricus",
         "espece": "Arvensis",
         "famille": "Agaricaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": ["Marron, brun, rouille"],
         "description":{
             "chapeau": "<p>Blanc pur, jaunissant, ocre roux en vieillissant, lisse sauf \u00e0 la marge qui est floconneuse, diam\u00e8tre pouvant atteindre 15 cm, h\u00e9misph\u00e9rique, convexe \u00e0 <a href=\"#\" class=\"glossaire\" title=\"Glossaire\"><span class=\"label label-info\">tronconique<\/span><\/a>.<\/p>",
             "hymenium": "<p>Gris rose p\u00e2le \u00e0 brun roux, libres. Spor\u00e9e pourpre.<\/p>",
@@ -124,51 +54,18 @@
             "chair": "<p>Blanche \u00e0 odeur anis\u00e9e.<\/p>",
             "ecologie": "<p>Prairies amend\u00e9es, jardins.<\/p>",
             "remarques": "<p><i>A.&nbsp;macrosporus<\/i> est une esp\u00e8ce voisine plus massive \u00e0 odeur anis\u00e9e et peu jaunissante.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Blanc","Jaune","Ocre","Roux"],
-            "forme": "Convexe tronconique",
-            "surface": "lisse",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"libres",
-    "densite":"serrées",
-    "couleur": ["Gris","Brun","Rose","Roux"]
-},
-        "pied": {
-            "forme": "cylindrique",
-            "anneau": "avec anneau",
-            "volve": "",
-            "couleur": ["Blanc","Jaune"]
-        },
-        "chair":{
-            "odeur": "agréable",
-            "saveur": "agréable",
-            "couleur": ["Blanc","Blanchâtre"],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": ["Prairies"],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "8",
         "rubrique": ["49"],
-        "url": "Agaric-des-pres",
         "vignette":"img/vignettes/champignonon8.jpg",
         "nom": "Agaric des prés",
         "genre": "Agaricus",
         "espece": "Campestris",
         "famille": "Agaricaceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Comestible",
-        "sporee": ["Marron, brun, rouille","Noire ou autre couleur très foncée"],
         "description":{
             "chapeau": "<p>Blanc a\u0300 blancha\u0302tre, le\u0301ge\u0300rement ocrace\u0301 avec l&#8217;a\u0302ge, lisse a\u0300 fibreux, soyeux parfois avec petits squames. Convexe a\u0300 marge enroule\u0301e (5-10 cm).<\/p>",
             "hymenium": "<p>Libres, serre\u0301es, rose\u0301e vif, puis bistres. Spor\u00e9e pourpre.<\/p>",
@@ -176,51 +73,18 @@
             "chair": "<p>Blancha\u0302tre un peu rosissante, odeur et saveur agre\u0301ables.<\/p>",
             "ecologie": "<p>Prairies pa\u0302ture\u0301es en automne.<\/p>",
             "remarques": "<p>Bon comestible, pouvant \u00eatre pr\u00e9par\u00e9 comme le champignon de Paris. Attention \u00e0 l&#8217;<i>Agaric jaunissant<\/i>.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Blanc","Blanchâtre","Ocre"],
-            "forme": "Convexe",
-            "surface": "lisse",
-            "marge": "enroulée"
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"libres",
-    "densite":"serrées",
-    "couleur": ["Rose","Marron"]
-},
-        "pied": {
-            "forme": "atténué vers le bas",
-            "anneau": "avec anneau",
-            "volve": "pas de volve",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "agréable",
-            "saveur": "agréable",
-            "couleur": ["Blanc","Blanchâtre","Rose"],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": ["Prairies"],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": ["Automne"]
         }
     },
     {
         "id": "11",
         "rubrique": ["30"],
-        "url": "Agaric-jaunissant",
         "vignette":"img/vignettes/champignonon11.jpg",
         "nom": "Agaric jaunissant",
         "genre": "Agaricus",
         "espece": "Xanthoderma",
         "famille": "Agaricaceae",
         "organisation": "Champignons à lames",
-        "taille": "Taille moyenne ou port de collybie",
         "comestibilite": "Toxique – 3e groupe",
-        "sporee": ["Marron, brun, rouille","Noire ou autre couleur très foncée"],
         "description":{
             "chapeau": "<p>Blanc, jaunissement vif et rapide au froissement de la marge en particulier. Lisse ou raye\u0301 de grisa\u0302tre dans certaines varie\u0301te\u0301s, typiquement <a href=\"#\" class=\"glossaire\" title=\"Glossaire\"><span class=\"label label-info\">tronconique<\/span><\/a>, parfois craquele\u0301 (5-10 cm).<\/p>",
             "hymenium": "<p>Rose vif, puis brun chocolat, libres. Spor\u00e9e pourpre.<\/p>",
@@ -228,51 +92,18 @@
             "chair": "<p>Blanche, jaunissant fortement vers la base, odeur iode\u0301e ou d&#8217;encre (surtout a\u0300 la chaleur).<\/p>",
             "ecologie": "<p>Lisie\u0300res, prairies amende\u0301es, zones rude\u0301rales.<\/p>",
             "remarques": "<p><i>A.&nbsp;meleagris<\/i> ou <i>Praeclaresquamosus<\/i> a les me\u0302mes caracte\u0300res que <i>A.&nbsp;xanthoderma<\/i>, mais le chapeau pre\u0301sente un reve\u0302tement de petits squames.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Blanc","Jaune"],
-            "forme": "Conique tronconique",
-            "surface": "lisse",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"libres",
-    "densite":"",
-    "couleur": ["Brun","Rose","Marron"]
-},
-        "pied": {
-            "forme": "bulbeux",
-            "anneau": "avec anneau",
-            "volve": "pas de volve",
-            "couleur": ["Blanc","Jaune"]
-        },
-        "chair":{
-            "odeur": "désagréable",
-            "saveur": "",
-            "couleur": ["Blanc","Jaune"],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": ["Lisières des bois","Prairies","Bois","Friches"],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "65",
         "rubrique": ["94"],
-        "url": "Agaric-radicant",
         "vignette":"img/vignettes/champignonon65.jpg",
         "nom": "Agaric radicant",
         "genre": "Agaricus",
         "espece": "Romagnesii",
         "famille": "Agaricaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 2e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Squames ou \u00e9cailles brunes \u00e0 gris brun\u00e2tre \u00e9tal\u00e9es en \u00e9toile sur fond blanch\u00e2tre. Convexe \u00e0 plat, marge enroul\u00e9e au d\u00e9but (5 x 8 cm).<\/p>",
             "hymenium": "<p>Rose vif, puis brun sale \u00e0 ar\u00eate p\u00e2le, libres. Spor\u00e9e pourpre.<\/p>",
@@ -280,51 +111,18 @@
             "chair": "<p>Blanche, rose puis jaun\u00e2tre<\/p>",
             "ecologie": "<p>Pelouse des parcs en ville, jach\u00e8res, parfois sous conif\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "66",
         "rubrique": ["94"],
-        "url": "Agaric-sanguinolent",
         "vignette":"img/vignettes/champignonon66.jpg",
         "nom": "Agaric sanguinolent",
         "genre": "Agaricus",
         "espece": "Haemorrhoidarius",
         "famille": "Agaricaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Fibrillo-squamuleux, brun roux (10-12 cm).<\/p>",
             "hymenium": "<p>Rose vif, rougissantes puis brunes.<\/p>",
@@ -332,51 +130,18 @@
             "chair": "<p>Blanche, \u00e0 rougissement vif.<\/p>",
             "ecologie": "<p>Forets, taillis, feuillus.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "10",
         "rubrique": ["47"],
-        "url": "Amanite-a-volve-rousse",
         "vignette":"img/vignettes/champignonon10.jpg",
         "nom": "Amanite à volve rousse",
         "genre": "Amanita",
         "espece": "Proxima",
         "famille": "Amanitaceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Toxique – 2e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Blanc \u00e0 ocrac\u00e9 p\u00e2le. Charnu, \u00e9pais. Marge cr\u00e9meuse.<\/p>",
             "hymenium": "<p>Blanch\u00e2tres \u00e0 cr\u00e8me p\u00e2le. Larges.<\/p>",
@@ -384,51 +149,18 @@
             "chair": "<p>Blanche. Odeur de fromage avec l&#8217;\u00e2ge.<\/p>",
             "ecologie": "<p>M\u00e9ridionale.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanc"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"libres",
-    "densite":"",
-    "couleur": ["Blanchâtre"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "anneau fixe",
-            "volve": "volve en sac",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "désagréable",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "67",
         "rubrique": ["67"],
-        "url": "Amanite-citrine",
         "vignette":"img/vignettes/champignonon67.jpg",
         "nom": "Amanite citrine",
         "genre": "Amanita",
         "espece": "Citrina",
         "famille": "Amanitaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Jaune citrin, reste de voile g\u00e9n\u00e9ral formant des plaques ou des flocons plus ou moins r\u00e9guliers, blanch\u00e2tres ocrac\u00e9s, convexe ou \u00e9tal\u00e9, marge lisse (6-10 cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es, blanch\u00e2tres \u00e0 jaun\u00e2tres, libres. Spor\u00e9e blanche.<\/p>",
@@ -436,51 +168,18 @@
             "chair": "<p>Blanch\u00e2tre, jaun\u00e2tre \u00e0 odeur de pomme de terre ou de rave et saveur d\u00e9sagr\u00e9able.<\/p>",
             "ecologie": "<p>For\u00eats de feuillus et de conif\u00e8res.<\/p>",
             "remarques": "<p>Parfois, certaines esp\u00e8ces pr\u00e9sentent des points ou minuscules taches rouges sur le chapeau&nbsp;: ce sont des colonies de bact\u00e9ries pigment\u00e9es.<\/p>"
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "68",
         "rubrique": ["77"],
-        "url": "Amanite-des-cesars",
         "vignette":"img/vignettes/champignonon68.jpg",
         "nom": "Amanite des césars",
         "genre": "Amanita",
         "espece": "Caesarea",
         "famille": "Amanitaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Orange vif, lisse, parfois avec lambeaux blancs, convexe, charnu (10-20 cm).<\/p>",
             "hymenium": "<p>Jaunes, ventrues, libres. Spor\u00e9e blanche.<\/p>",
@@ -488,51 +187,18 @@
             "chair": "<p>P\u00e2le, jaune en surface.<\/p>",
             "ecologie": "<p>Feuillus ou bois m\u00eal\u00e9s, thermophiles.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "69",
         "rubrique": ["89"],
-        "url": "Amanite-epaisse",
         "vignette":"img/vignettes/champignonon69.jpg",
         "nom": "Amanite épaisse",
         "genre": "Amanita",
         "espece": "Spissa",
         "famille": "Amanitaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Brun bistre, reste de voile g\u00e9n\u00e9ral gris\u00e2tre (aspect de carte g\u00e9ographique), charnu (10-20 cm).<\/p>",
             "hymenium": "<p>Blanches, libres, serr\u00e9es.<\/p>",
@@ -540,51 +206,18 @@
             "chair": "<p>Blanche \u00e0 l\u00e9g\u00e8re odeur de rave.<\/p>",
             "ecologie": "<p>Feuillus, conif\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "70",
         "rubrique": ["67"],
-        "url": "Amanite-jonquille",
         "vignette":"img/vignettes/champignonon70.jpg",
         "nom": "Amanite jonquille",
         "genre": "Amanita",
         "espece": "Junquillea",
         "famille": "Amanitaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 2e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Jaune paille \u00e0 cr\u00e8me, parfois lambeaux blancs de voile g\u00e9n\u00e9ral, marge stri\u00e9e. Convexe \u00e0 plan (5-10 cm).<\/p>",
             "hymenium": "<p>Blanches, libres, serr\u00e9es. Spor\u00e9e blanche.<\/p>",
@@ -592,51 +225,18 @@
             "chair": "<p>Blanche, saveur agr\u00e9able.<\/p>",
             "ecologie": "<p>Feuillus et conif\u00e8res m\u00eal\u00e9s, thermophiles.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "72",
         "rubrique": ["89"],
-        "url": "Amanite-panthere",
         "vignette":"img/vignettes/champignonon72.jpg",
         "nom": "Amanite panthère",
         "genre": "Amanita",
         "espece": "Pantherina",
         "famille": "Amanitaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 2e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Brun bistre ou caf\u00e9 au lait. Petits flocons r\u00e9guliers blancs (ressemblant \u00e0 des gouttes de lait). Convexe \u00e0 plan, marge stri\u00e9e (5-10 cm).<\/p>",
             "hymenium": "<p>Blanches libres. Spor\u00e9e blanche.<\/p>",
@@ -644,51 +244,18 @@
             "chair": "<p>Blanche, immuable, sans odeur ou go\u00fbt particulier.<\/p>",
             "ecologie": "<p>Feuillus et conif\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "1",
         "rubrique": ["67"],
-        "url": "Amanite-Phalloide",
         "vignette":"img/vignettes/champignonon1.jpg",
         "nom": "Amanite Phalloïde",
         "genre": "Amanita",
         "espece": "Phalloides",
         "famille": "Amanitaceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Très toxique – 1er groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Jaune verd\u00e2tre \u00e0 gris verd\u00e2tre plus ou moins fonc\u00e9. Finement fibrilleux radialement.<\/p>",
             "hymenium": "<p>Blanches, libres.<\/p>",
@@ -696,51 +263,18 @@
             "chair": "<p>Blanche. Odeur presque nulle (ne pas go\u00fbter&nbsp;!).<\/p>",
             "ecologie": "<p>Surtout sous feuillus. Tr\u00e8s commun certaines ann\u00e9es. De l&#8217;\u00e9t\u00e9 \u00e0 l&#8217;automne.<\/p>",
             "remarques": "<p><strong>Attention<\/strong>, les formes blanches sont tout aussi dangereuses.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Blanc","Gris","Rose","Vert"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": ["Blanc"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "anneau fixe",
-            "volve": "volve en sac",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Feuillus"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "6",
         "rubrique": ["47"],
-        "url": "Amanite-printaniere",
         "vignette":"img/vignettes/champignonon6.jpg",
         "nom": "Amanite printanière",
         "genre": "Amanita",
         "espece": "Verna",
         "famille": "Amanitaceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Très toxique – 1er groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Blanc \u00e0 cr\u00e8me p\u00e2le. H\u00e9misph\u00e9rique puis convexe \u00e0 presque plat. Lisse, glabre, viscidule.<\/p>",
             "hymenium": "<p>Blanches. Assez serr\u00e9es. Ar\u00eate vaguement \u00e9rod\u00e9e ou enti\u00e8re.<\/p>",
@@ -748,51 +282,18 @@
             "chair": "<p>Blanche inodore.<\/p>",
             "ecologie": "<p>For\u00eats et taillis. Plut\u00f4t thermophile. Au printemps<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanc"],
-            "forme": "",
-            "surface": "lisse",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"libres",
-    "densite":"",
-    "couleur": ["Blanc"]
-},
-        "pied": {
-            "forme": "clavé",
-            "anneau": "anneau fixe",
-            "volve": "volve en sac",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "sans odeur",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": ["Forêts"],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": ["Printemps"]
         }
     },
     {
         "id": "73",
         "rubrique": ["77"],
-        "url": "Amanite-tue-mouches",
         "vignette":"img/vignettes/champignonon73.jpg",
         "nom": "Amanite tue-mouches",
         "genre": "Amanita",
         "espece": "Muscaria",
         "famille": "Amanitaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 2e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Rouge vif \u00e0 orang\u00e9, marbr\u00e9 de jaune en veillissant (ou apr\u00e8s la pluie), flocons blancs r\u00e9guliers. Convexe puis \u00e9tal\u00e9, marge lisse (10-20 cm).<\/p>",
             "hymenium": "<p>Blanches, libres. Spor\u00e9e blanche.<\/p>",
@@ -800,51 +301,18 @@
             "chair": "<p>Chair blanche (orange sous la cuticule), pas d&#8217;odeur particuli\u00e8re, saveur de noisette.<\/p>",
             "ecologie": "<p>Bouleaux, \u00e9pic\u00e9as, esp\u00e8ces acidophiles en montagne et en plaine.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "74",
         "rubrique": ["60"],
-        "url": "Amanite-vaginee",
         "vignette":"img/vignettes/champignonon74.jpg",
         "nom": "Amanite vaginée",
         "genre": "Amanita",
         "espece": "Vaginata",
         "famille": "Amanitaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Gris \u00e0 gris\u00e2tre terne, lisse \u00e0 marge stri\u00e9e ovo\u00efde, campa- nule, plan et mamelonn\u00e9, (6-12 cm).<\/p>",
             "hymenium": "<p>Peu serr\u00e9es \u00e0 ar\u00eate velout\u00e9e, floconneuse ou givr\u00e9e, libres, blanches. Spor\u00e9e blanche.<\/p>",
@@ -852,51 +320,18 @@
             "chair": "<p>Blanche inodore, go\u00fbt agr\u00e9able.<\/p>",
             "ecologie": "<p>Feuillus, calcicoles, plus ou moins m\u00eal\u00e9s de conif\u00e8res.<\/p>",
             "remarques": "<p>A. fulva est identique, mais le chapeau a une couleur rouss\u00e2tre.<\/p>"
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "75",
         "rubrique": ["89"],
-        "url": "Amanite-vineuse",
         "vignette":"img/vignettes/champignonon75.jpg",
         "nom": "Amanite vineuse",
         "genre": "Amanita",
         "espece": "Rubescens",
         "famille": "Amanitaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Brun rose \u00e0 ocre bru- n\u00e2tre, flocons confluants, irr\u00e9gu- liers, blanch\u00e2tre, cr\u00e8me ocrac\u00e9, convexe (8-12 cm).<\/p>",
             "hymenium": "<p>Blanches, tach\u00e9es de rose vineux, libres. Spor\u00e9e blanche.<\/p>",
@@ -904,51 +339,18 @@
             "chair": "<p>Blanche \u00e0 rose vineux, \u00e0 go\u00fbt et odeur agr\u00e9ables.<\/p>",
             "ecologie": "<p>Feuillus et conif\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "76",
         "rubrique": ["117"],
-        "url": "Armillaire-couleur-de-miel",
         "vignette":"img/vignettes/champignonon76.jpg",
         "nom": "Armillaire couleur de miel",
         "genre": "Armillaria",
         "espece": "Mellea",
         "famille": "Autre…",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Squames brun jaun\u00e2tre au centre sur fond jaune (de miel), marge enroul\u00e9e (4-10 cm).<\/p>",
             "hymenium": "<p>Blanches \u00e0 cr\u00e8me, arqu\u00e9es, subd\u00e9currentes, souvent tach\u00e9es de brun\u00e2tre.<\/p>",
@@ -956,51 +358,18 @@
             "chair": "<p>P\u00e2le \u00e0 odeur fongique et go\u00fbt agr\u00e9able, comestible jeune. \u00c2g\u00e9e ou mal conserv\u00e9e, peut \u00eatre toxique.<\/p>",
             "ecologie": "<p>Poussent en touffes sur les arbres vivants dont ils sont de redoutables parasites.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "32",
         "rubrique": ["8"],
-        "url": "Bolet-a-chair-jaune",
         "vignette":"img/vignettes/champignonon32.jpg",
         "nom": "Bolet à chair jaune",
         "genre": "Xerocomus",
         "espece": "Chrysenteron",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Convexe, velout\u00e9, olivac\u00e9, brun terne (6-12 cm). Rev\u00eatement vite craquel\u00e9, fond rose \u00e0 l&#8217;int\u00e9rieur des crevasses.<\/p>",
             "hymenium": "<p>Adn\u00e9s, jaune sale, verd\u00e2tres. Pores irr\u00e9guliers, anguleux concolores, bleuissant l\u00e9g\u00e8rement au toucher.<\/p>",
@@ -1008,51 +377,18 @@
             "chair": "<p>Jaune p\u00e2le, abricot, bleuissante.<\/p>",
             "ecologie": "<p>Feuillus, clairi\u00e8res.<\/p>",
             "remarques": "<p>Comestible tr\u00e8s mediocre.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Brun","Vert"],
-            "forme": "Convexe",
-            "surface": "revêtement velouté",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Anguleux",
-    "insertion": "",
-    "taille": "",
-    "couleur": ["Vert","Jaune"]
-},
-        "pied": {
-            "forme": "cylindrique",
-            "anneau": "sans anneau",
-            "volve": "",
-            "couleur": ["Jaune","Rouge"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Feuillus"],
-            "saisons": []
         }
     },
     {
         "id": "22",
         "rubrique": ["10"],
-        "url": "Bolet-a-pied-rouge",
         "vignette":"img/vignettes/champignonon22.jpg",
         "nom": "Bolet à pied rouge",
         "genre": "Boletus",
         "espece": "Erythropus",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Comestible",
-        "sporee": ["Marron, brun, rouille"],
         "description":{
             "chapeau": "<p>Brun fonc\u00e9, plus clair (reflets orang\u00e9s) vers la marge, lisse, velout\u00e9, h\u00e9misph\u00e9rique (15-20 cm).<\/p>",
             "hymenium": "<p>Jaun\u00e2tre olivac\u00e9, bleuissants. Pores fins, rouge orang\u00e9, bleuissant au toucher.<\/p>",
@@ -1060,51 +396,18 @@
             "chair": "<p>Jaune bleuissant rapidement \u00e0 la coupe, saveur douce.<\/p>",
             "ecologie": "<p>Feuillus acidophiles, clairi\u00e8res, coupes foresti\u00e8res.<\/p>",
             "remarques": "<p>C&#8217;est la r\u00e9compense du mycologue&nbsp;!<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Brun","Orange","Marron"],
-            "forme": "",
-            "surface": "strié ou vergeté radialement",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Arrondis",
-    "insertion": "",
-    "taille": "",
-    "couleur": ["Bleuissant","Vert","Jaune","Orange","Rouge"]
-},
-        "pied": {
-            "forme": "ventru",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Jaune","Rouge"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": ["Printemps","Automne"]
         }
     },
     {
         "id": "33",
         "rubrique": ["8"],
-        "url": "Bolet-bai",
         "vignette":"img/vignettes/champignonon33.jpg",
         "nom": "Bolet bai",
         "genre": "Xerocomus",
         "espece": "Badius",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>H\u00e9misph\u00e9rique, charnu, velout\u00e9, marron, sec, rarement visqueux brillant (10-15 cm).<\/p>",
             "hymenium": "<p>Adn\u00e9s, jaune p\u00e2le \u00e0 verd\u00e2tres. Pores fins puis irr\u00e9guliers, jaune bleuissant au toucher.<\/p>",
@@ -1112,51 +415,18 @@
             "chair": "<p>Blanch\u00e2tre \u00e0 jaun\u00e2tre, ferme, bleuissant l\u00e9g\u00e8rement. Saveur douce.<\/p>",
             "ecologie": "<p>Feuillus ou conif\u00e8res. Tendance acidophiles.<\/p>",
             "remarques": "<p>Le bolet bai est un bon comestible.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Marron"],
-            "forme": "",
-            "surface": "revêtement velouté",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Anguleux",
-    "insertion": "Adnés",
-    "taille": "fins",
-    "couleur": ["Vert","Jaune"]
-},
-        "pied": {
-            "forme": "cylindrique",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Brun","Jaune"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": []
         }
     },
     {
         "id": "35",
         "rubrique": ["9"],
-        "url": "Bolet-chatain",
         "vignette":"img/vignettes/champignonon35.jpg",
         "nom": "Bolet châtain",
         "genre": "Gyroporus",
         "espece": "Castaneus",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Jaune, jaunâtre, ocre"],
         "description":{
             "chapeau": "<p>Convexe, charnu, puis plat, irr\u00e9gulier, rev\u00eatement lisse subvelout\u00e9, brun roux ocrac\u00e9, uniforme parfois clair (10 cm).<\/p>",
             "hymenium": "<p>\u00c9chancr\u00e9s, blancs puis jaune ocrac\u00e9. Pores petits, immuables.<\/p>",
@@ -1164,51 +434,18 @@
             "chair": "<p>Cassante, immuable.<\/p>",
             "ecologie": "<p>Feuillus (ch\u00eanes), conif\u00e8res. Acidophiles.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Brun","Jaune","Orange"],
-            "forme": "Convexe",
-            "surface": "strié ou vergeté radialement",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Arrondis",
-    "insertion": "",
-    "taille": "fins",
-    "couleur": ["Blanc","Blanchâtre","Jaune"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Brun","Jaune","Orange"]
-        },
-        "chair":{
-            "odeur": "agréable",
-            "saveur": "agréable",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Feuillus","Résineux"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "34",
         "rubrique": ["8"],
-        "url": "Bolet-de-fiel-Chicotin",
         "vignette":"img/vignettes/champignonon34.jpg",
         "nom": "Bolet de fiel (Chicotin)",
         "genre": "Tylopilus",
         "espece": "Felleus",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Rose"],
         "description":{
             "chapeau": "<p>Rappelant le groupe edulis. Chamois, beige gris\u00e2tre (10-15 cm).<\/p>",
             "hymenium": "<p>Echancr\u00e9s, blanch\u00e2tres puis roses. Pores irr\u00e9guliers blanch\u00e2tres puis roses.<\/p>",
@@ -1216,51 +453,18 @@
             "chair": "<p>Blanche inodore, mais tr\u00e8s am\u00e8re.<\/p>",
             "ecologie": "<p>Feuillus, acidophiles.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Gris","Brun"],
-            "forme": "",
-            "surface": "mat",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Anguleux",
-    "insertion": "",
-    "taille": "",
-    "couleur": ["Blanc","Blanchâtre","Rose"]
-},
-        "pied": {
-            "forme": "ventru",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Gris","Brun"]
-        },
-        "chair":{
-            "odeur": "agréable",
-            "saveur": "amère",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": ["Été"]
         }
     },
     {
         "id": "37",
         "rubrique": ["10"],
-        "url": "Bolet-de-Quelet",
         "vignette":"img/vignettes/champignonon37.jpg",
         "nom": "Bolet de Quélet",
         "genre": "Boletus",
         "espece": "Queletii",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": ["Marron, brun, rouille"],
         "description":{
             "chapeau": "<p>Brun fonc\u00e9, velout\u00e9. Marge souvent plus claire.<\/p>",
             "hymenium": "<p>Jaunes puis verd\u00e2tres \u00e0 oliv\u00e2tres. Bleuissants. Pores jaunes puis orang\u00e9 rouge. Bleuissants au toucher.<\/p>",
@@ -1268,51 +472,18 @@
             "chair": "<p>Jaune p\u00e2le, bleuissant \u00e0 la coupe, rouge noircissant \u00e0 la base du pied.<\/p>",
             "ecologie": "<p>Sous feuillus. De l&#8217;\u00e9t\u00e9 \u00e0 l&#8217;automne.<\/p>",
             "remarques": "<p>Comestible bien cuit.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Brun","Orange","Rouge"],
-            "forme": "",
-            "surface": "strié ou vergeté radialement",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Arrondis",
-    "insertion": "",
-    "taille": "",
-    "couleur": ["Vert","Jaune","Orange","Rouge"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Jaune","Orange","Rouge"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Feuillus"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "30",
         "rubrique": ["7"],
-        "url": "Bolet-des-bouviers",
         "vignette":"img/vignettes/champignonon30.jpg",
         "nom": "Bolet des bouviers",
         "genre": "Suillus",
         "espece": "Bovinus",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Lisse, visqueux, brun jaune orang\u00e9 (5-10 cm).<\/p>",
             "hymenium": "<p>D\u00e9currents, beige jaun\u00e2tre. Pores anguleux, amples concolores.<\/p>",
@@ -1320,51 +491,18 @@
             "chair": "<p>Blanch\u00e2tre, jaun\u00e2tre, l\u00e9g\u00e8rement ros\u00e2tre, subimmuable.<\/p>",
             "ecologie": "<p>Pins. Acidophiles.<\/p>",
             "remarques": "<p>Comestible m\u00e9diocre \u00e0 condition de peler la cuticule visqueuse du chapeau.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Brun","Jaune","Orange"],
-            "forme": "",
-            "surface": "lisse visqueux",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Anguleux",
-    "insertion": "",
-    "taille": "grands ou laches",
-    "couleur": ["Jaune"]
-},
-        "pied": {
-            "forme": "cylindrique",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Brun","Jaune","Orange"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Pins"],
-            "saisons": []
         }
     },
     {
         "id": "24",
         "rubrique": ["7"],
-        "url": "Bolet-elegant",
         "vignette":"img/vignettes/champignonon24.jpg",
         "nom": "Bolet élégant",
         "genre": "Suillus",
         "espece": "Grevillei",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Visqueux, jaune vif \u00e0 jaune orang\u00e9 (5-10 cm).<\/p>",
             "hymenium": "<p>Adn\u00e9s, subd\u00e9currents, assez courts, jaunes \u00e0 bruns. Pores \u00e9troits puis anguleux, jaunes \u00e0 orang\u00e9s, se tachant de roux au toucher.<\/p>",
@@ -1372,51 +510,18 @@
             "chair": "<p>Blanch\u00e2tre \u00e0 jaune. Saveur douce, odeur faible.<\/p>",
             "ecologie": "<p>M\u00e9l\u00e8zes.<\/p>",
             "remarques": "<p>Comestible apr\u00e8s avoir pel\u00e9 la cuticule visqueuse du chapeau.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Jaune","Orange"],
-            "forme": "",
-            "surface": "Visqueux",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Anguleux",
-    "insertion": "",
-    "taille": "",
-    "couleur": ["Brun","Jaune","Orange"]
-},
-        "pied": {
-            "forme": "cylindrique",
-            "anneau": "avec anneau",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "faible",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Mélèzes"],
-            "saisons": []
         }
     },
     {
         "id": "31",
         "rubrique": ["8"],
-        "url": "Bolet-poivre",
         "vignette":"img/vignettes/champignonon31.jpg",
         "nom": "Bolet poivré",
         "genre": "Chalciporus",
         "espece": "Piperatus",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Marron, brun, rouille"],
         "description":{
             "chapeau": "<p>Brun jaune \u00e0 brun rouge\u00e2tre. Plus ou moins brillant.<\/p>",
             "hymenium": "<p>Tubes brun jaune \u00e0 brun rouille, subd\u00e9currents. pores brun rouille \u00e0 rouge brique, amples vers la marge.<\/p>",
@@ -1424,51 +529,18 @@
             "chair": "<p>Jaune ros\u00e2tre, jaune vif \u00e0 la base du pied. Saveur tr\u00e8s poivr\u00e9e. Spor\u00e9e brun rouille.<\/p>",
             "ecologie": "<p>Conif\u00e8res et feuillus. En automne.<\/p>",
             "remarques": "<p>Hach\u00e9s et m\u00e9lang\u00e9s \u00e0 d&#8217;autres champignons, un ou deux chapeaux du bolet poivr\u00e9 peuvent servir d&#8217;assaisonnement.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Brun","Jaune","Rouge"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Anguleux",
-    "insertion": "",
-    "taille": "",
-    "couleur": ["Brun","Jaune","Rouge"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Brun","Jaune","Orange"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "poivrée",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": ["Automne"]
         }
     },
     {
         "id": "21",
         "rubrique": ["10"],
-        "url": "Bolet-satan",
         "vignette":"img/vignettes/champignonon21.jpg",
         "nom": "Bolet satan",
         "genre": "Boletus",
         "espece": "Satanas",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Toxique – 3e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Blanch\u00e2tre sale \u00e0 tonalit\u00e9 gris\u00e2tre verd\u00e2tre, lisse, h\u00e9misph\u00e9rique (10-20 cm).<\/p>",
             "hymenium": "<p>Jaune verd\u00e2tre, bleuissants. Pores petits puis rouge-sang (orang\u00e9 vers la marge), bleuissants.<\/p>",
@@ -1476,51 +548,18 @@
             "chair": "<p>Blanch\u00e2tre bleuissant, odeur naus\u00e9euse avec l&#8217;\u00e2ge.<\/p>",
             "ecologie": "<p>Feuillus, taillis calcicoles, thermophiles.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanchâtre","Gris","Vert"],
-            "forme": "",
-            "surface": "strié ou vergeté radialement",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Arrondis",
-    "insertion": "",
-    "taille": "",
-    "couleur": ["Bleuissant"]
-},
-        "pied": {
-            "forme": "clavé",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanchâtre","Brun","Jaune","Rouge"]
-        },
-        "chair":{
-            "odeur": "désagréable",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": ["Bois"],
-            "substrat": ["Calcicole"],
-            "vegetation": [],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "36",
         "rubrique": ["9"],
-        "url": "Cepe-de-Bordeaux",
         "vignette":"img/vignettes/champignonon36.jpg",
         "nom": "Cèpe de Bordeaux",
         "genre": "Boletus",
         "espece": "Edulis",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": ["Marron, brun, rouille"],
         "description":{
             "chapeau": "<p>Convexe, arrondi, rev\u00eatement sec, parfois l\u00e9g\u00e8rement lubrifi\u00e9, couleur fauve noisette plus ou moins clair, \u00e0 la marge filet blanch\u00e2tre (10-25 cm).<\/p>",
             "hymenium": "<p>\u00c9chancr\u00e9s blancs, puis jaune p\u00e2le et verd\u00e2tre, pores ronds et fins concolores, immuables.<\/p>",
@@ -1528,51 +567,18 @@
             "chair": "<p>Ferme, blanche, immuable, odeur faible et saveur douce (noisette).<\/p>",
             "ecologie": "<p>Feuillus m\u00eal\u00e9s.<\/p>",
             "remarques": "<p>Le c\u00e8pe de Bordeaux est parfois s\u00e9par\u00e9 par les mycophages en deux esp\u00e8ces&nbsp;: les c\u00e8pes durs et les c\u00e8pes mous.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Brun"],
-            "forme": "",
-            "surface": "strié ou vergeté radialement",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Arrondis",
-    "insertion": "",
-    "taille": "fins",
-    "couleur": ["Blanc","Gris","Vert","Jaune"]
-},
-        "pied": {
-            "forme": "ventru",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc","Blanchâtre"]
-        },
-        "chair":{
-            "odeur": "agréable",
-            "saveur": "agréable",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": ["Automne"]
         }
     },
     {
         "id": "29",
         "rubrique": ["4"],
-        "url": "Chanterelle-Girolle",
         "vignette":"img/vignettes/champignonon29.jpg",
         "nom": "Chanterelle (Girolle)",
         "genre": "Cantharellus",
         "espece": "Cibarius",
         "famille": "Cantharellaceae",
         "organisation": "Champignons sans lames ni tubes",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Jaune d&#8217;\u0153uf orang\u00e9 ou palissant, lisse, convexe, puis irr\u00e9guli\u00e8rement d\u00e9prim\u00e9, marge lob\u00e9e (5-8 cm).<\/p>",
             "hymenium": "<p>Hym\u00e9nium avec plis fourchus, concolores au chapeau.<\/p>",
@@ -1580,45 +586,18 @@
             "chair": "<p>P\u00e2le, \u00e0 odeur fruit\u00e9e, go\u00fbt agr\u00e9able.<\/p>",
             "ecologie": "<p>Feuillus ou conif\u00e8res, \u00e0 terre sur la mousse.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Jaune","Orange"],
-            "forme": "Trompette",
-            "surface": "lisse",
-            "marge": ""
-        },
-        "pied": {
-            "forme": "atténué vers le bas",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Jaune","Orange"]
-        },
-        "chair":{
-            "odeur": "fruité",
-            "saveur": "agréable",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": ["Terre"],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": []
         }
     },
     {
         "id": "27",
         "rubrique": ["4"],
-        "url": "Clavaire-chou-fleur",
         "vignette":"img/vignettes/champignonon27.jpg",
         "nom": "Clavaire chou-fleur",
         "genre": "Ramaria",
         "espece": "Botrytis",
         "famille": "Ramariaceae",
         "organisation": "Champignons sans lames ni tubes",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Rameaux \u00e9pais, cr\u00e8me \u00e0 extr\u00e9mit\u00e9 rose purpurin (10-15 cm).<\/p>",
             "hymenium": "",
@@ -1626,45 +605,18 @@
             "chair": "<p>Blanche, agr\u00e9able.<\/p>",
             "ecologie": "<p>Feuillus.<\/p>",
             "remarques": "<p>Comestible m\u00e9diocre.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Rose"],
-            "forme": "Corail",
-            "surface": "",
-            "marge": ""
-        },
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanchâtre"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "agréable",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Feuillus"],
-            "saisons": []
         }
     },
     {
         "id": "26",
         "rubrique": ["4"],
-        "url": "Clavaire-jolie",
         "vignette":"img/vignettes/champignonon26.jpg",
         "nom": "Clavaire jolie",
         "genre": "Ramaria",
         "espece": "Formosa",
         "famille": "Ramariaceae",
         "organisation": "Champignons sans lames ni tubes",
-        "taille": "",
         "comestibilite": "Toxique – 3e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Rameaux allonge\u0301s, rose saumone\u0301 a\u0300 extre\u0301mite\u0301 jaune (10-15 cm).<\/p>",
             "hymenium": "",
@@ -1672,45 +624,18 @@
             "chair": "<p>Blanche, rose vineuse a\u0300 la coupe, ame\u0300re.<\/p>",
             "ecologie": "<p>Feuillus<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Rose","Jaune"],
-            "forme": "Corail",
-            "surface": "",
-            "marge": ""
-        },
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanchâtre"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "amère",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Feuillus"],
-            "saisons": []
         }
     },
     {
         "id": "80",
         "rubrique": ["78"],
-        "url": "Clitocybe-de-l-olivier",
         "vignette":"img/vignettes/champignonon80.jpg",
         "nom": "Clitocybe de l&#8217;olivier",
         "genre": "Omphalotus",
         "espece": "Olearius",
         "famille": "Marasmiaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 3e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Orang\u00e9 vif au d\u00e9but, se ternit de brun rouge\u00e2tre en vieillissant. Rev\u00eatement lisse \u00e0 fibrilleux, convexe, plan avec mamelon (8-15&nbsp;cm).<\/p>",
             "hymenium": "<p>D\u00e9currentes, fines, serr\u00e9es, subconcolores. Spor\u00e9e blanche.<\/p>",
@@ -1718,51 +643,18 @@
             "chair": "<p>P\u00e2le, ferme.<\/p>",
             "ecologie": "<p>Pousse en touffes, sur des souches.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "81",
         "rubrique": ["59"],
-        "url": "Clitocybe-nebuleux",
         "vignette":"img/vignettes/champignonon81.jpg",
         "nom": "Clitocybe nébuleux",
         "genre": "Clitocybe",
         "espece": "Nebularis",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Beige, gris, gris\u00e2tre, avec une zone centrale plus fonc\u00e9e. Glabre et sublubrifi\u00e9. Convexe avec un mamelon assez large (10-20 cm).<\/p>",
             "hymenium": "<p>Cr\u00e8me p\u00e2le, peu d\u00e9currentes, serr\u00e9es, se s\u00e9parant facilement du chapeau. Spor\u00e9e blanche.<\/p>",
@@ -1770,51 +662,18 @@
             "chair": "<p>Blanche \u00e0 odeur fongique.<\/p>",
             "ecologie": "<p>Conif\u00e8res et feuillus, ronds de sorci\u00e8re.<\/p>",
             "remarques": "<p>Comestible moyen, mais dans certains cas, serait \u00e0 l\u2019origine d\u2019intoxication sans gravit\u00e9 chez certaines personnes aller- giques aux compos\u00e9s chimiques \u00e0 triple liaison. Les vieux sp\u00e9cimens, bien conserv\u00e9s, contiennent des substances toxiques.<\/p>"
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "79",
         "rubrique": ["105"],
-        "url": "Clitocybes-blancs",
         "vignette":"img/vignettes/champignonon79.jpg",
         "nom": "Clitocybes blancs",
         "genre": "Clitocybe",
         "espece": "Phyllophila, pityophila",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 3e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Blanc givr\u00e9, zon\u00e9 de taches imbues, blanch\u00e2tres ocrac\u00e9es, plat \u00e0 l\u00e9g\u00e8rement d\u00e9prim\u00e9 (6-10 cm).<\/p>",
             "hymenium": "<p>Blanches, adn\u00e9es ou l\u00e9g\u00e8rement d\u00e9currentes. Spor\u00e9e blanche.<\/p>",
@@ -1822,51 +681,18 @@
             "chair": "<p>Blanche \u00e0 odeur farineuse ou aromatique.<\/p>",
             "ecologie": "<p>En for\u00eat de conif\u00e8res = C. pityophila.<br class='autobr' \/>\nEn for\u00eat de feuillus = C. phyllophila.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "82",
         "rubrique": ["105"],
-        "url": "Clitopile-petit-prune-Meunier",
         "vignette":"img/vignettes/champignonon82.jpg",
         "nom": "Clitopile petit prune (Meunier)",
         "genre": "Clitopilus",
         "espece": "Prunulus",
         "famille": "Entolomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Blanc, banch\u00e2tre, gris\u00e2tre au centre, rev\u00eatement m\u00e2t subvelout\u00e9. Convexe puis plan d\u00e9prim\u00e9, charnu, marge enroul\u00e9e (5-10 cm).<\/p>",
             "hymenium": "<p>Blanches puis roses \u00e0 m\u00e2turit\u00e9. Spor\u00e9e rose.<\/p>",
@@ -1874,51 +700,18 @@
             "chair": "<p>Blanche, \u00e0 forte odeur et saveur de farine fra\u00eeche.<\/p>",
             "ecologie": "<p>Feuillus et conif\u00e8res, clairi\u00e8res, lieux herbeux.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "13",
         "rubrique": ["107"],
-        "url": "Coprin-chevelu",
         "vignette":"img/vignettes/champignonon13.jpg",
         "nom": "Coprin chevelu",
         "genre": "Coprinus",
         "espece": "Comatus",
         "famille": "Coprinaceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Comestible",
-        "sporee": ["Noire ou autre couleur très foncée"],
         "description":{
             "chapeau": "<p>Blanc, rosissant, puis noircissant \u00e0 partir de la marge. Rev\u00eatement m\u00e9chu blanc \u00e0 cr\u00e8me, brun\u00e2tre avec l&#8217;\u00e2ge, campanul\u00e9.<\/p>",
             "hymenium": "<p>Blanches, roses puis noires, d\u00e9liquescentes.<\/p>",
@@ -1926,51 +719,18 @@
             "chair": "<p>Blanche. Odeur agr\u00e9able.<\/p>",
             "ecologie": "<p>Terrains vagues, pelouses.<\/p>",
             "remarques": "<p>De nombreux coprins sont \u00e9galement toxiques.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Blanc","Rose","Marron"],
-            "forme": "Campanule",
-            "surface": "écailles ou mèches",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"serrées",
-    "couleur": ["Blanc","Rose","Marron"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "anneau fugace",
-            "volve": "pas de volve",
-            "couleur": ["Blanc","Gris"]
-        },
-        "chair":{
-            "odeur": "agréable",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": ["Friches"],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": ["Printemps","Été","Automne"]
         }
     },
     {
         "id": "112",
         "rubrique": ["95"],
-        "url": "Coprin-micace",
         "vignette":"img/vignettes/champignonon112.jpg",
         "nom": "Coprin micacé",
         "genre": "Coprinus",
         "espece": "Micaceus",
         "famille": "Coprinaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Cr\u00e8me, beige, noisette vers le centre. Poudr\u00e9 de flocons blanch\u00e2tres. Ovo\u00efde \u00e0 campanul\u00e9, finement stri\u00e9.<\/p>",
             "hymenium": "<p>P\u00e2les puis noires, d\u00e9liquescentes. Serr\u00e9es, adh\u00e9rentes. Spor\u00e9e noire.<\/p>",
@@ -1978,51 +738,18 @@
             "chair": "<p>Mince inodore.<\/p>",
             "ecologie": "<p>En touffes sur souche, bois de feuillus. Du printemps \u00e0 l&#8217;automne.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "12",
         "rubrique": ["57"],
-        "url": "Coprin-noir-d-encre",
         "vignette":"img/vignettes/champignonon12.jpg",
         "nom": "Coprin noir d&#8217;encre",
         "genre": "Coprinus",
         "espece": "Atramentarius",
         "famille": "Coprinaceae",
         "organisation": "Champignons à lames",
-        "taille": "Taille moyenne ou port de collybie",
         "comestibilite": "Toxique – 4e groupe",
-        "sporee": ["Noire ou autre couleur très foncée"],
         "description":{
             "chapeau": "<p>Gris, brun-gris, rev\u00eatement glabre ou ridul\u00e9. Campanule puis largement \u00e9tal\u00e9 (5-10 m).<\/p>",
             "hymenium": "<p>Serr\u00e9es blanches, puis brun-pourpre d\u00e9liquescentes.<\/p>",
@@ -2030,51 +757,18 @@
             "chair": "<p>Blanche, odeur et saveur faibles.<\/p>",
             "ecologie": "<p>Parcs, tillis rud\u00e9ralis\u00e9s.<\/p>",
             "remarques": "<p>De nombreux coprins pr\u00e9sentent le m\u00eame type de toxicit\u00e9.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Gris","Marron"],
-            "forme": "Campanule",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"serrées",
-    "couleur": ["Blanc","Rouge","Marron"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "sans anneau",
-            "volve": "pas de volve",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "faible",
-            "saveur": "sans saveur",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": ["Prairies","Friches"],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": ["Printemps","Été","Automne"]
         }
     },
     {
         "id": "20",
         "rubrique": ["80"],
-        "url": "Cortinaire-couleur-de-rocou",
         "vignette":"img/vignettes/champignonon20.jpg",
         "nom": "Cortinaire couleur de rocou",
         "genre": "Cortinarius",
         "espece": "Orellanus",
         "famille": "Cortinariaceae",
         "organisation": "Champignons à lames",
-        "taille": "Taille moyenne ou port de collybie",
         "comestibilite": "Très toxique – 1er groupe",
-        "sporee": ["Marron, brun, rouille"],
         "description":{
             "chapeau": "<p>Brun, roux orang\u00e9, fibrillo-squamuleux, convexe (5-10 cm).<\/p>",
             "hymenium": "<p>Espac\u00e9es, adn\u00e9es, orang\u00e9es puis rouille.<\/p>",
@@ -2082,51 +776,18 @@
             "chair": "<p>Jaun\u00e2tre, odeur raphano\u00efde.<\/p>",
             "ecologie": "<p>Feuillus m\u00eal\u00e9s thermophiles. Acidophile.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Orange","Rouge","Marron"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "83",
         "rubrique": ["92","110"],
-        "url": "Entolome-en-bouclier",
         "vignette":"img/vignettes/champignonon83.jpg",
         "nom": "Entolome en bouclier",
         "genre": "Entoloma",
         "espece": "Clypeatum",
         "famille": "Entolomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Gris brun, hygrophane. Marge enroul\u00e9e, ondul\u00e9e (8-10 cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es, \u00e9chancr\u00e9es, blanc gris rose.<\/p>",
@@ -2134,51 +795,18 @@
             "chair": "<p>Odeur et saveur farineuse.<\/p>",
             "ecologie": "<p>Printemps \/ lisi\u00e8res, haies, taillis, rosac\u00e9es arbustives. Souvent gr\u00e9gaire \u00e0 cespiteux.<\/p>",
             "remarques": "<p>Comestible moyen.<\/p>"
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "84",
         "rubrique": ["92","109"],
-        "url": "Entolome-livide",
         "vignette":"img/vignettes/champignonon84.jpg",
         "nom": "Entolome livide",
         "genre": "Entoloma",
         "espece": "Lividum",
         "famille": "Entolomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 3e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Cr\u00e8me ocrac\u00e9, \u00e0 nuances gris\u00e2tres, rev\u00eatement glabre, lisse \u00e0 ridul\u00e9 (verget\u00e9), convexe, charnu \u00e0 plan mamelonn\u00e9, marge enroul\u00e9e [6-10 (15) cm].<\/p>",
             "hymenium": "<p>Peu serr\u00e9es, \u00e9chancr\u00e9es, jaun\u00e2tres, puis rose saumon. Spor\u00e9e rose.<\/p>",
@@ -2186,51 +814,18 @@
             "chair": "<p>Blanche et ferme \u00e0 odeur forte de farine.<\/p>",
             "ecologie": "<p>Feuillus argilo-calcaires.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "86",
         "rubrique": ["81","98"],
-        "url": "Galere-marginee",
         "vignette":"img/vignettes/champignonon86.jpg",
         "nom": "Galère marginée",
         "genre": "Galerina",
         "espece": "Marginata",
         "famille": "Strophariaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Très toxique – 1er groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Brun fauve humide \u00e0 ocre-jaune en s\u00e9chant (hygrophane). Lisse, convexe (4-7 cm).<\/p>",
             "hymenium": "<p>\u00c9troites et serr\u00e9es, adn\u00e9es brun p\u00e2le \u00e0 ocrac\u00e9es et ar\u00eate blanch\u00e2tre. Spor\u00e9e ocre rouille.<\/p>",
@@ -2238,51 +833,18 @@
             "chair": "<p>Odeur farineuse.<\/p>",
             "ecologie": "<p>Esp\u00e8ces isol\u00e9es sur souches enfonc\u00e9es dans le sol.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "15",
         "rubrique": ["3"],
-        "url": "Gyromitre-delicieux",
         "vignette":"img/vignettes/champignonon15.jpg",
         "nom": "Gyromitre délicieux",
         "genre": "Gyromitra",
         "espece": "Esculenta",
         "famille": "Discinaceae",
         "organisation": "Champignons sans lames ni tubes",
-        "taille": "Taille moyenne ou port de collybie",
         "comestibilite": "Toxique – 2e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>\u00c0 lobes c\u00e9r\u00e9briformes arrondis, bistre roux \u00e0 brun-rouille (5-10 cm).<\/p>",
             "hymenium": "",
@@ -2290,45 +852,18 @@
             "chair": "<p>P\u00e2le, odeur aromatique.<\/p>",
             "ecologie": "<p>Acidophile, sous conif\u00e8res en montagne.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Orange","Rouge","Marron"],
-            "forme": "Cérébriforme",
-            "surface": "",
-            "marge": ""
-        },
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "106",
         "rubrique": ["82"],
-        "url": "Hypholome-couleur-de-brique",
         "vignette":"img/vignettes/champignonon106.jpg",
         "nom": "Hypholome couleur de brique",
         "genre": "Hypholoma",
         "espece": "Sublaterritium",
         "famille": "Strophariaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Convexe, charnu, lisse, fibrilleux, rouge brique au centre (5-10&nbsp;cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es, adn\u00e9es, jaunes puis gris\u00e2tre.<\/p>",
@@ -2336,51 +871,18 @@
             "chair": "<p>Jaune p\u00e2le \u00e0 brun, l\u00e9g\u00e8rement am\u00e8re.<\/p>",
             "ecologie": "<p>Lignicoles, pousse en touffes.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "104",
         "rubrique": ["72"],
-        "url": "Hypholome-en-touffes",
         "vignette":"img/vignettes/champignonon104.jpg",
         "nom": "Hypholome en touffes",
         "genre": "Hypholoma",
         "espece": "Fasciculare",
         "famille": "Strophariaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 2e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Sec, lisse, jaune citrin \u00e0 centre l\u00e9g\u00e8rement brun fauve (4-6 cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es, jaune verd\u00e2tre, violet noir\u00e2tre \u00e0 maturit\u00e9.<\/p>",
@@ -2388,51 +890,18 @@
             "chair": "<p>Jaune, inodore \u00e0 saveur am\u00e8re.<\/p>",
             "ecologie": "<p>Pousse en touffes sur souches, branches mortes, conif\u00e8res, feuillus.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "113",
         "rubrique": ["97"],
-        "url": "Inocybe-a-spores-etoilees",
         "vignette":"img/vignettes/champignonon113.jpg",
         "nom": "Inocybe à spores étoilées",
         "genre": "Inocybe",
         "espece": "Asterospora",
         "famille": "Cortinariaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 2e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Roux fonc\u00e9 \u00e0 brun gris\u00e2tre, lisse mais fribrilleux (ray\u00e9) \u00e0 crevasse vers la marge, conique (4-5 cm).<\/p>",
             "hymenium": "<p>Beiges argilac\u00e9es. Spor\u00e9e ocre.<\/p>",
@@ -2440,51 +909,18 @@
             "chair": "<p>Subconcolore, sans odeur ou go\u00fbt particulier.<\/p>",
             "ecologie": "<p>Feuillus m\u00eal\u00e9s, lisi\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "51",
         "rubrique": ["44"],
-        "url": "Lactaire-a-lait-abondant-Vachotte",
         "vignette":"img/vignettes/champignonon51.jpg",
         "nom": "Lactaire à lait abondant (Vachotte)",
         "genre": "Lactarius",
         "espece": "Volemus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "Taille moyenne ou port de collybie",
         "comestibilite": "Comestible",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Orang\u00e9 roux plus ou moins brun\u00e2tre, sub- velout\u00e9 (8-10 cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es, cr\u00e8me jaun\u00e2tre.<\/p>",
@@ -2492,51 +928,18 @@
             "chair": "<p>Douce, p\u00e2le \u00e0 lait tr\u00e8s abondant blanc, odeur de topinambour. Saveur l\u00e9g\u00e8rement am\u00e8re.<\/p>",
             "ecologie": "<p>Feuillus.<\/p>",
             "remarques": "<p>Comestible m\u00e9diocre.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Blanchâtre","Beige","Jaune","Orange","Roux"],
-            "forme": "",
-            "surface": "lisse",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"décurrentes",
-    "densite":"serrées",
-    "couleur": ["Crème","Jaune","Ocre","Rouge"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanchâtre","Beige","Orange"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "agréable",
-            "couleur": [],
-            "lait": ["immuable","blanc"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": ["Été"]
         }
     },
     {
         "id": "52",
         "rubrique": ["35"],
-        "url": "Lactaire-a-lait-jaune-d-or",
         "vignette":"img/vignettes/champignonon52.jpg",
         "nom": "Lactaire à lait jaune d’or",
         "genre": "Lactarius",
         "espece": "Chrysorrheus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Zon\u00e9 d&#8217;\u00f4cre rouge\u00e2tre sur fond jaune (abricot) p\u00e2le (4-8 cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es, cr\u00e8me rose.<\/p>",
@@ -2544,51 +947,18 @@
             "chair": "<p>Blanche, jaunit \u00e0 la coupe. Lait blanc \u00e0 jaunissement dor\u00e9 vif. Saveur \u00e2cre.<\/p>",
             "ecologie": "<p>Surtout ch\u00eanes.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Crème","Ocre","Orange","Rouge"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"serrées",
-    "couleur": ["Crème","Rose"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanchâtre","Crème","Rose","Orange"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "amère",
-            "couleur": [],
-            "lait": ["blanc","puis jaune"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Chênes","Feuillus"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "56",
         "rubrique": ["37"],
-        "url": "Lactaire-couleur-de-poix",
         "vignette":"img/vignettes/champignonon56.jpg",
         "nom": "Lactaire couleur de poix",
         "genre": "Lactarius",
         "espece": "Picinus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Jaune, jaunâtre, ocre"],
         "description":{
             "chapeau": "<p>Brun noir\u00e2tre, marbr\u00e9 de beige gris\u00e2tre vers la marge. Lisse, velout\u00e9. Convexe puis d\u00e9prim\u00e9.<\/p>",
             "hymenium": "<p>P\u00e2les \u00e0 cr\u00e8me ocrac\u00e9. Lames serr\u00e9es.<\/p>",
@@ -2596,51 +966,18 @@
             "chair": "<p>Blanche, presque immuable. Latex blanc peu abondant immuable isol\u00e9 mais rosissant sur la chair. Saveur \u00e2cre.<\/p>",
             "ecologie": "<p>Sous conif\u00e8res, \u00e9pic\u00e9as en montagne. En automne.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Beige","Gris","Brun","Noircissant"],
-            "forme": "Convexe arrondie",
-            "surface": "velouté",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"serrées",
-    "couleur": ["Crème","Ocre"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Beige","Gris","Brun"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["blanc","puis rose"]
-        },
-        "ecologie":{
-            "habitat": ["Montagne"],
-            "substrat": [],
-            "vegetation": ["Conifères","Épicéeas"],
-            "saisons": ["Automne"]
         }
     },
     {
         "id": "60",
         "rubrique": ["32"],
-        "url": "Lactaire-de-l-epicea",
         "vignette":"img/vignettes/champignonon60.jpg",
         "nom": "Lactaire de l&#8217;épicéa",
         "genre": "Lactarius",
         "espece": "Deterrimus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": ["Jaune, jaunâtre, ocre"],
         "description":{
             "chapeau": "<p>Orang\u00e9 terne, givr\u00e9, verdissant. Peu zon\u00e9.<\/p>",
             "hymenium": "<p>Lames orang\u00e9es, carn\u00e9es dans le fond, vert sombre dans les blessures. Serr\u00e9es.<\/p>",
@@ -2648,51 +985,18 @@
             "chair": "<p>Blanch\u00e2tre \u00e0 la coupe. Latex orang\u00e9 peu abondant. Saveur un peu \u00e2cre, odeur faible de carotte.<\/p>",
             "ecologie": "<p>Sous \u00e9pic\u00e9as, en \u00e9t\u00e9 et automne.<\/p>",
             "remarques": "<p>Comestible m\u00e9diocre.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Orange"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"serrées",
-    "couleur": ["Vert","Orange"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Orange"]
-        },
-        "chair":{
-            "odeur": "faible",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["immuable","orange","rouge"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Épicéeas"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "61",
         "rubrique": ["32"],
-        "url": "Lactaire-delicieux",
         "vignette":"img/vignettes/champignonon61.jpg",
         "nom": "Lactaire délicieux",
         "genre": "Lactarius",
         "espece": "Deliciosus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": ["Jaune, jaunâtre, ocre"],
         "description":{
             "chapeau": "<p>Zon\u00e9, ocre orang\u00e9 sur fond couleur de brique. Cuticule lisse peu visqueuse (10-15 cm).<\/p>",
             "hymenium": "<p>Orange vif, taches vertes.<\/p>",
@@ -2700,51 +1004,18 @@
             "chair": "<p>Orang\u00e9 p\u00e2le, lait orang\u00e9 carotte immuable.<\/p>",
             "ecologie": "<p>Sous les pins, en automne.<\/p>",
             "remarques": "<p>Tr\u00e8s recherch\u00e9 dans les r\u00e9gions o\u00f9 il abonde.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Ocre","Orange","Rouge"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"serrées",
-    "couleur": ["Vert","Orange"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Orange"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["immuable","orange","rouge"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Pins"],
-            "saisons": ["Automne"]
         }
     },
     {
         "id": "59",
         "rubrique": ["32"],
-        "url": "Lactaire-du-sapin",
         "vignette":"img/vignettes/champignonon59.jpg",
         "nom": "Lactaire du sapin",
         "genre": "Lactarius",
         "espece": "Salmonicolor",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": ["Jaune, jaunâtre, ocre"],
         "description":{
             "chapeau": "<p>Jaune orang\u00e9 avec zones plus fonc\u00e9es. Cuticule humide.<\/p>",
             "hymenium": "<p>Lames oranges saumon\u00e9, verdissantes dans les blessures. Serr\u00e9es.<\/p>",
@@ -2752,51 +1023,18 @@
             "chair": "<p>P\u00e2le \u00e0 lait orang\u00e9 satur\u00e9. Odeur d\u00e9sagr\u00e9able, saveur amarescente, un peu \u00e2cre. Latex orange puis brunissant.<\/p>",
             "ecologie": "<p>Sous sapins, en \u00e9t\u00e9 et en automne.<\/p>",
             "remarques": "<p>Comestible m\u00e9diocres souvent confondus avec les meilleurs. Les gros exemplaires peuvent \u00eatre cuits au grill. Les jeunes supportent parfaitement le vinaigre.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Jaune","Orange"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"serrées",
-    "couleur": ["Rose","Vert","Orange"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Jaune","Orange"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["immuable","orange","rouge"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Sapins"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "55",
         "rubrique": ["37"],
-        "url": "Lactaire-fuligineux",
         "vignette":"img/vignettes/champignonon55.jpg",
         "nom": "Lactaire fuligineux",
         "genre": "Lactarius",
         "espece": "Fuliginosus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Jaune, jaunâtre, ocre"],
         "description":{
             "chapeau": "<p>Brun\u00e2tre \u00e0 caf\u00e9 au lait, gris\u00e2tre et marbr\u00e9 de rouss\u00e2tre. Velout\u00e9.<\/p>",
             "hymenium": "<p>Ocrac\u00e9es \u00e0 saumon\u00e9 jaun\u00e2tre, roussissantes.<\/p>",
@@ -2804,51 +1042,18 @@
             "chair": "<p>Rosissante puis reflets briquet\u00e9s. Latex blanc immuable isol\u00e9. Saveur \u00e2cre.<\/p>",
             "ecologie": "<p>Sous feuillus, taillis de charmes. De l&#8217;\u00e9t\u00e9 \u00e0 l&#8217;automne.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Gris","Brun","Roux"],
-            "forme": "",
-            "surface": "velouté",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": ["Rose","Jaune","Ocre","Roux"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Gris","Brun","Roux"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["blanc","puis rose"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Feuillus"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "54",
         "rubrique": ["36"],
-        "url": "Lactaire-humide",
         "vignette":"img/vignettes/champignonon54.jpg",
         "nom": "Lactaire humide",
         "genre": "Lactarius",
         "espece": "Uvidus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Blanch\u00e2tre \u00e0 cr\u00e8me gris\u00e2tre p\u00e2le, plus ou moins violet\u00e9. Visqueux.<\/p>",
             "hymenium": "<p>Cr\u00e8me p\u00e2le, violac\u00e9es au toucher.<\/p>",
@@ -2856,51 +1061,18 @@
             "chair": "<p>Blanche \u00e0 cr\u00e8me jaun\u00e2tre, fragile. Saveur accrescente \u00e0 amarescente. Lait blanc violacens sur les lames, immuable isol\u00e9. Spor\u00e9e cr\u00e8me sale.<\/p>",
             "ecologie": "<p>Pessi\u00e8res humides, bouleaux, isol\u00e9. De l\u00e9t\u00e9 \u00e0 l&#8217;automne.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanchâtre","Crème","Gris","Bleu et violet"],
-            "forme": "",
-            "surface": "Visqueux",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": ["Blanchâtre","Crème","Gris","Bleu et violet"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanchâtre","Bleu et violet"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["blanc","puis violet"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Bouleaux"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "58",
         "rubrique": ["38"],
-        "url": "Lactaire-muqueux",
         "vignette":"img/vignettes/champignonon58.jpg",
         "nom": "Lactaire muqueux",
         "genre": "Lactarius",
         "espece": "Blennius",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Brun rouge\u00e2tre, parfois violet\u00e9 fonc\u00e9 \u00e0 reflets olivac\u00e9s. Zon\u00e9 ou tach\u00e9, quttul\u00e9 vers le bord. Tr\u00e8s visqueux.<\/p>",
             "hymenium": "<p>Blanc pur puis cr\u00e8me tr\u00e8s p\u00e2le.<\/p>",
@@ -2908,51 +1080,18 @@
             "chair": "<p>P\u00e2le \u00e0 subconcolore, assez ferme puis molle. Lait abondant s\u00e9chant en perles gris olive sur les lames. Lait tr\u00e8s \u00e2cre.<\/p>",
             "ecologie": "<p>H\u00eatre uniquement.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Gris","Brun","Bleu et violet","Rouge"],
-            "forme": "",
-            "surface": "Visqueux",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": ["Blanc","Crème"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc","Crème","Gris","Rouge"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["blanc","puis vert ou gris"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Hêtres"],
-            "saisons": []
         }
     },
     {
         "id": "57",
         "rubrique": ["38"],
-        "url": "Lactaire-plombe",
         "vignette":"img/vignettes/champignonon57.jpg",
         "nom": "Lactaire plombé",
         "genre": "Lactarius",
         "espece": "Necator",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Brun olive, mastic, noir\u00e2tre au disque, bord plus jaune verd\u00e2tre. Brillant, sale. Vaguement zon\u00e9 fibrilleux, \u00e0 marge longtemps enroul\u00e9e, un peu barbue.<\/p>",
             "hymenium": "<p>Lames blanches puis lav\u00e9es de verd\u00e2tre, tach\u00e9es de roux ou de brun olive. Serr\u00e9es, subd\u00e9currentes.<\/p>",
@@ -2960,51 +1099,18 @@
             "chair": "<p>Un peu brunissante, sale. Lait s\u00e9chant en jaune verd\u00e2tre sur les lames. Tr\u00e8s \u00e2cre.<\/p>",
             "ecologie": "<p>For\u00eats m\u00eal\u00e9es, surtout avec les bouleaux.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Gris","Brun","Vert","Jaune"],
-            "forme": "",
-            "surface": "",
-            "marge": "enroulée"
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"subdécurrentes",
-    "densite":"serrées",
-    "couleur": ["Blanc","Brun","Vert","Roux"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc","Brun","Vert"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["blanc","puis vert ou gris"]
-        },
-        "ecologie":{
-            "habitat": ["Forêts"],
-            "substrat": [],
-            "vegetation": ["Bouleaux"],
-            "saisons": []
         }
     },
     {
         "id": "47",
         "rubrique": ["39"],
-        "url": "Lactaire-poivre",
         "vignette":"img/vignettes/champignonon47.jpg",
         "nom": "Lactaire poivré",
         "genre": "Lactarius",
         "espece": "Piperatus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Blanc puis ocre rouill\u00e9 (6-12 cm).<\/p>",
             "hymenium": "<p>Tr\u00e8s serr\u00e9es, d\u00e9currentes, cr\u00e8me carn\u00e9.<\/p>",
@@ -3012,51 +1118,18 @@
             "chair": "<p>Blanche, grenue, odeur faible, \u00e2cre, lait blanc immuable.<\/p>",
             "ecologie": "<p>Feuillus, parfois conif\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanc","Blanchâtre","Ocre","Roux"],
-            "forme": "",
-            "surface": "lisse",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "Lamelles anastomosées",
-    "insertion":"décurrentes",
-    "densite":"serrées",
-    "couleur": ["Blanc","Crème","Brun"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc","Crème"]
-        },
-        "chair":{
-            "odeur": "faible",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["immuable","blanc"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": []
         }
     },
     {
         "id": "50",
         "rubrique": ["41"],
-        "url": "Lactaire-pubescent",
         "vignette":"img/vignettes/champignonon50.jpg",
         "nom": "Lactaire pubescent",
         "genre": "Lactarius",
         "espece": "Pubescens",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "Taille moyenne ou port de collybie",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Blanc \u00e0 cr\u00e8me ros\u00e2tre plus ou moins zon\u00e9 de rouge. Marge enroul\u00e9e, laineuse (6-10 cm).<\/p>",
             "hymenium": "<p>\u00c0 reflets ros\u00e2tres.<\/p>",
@@ -3064,51 +1137,18 @@
             "chair": "<p>Blanche, \u00e2cre, lait blanc.<\/p>",
             "ecologie": "<p>Bouleaux, pelouses.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanchâtre","Beige","Crème","Rose","Orange"],
-            "forme": "Convexe ombiliquée",
-            "surface": "laineux",
-            "marge": "enroulée"
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"subdécurrentes",
-    "densite":"serrées",
-    "couleur": ["Blanc","Crème","Rose"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanchâtre","Rose"]
-        },
-        "chair":{
-            "odeur": "fruité",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["immuable","blanc"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Bouleaux"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "18",
         "rubrique": ["34"],
-        "url": "Lactaire-sanguin",
         "vignette":"img/vignettes/champignonon18.jpg",
         "nom": "Lactaire sanguin (Roussillous des Catalans)",
         "genre": "Lactarius",
         "espece": "Sanguifluus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Zon\u00e9 de ros\u00e2tre et d&#8217;orang\u00e9, verdissant peu (6-12 cm).<\/p>",
             "hymenium": "<p>Orang\u00e9es \u00e0 reflets roses puis vineux.<\/p>",
@@ -3116,51 +1156,18 @@
             "chair": "<p>Blanche \u00e0 la coupe rougissante par le lait de teinte rouge-vineux (&#171;&nbsp;Sanguin&nbsp;&#187;).<\/p>",
             "ecologie": "<p>Sous les pins en zone m\u00e9ridionale.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Rose","Vert","Orange","Rouge"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": ["Rose","Orange","Rouge"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Rose","Bleu et violet","Orange","Rouge"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "amère",
-            "couleur": [],
-            "lait": ["immuable","rouge"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Pins"],
-            "saisons": []
         }
     },
     {
         "id": "53",
         "rubrique": ["35"],
-        "url": "Lactaire-scrobicule",
         "vignette":"img/vignettes/champignonon53.jpg",
         "nom": "Lactaire scrobiculé",
         "genre": "Lactarius",
         "espece": "Scrobiculatus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>En forme d\u2019entonnoir, marge enroul\u00e9e, jaune ochrac\u00e9, plus ou moins zon\u00e9 (20 cm).<\/p>",
             "hymenium": "<p>Espac\u00e9es, sub-d\u00e9currentes, cr\u00e8me p\u00e2le, jaunissantes.<\/p>",
@@ -3168,51 +1175,18 @@
             "chair": "<p>Lait blanch\u00e2tre, jaunissant \u00e0 l\u2019air, \u00e2cre.<\/p>",
             "ecologie": "<p>Conif\u00e8res de montagne.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Brun","Jaune","Ocre","Roux"],
-            "forme": "",
-            "surface": "Visqueux",
-            "marge": "enroulée"
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"subdécurrentes",
-    "densite":"espacées",
-    "couleur": ["Crème","Brun","Jaune","Roux"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanchâtre","Jaune","Roux"]
-        },
-        "chair":{
-            "odeur": "fruité",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["blanc","puis jaune"]
-        },
-        "ecologie":{
-            "habitat": ["Montagne"],
-            "substrat": [],
-            "vegetation": ["Conifères","Épicéeas"],
-            "saisons": []
         }
     },
     {
         "id": "49",
         "rubrique": ["41"],
-        "url": "Lactaire-toisonne",
         "vignette":"img/vignettes/champignonon49.jpg",
         "nom": "Lactaire toisonné",
         "genre": "Lactarius",
         "espece": "Torminosus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "Taille moyenne ou port de collybie",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Zon\u00e9 de rouge brique et rose \u00e0 marge enroul\u00e9e et barbue ou laineuse, Creux (8-12 cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es, subd\u00e9currentes, blanch\u00e2tres \u00e0 ros\u00e9es.<\/p>",
@@ -3220,51 +1194,18 @@
             "chair": "<p>Blanch\u00e2tre, odeur faiblement fruit\u00e9e. Lait blanc immuable<br class='autobr' \/>\n(jaunissant sur tissu blanc).<\/p>",
             "ecologie": "<p>Bouleaux.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanchâtre","Beige","Orange"],
-            "forme": "Convexe ombiliquée",
-            "surface": "laineux",
-            "marge": "enroulée"
-        },
-         "lames": {
-    "forme": "Lamelles anastomosées",
-    "insertion":"subdécurrentes",
-    "densite":"serrées",
-    "couleur": ["Crème","Rose"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanchâtre","Crème","Rose"]
-        },
-        "chair":{
-            "odeur": "fruité",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["immuable","blanc"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Bouleaux"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "48",
         "rubrique": ["40"],
-        "url": "Lactaire-veloute",
         "vignette":"img/vignettes/champignonon48.jpg",
         "nom": "Lactaire velouté",
         "genre": "Lactarius",
         "espece": "Vellereus",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Blanc cr\u00e8me velout\u00e9, convexe puis creux [10-20 (30) cm].<\/p>",
             "hymenium": "<p>Espac\u00e9es, blanches salies de cr\u00e8me, d\u00e9currentes.<\/p>",
@@ -3272,51 +1213,18 @@
             "chair": "<p>Grenue, \u00e2cre, blanche \u00e0 lait blanc abondant.<\/p>",
             "ecologie": "<p>Feuillus.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanc","Blanchâtre","Crème","Ocre"],
-            "forme": "Convexe",
-            "surface": "velouté",
-            "marge": "enroulée"
-        },
-         "lames": {
-    "forme": "Lamelles anastomosées",
-    "insertion":"décurrentes",
-    "densite":"espacées",
-    "couleur": ["Blanc","Blanchâtre","Crème","Jaune"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc","Blanchâtre"]
-        },
-        "chair":{
-            "odeur": "faible",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["immuable","blanc"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Feuillus","Hêtres"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "19",
         "rubrique": ["121"],
-        "url": "Lepiote-brun-rose",
         "vignette":"img/vignettes/champignonon19.jpg",
         "nom": "Lépiote brun rose",
         "genre": "Lepiota",
         "espece": "brunneoincarnata",
         "famille": "Agaricaceae",
         "organisation": "Champignons à lames",
-        "taille": "Petite taille ou port de mycène",
         "comestibilite": "Très toxique – 1er groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Calotte (centre) brun vineux, \u00e9cailles brun ros\u00e2tre, peu charnu (3-5 cm).<\/p>",
             "hymenium": "<p>Blanches, libres.<\/p>",
@@ -3324,51 +1232,18 @@
             "chair": "<p>Blanche \u00e0 vineuse, \u00e0 odeur faiblement fruit\u00e9e.<\/p>",
             "ecologie": "<p>Lisi\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Rose","Marron"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "111",
         "rubrique": ["119"],
-        "url": "Lepiote-deguenillee",
         "vignette":"img/vignettes/champignonon111.jpg",
         "nom": "Lépiote déguenillée",
         "genre": "Macrolepiota",
         "espece": "Rhacodes",
         "famille": "Agaricaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Calotte (disque central) et grosses \u00e9cailles retrouss\u00e9es concentriques, beige brun\u00e2tre, convexe (10-15 cm).<\/p>",
             "hymenium": "<p>Libres, blanc cr\u00e8me, salies au toucher. Spor\u00e9e blanche.<\/p>",
@@ -3376,51 +1251,18 @@
             "chair": "<p>Rougissante (teint\u00e9e d&#8217;orang\u00e9).<\/p>",
             "ecologie": "<p>Conif\u00e8res, lisi\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "110",
         "rubrique": ["119"],
-        "url": "Lepiote-elevee",
         "vignette":"img/vignettes/champignonon110.jpg",
         "nom": "Lépiote élevée",
         "genre": "Macrolepiota",
         "espece": "Procera",
         "famille": "Agaricaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Calotte discale mame- lonn\u00e9e brune et squames r\u00e9guliers circulaires brun\u00e2tres [10-25 (40) cm].<\/p>",
             "hymenium": "<p>Blanc cr\u00e8me, libres. Spor\u00e9e blanche.<\/p>",
@@ -3428,51 +1270,18 @@
             "chair": "",
             "ecologie": "<p>Pr\u00e9s, clairi\u00e8res, for\u00eats calcaires de feuillus.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "7",
         "rubrique": ["47","100"],
-        "url": "Lepiote-pudique",
         "vignette":"img/vignettes/champignonon7.jpg",
         "nom": "Lépiote pudique",
         "genre": "Leucoagricus",
         "espece": "Leucothites",
         "famille": "Agaricaceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Comestible",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Blanch\u00e2tre, parfois plus fonc\u00e9 vers le centre. Lisse.<\/p>",
             "hymenium": "<p>Blanches puis plus ou moins ros\u00e9es. Serr\u00e9es.<\/p>",
@@ -3480,51 +1289,18 @@
             "chair": "<p>Blanche. Odeur et saveur agr\u00e9ables.<\/p>",
             "ecologie": "<p>Parcs, jardins, tendance nitrophile. En automne.<\/p>",
             "remarques": "<p>Par prudence une bonne connaissance des esp\u00e8ces ressemblantes est n\u00e9cessaire avant toute consommation. Attention aux zones pollu\u00e9es.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Blanchâtre"],
-            "forme": "",
-            "surface": "lisse",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"libres",
-    "densite":"serrées",
-    "couleur": ["Blanc"]
-},
-        "pied": {
-            "forme": "bulbeux",
-            "anneau": "anneau coulissant",
-            "volve": "pas de volve",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "agréable",
-            "saveur": "agréable",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": ["Automne"]
         }
     },
     {
         "id": "109",
         "rubrique": ["88"],
-        "url": "Marasme-des-oreades-faux-mousseron",
         "vignette":"img/vignettes/champignonon109.jpg",
         "nom": "Marasme des oréades (faux mousseron)",
         "genre": "Marasmius",
         "espece": "Oreades",
         "famille": "Marasmiaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Ocre marron, cr\u00e8me, hygrophane, marge ondul\u00e9e (cr\u00e9nel\u00e9e) \u00e0 rev\u00eatement m\u00e2t. Convexe \u00e0 plan (3-5 cm).<\/p>",
             "hymenium": "<p>Espac\u00e9es, cr\u00e8me, non d\u00e9currentes. Spor\u00e9e blanche.<\/p>",
@@ -3532,51 +1308,18 @@
             "chair": "<p>P\u00e2le \u00e0 odeur coumarinique (cyanique).<\/p>",
             "ecologie": "<p>Pelouses, prairies.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "16",
         "rubrique": ["3"],
-        "url": "Morille-ronde",
         "vignette":"img/vignettes/champignonon16.jpg",
         "nom": "Morille ronde",
         "genre": "Morchella",
         "espece": "Rotunda",
         "famille": "Morchellaceae",
         "organisation": "Champignons sans lames ni tubes",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Ocre brun\u00e2tre \u00e0 c\u00f4tes irr\u00e9guli\u00e8res plus claires, alv\u00e9oles in\u00e9gales et profondes (10-20 cm).<\/p>",
             "hymenium": "",
@@ -3584,45 +1327,18 @@
             "chair": "<p>P\u00e2le \u00e0 odeur fongique<\/p>",
             "ecologie": "<p>Taillis, fr\u00eanes, ormes, lieux frais, printani\u00e8re tardive.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Orange","Rouge","Marron"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "23",
         "rubrique": ["7"],
-        "url": "Nonette-voilee",
         "vignette":"img/vignettes/champignonon23.jpg",
         "nom": "Nonette voilée",
         "genre": "Suillus",
         "espece": "Luteus",
         "famille": "Boletaceae",
         "organisation": "Champignons à tubes",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Charnu, convexe, brun sombre ou chocolat pourpr\u00e9. Cuticule tr\u00e8s visqueuse (8-12 cm).<\/p>",
             "hymenium": "<p>Pores r\u00e9guliers et fins, jaunes puis ocre oliv\u00e2tre. Tubes adn\u00e9s.<\/p>",
@@ -3630,51 +1346,18 @@
             "chair": "<p>Ferme, blanche \u00e0 jaune, saveur douce.<\/p>",
             "ecologie": "<p>Sous les pins.<\/p>",
             "remarques": "<p>Comestible \u00e0 condition d\u2019\u00e9plucher la cuticule<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Brun","Marron"],
-            "forme": "Convexe",
-            "surface": "Visqueux",
-            "marge": ""
-        },
-         "pores": {
-    "forme": "Anguleux",
-    "insertion": "Adnés",
-    "taille": "petits",
-    "couleur": ["Vert","Jaune","Orange"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "avec anneau",
-            "volve": "",
-            "couleur": ["Brun","Jaune"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Pins"],
-            "saisons": []
         }
     },
     {
         "id": "17",
         "rubrique": ["97"],
-        "url": "Paxille-enroule",
         "vignette":"img/vignettes/champignonon17.jpg",
         "nom": "Paxille enroulé",
         "genre": "Paxillus",
         "espece": "Involutus",
         "famille": "Paxillaceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Toxique – 2e groupe",
-        "sporee": ["Jaune, jaunâtre, ocre","Marron, brun, rouille"],
         "description":{
             "chapeau": "<p>Brun jaun\u00e2tre \u00e0 brun rouill\u00e9. Convexe, mamelonn\u00e9, un peu visqueux au d\u00e9but. Marge velout\u00e9e et enroul\u00e9e, cannel\u00e9e (10-15 cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es, d\u00e9currentes, facilement s\u00e9parables du chapeau, moutarde, ocrac\u00e9es, roussissant au froissement, puis brun-rouille.<\/p>",
@@ -3682,51 +1365,18 @@
             "chair": "<p>Plus ou moins jaune.<\/p>",
             "ecologie": "<p>Feuillus, conif\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Jaune","Orange","Rouge","Marron"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "28",
         "rubrique": ["4"],
-        "url": "Pezize-couronnee",
         "vignette":"img/vignettes/champignonon28.jpg",
         "nom": "Pézize couronnée",
         "genre": "Sarcophaera",
         "espece": "Crassa",
         "famille": "Pezizaceae",
         "organisation": "Champignons sans lames ni tubes",
-        "taille": "",
         "comestibilite": "Toxique – 3e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Coupe \u00e9toil\u00e9e \u00e0 int\u00e9rieur violet, ext\u00e9rieur blanch\u00e2tre [8-10 (12) cm].<\/p>",
             "hymenium": "",
@@ -3734,45 +1384,18 @@
             "chair": "",
             "ecologie": "<p>Bois calcaires au printemps.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanchâtre","Bleu et violet"],
-            "forme": "Forme de coupe",
-            "surface": "",
-            "marge": ""
-        },
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": ["Bois"],
-            "substrat": ["Calcicole"],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "115",
         "rubrique": ["98"],
-        "url": "Pholiote-changeante",
         "vignette":"img/vignettes/champignonon115.jpg",
         "nom": "Pholiote changeante",
         "genre": "Kuehneromyces",
         "espece": "Mutabilis",
         "famille": "Crepidotaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Hygrophane, brun de datte, centre plus p\u00e2le, jaun\u00e2tre ocre clair. Convexe lisse (4-7 cm).<\/p>",
             "hymenium": "<p>Adn\u00e9es, beige clair puis rousses. Ar\u00eate givr\u00e9e. Spor\u00e9e ocre rouille.<\/p>",
@@ -3780,51 +1403,18 @@
             "chair": "<p>P\u00e2le \u00e0 odeur et saveur fongiques.<\/p>",
             "ecologie": "<p>Pousse en touffes denses sur souches de feuillus.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "114",
         "rubrique": ["98"],
-        "url": "Pholiote-du-peuplier",
         "vignette":"img/vignettes/champignonon114.jpg",
         "nom": "Pholiote du peuplier",
         "genre": "Agrcybe",
         "espece": "Aegerita",
         "famille": "Bolbitiaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Beige blanch\u00e2tre \u00e0 brun ocrac\u00e9 au centre. Convexe lisse sec puis rid\u00e9 et craquel\u00e9 (5-12&nbsp;cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es, adn\u00e9es (ou subd\u00e9currentes), beige p\u00e2le puis argilac\u00e9es.<\/p>",
@@ -3832,51 +1422,18 @@
             "chair": "<p>Blanch\u00e2tre \u00e0 odeur agr\u00e9able (sp\u00e9cimens \u00e2g\u00e9s = futaille ou odeur de vieille barrique de vin).<\/p>",
             "ecologie": "<p>Pousse en touffes sur des troncs, les souches de peupliers, saules, parfois ormes.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "116",
         "rubrique": ["98"],
-        "url": "Pholiote-ecailleuse",
         "vignette":"img/vignettes/champignonon116.jpg",
         "nom": "Pholiote écailleuse",
         "genre": "Pholiota",
         "espece": "Squarrosa",
         "famille": "Strophariaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Charnu, convexe, h\u00e9riss\u00e9 de squamules, brun rouss\u00e2tre sur fond jaune \u00e0 ocrac\u00e9 [8-10 (15) cm].<\/p>",
             "hymenium": "<p>Serr\u00e9es, jaun\u00e2tres puis brun rouille, oliv\u00e2tre. Spor\u00e9e ocre.<\/p>",
@@ -3884,51 +1441,18 @@
             "chair": "<p>Fibreuse, jaune, saveur douce \u00e0 am\u00e8re.<\/p>",
             "ecologie": "<p>En touffe sur souches de feuillus.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "105",
         "rubrique": ["81"],
-        "url": "Pholiote-remarquable",
         "vignette":"img/vignettes/champignonon105.jpg",
         "nom": "Pholiote remarquable",
         "genre": "Gymnopilus",
         "espece": "Spectabilis",
         "famille": "Crepidotaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 2e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Convexe, fibrilleux, roux vif [8-10 (15) cm].<\/p>",
             "hymenium": "<p>Adn\u00e9es ou \u00e9chancr\u00e9es, serr\u00e9es, jaune rouille vif. Spor\u00e9e ocre.<\/p>",
@@ -3936,51 +1460,18 @@
             "chair": "<p>Fibreuse plus ou moins jaune, am\u00e8re.<\/p>",
             "ecologie": "<p>En touffe, sur souches ou branches de feuillus.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "101",
         "rubrique": ["64"],
-        "url": "Pied-bleu",
         "vignette":"img/vignettes/champignonon101.jpg",
         "nom": "Pied bleu",
         "genre": "Lepista",
         "espece": "Nuda",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Convexe \u00e0 \u00e9tal\u00e9, lisse non visqueux, charnu, lilas bleut\u00e9 p\u00e2lissant au centre puis brun rouss\u00e2tre (8-15&nbsp;cm).<\/p>",
             "hymenium": "<p>\u00c9chancr\u00e9es, lilas bleut\u00e9 puis ocre ros\u00e2tre. Se s\u00e9parent facilement du chapeau.<\/p>",
@@ -3988,51 +1479,18 @@
             "chair": "<p>Bleu\u00e2tre puis p\u00e2lissant ou devenant l\u00e9g\u00e8rement rousse, \u00e0 go\u00fbt agr\u00e9able l\u00e9g\u00e8rement fruit\u00e9.<\/p>",
             "ecologie": "<p>Tardif (hivernal), for\u00eat.<\/p>",
             "remarques": "<p>Cette esp\u00e8ce est parfois mal tol\u00e9r\u00e9e par certaines personnes allergiques \u00e0 certains compos\u00e9s chimiques.<\/p>"
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "99",
         "rubrique": ["59"],
-        "url": "Pleurote-corne-d-abondance",
         "vignette":"img/vignettes/champignonon99.jpg",
         "nom": "Pleurote corne d’abondance",
         "genre": "Pleurotus",
         "espece": "Cornucopiae",
         "famille": "Pleurotaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Creux (entonnoir) blanch\u00e2tre \u00e0 beige p\u00e2le (8-10 cm).<\/p>",
             "hymenium": "<p>Blanch\u00e2tres longuement d\u00e9currentes ( filets, r\u00e9seau) sur le pied. Spor\u00e9e blanche.<\/p>",
@@ -4040,51 +1498,18 @@
             "chair": "<p>Fibreuse, blanche, odeur plus ou moins agr\u00e9able.<\/p>",
             "ecologie": "<p>En touffe sur bois de feuillus (souvent ormes).<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "98",
         "rubrique": ["59"],
-        "url": "Pleurote-du-Panicaut",
         "vignette":"img/vignettes/champignonon98.jpg",
         "nom": "Pleurote du Panicaut",
         "genre": "Pleurotus",
         "espece": "Eryngii",
         "famille": "Pleurotaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Convexe, puis un peu d\u00e9prim\u00e9, rev\u00eatement sec \u00b1 \u00e9cailleux, brun gris \u00e0 brun roux ou beige p\u00e2le (5 x 12 cm).<\/p>",
             "hymenium": "<p>D\u00e9currentes, blanch\u00e2tres \u00e0 gris\u00e2tres.<\/p>",
@@ -4092,51 +1517,18 @@
             "chair": "<p>Blanche \u00e0 odeur agr\u00e9able.<\/p>",
             "ecologie": "<p>Dans les pr\u00e9s p\u00e2tur\u00e9s sur racine de Panicauts (Eryngium).<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "100",
         "rubrique": ["59"],
-        "url": "Pleurote-en-huitre",
         "vignette":"img/vignettes/champignonon100.jpg",
         "nom": "Pleurote en huître",
         "genre": "Pleurotus",
         "espece": "Ostreatus",
         "famille": "Pleurotaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Charnu, convexe \u00e0 plat, gris bleu\u00e2tre, lisse [8-12 (15) cm].<\/p>",
             "hymenium": "<p>Blanches \u00b1 d\u00e9currentes, parfois anastomos\u00e9es \u00e0 la base. Spor\u00e9e gris lilas.<\/p>",
@@ -4144,51 +1536,18 @@
             "chair": "<p>Grenue blanche.<\/p>",
             "ecologie": "<p>Sur troncs ou branches mortes, en touffes.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "40",
         "rubrique": ["16"],
-        "url": "Russule-a-lames-inegales",
         "vignette":"img/vignettes/champignonon40.jpg",
         "nom": "Russule à lames inégales",
         "genre": "Russula",
         "espece": "Heterophylla",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Vert jaune, parfois teint\u00e9 de bleut\u00e9, vineux, assombri au centre. Cuticule glabre ou luisante (8-15 cm).<\/p>",
             "hymenium": "<p>Blanches, non d\u00e9currentes, anastomos\u00e9es (fourchues) pr\u00e8s du pied.<\/p>",
@@ -4196,51 +1555,18 @@
             "chair": "<p>Blanche, sans odeur particuli\u00e8re, parfois un peu \u00e2cre apr\u00e8s mastication.<\/p>",
             "ecologie": "<p>Feuillus.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Bleu et violet","Vert","Jaune"],
-            "forme": "",
-            "surface": "sec",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "Lamelles anastomosées",
-    "insertion":"",
-    "densite":"",
-    "couleur": ["Blanc","Blanchâtre"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "agréable",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "38",
         "rubrique": ["15"],
-        "url": "Russule-belette",
         "vignette":"img/vignettes/champignonon38.jpg",
         "nom": "Russule belette",
         "genre": "Russula",
         "espece": "Mustelina",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Charnu, convexe. Cuticule brun rouss\u00e2tre (idem C\u00e8pe de Bordeaux). Lisse puis mat (10-15 cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es blanches, puis cr\u00e8me.<\/p>",
@@ -4248,51 +1574,18 @@
             "chair": "<p>Grenue. Odeur faible (en vieillissant, odeur de fromage).<\/p>",
             "ecologie": "<p>Conif\u00e8res, surtout \u00e9pic\u00e9as.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Brun","Jaune","Roux"],
-            "forme": "Convexe",
-            "surface": "lisse",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"serrées",
-    "couleur": ["Blanc","Crème","Ocre"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc","Brun","Jaune"]
-        },
-        "chair":{
-            "odeur": "faible",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": ["Montagne"],
-            "substrat": [],
-            "vegetation": ["Conifères","Épicéeas"],
-            "saisons": []
         }
     },
     {
         "id": "2",
         "rubrique": ["16"],
-        "url": "Russule-charbonniere",
         "vignette":"img/vignettes/champignonon2.jpg",
         "nom": "Russule charbonnière",
         "genre": "Russula",
         "espece": "Cyanoxantha",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Couleurs varie\u0301es (vert, bleu violace\u0301), cuticule lisse vergete\u0301e et luisante (5-10 cm).<\/p>",
             "hymenium": "<p>Blanches, non de\u0301currentes, flexibles, a\u0300 toucher &#171;&nbsp;lardace\u0301&nbsp;&#187;.<\/p>",
@@ -4300,51 +1593,18 @@
             "chair": "<p>Blanche, sans odeur ou gou\u0302t particulier.<\/p>",
             "ecologie": "<p>Sous feuillus et conif\u00e8res. De l&#8217;\u00e9t\u00e9 \u00e0 l&#8217;automne.<\/p>",
             "remarques": "<p>Cyanoxantha est un comestible agr\u00e9able. La souplesse et l&#8217;aspect gras de ses lames sont de bons \u00e9l\u00e9ments d&#8217;identification.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Rose","Bleu et violet","Vert"],
-            "forme": "",
-            "surface": "lisse",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": ["Blanc"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "sans anneau",
-            "volve": "pas de volve",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "faible",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "43",
         "rubrique": ["17"],
-        "url": "Russule-doree",
         "vignette":"img/vignettes/champignonon43.jpg",
         "nom": "Russule dorée",
         "genre": "Russula",
         "espece": "Aurea",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": ["Jaune, jaunâtre, ocre"],
         "description":{
             "chapeau": "<p>Rouge \u00e0 orang\u00e9 sur fond jaune.<\/p>",
             "hymenium": "<p>Cr\u00e8me jaun\u00e2tre \u00e0 ar\u00eate typiquement jaune citrin.<\/p>",
@@ -4352,51 +1612,18 @@
             "chair": "<p>Blanche, jaune vif sous la cuticule. Odeur nulle, saveur douce.<\/p>",
             "ecologie": "<p>Sous feuillus de l&#8217;\u00e9t\u00e9 \u00e0 l&#8217;automne.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Jaune","Orange","Rouge"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": ["Crème","Jaune"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc","Jaune"]
-        },
-        "chair":{
-            "odeur": "sans odeur",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Feuillus"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "45",
         "rubrique": ["17"],
-        "url": "Russule-emetique",
         "vignette":"img/vignettes/champignonon45.jpg",
         "nom": "Russule émétique",
         "genre": "Russula",
         "espece": "Emetica",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 3e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Rouge vif, convexe, charnu \u00e0 cuticule s\u00e9parable (4-10 cm).<\/p>",
             "hymenium": "<p>Blanches (peu) serr\u00e9es, adn\u00e9es \u00e0 reflets cr\u00e8me p\u00e2le.<\/p>",
@@ -4404,51 +1631,18 @@
             "chair": "<p>Blanche, ros\u00e2tre en superficie, go\u00fbt tr\u00e8s \u00e2cre.<\/p>",
             "ecologie": "<p>Conif\u00e8res (\u00e9pic\u00e9a), lieux humides, mar\u00e9cageux.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Rose","Orange","Rouge"],
-            "forme": "Convexe",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"adnées",
-    "densite":"serrées",
-    "couleur": ["Blanc","Blanchâtre"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "faible",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": ["Montagne"],
-            "substrat": [],
-            "vegetation": ["Conifères","Épicéeas"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "44",
         "rubrique": ["17"],
-        "url": "Russule-jolie",
         "vignette":"img/vignettes/champignonon44.jpg",
         "nom": "Russule jolie",
         "genre": "Russula",
         "espece": "Lepida",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Rouge vif, velout\u00e9 mat, craquel\u00e9 en vieillissant. Cuticule non s\u00e9parable (5-10 cm).<\/p>",
             "hymenium": "<p>Peu serr\u00e9es, blanc cr\u00e8me.<\/p>",
@@ -4456,51 +1650,18 @@
             "chair": "<p>Grenue, blanche, odeur et saveur menthol\u00e9e.<\/p>",
             "ecologie": "<p>H\u00eatraie.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Orange","Rouge"],
-            "forme": "",
-            "surface": "mat",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"espacées",
-    "couleur": ["Blanc","Crème"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc","Rose","Rouge"]
-        },
-        "chair":{
-            "odeur": "fruité",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Feuillus"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "46",
         "rubrique": ["46"],
-        "url": "Russule-noircissante",
         "vignette":"img/vignettes/champignonon46.jpg",
         "nom": "Russule noircissante",
         "genre": "Russula",
         "espece": "Nigricans",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Blancha\u0302tre a\u0300 brun fonce\u0301, puis noir (10-20 cm).<\/p>",
             "hymenium": "<p>Tre\u0300s espace\u0301es, e\u0301paisses, fragiles.<\/p>",
@@ -4508,51 +1669,18 @@
             "chair": "<p>Grenue, rougissante, puis noire. Saveur douce.<\/p>",
             "ecologie": "<p>Feuillus, parfois conife\u0300res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanchâtre","Brun","Noircissant"],
-            "forme": "",
-            "surface": "",
-            "marge": "enroulée"
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"espacées",
-    "couleur": ["Blanchâtre","Rose","Rouge"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc","Rouge","Noircissant"]
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "39",
         "rubrique": ["15"],
-        "url": "Russule-ocre-et-blanc",
         "vignette":"img/vignettes/champignonon39.jpg",
         "nom": "Russule ocre et blanc",
         "genre": "Russula",
         "espece": "Ochroleuca",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Ocre jaune plus ou moins vif, uniforme, convexe-plat (7-9 cm).<\/p>",
             "hymenium": "<p>Blanches, serr\u00e9es.<\/p>",
@@ -4560,51 +1688,18 @@
             "chair": "<p>Grenue, inodore, saveur plut\u00f4t \u00e2cre.<\/p>",
             "ecologie": "<p>For\u00eats.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Brun","Jaune","Ocre"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"serrées",
-    "couleur": ["Blanc"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "faible",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Conifères","Feuillus"],
-            "saisons": ["Été","Automne"]
         }
     },
     {
         "id": "42",
         "rubrique": ["16"],
-        "url": "Russule-Sardoine",
         "vignette":"img/vignettes/champignonon42.jpg",
         "nom": "Russule Sardoine",
         "genre": "Russula",
         "espece": "Drimeia",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": ["Marron, brun, rouille"],
         "description":{
             "chapeau": "<p>Violet, palissant vers la marge (7-9 cm).<\/p>",
             "hymenium": "<p>\u00c0 reflets citrin vif avec l\u2019\u00e2ge.<\/p>",
@@ -4612,51 +1707,18 @@
             "chair": "<p>Grenue, l\u00e9g\u00e8rement citrine sous cuticule. Tr\u00e8s \u00e2cre. Odeur fruit\u00e9e.<\/p>",
             "ecologie": "<p>Sous les pins.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Bleu et violet"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": ["Crème"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Rose","Bleu et violet"]
-        },
-        "chair":{
-            "odeur": "fruité",
-            "saveur": "âcre",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Pins"],
-            "saisons": ["Automne"]
         }
     },
     {
         "id": "3",
         "rubrique": ["16"],
-        "url": "Russule-verdoyante",
         "vignette":"img/vignettes/champignonon3.jpg",
         "nom": "Russule verdoyante",
         "genre": "Russula",
         "espece": "Virescens",
         "famille": "Russulaceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Comestible",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Cuticule velout\u00e9e et craquel\u00e9e, vert bleut\u00e9 ou vert de gris (vert moisissure) sur fond blanch\u00e2tre [5-10 (15) cm].<\/p>",
             "hymenium": "<p>Blanches non d\u00e9currentes, peu serr\u00e9es, flexibles, lardac\u00e9es.<\/p>",
@@ -4664,51 +1726,18 @@
             "chair": "<p>Sans odeur particuli\u00e8re, \u00e0 go\u00fbt de noisette.<\/p>",
             "ecologie": "<p>Feuillus acidophiles (ch\u00eanaies, h\u00eatraies).<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Bleu et violet","Vert"],
-            "forme": "",
-            "surface": "cuticule craquelée",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"espacées",
-    "couleur": ["Blanc"]
-},
-        "pied": {
-            "forme": "cylindrique",
-            "anneau": "sans anneau",
-            "volve": "pas de volve",
-            "couleur": ["Blanc","Roux"]
-        },
-        "chair":{
-            "odeur": "faible",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": ["Bois"],
-            "substrat": [],
-            "vegetation": ["Chênes","Feuillus","Hêtres"],
-            "saisons": ["Printemps","Été","Automne"]
         }
     },
     {
         "id": "92",
         "rubrique": ["113","116"],
-        "url": "Tricholome-a-odeur-de-savon",
         "vignette":"img/vignettes/champignonon92.jpg",
         "nom": "Tricholome à odeur de savon",
         "genre": "Tricholoma",
         "espece": "Saponaceum",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Gris verd\u00e2tre \u00e0 disque central plus fonc\u00e9, rosissant \u00e0 la marge. Rev\u00eatement glabre [(5) 10-15 cm].<\/p>",
             "hymenium": "<p>Peu serr\u00e9es, \u00e9chancr\u00e9es, blanch\u00e2tres, parfois rosissantes.<\/p>",
@@ -4716,51 +1745,18 @@
             "chair": "<p>P\u00e2le, rosissante, \u00e0 odeur savonneuse.<\/p>",
             "ecologie": "<p>Conif\u00e8res, feuillus \u00e0 tendance silicicole.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "90",
         "rubrique": ["103"],
-        "url": "Tricholome-acerbe",
         "vignette":"img/vignettes/champignonon90.jpg",
         "nom": "Tricholome acerbe",
         "genre": "Tricholoma",
         "espece": "Acerbum",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>D&#8217;abord beige-jaun\u00e2tre puis brun noisette, centre rouss\u00e2re. Nuances roses apr\u00e8s la pluie. Marge nettement enroul\u00e9e.<\/p>",
             "hymenium": "<p>Cr\u00e8me, tach\u00e9es de brun-roux. Spor\u00e9e blanche.<\/p>",
@@ -4768,51 +1764,18 @@
             "chair": "<p>Blanch\u00e2tre. Odeur sub-nulle. Saveur de am\u00e8re \u00e0 \u00e2pre.<\/p>",
             "ecologie": "<p>Feuillus, souvent sous ch\u00eanes, terrains calcaires, thermophile.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "107",
         "rubrique": ["87"],
-        "url": "Tricholome-agrege",
         "vignette":"img/vignettes/champignonon107.jpg",
         "nom": "Tricholome agrégé",
         "genre": "Lyophillum",
         "espece": "Decastes",
         "famille": "Lyophylloideae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Convexe \u00e0 plat, lisse \u00e0 verget\u00e9. Beige, ocrac\u00e9 \u00e0 brun\u00e2tre (5-10&nbsp;cm).<\/p>",
             "hymenium": "<p>\u00c9chancr\u00e9es, serr\u00e9es, blanch\u00e2tres \u00e0 cr\u00e8me. Spor\u00e9e blanche.<\/p>",
@@ -4820,51 +1783,18 @@
             "chair": "<p>Blanche, odeur faible (subfarineuse). Fibreuse.<\/p>",
             "ecologie": "<p>Au sol, sur bois enterr\u00e9, en touffes denses.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "89",
         "rubrique": ["103"],
-        "url": "Tricholome-blanc",
         "vignette":"img/vignettes/champignonon89.jpg",
         "nom": "Tricholome blanc",
         "genre": "Tricholoma",
         "espece": "Album",
         "famille": "Tricholomataceae",
         "organisation": "",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Blanc, sec (4-7 cm).<\/p>",
             "hymenium": "<p>Peu serr\u00e9es, blanches.<\/p>",
@@ -4872,45 +1802,18 @@
             "chair": "<p>Blanche \u00e0 odeur farineuse, \u00e2cre.<\/p>",
             "ecologie": "<p>Feuillus.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Blanc"],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "9",
         "rubrique": ["103"],
-        "url": "Tricholome-colombette",
         "vignette":"img/vignettes/champignonon9.jpg",
         "nom": "Tricholome colombette",
         "genre": "Tricholoma",
         "espece": "Columbetta",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Comestible",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Blanc soyeux, conico-convexe puis mamelonn\u00e9.<\/p>",
             "hymenium": "<p>Blanches, serr\u00e9es, minces.<\/p>",
@@ -4918,51 +1821,18 @@
             "chair": "<p>Blanche. Odeur neutre, saveur douce.<\/p>",
             "ecologie": "<p>Surtout sous feuillus, lisi\u00e8res. En automne.<\/p>",
             "remarques": "<p>La consommation de Tricholoma columbetta n\u00e9cessite une bonne exp\u00e9rience. Il faut penser aux amanites blanches mortelles.<\/p>"
-        },
-        "chapeau":{
-            "couleur": ["Blanc"],
-            "forme": "Plane mamelonnée",
-            "surface": "revêtement velouté",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"libres",
-    "densite":"serrées",
-    "couleur": ["Blanc"]
-},
-        "pied": {
-            "forme": "",
-            "anneau": "sans anneau",
-            "volve": "pas de volve",
-            "couleur": ["Blanc"]
-        },
-        "chair":{
-            "odeur": "faible",
-            "saveur": "douce",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": ["Lisières des bois"],
-            "substrat": [],
-            "vegetation": ["Feuillus"],
-            "saisons": ["Automne"]
         }
     },
     {
         "id": "108",
         "rubrique": ["87"],
-        "url": "Tricholome-couleur-de-vache",
         "vignette":"img/vignettes/champignonon108.jpg",
         "nom": "Tricholome couleur de vache",
         "genre": "Tricholoma",
         "espece": "Vaccinum",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Feutr\u00e9 \u00e0 laineux, \u00e9cailleux. Marge velue, cannel\u00e9e.<\/p>",
             "hymenium": "<p>Blanch\u00e2tres \u00e0 rose chair, tachet\u00e9es de roux avec l&#8217;\u00e2ge. Spor\u00e9e blanche.<\/p>",
@@ -4970,51 +1840,18 @@
             "chair": "<p>Blanche, brunissant au pied. Odeur de terre (farine si coup\u00e9). Saveur am\u00e8re.<\/p>",
             "ecologie": "<p>R\u00e9sineux, surtout \u00e9pic\u00e9as. Sub-montagnard.<\/p>",
             "remarques": "<p>Immangeable en raison de son amertume.<\/p>"
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "93",
         "rubrique": ["87","114"],
-        "url": "Tricholome-de-la-Saint-Georges",
         "vignette":"img/vignettes/champignonon93.jpg",
         "nom": "Tricholome de la Saint-Georges",
         "genre": "Calocybe",
         "espece": "Gambosa",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Blanc, cr\u00e8me, m\u00e2t, glabre, convexe, bomb\u00e9 (charnu) \u00e0 marge enroul\u00e9e (5-10 cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es, blanc cr\u00e8me, \u00e9chancr\u00e9es. Spor\u00e9e blanche.<\/p>",
@@ -5022,51 +1859,18 @@
             "chair": "<p>Blanche, ferme \u00e0 odeur de farine, go\u00fbt agr\u00e9able.<\/p>",
             "ecologie": "<p>Printemps, lisi\u00e8res, haies, prairies.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "91",
         "rubrique": ["113","116"],
-        "url": "Tricholome-disjoint",
         "vignette":"img/vignettes/champignonon91.jpg",
         "nom": "Tricholome disjoint",
         "genre": "Tricholoma",
         "espece": "Sejunctum",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Suspect – 5e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Jaune verd\u00e2tre fibrilleux, convexe, conique, \u00e9tal\u00e9, mamelonn\u00e9, (5-10 cm).<\/p>",
             "hymenium": "<p>Peu serr\u00e9es, \u00e9chancr\u00e9es, blanch\u00e2tres. Spor\u00e9e blanche.<\/p>",
@@ -5074,51 +1878,18 @@
             "chair": "<p>\u00c0 forte odeur farineuse, l\u00e9g\u00e8rement am\u00e8re.<\/p>",
             "ecologie": "<p>Conif\u00e8res, feuillus.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "102",
         "rubrique": ["115"],
-        "url": "Tricholome-equestre-Bidaou",
         "vignette":"img/vignettes/champignonon102.jpg",
         "nom": "Tricholome équestre (Bidaou)",
         "genre": "Tricholoma",
         "espece": "Equestre",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Très toxique – 1er groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Jaune \u00e0 disque central squamuleux plus fonc\u00e9 [(5) 10-15 cm].<\/p>",
             "hymenium": "<p>Peu serr\u00e9es, \u00e9chancr\u00e9es jaunes. Spor\u00e9e blanche.<\/p>",
@@ -5126,51 +1897,18 @@
             "chair": "<p>Grenue, l\u00e9g\u00e8rement citrine sous cuticule. Odeur et saveur de farine.<\/p>",
             "ecologie": "<p>Pin\u00e8des sableuses, \u00e9galement feuillus.<\/p>",
             "remarques": "<p>Dans les pessi\u00e8res \u00e0 Myrtilles, on trouve Tricholoma aestuans \u00e0 silhouette de T. virgatum, mais de couleur jaune (non comestible).<\/p>"
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "5",
         "rubrique": ["113","116"],
-        "url": "Tricholome-pretentieux",
         "vignette":"img/vignettes/champignonon5.jpg",
         "nom": "Tricholome prétentieux",
         "genre": "Tricholoma",
         "espece": "portentosum",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "Grande taille ou port de tricholome",
         "comestibilite": "Comestible",
-        "sporee": ["Blanc crème ou couleur très claire"],
         "description":{
             "chapeau": "<p>Fibrilles gris noir\u00e2tres ou gris ardois\u00e9 sur fond jaune, pelable. Visqueux. Marge claire, lob\u00e9e, flexueuse.<\/p>",
             "hymenium": "<p>Blanch\u00e2tres, vite nuanc\u00e9es de jaune-verd\u00e2tre. Peu serr\u00e9es.<\/p>",
@@ -5178,51 +1916,18 @@
             "chair": "<p>Blanche et jaun\u00e2tre en surface. Odeur de farine agr\u00e9able. Saveur farine amarescente.<\/p>",
             "ecologie": "<p>Mixte (pins, \u00e9pic\u00e9as) riches en mousses ou lichens. Sols sablonneux.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": ["Gris","Jaune"],
-            "forme": "",
-            "surface": "lisse visqueux",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"échancrées",
-    "densite":"",
-    "couleur": ["Blanchâtre","Vert","Jaune"]
-},
-        "pied": {
-            "forme": "atténué vers le bas",
-            "anneau": "",
-            "volve": "",
-            "couleur": ["Blanc","Vert","Jaune"]
-        },
-        "chair":{
-            "odeur": "farine",
-            "saveur": "agréable",
-            "couleur": [],
-            "lait": []
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": ["Épicéeas","Pins"],
-            "saisons": []
         }
     },
     {
         "id": "103",
         "rubrique": ["115"],
-        "url": "Tricholome-soufre",
         "vignette":"img/vignettes/champignonon103.jpg",
         "nom": "Tricholome soufré",
         "genre": "Tricholoma",
         "espece": "Sulfureum",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 2e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Jaune soufr\u00e9, m\u00e2t, fibrilleux, velout\u00e9 (8-10&nbsp;cm).<\/p>",
             "hymenium": "<p>Espac\u00e9es, \u00e9paisses, jaunes.<\/p>",
@@ -5230,51 +1935,18 @@
             "chair": "<p>Forte odeur de gaz d&#8217;\u00e9clairage (soufre).<\/p>",
             "ecologie": "<p>For\u00eats, feuillus.<\/p>",
             "remarques": "<p>N.B.&nbsp;: var bufonium, chapeau brun marron.<\/p>"
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "96",
         "rubrique": ["112"],
-        "url": "Tricholome-squameux",
         "vignette":"img/vignettes/champignonon96.jpg",
         "nom": "Tricholome squameux",
         "genre": "Tricholoma",
         "espece": "Atrosquamosum",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Couvert de squames gris s\u00e9pia sombre sur fond cr\u00e8me. Conique, convexe, \u00e9tal\u00e9 mamelonn\u00e9 [5-8 (10)&nbsp;cm].<\/p>",
             "hymenium": "<p>Blanch\u00e2tres, \u00e9chancr\u00e9es \u00e0 ar\u00eate noir\u00e2tre. Spor\u00e9e blanche.<\/p>",
@@ -5282,51 +1954,18 @@
             "chair": "<p>Blanch\u00e2tre \u00e0 odeur nettement poivr\u00e9e.<\/p>",
             "ecologie": "<p>Feuillus, calcicoles, h\u00eatraies, sapini\u00e8res (\u00e9pic\u00e9as&nbsp;?).<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "97",
         "rubrique": ["112"],
-        "url": "Tricholome-terreux",
         "vignette":"img/vignettes/champignonon97.jpg",
         "nom": "Tricholome terreux",
         "genre": "Tricholoma",
         "espece": "Terreum",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Comestible",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Gris noir\u00e2tre fibrillo-verget\u00e9, convexe, conique, plus ou moins \u00e9tal\u00e9 mamelonn\u00e9 (4-9&nbsp;cm).<\/p>",
             "hymenium": "<p>Peu serr\u00e9es, gris\u00e2tres, \u00e9chancr\u00e9es. Spor\u00e9e blanche.<\/p>",
@@ -5334,51 +1973,18 @@
             "chair": "<p>Blanche \u00e0 odeur et saveur faibles, non farineuse.<\/p>",
             "ecologie": "<p>Pins, surtout calcicoles.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "94",
         "rubrique": ["112"],
-        "url": "Tricholome-tigre",
         "vignette":"img/vignettes/champignonon94.jpg",
         "nom": "Tricholome tigré",
         "genre": "Tricholoma",
         "espece": "Pardinum",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 3e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Squames concentriques assez larges, brun noir\u00e2tre sur fond p\u00e2le, gris ocrac\u00e9e. Convexe, charnu (10-15 cm).<\/p>",
             "hymenium": "<p>Serr\u00e9es, blanch\u00e2tres \u00e9chancr\u00e9es. Spor\u00e9e blanche.<\/p>",
@@ -5386,51 +1992,18 @@
             "chair": "<p>Blanch\u00e2tre, \u00e0 odeur farineuse puis d\u00e9sagr\u00e9able (spermatique&nbsp;?).<\/p>",
             "ecologie": "<p>For\u00eats calcicoles (h\u00eatres, sapins en montagne).<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     },
     {
         "id": "95",
         "rubrique": ["112"],
-        "url": "Tricholome-vergete",
         "vignette":"img/vignettes/champignonon95.jpg",
         "nom": "Tricholome vergeté",
         "genre": "Tricholoma",
         "espece": "Virgatum",
         "famille": "Tricholomataceae",
         "organisation": "Champignons à lames",
-        "taille": "",
         "comestibilite": "Toxique – 3e groupe",
-        "sporee": [],
         "description":{
             "chapeau": "<p>Gris argent\u00e9, fibrilleux, conique (6-7 cm).<\/p>",
             "hymenium": "<p>Gris\u00e2tres.<\/p>",
@@ -5438,36 +2011,6 @@
             "chair": "<p>Blanche, saveur am\u00e8re, \u00e2cre.<\/p>",
             "ecologie": "<p>Conif\u00e8res.<\/p>",
             "remarques": ""
-        },
-        "chapeau":{
-            "couleur": [],
-            "forme": "",
-            "surface": "",
-            "marge": ""
-        },
-         "lames": {
-    "forme": "",
-    "insertion":"",
-    "densite":"",
-    "couleur": []
-},
-        "pied": {
-            "forme": "",
-            "anneau": "",
-            "volve": "",
-            "couleur": []
-        },
-        "chair":{
-            "odeur": "",
-            "saveur": "",
-            "couleur": [],
-            "lait": ["pas de lait"]
-        },
-        "ecologie":{
-            "habitat": [],
-            "substrat": [],
-            "vegetation": [],
-            "saisons": []
         }
     }
 ]
