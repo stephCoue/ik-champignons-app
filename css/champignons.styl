@@ -56,6 +56,7 @@ centerBlock()
   height: 100%
   opacity: 0
   -webkit-transition: opacity .5s
+  background:  url('images/bois-brun-fonce.png')
 
 /*  ZONE DE CONTENUS */
 
@@ -66,7 +67,6 @@ centerBlock()
   position: absolute
   width: 100%
   height: 100%
-  background:  url('images/bois-brun-fonce.png')
   box-shadow: 0 0 20px rgba(0,0,0,0.5)
   overflow-y: scroll
   overflow-x: hidden
@@ -101,8 +101,7 @@ footer
   background-repeat:no-repeat;
   background-size: contain;
   background-position: center
-  width: 23%;
-  // height: auto;
+  width: 23%
   centerBlock()
 
 
@@ -165,6 +164,40 @@ footer
 
 
 
+[class*="content"]
+  background: transparent url('images/bois-brun-fonce.png')
+
+.content-header
+  position: fixed
+  top: -100px
+  width: 100%
+  color:  $secondColor
+  z-index: 10;
+  -webkit-transition: all .2s
+
+  h1
+    margin: 5px 10px;
+    line-height: 40px;
+    text-align: left;
+    font-size: .8em
+    position: relative
+
+    span
+      color: $primary
+
+    // &:before
+    //   content: ""
+    //   display: block
+    //   width: 50px
+    //   height: 50px
+    //   background: transparent url('images/sprite-menu-picto.png') -57px -57px no-repeat
+    //   position: absolute
+
+
+    i
+      width: 1.2em
+      height: 1.2em
+      background: transparent url('images/sprite-menu-picto.png') -57px -57px no-repeat
 
 
 
@@ -174,55 +207,303 @@ footer
 
 
 
+.content-footer
+  text-transform: uppercase
+  position: fixed;
+  width: 100%;
+  top: 100%;
+  z-index: 10;
+  -webkit-transition: all .2s linear
+  a
+    display: block
+    color: $primary
+    position: relative
+
+    &:before
+      display: block
+      width: 1.2em
+      height: 1.2em
+      background:  red //transparent url('images/sprite-menu-picto.png') -57px -57px no-repeat
+      position: absolute
+
+
+    &:active,
+    &:hover
+      color: $secondColor
+
+  .on
+    a
+      color: $secondColor
+
+
+  .cell
+    text-align: center
+
+
+// i
+//   .picto
+//       width: 42px
+//       height: 42px
+//       background: transparent url('images/sprite-menu-picto.png') -57px -57px no-repeat
 
 
 
 
+/*FOOTER*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*PAGE HOME*/
-
-// .page-home h1 {
-//   margin: 30px 0;
+// .content-footer {
+//   position: fixed;
+//   width: 100%;
+//   top: 100%;
+//   background-color: #333;
+//   z-index: 10;
+//   -webkit-transition: all .2s linear;
 // }
 
-// .nav-main {
+// .content-footer .cell {
 //   text-align: center;
 // }
 
-.nav-main ul {
-  // background: rgba(red,.3)
+.content-footer a {
+  // display: block;
+  padding: 10px 5px;
+  // color: #aaa;
 }
 
-.nav-main li {
-  margin: 1px 0;
-  // background: rgba(blue, .2);
-}
-
-// .nav-main a {
-//   padding: 15px 0;
-//   background-color: #999;
-//   font-weight: bold;
-// }
-
-// .nav-main a:active {
+// .content-footer .on a, .content-footer a:active {
 //   color: #fff;
 // }
+
+
+
+/*HEADER*/
+
+// .content-header {
+//   position: fixed;
+//   top: -100px;
+//   width: 100%;
+//   background-color: #333;
+//   color: #999;
+//   z-index: 10;
+//   -webkit-transition: all .2s;
+// }
+
+// .content-header h1 {
+//   margin: 5px 10px;
+//   line-height: 40px;
+//   text-align: left;
+//   font-size: 1.2em;
+// }
+
+.header-on {
+  top: 0;
+}
+
+.header-tous .champignons {
+  display: none;
+}
+
+.header-tous .tous {
+  display: block;
+}
+
+.header-champignon .champignons {
+  display: block;
+}
+
+.header-champignon .tous {
+  display: none;
+}
+
+.content-header .table {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: auto;
+}
+
+.content-header a {
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+  background-image: url(images/boutons-tous.png);
+  background-repeat: no-repeat;
+}
+
+.header-tous li + li a {
+  background-position: -50px 0;
+}
+
+.header-tous li + li + li a {
+  background-position: -100px 0;
+}
+
+.header-tous .on a {
+  background-position: 0 -50px;
+}
+
+.header-tous li + .on a {
+  background-position: -50px -50px;
+}
+
+.header-tous li + li + .on a {
+  background-position: -100px -50px;
+}
+
+.content-header .back {
+  background-position: -150px 0;
+}
+
+.content-header .on .back, .content-header .back:active {
+  background-position: -150px -50px;
+}
+
+.content-header .cueillette {
+  background-position: -200px 0;
+}
+.content-header .on .cueillette, .content-header .cueillette:active {
+  background-position: -200px -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VUE EN LIST */
+
+#tous,
+.slides
+  background: transparent url("images/paper-background.jpg") center center
+
+
+a.inner
+  color: $titreColor
+  font: 120%  'fjalla_oneregular'
+
+.liste
+  margin: 1% 0
+  li
+    width: 90%
+    border-image:  url("images/nav-main-hr.png")  100% 0 0
+    border-width: 2.2px
+    centerBlock()
+
+    &:last-child
+      border-image: url("images/nav-main-hr.png") 100% 0 100% 0
+
+
+
+
+.activeClass:hover
+  background: -webkit-linear-gradient(left, rgba(#e2e2e0, 0) 2%,rgba(#e2e2e0, .08) 3%,rgba(#e2e2e0, .12) 16%,rgba(#c4ce7b , .6) 32%,rgba($primary, .9) 50%,rgba(#c4ce7b , .6) 75%,rgba(#e2e2e0, .12) 90%,rgba(#e2e2e0, .08) 97%, rgba(#e2e2e0, 0) 98%)
+  color: $titreColor
+  text-shadow: 0 1px 1px #fff
+
+
+
+/*VUE EN LISTE*/
+
+.liste li {
+  // border: 1px solid #aaa;
+  // border-width: 1px 0;
+  clear: both;
+  // margin-bottom: -1px;
+}
+
+.liste .inner {
+  margin: 5px 0;
+  display: table;
+}
+
+.liste .vignette, .liste .textes {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.liste .textes {
+  padding-left: 10px;
+}
+
+.liste .vignette {
+  width: 24%;
+}
+
+
+
+
+/*VUE EN GRILLE*/
+
+.grille li {
+  width: 33.33%;
+  float: left;
+  font-size: 0.80em;
+  line-height: 1.1em;
+}
+
+.grille li:nth-child(3n+4) {
+  clear: left;
+}
+
+.grille li:last-child {
+  margin-bottom: 50px;
+}
+
+.grille .inner {
+  margin: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*PAGE CHAMPIGNON*/
 
@@ -323,167 +604,143 @@ footer
   opacity: 1.0;
 }
 
-/*VUE EN GRILLE*/
+// /*VUE EN GRILLE*/
 
-.grille li {
-  width: 33.33%;
-  float: left;
-  font-size: 0.80em;
-  line-height: 1.1em;
-}
+// .grille li {
+//   width: 33.33%;
+//   float: left;
+//   font-size: 0.80em;
+//   line-height: 1.1em;
+// }
 
-.grille li:nth-child(3n+4) {
-  clear: left;
-}
+// .grille li:nth-child(3n+4) {
+//   clear: left;
+// }
 
-.grille li:last-child {
-  margin-bottom: 50px;
-}
+// .grille li:last-child {
+//   margin-bottom: 50px;
+// }
 
-.grille .inner {
-  margin: 5%;
-}
+// .grille .inner {
+//   margin: 5%;
+// }
 
-/*VUE EN LISTE*/
+// /*VUE EN LISTE*/
 
-.liste li {
-  border: 1px solid #aaa;
-  border-width: 1px 0;
-  clear: both;
-  margin-bottom: -1px;
-}
+// .liste li {
+//   border: 1px solid #aaa;
+//   border-width: 1px 0;
+//   clear: both;
+//   margin-bottom: -1px;
+// }
 
-.liste .inner {
-  margin: 5px 0;
-  display: table;
-}
+// .liste .inner {
+//   margin: 5px 0;
+//   display: table;
+// }
 
-.liste .vignette, .liste .textes {
-  display: table-cell;
-  vertical-align: middle;
-}
+// .liste .vignette, .liste .textes {
+//   display: table-cell;
+//   vertical-align: middle;
+// }
 
-.liste .textes {
-  padding-left: 10px;
-}
+// .liste .textes {
+//   padding-left: 10px;
+// }
 
-.liste .vignette {
-  width: 24%;
-}
+// .liste .vignette {
+//   width: 24%;
+// }
 
-/*HEADER*/
+// /*HEADER*/
 
-.content-header {
-  position: fixed;
-  top: -100px;
-  width: 100%;
-  background-color: #333;
-  color: #999;
-  z-index: 10;
-  -webkit-transition: all .2s;
-}
+// .content-header {
+//   position: fixed;
+//   top: -100px;
+//   width: 100%;
+//   background-color: #333;
+//   color: #999;
+//   z-index: 10;
+//   -webkit-transition: all .2s;
+// }
 
-.content-header h1 {
-  margin: 5px 10px;
-  line-height: 40px;
-  text-align: left;
-  font-size: 1.2em;
-}
+// .content-header h1 {
+//   margin: 5px 10px;
+//   line-height: 40px;
+//   text-align: left;
+//   font-size: 1.2em;
+// }
 
-.header-on {
-  top: 0;
-}
+// .header-on {
+//   top: 0;
+// }
 
-.header-tous .champignons {
-  display: none;
-}
+// .header-tous .champignons {
+//   display: none;
+// }
 
-.header-tous .tous {
-  display: block;
-}
+// .header-tous .tous {
+//   display: block;
+// }
 
-.header-champignon .champignons {
-  display: block;
-}
+// .header-champignon .champignons {
+//   display: block;
+// }
 
-.header-champignon .tous {
-  display: none;
-}
+// .header-champignon .tous {
+//   display: none;
+// }
 
-.content-header .table {
-  position: absolute;
-  top: 12px;
-  right: 10px;
-  width: auto;
-}
+// .content-header .table {
+//   position: absolute;
+//   top: 12px;
+//   right: 10px;
+//   width: auto;
+// }
 
-.content-header a {
-  width: 24px;
-  height: 24px;
-  margin-left: 20px;
-  background-image: url(images/boutons-tous.png);
-  background-repeat: no-repeat;
-}
+// .content-header a {
+//   width: 24px;
+//   height: 24px;
+//   margin-left: 20px;
+//   background-image: url(images/boutons-tous.png);
+//   background-repeat: no-repeat;
+// }
 
-.header-tous li + li a {
-  background-position: -50px 0;
-}
+// .header-tous li + li a {
+//   background-position: -50px 0;
+// }
 
-.header-tous li + li + li a {
-  background-position: -100px 0;
-}
+// .header-tous li + li + li a {
+//   background-position: -100px 0;
+// }
 
-.header-tous .on a {
-  background-position: 0 -50px;
-}
+// .header-tous .on a {
+//   background-position: 0 -50px;
+// }
 
-.header-tous li + .on a {
-  background-position: -50px -50px;
-}
+// .header-tous li + .on a {
+//   background-position: -50px -50px;
+// }
 
-.header-tous li + li + .on a {
-  background-position: -100px -50px;
-}
+// .header-tous li + li + .on a {
+//   background-position: -100px -50px;
+// }
 
-.content-header .back {
-  background-position: -150px 0;
-}
+// .content-header .back {
+//   background-position: -150px 0;
+// }
 
-.content-header .on .back, .content-header .back:active {
-  background-position: -150px -50px;
-}
+// .content-header .on .back, .content-header .back:active {
+//   background-position: -150px -50px;
+// }
 
-.content-header .cueillette {
-  background-position: -200px 0;
-}
-.content-header .on .cueillette, .content-header .cueillette:active {
-  background-position: -200px -50px;
-}
+// .content-header .cueillette {
+//   background-position: -200px 0;
+// }
+// .content-header .on .cueillette, .content-header .cueillette:active {
+//   background-position: -200px -50px;
+// }
 
-/*FOOTER*/
-
-.content-footer {
-  position: fixed;
-  width: 100%;
-  top: 100%;
-  background-color: #333;
-  z-index: 10;
-  -webkit-transition: all .2s linear;
-}
-
-.content-footer .cell {
-  text-align: center;
-}
-
-.content-footer a {
-  display: block;
-  padding: 10px 5px;
-  color: #aaa;
-}
-
-.content-footer .on a, .content-footer a:active {
-  color: #fff;
-}
 
 .vignette img {
   max-width: 100%;
