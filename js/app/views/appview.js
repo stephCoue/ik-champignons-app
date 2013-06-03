@@ -62,6 +62,10 @@ function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTo
 					this.nextPage = this.pageChampignon;
 					this.header.show("champignon");
 					break;
+				case "determiner":
+					this.nextPage = this.pageDeterminer;
+					this.footer.show("determiner");
+					break;
 			}
 
 			if(this.currentPage !== this.nextPage){
@@ -78,7 +82,7 @@ function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTo
 			// On met le div conteneur de l'app à la taille de la fenêtre
 			this.$el.height( $(window).height() );
 
-			// On affiche avec un peiti fade pour la classe
+			// On affiche avec un petit fade pour la classe ;-)
 			this.$el.css({opacity: 1});
 
 			// on renvoie la vue pour le chaining

@@ -1,8 +1,9 @@
 define([
 	"jquery",
 	"underscore",
-	"backbone"
-], function($, _, Backbone){
+	"backbone",
+	"mixins/pageMixin"
+], function($, _, Backbone, PageMixin){
 
 	var PageDeterminer = Backbone.View.extend({
 
@@ -12,6 +13,8 @@ define([
 			this.$el.hide();
 		}
 	});
+
+	_.extend(PageDeterminer.prototype, PageMixin);
 
 	return PageDeterminer;
 
