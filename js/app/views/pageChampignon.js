@@ -13,6 +13,7 @@ define([
 		initialize: function() {
 			this.$el.hide();
 			this.currentFiche = 1;
+			this.swipable = true;
 			this.speed = 300;
 			this.$el.find("#slides").swipe({
 				triggerOnTouchEnd: true,
@@ -28,22 +29,27 @@ define([
 		},
 
 		onSwipeStatus: function(event, phase, direction, distance, fingers){
+			console.log(this.swipable, direction);
 			switch(phase){
 				case "move":
-					if (direction === "left" || direction === "right"){
+					if ( (direction === "left" || direction === "right") && this.swipable){
 						if(direction === "left" && distance > 30)
 							this.scrollFiche( $(window).width() * this.currentFiche + distance, 0 );
 						else if(direction === "right" && distance > 30)
 							this.scrollFiche( $(window).width() * this.currentFiche - distance, 0 );
+					} else if(direction === "up" || direction === "down"){
+						if(distance > 30)
+							this.swipable = false;
 					} else {
-						this.scrollFiche($(window).width() * this.currentFiche, 0);
+						//this.swipable = true;
+						//this.scrollFiche($(window).width() * this.currentFiche, 0);
 					}
 					break;
 				case "cancel":
-					this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
+					//this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
 					break;
 				case "end":
-					if(distance > $(window).width() / 3){
+					if( (distance > $(window).width() / 3) && this.swipable ){
 						if(direction == "left")
 							this.nextFiche();
 						else if(direction == "right")
@@ -53,6 +59,7 @@ define([
 					} else {
 						this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
 					}
+					this.swipable = true;
 					break;
 			}
 		},
