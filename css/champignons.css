@@ -40,14 +40,25 @@ header,footer{width:100%}
 .content-header{position:fixed;top:-100px;width:100%;color:#e3d9c0;z-index:10;-webkit-transition:all .2s;}
 .content-header h1{margin:5px 10px;line-height:40px;text-align:left;font-size:.8em;position:relative;}
 .content-header h1 span{color:#bbd029}
-.content-header h1 i{width:1.2em;height:1.2em;background:transparent url("images/sprite-menu-picto.png") -57px -57px no-repeat}
 .content-footer{text-transform:uppercase;position:fixed;width:100%;top:100%;z-index:10;-webkit-transition:all .2s linear;}
-.content-footer a{display:block;color:#bbd029;position:relative;}
-.content-footer a:before{display:block;width:1.2em;height:1.2em;background:#f00;position:absolute}
+.content-footer ul{width:100%}
+.content-footer a{display:block;color:#bbd029;padding:3px 0;white-space:nowrap;font-size:.7em;position:relative;}
 .content-footer a:active,.content-footer a:hover{color:#e3d9c0}
 .content-footer .on a{color:#e3d9c0}
-.content-footer .cell{text-align:center}
-.content-footer a{padding:10px 5px}
+.content-footer .cell{text-align:center;width:25%}
+.picto{width:30px;height:30px;display:block;margin:0 auto;background:transparent url("images/sprite-menu-picto-30px.png") 0 0 no-repeat;}
+.picto:hover,.picto:active,.on .picto,a:hover .picto,a:active .picto{background:transparent url("images/sprite-menu-picto-30px.png") 0 -30px no-repeat}
+.determiner a .picto{background:transparent url("images/sprite-menu-picto-30px.png") -60px 0 no-repeat;}
+.determiner a .picto:hover,.determiner a .picto:active{background:transparent url("images/sprite-menu-picto-30px.png") -60px -30px no-repeat}
+.determiner a:hover .picto,.determiner a:active .picto{background:transparent url("images/sprite-menu-picto-30px.png") -60px -30px no-repeat}
+.cueillette .picto{background:transparent url("images/sprite-menu-picto-30px.png") -150px 0 no-repeat;}
+.cueillette .picto:hover,.cueillette .picto:active{background:transparent url("images/sprite-menu-picto-30px.png") -150px -30px no-repeat}
+.cueillette a:hover .picto,.cueillette a:active .picto{background:transparent url("images/sprite-menu-picto-30px.png") -150px -30px no-repeat}
+.tous .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px 0 no-repeat;}
+.tous .picto:hover,.tous .picto:active{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
+.tous a:hover .picto,.tous a:active .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
+.tous .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
+.infoBulleNotification{position:absolute;width:16px;height:16px;line-height:16px;display:block;font-size:.8em;color:#fff;background:#d0470a;border:1px solid #fff;-webkit-border-radius:50%;border-radius:50%;top:9%;left:58%}
 .header-on{top:0}
 .header-tous .champignons{display:none}
 .header-tous .tous{display:block}
@@ -95,5 +106,7 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .search .bouton{display:none;position:absolute;width:30px;height:30px;right:6px;top:50%;margin-top:-15px;background-image:url("images/close.png");background-repeat:no-repeat;background-position:center;-webkit-background-size:60%;-moz-background-size:60%;background-size:60%;opacity:.3;filter:alpha(opacity=30);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"}
 .search .bouton:active{opacity:1;-ms-filter:none;filter:none}
 .vignette img{max-width:100%;height:auto}
-.page .slides{float:left;display:inline;-webkit-transition-property:-webkit-transform;-webkit-transition-timing-function:ease-out;-webkit-transform:translate3d(0,0,0)}
-.page .slide{float:left;padding:50px 0;-webkit-transform:translate3d(0,0,0)}
+.page-champignon{overflow-y:hidden}
+.page-champignon .slides{height:100%;-webkit-transition-property:-webkit-transform;-webkit-transition-timing-function:ease-out;-webkit-transform:translate3d(0,0,0)}
+.page-champignon .slide{height:100%;overflow-y:scroll;float:left;-webkit-transform:translate3d(0,0,0)}
+.page-champignon .slide-inner{margin:60px 10px}
