@@ -1,29 +1,10 @@
 define([
 	"jquery",
 	"underscore",
-	"backbone",
-	"json",
-	"collections/champignons",
-	"json!data/champignons.js",
-	"views/app",
-	"views/pageHome",
-	"views/pageTous",
-	"views/pageChampignon"
-	], function($, _, Backbone, json, ChampignonsCollection, dataChampignons, AppView, PageHomeView, PageTousView, PageChampignonView){
+	"backbone"
+	], function($, _, Backbone){
 
 		var AppRouter = Backbone.Router.extend({
-			initialize: function(){
-
-				// La collection de champignons
-				this.champignons = new ChampignonsCollection();
-				this.champignons.set(dataChampignons);
-
-				// Les vues
-				this.appView = new AppView();
-				this.homeView = new PageHomeView();
-				this.tousView = new PageTousView({collection:this.champignons});
-
-			},
 
 			routes: {
 				"":"home",
@@ -36,59 +17,8 @@ define([
 				"critere/:cid": "filterList",
 				"champignon/:id": "getChampignon",
 				"*actions": "toDefault"
-			},
-
-			home: function() {
-				console.log("Router: Home");
-				this.appView.changePage(this.homeView);
-			},
-
-			tous: function(){
-				console.log("Router : Tous les champignons");
-				this.appView.changePage(this.tousView);
-			},
-
-			getChampignon: function(id) {
-				console.log("route champignon id = ", id);
-				var pageChampignon = new PageChampignonView({model:this.champignons.getOne(id)});
-				this.appView.changePage(pageChampignon);
-			},
-
-			determiner: function(){
-				console.log("Router : Déterminer");
-				$.mobile.changePage( "#determiner" , { changeHash: false } );
-			},
-
-			mycologie: function(){
-				console.log("Router : Mycologie");
-				$.mobile.changePage( "#mycologie" , { changeHash: false } );
-			},
-
-			infos: function(){
-				console.log("Router : Infos");
-				$.mobile.changePage( "#infos" , { changeHash: false } );
-			},
-
-			cueillette: function() {
-				console.log("Router : Cueillette");
-				$.mobile.changePage( "#cueillette" , { changeHash: false } );
-			},
-
-			filterList: function(id) {
-				this.criteresListView.update(id);
-
-				if(id === '0') {
-					this.champignonsListView.collection.selection(0);
-				} else {
-					var champignons = this.criteresListView.collection.getChampignons(id);
-					this.champignonsListView.collection.selection(champignons);
-				}
-			},
-
-			toDefault: function(){
-				console.log("route inconnue ! retour au splashscreen");
-				$.mobile.changePage( "#home" , { transition:"fade", reverse: true, changeHash: false } );
 			}
+
 		});
 
 		var initialize = function() {

@@ -42,7 +42,7 @@ define([
 
 		determiner: function(){
 			console.log("AppController : route determiner");
-			//this.app.appView.showPage({page:"determiner"});
+			this.app.appView.showPage({page:"determiner"});
 		},
 
 		// Préférences
