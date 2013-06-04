@@ -15,7 +15,9 @@ define([
 			this.currentFiche = 1;
 			this.swipable = true;
 			this.speed = 300;
-			this.$el.find("#slides").swipe({
+			this.$el.find("#currentSlide")
+			.css("opacity", "0")
+			.swipe({
 				triggerOnTouchEnd: true,
 				allowPageScroll:"vertical",
 				swipeStatus: function(){}
@@ -24,15 +26,16 @@ define([
 		},
 
 		events: {
-			"swipeStatus #slides": "onSwipeStatus",
+			"swipeStatus #currentSlide": "onSwipeStatus",
 			"webkitTransitionEnd #slides": "onTransitionEnd"
 		},
 
 		onSwipeStatus: function(event, phase, direction, distance, fingers){
-			console.log(this.swipable, direction);
 			switch(phase){
 				case "move":
 					if ( (direction === "left" || direction === "right") && this.swipable){
+						this.$el.find("#currentSlide").css({"opacity":"0"});
+						this.$el.find("#slides").css({"opacity":"1"});
 						if(direction === "left" && distance > 30)
 							this.scrollFiche( $(window).width() * this.currentFiche + distance, 0 );
 						else if(direction === "right" && distance > 30)
@@ -40,13 +43,10 @@ define([
 					} else if(direction === "up" || direction === "down"){
 						if(distance > 30)
 							this.swipable = false;
-					} else {
-						//this.swipable = true;
-						//this.scrollFiche($(window).width() * this.currentFiche, 0);
 					}
 					break;
 				case "cancel":
-					//this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
+					this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
 					break;
 				case "end":
 					if( (distance > $(window).width() / 3) && this.swipable ){
@@ -62,10 +62,6 @@ define([
 					this.swipable = true;
 					break;
 			}
-		},
-
-		onTransitionEnd: function(event){
-			this.onChampignon(this.champignons[this.currentFiche]);
 		},
 
 		scrollFiche: function(distance, duration){
@@ -86,6 +82,15 @@ define([
 		},
 
 		onChampignon: function(champignon){
+			// Mise à jour de la liste des champignons
+			this.updateSlider(champignon);
+
+			// rendu du slider
+			this.onTransitionEnd();
+			//this.render();
+		},
+
+		updateSlider: function(champignon){
 			// Mise à jour de la sélection dans la collection
 			champignon.collection.current = champignon;
 
@@ -105,12 +110,28 @@ define([
 			} else {
 				this.currentFiche = this.champignons.length - 2;
 			}
+		},
 
-			// rendu du slider
+		onTransitionEnd: function(){
+
+			// Mise à jour de la liste des champignons
+			this.updateSlider(this.champignons[this.currentFiche]);
+
+			// Mise à jour de la fiche courante
+			var newFiche = new Fiche({model:this.champignons[this.currentFiche]}).render();
+			this.$el.find("#currentSlide")
+			.empty()
+			.append( newFiche.$el )
+			.css("opacity", "1");
+
+			this.$el.find("#slides").css("opacity", "0");
+
 			this.render();
+
 		},
 
 		render: function() {
+			console.log("render");
 			var $slides = this.$el.find("#slides");
 			$slides.empty();
 			$slides.width($(window).width() * this.champignons.length);
