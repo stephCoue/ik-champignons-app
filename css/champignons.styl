@@ -14,6 +14,7 @@ $institut = #658833 || rgb(101,136,51); // green foncé
 $secondColor = #E3D9C0 || rgb(227,217,192); // marron claire
 $titreColor = #534741 || rgb(83,71,65); // marron fonce
 $infoBulleNotification = #d0470a || rgb(208,71,10); // rouge
+$ombreHeaders = #8C572C
 
 
 /*  COMMUN  */
@@ -126,7 +127,6 @@ footer
 
     &:hover,
     &:active
-      // background: -webkit-linear-gradient(left, rgba(#e2e2e0, .12) 3%, rgba(#c4ce7b , .6) 21%, rgba($primary, .9) 50%, rgba(#c4ce7b , .6) 77%, rgba(#e2e2e0, .12) 97%)
       background: -webkit-linear-gradient(left, rgba(#e2e2e0, 0) 2%,rgba(#e2e2e0, .08) 3%,rgba(#e2e2e0, .12) 16%,rgba(#c4ce7b , .6) 32%,rgba($primary, .9) 50%,rgba(#c4ce7b , .6) 75%,rgba(#e2e2e0, .12) 90%,rgba(#e2e2e0, .08) 97%, rgba(#e2e2e0, 0) 98%)
       & a,
       & span
@@ -179,30 +179,24 @@ footer
     margin: 5px 10px;
     line-height: 40px;
     text-align: left;
-    font-size: .8em
+    font-size: .9em
     position: relative
+    margin-left 3em
+    top 6px
 
     span
       color: $primary
-
-    // &:before
-    //   content: ""
-    //   display: block
-    //   width: 50px
-    //   height: 50px
-    //   background: transparent url('images/sprite-menu-picto.png') -57px -57px no-repeat
-    //   position: absolute
+      position: absolute
+      top -1em
 
 
-  // i
-  //   width: 1.2em
-  //   height: 1.2em
-  //   background: transparent url('images/sprite-menu-picto.png') -57px -57px no-repeat
-
-
-
-
-
+  .picto
+    position: absolute
+    background: transparent url('images/sprite-menu-picto-30px.png') -30px -30px no-repeat
+    left -2.4em
+    top -2px
+    &:hover
+      background: transparent url('images/sprite-menu-picto-30px.png') -30px -30px no-repeat
 
 
 
@@ -214,6 +208,7 @@ footer
   top: 100%;
   z-index: 10;
   -webkit-transition: all .2s linear
+  box-shadow 0 -1px 5px $ombreHeaders
 
   ul
     width 100%
@@ -299,55 +294,15 @@ footer
   left: 58%
 
 
+.header-tous
+  box-shadow 0 1px 5px $ombreHeaders
 
 
 
 
-/*FOOTER*/
 
-// .content-footer {
-//   position: fixed;
-//   width: 100%;
-//   top: 100%;
-//   background-color: #333;
-//   z-index: 10;
-//   -webkit-transition: all .2s linear;
-// }
+/* HEADER to clean*/
 
-// .content-footer .cell {
-//   text-align: center;
-// }
-
-.content-footer a {
-  // display: block;
-  // padding: 10px 5px;
-  // color: #aaa;
-}
-
-// .content-footer .on a, .content-footer a:active {
-//   color: #fff;
-// }
-
-
-
-/*HEADER*/
-
-// .content-header {
-//   position: fixed;
-//   top: -100px;
-//   width: 100%;
-//   background-color: #333;
-//   color: #999;
-//   z-index: 10;
-//   -webkit-transition: all .2s;
-// }
-
-// .content-header h1 {
-//   margin: 5px 10px;
-//   line-height: 40px;
-//   text-align: left;
-//   font-size: 1.2em;
-// }
 
 .header-on {
   top: 0;
@@ -424,16 +379,119 @@ footer
 
 
 
+/*CHAMPS RECHERCHE*/
+
+.search
+  position: relative
+  margin: 1px -10px
+  padding: 6px 0
+  padding-top: 15%
+  .inner
+    margin: 0 10px
+    position: relative
+
+  input
+    display block
+    width: 97%
+    padding: 4px 5px;
+    margin: 0 auto;
+    border: 0 none;
+    border-radius: 4px;
+    font-size: 0.8em
+    padding-left: 30px
+
+
+  .loupe
+    display block
+    width 22px
+    height 22px
+    position: absolute
+    background transparent url('images/search-21px.png') 0 0 no-repeat
+    left: 9px
+    top: 2px
+
+  .bouton
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 6px;
+    top: 50%;
+    margin-top: -15px;
+    background-image: url(images/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    opacity: 0.3
+    &:active
+      opacity: 1
+
+
+/*  FILTRES */
+
+.filtres
+  margin: 0 6px
+  font-family: 'fjalla_oneregular'
+  .cell
+    width (100/3)%
+  a
+    display block
+    color lighten($titreColor, 60%)
+    padding 6px 0
+    text-align center
+    font-size .9em
+    text-transform uppercase
+
+    &:active
+      font-weight bold
+
+  .on
+    a
+      color $titreColor
+
+  // a
+  //   display: block
+  //   color: $titreColor
+  //   padding: 6px 0
+  //   text-align: center
+  //   font-size: 0.7em
+  //   text-transform: uppercase
+
+  //   &:active
+  //     font-weight bold
+
+  // .on
 
 
 
+/* FILTRES */
 
+// .filtres {
+//   margin: 0 -10px;
+//   background-color: #999;
+// }
 
+// .filtres .cell {
+//   width: 33.333%;
+// }
 
+// .filtres a {
+//   display: block;
+//   padding: 6px 0;
+//   text-align: center;
+//   font-size: 0.7em;
+//   text-transform: uppercase;
+// }
 
+// .filtres a:active {
+//   font-weight: bold;
+// }
 
-
-
+// .filtres .on a {
+//   font-weight: bold;
+//   // background-color: #666;
+//   color: #fff;
+// }
 
 
 
@@ -587,76 +645,49 @@ a.inner
   display: block;
 }
 
-/* FILTRES */
 
-.filtres {
-  margin: 0 -10px;
-  background-color: #999;
-}
 
-.filtres .cell {
-  width: 33.333%;
-}
+// /*CHAMPS RECHERCHE*/
 
-.filtres a {
-  display: block;
-  padding: 6px 0;
-  text-align: center;
-  font-size: 0.7em;
-  text-transform: uppercase;
-}
+// .search {
+//   position: relative;
+//   margin: 1px -10px;
+//   padding: 10px 0;
+//   background-color: #999;
+// }
 
-.filtres a:active {
-  font-weight: bold;
-}
+// .search .inner {
+//   margin: 0 10px;
+// }
 
-.filtres .on a {
-  font-weight: bold;
-  background-color: #666;
-  color: #fff;
-}
+// .search input {
+//   display: block;
+//   width: 97%;
+//   padding: 4px 5px;
+//   margin: 0 auto;
+//   border: 0 none;
+//   border-radius: 4px;
+//   font-size: 0.8em;
+// }
 
-/*CHAMPS RECHERCHE*/
+// .search .bouton {
+//   display: none;
+//   position: absolute;
+//   width: 30px;
+//   height: 30px;
+//   right: 6px;
+//   top: 50%;
+//   margin-top: -15px;
+//   background-image: url(images/close.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: 60%;
+//   opacity: 0.3;
+// }
 
-.search {
-  position: relative;
-  margin: 1px -10px;
-  padding: 10px 0;
-  background-color: #999;
-}
-
-.search .inner {
-  margin: 0 10px;
-}
-
-.search input {
-  display: block;
-  width: 97%;
-  padding: 4px 5px;
-  margin: 0 auto;
-  border: 0 none;
-  border-radius: 4px;
-  font-size: 0.8em;
-}
-
-.search .bouton {
-  display: none;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 6px;
-  top: 50%;
-  margin-top: -15px;
-  background-image: url(images/close.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60%;
-  opacity: 0.3;
-}
-
-.search .bouton:active {
-  opacity: 1.0;
-}
+// .search .bouton:active {
+//   opacity: 1.0;
+// }
 
 // /*VUE EN GRILLE*/
 
