@@ -15,9 +15,8 @@ define([
 			this.currentFiche = 1;
 			this.swipable = true;
 			this.speed = 300;
-			this.$el.find("#currentSlide")
-			.css("opacity", "0")
-			.swipe({
+			this.$slides = this.$el.find("#slides");
+			this.$slides.swipe({
 				triggerOnTouchEnd: true,
 				allowPageScroll:"vertical",
 				swipeStatus: function(){}
@@ -26,7 +25,7 @@ define([
 		},
 
 		events: {
-			"swipeStatus #currentSlide": "onSwipeStatus",
+			"swipeStatus #slides": "onSwipeStatus",
 			"webkitTransitionEnd #slides": "onTransitionEnd"
 		},
 
@@ -34,8 +33,6 @@ define([
 			switch(phase){
 				case "move":
 					if ( (direction === "left" || direction === "right") && this.swipable){
-						this.$el.find("#currentSlide").css({"opacity":"0"});
-						this.$el.find("#slides").css({"opacity":"1"});
 						if(direction === "left" && distance > 30)
 							this.scrollFiche( $(window).width() * this.currentFiche + distance, 0 );
 						else if(direction === "right" && distance > 30)
@@ -82,15 +79,6 @@ define([
 		},
 
 		onChampignon: function(champignon){
-			// Mise à jour de la liste des champignons
-			this.updateSlider(champignon);
-
-			// rendu du slider
-			this.onTransitionEnd();
-			//this.render();
-		},
-
-		updateSlider: function(champignon){
 			// Mise à jour de la sélection dans la collection
 			champignon.collection.current = champignon;
 
@@ -104,46 +92,74 @@ define([
 			if(champignon.collection.getNext())
 				this.champignons.push(champignon.collection.getNext());
 
+			console.log("######\n" + "this.currentFiche = ", this.currentFiche);
+			if(this.currentFiche === 2 && champignon.collection.indexOf(champignon) < champignon.collection.length - 1)
+				this.renderNext();
+			else if(this.currentFiche === 0 && champignon.collection.indexOf(champignon) > 1)
+				this.renderPrev();
+			else
+				this.render();
+
 			// Mise à jour de l'index du slider
 			if(champignon.collection.indexOf(champignon) === champignon.collection.length - 1){
 				this.currentFiche = 1;
 			} else {
 				this.currentFiche = this.champignons.length - 2;
 			}
+
+			console.log("this.currentFiche = ", this.currentFiche);
 		},
 
 		onTransitionEnd: function(){
+			this.onChampignon(this.champignons[this.currentFiche]);
+		},
 
-			// Mise à jour de la liste des champignons
-			this.updateSlider(this.champignons[this.currentFiche]);
+		renderNext: function(){
+			console.log("renderNext");
+			// Suppression du premier enfant
+			this.$slides.find(".slide:first-child").remove();
+			// Ajout du dernier nouvel enfant
+			this.$slides.append( new Fiche({model:this.champignons[2]}).render().$el );
+			// repositionnelent du slider
+			this.$slides.css({
+				"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)",
+				"-webkit-transition-duration": "0"
+			});
+		},
 
-			// Mise à jour de la fiche courante
-			var newFiche = new Fiche({model:this.champignons[this.currentFiche]}).render();
-			this.$el.find("#currentSlide")
-			.empty()
-			.append( newFiche.$el )
-			.css("opacity", "1");
-
-			this.$el.find("#slides").css("opacity", "0");
-
-			this.render();
-
+		renderPrev: function(){
+			console.log("renderPrev");
+			// Suppression du dernier enfant
+			this.$slides.find(".slide:last-child").remove();
+			// Ajout du premier nouvel enfant
+			this.$slides.prepend( new Fiche({model:this.champignons[0]}).render().$el );
+			// repositionnelent du slider
+			this.$slides.css({
+				"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)",
+				"-webkit-transition-duration": "0"
+			});
 		},
 
 		render: function() {
 			console.log("render");
-			var $slides = this.$el.find("#slides");
-			$slides.empty();
-			$slides.width($(window).width() * this.champignons.length);
+			console.log("collection length ", this.champignons.length);
+			if(this.champignons.length < 3){
+				// on est soit eu début ou à la fin de la liste
+				console.log("On est au bout ! ", this.champignons.length);
+			}
+
+			// Mise à jour du slider
+			this.$slides.empty().width($(window).width() * this.champignons.length);
+
+			// ajout des nouvelles fiches dans le slider
 			_.each(this.champignons, function(champignon){
 				var fiche = new Fiche({model:champignon}).render();
-				$slides.append(fiche.$el);
-			});
+				this.$slides.append(fiche.$el);
+			}, this);
 
-			var offset = $(window).width() * this.currentFiche;
-
-			$slides.css({
-				"-webkit-transform": "translate3d(-" + offset + "px, 0px, 0px)",
+			// Application du décalage en css
+			this.$slides.css({
+				"-webkit-transform": "translate3d(-" + $(window).width() * (this.champignons.length - 2) + "px, 0px, 0px)",
 				"-webkit-transition-duration": "0"
 			});
 
