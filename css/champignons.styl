@@ -30,11 +30,13 @@ a
 
 /*  UTILITAIRES */
 table
-  display: table
+  // display: table
   width: 100%
+  clearfix()
 
 .cell
-  display: table-cell
+  // display: table-cell
+  float:left
 
 .bouton
   display: block
@@ -515,10 +517,12 @@ footer
 
 /* VUE EN LIST */
 
-#tous,
-.slides
-  background: transparent url("images/paper-background.jpg") center center
+// #tous .page-inner,
+// .slide
 
+#tous,
+.slide
+  background: transparent url("images/paper-background.jpg") center center
 
 a.inner
   color: $titreColor
