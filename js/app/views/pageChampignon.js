@@ -92,14 +92,6 @@ define([
 			if(champignon.collection.getNext())
 				this.champignons.push(champignon.collection.getNext());
 
-			console.log("######\n" + "this.currentFiche = ", this.currentFiche);
-			if(this.currentFiche === 2 && champignon.collection.indexOf(champignon) < champignon.collection.length - 1)
-				this.renderNext();
-			else if(this.currentFiche === 0 && champignon.collection.indexOf(champignon) > 1)
-				this.renderPrev();
-			else
-				this.render();
-
 			// Mise à jour de l'index du slider
 			if(champignon.collection.indexOf(champignon) === champignon.collection.length - 1){
 				this.currentFiche = 1;
@@ -107,7 +99,7 @@ define([
 				this.currentFiche = this.champignons.length - 2;
 			}
 
-			console.log("this.currentFiche = ", this.currentFiche);
+			this.render();
 		},
 
 		onTransitionEnd: function(){
@@ -115,11 +107,13 @@ define([
 		},
 
 		renderNext: function(){
-			console.log("renderNext");
 			// Suppression du premier enfant
 			this.$slides.find(".slide:first-child").remove();
 			// Ajout du dernier nouvel enfant
 			this.$slides.append( new Fiche({model:this.champignons[2]}).render().$el );
+			// Ajout du premier nouvel enfant
+			if(this.$slides.children().length < 3)
+				this.$slides.prepend( new Fiche({model:this.champignons[0]}).render().$el );
 			// repositionnelent du slider
 			this.$slides.css({
 				"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)",
@@ -128,11 +122,13 @@ define([
 		},
 
 		renderPrev: function(){
-			console.log("renderPrev");
 			// Suppression du dernier enfant
 			this.$slides.find(".slide:last-child").remove();
 			// Ajout du premier nouvel enfant
 			this.$slides.prepend( new Fiche({model:this.champignons[0]}).render().$el );
+			// Ajout du dernier enfant
+			if(this.$slides.children().length < 3)
+				this.$slides.append( new Fiche({model:this.champignons[2]}).render().$el );
 			// repositionnelent du slider
 			this.$slides.css({
 				"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)",
@@ -141,27 +137,54 @@ define([
 		},
 
 		render: function() {
-			console.log("render");
-			console.log("collection length ", this.champignons.length);
-			if(this.champignons.length < 3){
-				// on est soit eu début ou à la fin de la liste
-				console.log("On est au bout ! ", this.champignons.length);
+
+			// Mise à jour de la largeur du slider
+			this.$slides.width($(window).width() * this.champignons.length);
+
+			if(this.$slides.children().length === 0){ // Si c'est la première fois
+
+				// ajout des nouvelles fiches dans le slider
+				_.each(this.champignons, function(champignon){
+					var fiche = new Fiche({model:champignon}).render();
+					this.$slides.append(fiche.$el);
+				}, this);
+
+				// Application du décalage en css
+				this.$slides.css({
+					"-webkit-transform": "translate3d(-" + $(window).width() * this.currentFiche + "px, 0px, 0px)",
+					"-webkit-transition-duration": "0"
+				});
+
+			} else { // Si pas la première fois
+
+				if(this.champignons.length < 3){ // On est au début ou à la fin
+					if(this.currentFiche === 0){ // on est au début
+						if(this.$slides.position().left < 0)
+							this.renderPrev();
+					} else if(this.currentFiche === 1){ // On est à la fin
+						if(this.$slides.children().length === 3){
+							this.$slides.find(".slide:first-child").remove();
+							this.$slides.css({
+								"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)",
+								"-webkit-transition-duration": "0"
+							});
+						}
+					}
+				} else { // on est au milieu
+					if(this.$slides.position().left < -$(window).width()){ // on a fait next
+						this.renderNext();
+					} else if(this.$slides.children().length === 3 && this.$slides.position().left === 0){ // on a fait prev
+						this.renderPrev();
+					} else if(this.$slides.children().length === 2 && this.$slides.position().left === -$(window).width()){
+						this.renderNext();
+					} else if(this.$slides.children().length === 2 && this.$slides.position().left === 0){
+						this.renderPrev();
+					}
+				}
+
 			}
 
-			// Mise à jour du slider
-			this.$slides.empty().width($(window).width() * this.champignons.length);
-
-			// ajout des nouvelles fiches dans le slider
-			_.each(this.champignons, function(champignon){
-				var fiche = new Fiche({model:champignon}).render();
-				this.$slides.append(fiche.$el);
-			}, this);
-
-			// Application du décalage en css
-			this.$slides.css({
-				"-webkit-transform": "translate3d(-" + $(window).width() * (this.champignons.length - 2) + "px, 0px, 0px)",
-				"-webkit-transition-duration": "0"
-			});
+			this.$slides.width($(window).width() * this.$slides.children().length);
 
 			return this;
 		}

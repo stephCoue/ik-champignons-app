@@ -24,7 +24,7 @@ define([
 				});
 			} else {
 				this.$el.transition({"-webkit-transform":"translate3d(100%,0,0)"}, this.speed, 'ease', function(){
-					_this.$el.hide();
+					_this.$el.hide().find(".empty").children().remove();
 				});
 			}
 		}
