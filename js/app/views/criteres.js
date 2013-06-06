@@ -1,22 +1,19 @@
 define([
-"jquery",
-"underscore",
-"backbone",
-"collections/criteres",
-"views/critereItem"
+	"jquery",
+	"underscore",
+	"backbone",
+	"collections/criteres",
+	"views/critereItem"
 ], function($, _, Backbone, CriteresCollection, CritereItem){
 
 	var CriteresListView = Backbone.View.extend({
 
-		el: $("#filtres"),
+		tagName: "ul",
 
 		initialize: function() {
 			this.currentId = "0",
 			this.collection = new CriteresCollection();
-			this.collection.on("sync", this.render, this);
-			this.collection.fetch();
-
-			this.backBtn = this.$el.find("#retour a").hide();
+			//this.backBtn = this.$el.find("#retour a").hide();
 		},
 
 		update: function(id) {
@@ -27,22 +24,23 @@ define([
 		render: function() {
 
 			var currentItems = this.collection.getEnfants(this.currentId);
+			console.log(currentItems);
 
 			if(currentItems) {
 
-				this.$el.find("ul").html('');
+				this.$el.empty();
 
-				if(this.currentId === "0")
-					this.backBtn.fadeOut();
-				else
-					this.backBtn.fadeIn();
+				// if(this.currentId === "0")
+				// 	this.backBtn.fadeOut();
+				// else
+				// 	this.backBtn.fadeIn();
 
-				this.backBtn.attr("href", "#critere/" + this.collection.getParent(this.currentId));
+				// this.backBtn.attr("href", "#critere/" + this.collection.getParent(this.currentId));
 			}
 
 			_.each(currentItems, function(critere){
 				var critereItem = new CritereItem({model:critere});
-				this.$el.find("ul").append(critereItem.render().el);
+				this.$el.append(critereItem.render().$el);
 			}, this);
 
 			return this;

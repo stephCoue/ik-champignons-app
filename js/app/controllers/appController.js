@@ -45,6 +45,10 @@ define([
 			this.app.appView.showPage({page:"determiner"});
 		},
 
+		critere: function(id){
+			console.log("AppController : route critere : ", id);
+		},
+
 		// Préférences
 
 		filterSave: function(sortkey){

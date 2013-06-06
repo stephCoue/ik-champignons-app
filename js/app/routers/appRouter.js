@@ -13,6 +13,7 @@ define([
 			"tous":"tous",
 			"champignon":"champignon",
 			"determiner":"determiner",
+			"determiner/:id":"critere",
 			"*action":"home"
 		}
 

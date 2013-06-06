@@ -3,9 +3,8 @@ define([
 	"underscore",
 	"backbone",
 	"views/champignonItem",
-	"collections/champignons",
-	"json!data/champignons.json"
-], function($, _, Backbone, ChampignonItem, ChampignonsCollection, data){
+	"collections/champignons"
+], function($, _, Backbone, ChampignonItem, ChampignonsCollection){
 
 	var ChampignonsListView = Backbone.View.extend({
 

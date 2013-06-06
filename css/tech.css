@@ -1,4 +1,4 @@
-.page-champignon .slide::-webkit-scrollbar {
+.page::-webkit-scrollbar, .page-champignon .slide::-webkit-scrollbar {
 	display: none;
 }
 
@@ -9,4 +9,16 @@
 	height: 100%;
 	overflow-y: scroll;
 	background: url("images/paper-background.jpg") center;
+}
+
+.sidebar {
+	display: none;
+}
+
+.page-determiner ul {
+	margin: 15% 6%;
+}
+
+.on .bouton .picto {
+	background-position-y: -30px;
 }
