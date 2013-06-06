@@ -402,6 +402,8 @@ footer
     font-size: 0.8em
     padding-left: 30px
 
+    &:focus
+      outline-color: lighten($ombreHeaders, 70%)
 
   .loupe
     display block
@@ -451,65 +453,6 @@ footer
     a
       color $titreColor
 
-  // a
-  //   display: block
-  //   color: $titreColor
-  //   padding: 6px 0
-  //   text-align: center
-  //   font-size: 0.7em
-  //   text-transform: uppercase
-
-  //   &:active
-  //     font-weight bold
-
-  // .on
-
-
-
-/* FILTRES */
-
-// .filtres {
-//   margin: 0 -10px;
-//   background-color: #999;
-// }
-
-// .filtres .cell {
-//   width: 33.333%;
-// }
-
-// .filtres a {
-//   display: block;
-//   padding: 6px 0;
-//   text-align: center;
-//   font-size: 0.7em;
-//   text-transform: uppercase;
-// }
-
-// .filtres a:active {
-//   font-weight: bold;
-// }
-
-// .filtres .on a {
-//   font-weight: bold;
-//   // background-color: #666;
-//   color: #fff;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -540,12 +483,13 @@ a.inner
       border-image: url("images/nav-main-hr.png") 100% 0 100% 0
 
 
+.activeClass
+  &:hover
+    background: -webkit-linear-gradient(left, rgba(#e2e2e0, 0) 2%,rgba(#e2e2e0, .08) 3%,rgba(#e2e2e0, .12) 16%,rgba(#c4ce7b , .6) 32%,rgba($primary, .9) 50%,rgba(#c4ce7b , .6) 75%,rgba(#e2e2e0, .12) 90%,rgba(#e2e2e0, .08) 97%, rgba(#e2e2e0, 0) 98%)
+    color: $titreColor
+    text-shadow: 0 1px 1px #fff
 
 
-.activeClass:hover
-  background: -webkit-linear-gradient(left, rgba(#e2e2e0, 0) 2%,rgba(#e2e2e0, .08) 3%,rgba(#e2e2e0, .12) 16%,rgba(#c4ce7b , .6) 32%,rgba($primary, .9) 50%,rgba(#c4ce7b , .6) 75%,rgba(#e2e2e0, .12) 90%,rgba(#e2e2e0, .08) 97%, rgba(#e2e2e0, 0) 98%)
-  color: $titreColor
-  text-shadow: 0 1px 1px #fff
 
 
 
@@ -593,7 +537,7 @@ a.inner
 }
 
 .grille li:last-child {
-  margin-bottom: 50px;
+  margin-bottom 4.8em;
 }
 
 .grille .inner {
@@ -604,9 +548,53 @@ a.inner
 
 
 
+.text
+  line-height 1.2
+
+.nomLatinChampignon
+  font-family "sofiaregular"
+
+.familleChampignon
+  font-size: .5em
+  font-weight 100
+  padding-right 17px
+  text-align right
+
+  .grille &
+    padding-right 0
+
+.nom
+  span
+    display: inline-block
+    width:100%
+
+
+.liste-champignons
+  &.liste
+    margin-bottom 4.8em
+    li
+      @extend  .activeClass
 
 
 
+.slide-inner
+  h2
+    font-family fjalla_oneregular
+    font-size 2em
+    line-height: 1.2
+    text-align center
+
+  &>h3
+    @extend .slide-inner h2
+    font-family "sofiaregular"
+    font-size 1.5em
+    margin-bottom: .6em
+
+  >div
+    margin-bottom: .6em
+    &>h3
+      color $institut
+      text-transform uppercase
 
 
 
@@ -648,6 +636,54 @@ a.inner
 .liste-champignons a {
   display: block;
 }
+
+
+
+
+.vignette img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FICHES CHAMPIGNON */
+
+.page-champignon {
+  overflow-y: hidden;
+}
+
+.page-champignon .slides {
+  height: 100%;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.page-champignon .slide {
+  height: 100%;
+  overflow-y: scroll;
+  float: left;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.page-champignon .slide-inner {
+  margin: 60px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1189,34 +1225,6 @@ a.inner
 //   color: #fff;
 // }
 
-.vignette img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* FICHES CHAMPIGNON */
-
-.page-champignon {
-  overflow-y: hidden;
-}
-
-.page-champignon .slides {
-  height: 100%;
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transform: translate3d(0,0,0);
-}
-
-.page-champignon .slide {
-  height: 100%;
-  overflow-y: scroll;
-  float: left;
-  -webkit-transform: translate3d(0,0,0);
-}
-
-.page-champignon .slide-inner {
-  margin: 60px 10px;
-}
 
 
 
