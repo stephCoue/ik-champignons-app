@@ -90,7 +90,6 @@ header,footer{width:100%}
 .filtres{margin:0 6px;font-family:'fjalla_oneregular';}
 .filtres .cell{width:33.333333333333336%}
 .filtres a{display:block;color:#bfb4ae;padding:6px 0;text-align:center;font-size:.9em;text-transform:uppercase;}
-.filtres a:active{font-weight:bold}
 .filtres .on a{color:#534741}
 #tous,.slide{background:transparent url("images/paper-background.jpg") center center}
 a.inner{color:#534741;font:120% 'fjalla_oneregular'}
