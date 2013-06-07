@@ -15,11 +15,13 @@ define([
 		show: function(contexte){
 			this.$el.find("." + contexte).addClass("on").siblings().removeClass("on");
 			this.$el.css("-webkit-transform","translate3d(0,-" + this.$el.outerHeight() + "px,0)");
+			this.$el.addClass("open");
 		},
 
 		hide: function(){
 			this.$el.find("li.on").removeClass("on");
 			this.$el.css("-webkit-transform","translate3d(0,0,0)");
+			this.$el.removeClass("open");
 		},
 
 		render: function(){
