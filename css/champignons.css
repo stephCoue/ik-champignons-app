@@ -23,8 +23,8 @@ table:after{clear:both}
 .page{position:absolute;width:100%;height:100%;-webkit-box-shadow:0 0 20px rgba(0,0,0,0.5);box-shadow:0 0 20px rgba(0,0,0,0.5);overflow-y:scroll;overflow-x:hidden;-webkit-overflow-scrolling:touch;-webkit-transition:-webkit-transform .2s ease;-webkit-transform-style:preserve-3d;-webkit-transform:translate3d(0,0,0)}
 .page-inner{margin:3% auto}
 header,footer{width:100%}
-.page-inner h1{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background:url("images/logo-app.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center bottom;min-height:88px;width:72%;margin:0 auto}
-.logo{min-height:75px;background:url("images/logo-ik-couleur.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;width:23%;margin:0 auto}
+.page-inner h1{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background:url("images/logo-app.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center bottom;min-height:95px;width:77%;margin:0 auto}
+.logo{min-height:87px;background:url("images/logo-ik-couleur.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;width:26%;margin:0 auto}
 .nav-main{font-size:130%;text-shadow:0 2px 2px #000;margin:4% auto;}
 .nav-main span{text-transform:uppercase;color:#bbd029;display:block;margin-bottom:.2em}
 .nav-main ul{width:90%;margin:0 auto}
@@ -39,12 +39,13 @@ header,footer{width:100%}
 .nav-main a.lecon:before{background-position:-171px 0}
 .nav-main a.infos:before{background-position:-228px 0}
 [class*="content"]{background:transparent url("images/bois-brun-fonce.png")}
-.content-header{position:fixed;top:-100px;width:100%;color:#e3d9c0;z-index:10;-webkit-transition:all .2s;}
+.content-header{position:fixed;top:-100px;width:100%;height:50px;color:#e3d9c0;z-index:10;-webkit-transition:all .2s;}
 .content-header h1{margin:5px 10px;line-height:40px;text-align:left;font-size:.9em;position:relative;margin-left:3em;top:6px;}
-.content-header h1 span{color:#bbd029;position:absolute;top:-1em}
+.content-header h1 .titre{color:#bbd029;position:absolute;text-transform:uppercase;top:-1em}
 .content-header .picto{position:absolute;background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat;left:-2.4em;top:-2px;}
 .content-header .picto:hover{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
-.content-footer{text-transform:uppercase;position:fixed;width:100%;top:100%;z-index:10;-webkit-transition:all .2s linear;-webkit-box-shadow:0 -1px 5px #8c572c;box-shadow:0 -1px 5px #8c572c;}
+.content-footer{text-transform:uppercase;position:fixed;width:100%;height:60px;top:100%;z-index:10;padding-top:6px;-webkit-transition:all .2s linear;}
+.content-footer.open{-webkit-box-shadow:0 -1px 5px #8c572c;box-shadow:0 -1px 5px #8c572c}
 .content-footer ul{width:100%}
 .content-footer a{display:block;color:#bbd029;padding:3px 0;white-space:nowrap;font-size:.7em;position:relative;}
 .content-footer a:active,.content-footer a:hover{color:#e3d9c0}
@@ -61,8 +62,8 @@ header,footer{width:100%}
 .tous .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px 0 no-repeat;}
 .tous .picto:hover,.tous .picto:active{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
 .tous a:hover .picto,.tous a:active .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
-.tous.on .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
-.infoBulleNotification{position:absolute;width:16px;height:16px;line-height:16px;display:block;font-size:.8em;color:#fff;background:#d0470a;border:1px solid #fff;-webkit-border-radius:50%;border-radius:50%;top:9%;left:58%}
+.tous .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
+.infoBulleNotification{position:absolute;width:16px;height:16px;line-height:16px;display:block;font-size:.8em;color:#fff;background:#d0470a;border:1px solid #fff;text-shadow:1px 1px 0 #000;-webkit-border-radius:50%;border-radius:50%;top:9%;left:58%}
 .header-tous{-webkit-box-shadow:0 1px 5px #8c572c;box-shadow:0 1px 5px #8c572c}
 .header-on{top:0}
 .header-tous .champignons{display:none}
@@ -80,7 +81,7 @@ header,footer{width:100%}
 .content-header .on .back,.content-header .back:active{background-position:-150px -50px}
 .content-header .cueillette{background-position:-200px 0}
 .content-header .on .cueillette,.content-header .cueillette:active{background-position:-200px -50px}
-.search{position:relative;margin:1px -10px;padding:6px 0;padding-top:15%;}
+.search{position:relative;margin:1px -10px;padding-top:8px;}
 .search .inner{margin:0 10px;position:relative}
 .search input{display:block;width:97%;padding:4px 5px;margin:0 auto;border:0 none;-webkit-border-radius:4px;border-radius:4px;font-size:.8em;padding-left:30px;}
 .search input:focus{outline-color:#e8cbb5}
@@ -89,7 +90,7 @@ header,footer{width:100%}
 .search .bouton:active{opacity:1;-ms-filter:none;filter:none}
 .filtres{margin:0 6px;font-family:'fjalla_oneregular';}
 .filtres .cell{width:33.333333333333336%}
-.filtres a{display:block;color:#bfb4ae;padding:6px 0;text-align:center;font-size:.9em;text-transform:uppercase;}
+.filtres a{display:block;color:#bfb4ae;padding:6px 0;text-align:center;font-size:.9em;text-transform:uppercase}
 .filtres .on a{color:#534741}
 #tous,.slide{background:transparent url("images/paper-background.jpg") center center}
 a.inner{color:#534741;font:120% 'fjalla_oneregular'}

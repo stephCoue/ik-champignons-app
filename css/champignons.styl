@@ -94,17 +94,17 @@ footer
     background-repeat:no-repeat;
     background-size: contain;
     background-position: center bottom
-    min-height: 88px //288px
-    width: 72%
+    min-height: 95px //288px
+    width: 77%
     centerBlock()
 
 .logo
-  min-height:  75px // 340px;
+  min-height:  87px //75px // 340px;
   background: url('images/logo-ik-couleur.png');
   background-repeat:no-repeat;
   background-size: contain;
   background-position: center
-  width: 23%
+  width: 26% //23%
   centerBlock()
 
 
@@ -173,6 +173,7 @@ footer
   position: fixed
   top: -100px
   width: 100%
+  height: 50px
   color:  $secondColor
   z-index: 10;
   -webkit-transition: all .2s
@@ -186,9 +187,10 @@ footer
     margin-left 3em
     top 6px
 
-    span
+    .titre
       color: $primary
       position: absolute
+      text-transform uppercase
       top -1em
 
 
@@ -207,10 +209,13 @@ footer
   text-transform: uppercase
   position: fixed;
   width: 100%;
+  height 60px
   top: 100%;
   z-index: 10;
+  padding-top 6px
   -webkit-transition: all .2s linear
-  box-shadow 0 -1px 5px $ombreHeaders
+  &.open
+    box-shadow 0 -1px 5px $ombreHeaders
 
   ul
     width 100%
@@ -291,6 +296,7 @@ footer
   background  $infoBulleNotification
   border 1px solid white
   // padding 1px
+  text-shadow: 1px 1px 0px black;
   border-radius 50%
   top: 9%
   left: 58%
@@ -386,8 +392,7 @@ footer
 .search
   position: relative
   margin: 1px -10px
-  padding: 6px 0
-  padding-top: 15%
+  padding-top: 8px
   .inner
     margin: 0 10px
     position: relative
@@ -445,9 +450,6 @@ footer
     text-align center
     font-size .9em
     text-transform uppercase
-
-    &:active
-      // font-weight bold
 
   .on
     a
