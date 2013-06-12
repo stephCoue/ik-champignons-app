@@ -25,7 +25,7 @@ table:after{clear:both}
 header,footer{width:100%}
 .page-inner h1{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background:url("images/logo-app.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center bottom;min-height:106px;margin:0 auto}
 .logo{min-height:100px;background:url("images/logo-ik-couleur.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center}
-.nav-main{font-size:130%;text-shadow:0 2px 2px #000;margin:4% auto;}
+.nav-main{font-size:120%;text-shadow:0 2px 2px #000;margin:4% auto;}
 .nav-main span{text-transform:uppercase;color:#bbd029;display:block;margin-bottom:.2em}
 .nav-main ul{width:90%;margin:0 auto}
 .nav-main li{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 0;border-image:url("images/nav-main-hr.png") 100% 0 0;border-width:5px;}
@@ -97,7 +97,7 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .liste{margin:1% 0;}
 .liste li{width:90%;-webkit-border-image:url("images/nav-main-hr.png") 100% 0 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 0;border-image:url("images/nav-main-hr.png") 100% 0 0;border-width:2.2px;margin:0 auto;}
 .liste li:last-child{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;border-image:url("images/nav-main-hr.png") 100% 0 100% 0}
-.activeClass:hover,.liste-champignons.liste li:hover{background:-webkit-linear-gradient(left,rgba(226,226,224,0) 2%,rgba(226,226,224,0.08) 3%,rgba(226,226,224,0.12) 16%,rgba(196,206,123,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(196,206,123,0.6) 75%,rgba(226,226,224,0.12) 90%,rgba(226,226,224,0.08) 97%,rgba(226,226,224,0) 98%);color:#534741;text-shadow:0 1px 1px #fff}
+.activeClass:active,.liste-champignons.liste li:active{background:-webkit-linear-gradient(left,rgba(226,226,224,0) 2%,rgba(226,226,224,0.08) 3%,rgba(226,226,224,0.12) 16%,rgba(196,206,123,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(196,206,123,0.6) 75%,rgba(226,226,224,0.12) 90%,rgba(226,226,224,0.08) 97%,rgba(226,226,224,0) 98%);color:#534741;text-shadow:0 1px 1px #fff}
 .liste li{clear:both}
 .liste .inner{margin:5px 0;display:table}
 .liste .vignette,.liste .textes{display:table-cell;vertical-align:middle}
