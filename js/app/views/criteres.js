@@ -13,29 +13,28 @@ define([
 		initialize: function() {
 			this.currentId = "0",
 			this.collection = new CriteresCollection();
+			Backbone.on("CRITERE", this.update, this);
+			Backbone.on("CRITERE_BACK", this.goBack, this);
 			//this.backBtn = this.$el.find("#retour a").hide();
 		},
 
 		update: function(id) {
 			this.currentId = id;
+			this.parent.setSelection( this.collection.get(id) );
 			this.render();
+		},
+
+		goBack: function(event){
+			this.update( this.collection.get(this.currentId).get("parent") );
 		},
 
 		render: function() {
 
 			var currentItems = this.collection.getEnfants(this.currentId);
-			console.log(currentItems);
 
 			if(currentItems) {
 
 				this.$el.empty();
-
-				// if(this.currentId === "0")
-				// 	this.backBtn.fadeOut();
-				// else
-				// 	this.backBtn.fadeIn();
-
-				// this.backBtn.attr("href", "#critere/" + this.collection.getParent(this.currentId));
 			}
 
 			_.each(currentItems, function(critere){

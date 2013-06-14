@@ -22,3 +22,19 @@
 .on .bouton .picto {
 	background-position-y: -30px;
 }
+
+/*PAGE DETERMINER*/
+
+#critere-box {
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.critere-off {
+	margin-top: -100px;
+}
+
+.critere-on {
+	-webkit-transition: margin-top .2s;
+	margin-top: 0;
+}

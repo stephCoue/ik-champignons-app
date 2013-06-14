@@ -12,6 +12,15 @@ define([
 
 		template: _.template( critereTemplate ),
 
+		events: {
+			"click a": "onCritere"
+		},
+
+		onCritere: function(event){
+			event.preventDefault();
+			Backbone.trigger("CRITERE", this.model.id);
+		},
+
 		render: function() {
 			this.$el.html(this.template(this.model.toJSON()));
 			return this;
