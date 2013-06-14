@@ -1,0 +1,1 @@
+define(["underscore","backbone","marionette"],function(e,t,n){var r=t.Marionette.AppRouter.extend({appRoutes:{"":"home",home:"home",tous:"tous",champignon:"champignon",determiner:"determiner","*action":"home"}});return r});

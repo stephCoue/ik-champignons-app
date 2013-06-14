@@ -2,17 +2,15 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
-	"marionette",
-	"views/pageHome",
-	"views/pageTous"
-], function($, _, Backbone, Marionette, PageHome, PageTous){
+	"marionette"
+], function($, _, Backbone, Marionette){
 
 	var AppController = Marionette.Controller.extend({
 
 		initialize: function(options){
 
 			// référence sur l'application
-			this.app = this.options.app;
+			this.app = options.app;
 
 			// Lecture des préférences
 			Backbone.trigger("settings:change", this.app.settings.toJSON());
@@ -43,10 +41,6 @@ define([
 		determiner: function(){
 			console.log("AppController : route determiner");
 			this.app.appView.showPage({page:"determiner"});
-		},
-
-		critere: function(id){
-			console.log("AppController : route critere : ", id);
 		},
 
 		// Préférences

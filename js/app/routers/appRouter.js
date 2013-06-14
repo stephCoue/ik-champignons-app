@@ -1,9 +1,8 @@
 define([
 	"underscore",
 	"backbone",
-	"marionette",
-	"controllers/appController"
-], function(_, Backbone, Marionette, AppController){
+	"marionette"
+], function(_, Backbone, Marionette){
 
 	var AppRouter = Backbone.Marionette.AppRouter.extend({
 
@@ -13,7 +12,6 @@ define([
 			"tous":"tous",
 			"champignon":"champignon",
 			"determiner":"determiner",
-			"determiner/:id":"critere",
 			"*action":"home"
 		}
 

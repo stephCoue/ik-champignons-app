@@ -65,7 +65,7 @@ function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTo
 				case "determiner":
 					this.nextPage = this.pageDeterminer;
 					this.header.show("determiner");
-					this.footer.hide();
+					this.footer.show("determiner");
 					break;
 			}
 

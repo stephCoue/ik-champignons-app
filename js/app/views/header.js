@@ -56,14 +56,14 @@ define([
 		},
 
 		show: function(contexte){
-			this.$el.removeClass("header-tous header-champignon");
+			this.$el.attr("class", "content-header");
 			this.$el.addClass("header-" + contexte);
 			this.$el.css("-webkit-transform","translate3d(0,0,0)")
 			.addClass("open");
 		},
 
 		hide: function(){
-			this.$el.removeClass("header-tous header-champignon");
+			this.$el.attr("class", "content-header");
 			this.$el.css("-webkit-transform","translate3d(0,-" + this.$el.outerHeight() + "px,0)")
 			.removeClass("open");
 		},
