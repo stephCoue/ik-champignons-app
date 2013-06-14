@@ -63,7 +63,7 @@ header,footer{width:100%}
 .tous .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px 0 no-repeat;}
 .tous .picto:hover,.tous .picto:active{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
 .tous a:hover .picto,.tous a:active .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
-.tous .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
+.tous .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px 0 no-repeat}
 .infoBulleNotification{position:absolute;width:16px;height:16px;line-height:16px;display:block;font-size:.8em;color:#fff;background:#d0470a;border:1px solid #fff;text-shadow:1px 1px 0 #000;-webkit-border-radius:50%;border-radius:50%;top:9%;left:58%}
 .header-tous{-webkit-box-shadow:0 1px 5px #8c572c;box-shadow:0 1px 5px #8c572c}
 .header-on{top:0}

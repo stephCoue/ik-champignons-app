@@ -15,7 +15,6 @@ define([
 			this.collection = new CriteresCollection();
 			Backbone.on("CRITERE", this.update, this);
 			Backbone.on("CRITERE_BACK", this.goBack, this);
-			//this.backBtn = this.$el.find("#retour a").hide();
 		},
 
 		update: function(id) {

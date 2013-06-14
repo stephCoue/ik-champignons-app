@@ -26,10 +26,16 @@ define([
 		},
 
 		setSelection: function(critere){
-			if(critere !== undefined)
+			if(critere) {
 				this.critereBox.show(critere.get('label'));
-			else
+				if(critere.get('enfants').length === 0)
+					this.criteresListView.$el.hide();
+				else
+					this.criteresListView.$el.show();
+			} else {
+				this.criteresListView.$el.show();
 				this.critereBox.hide();
+			}
 		},
 
 		render: function(){

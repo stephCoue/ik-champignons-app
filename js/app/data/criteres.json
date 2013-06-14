@@ -1,615 +1,716 @@
-
 [
 	{
 		"id":"2",
 		"label":"Champignons de formes diverses ne présentant ni lames ni tubes",
 		"parent":"0",
+		"enfants":[3,4,5],
 		"champignons":[15,16,26,27,28,29]
 	},
 	{
 		"id":"3",
 		"label":"Forme irrégulièrement convolutée ou alvéolée",
 		"parent":"2",
+		"enfants":[],
 		"champignons":[15,16]
 	},
 	{
 		"id":"4",
 		"label":"Forme de coupe, de corail, de trompette, de massue ou de selle",
 		"parent":"2",
+		"enfants":[],
 		"champignons":[26,27,28,29]
 	},
 	{
 		"id":"6",
 		"label":"Champignon avec pied et chapeau, chair non coriace (tendre), tubes séparables sous le chapeau",
 		"parent":"0",
+		"enfants":[7,8,9,10],
 		"champignons":[21,22,23,24,30,31,32,33,34,35,36,37]
 	},
 	{
 		"id":"7",
 		"label":"Pores anguleux, chapeau visqueux",
 		"parent":"6",
+		"enfants":[],
 		"champignons":[23,24,30]
 	},
 	{
 		"id":"8",
 		"label":"Pores anguleux, chapeau sec",
 		"parent":"6",
+		"enfants":[],
 		"champignons":[31,32,33,34]
 	},
 	{
 		"id":"9",
 		"label":"Pores ronds immuables, chapeau sec",
 		"parent":"6",
+		"enfants":[],
 		"champignons":[35,36]
 	},
 	{
 		"id":"10",
 		"label":"Pores ronds bleuissants, chapeau sec",
 		"parent":"6",
+		"enfants":[],
 		"champignons":[21,22,37]
 	},
 	{
 		"id":"11",
 		"label":"Champignons avec pied et chapeau, chair non coriace (tendre), lames sous le chapeau",
 		"parent":"0",
-		"champignons":[1,2,3,5,6,7,8,9,10,11,12,13,17,18,19,20,38,39,40,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,79,80,81,82,83,84,86,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116]
+		"enfants":[12,25],
+		"champignons":[1,2,3,5,6,7,8,9,10,11,12,13,17,18,19,20,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,72,73,74,75,76,79,80,81,82,83,84,86,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116]
 	},
 	{
 		"id":"12",
 		"label":"Chair grenue (le pied se casse comme un bâton de craie)",
 		"parent":"11",
-		"champignons":[2,3,18,38,39,40,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61]
+		"enfants":[13,19],
+		"champignons":[2,3,18,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61]
 	},
 	{
 		"id":"13",
 		"label":"Absence de lait",
 		"parent":"12",
-		"champignons":[2,3,38,39,40,42,43,44,45,46]
+		"enfants":[14,18],
+		"champignons":[2,3,38,39,40,41,42,43,44,45,46]
 	},
 	{
 		"id":"14",
 		"label":"Russules typiques de teintes variables",
 		"parent":"13",
-		"champignons":[2,3,38,39,40,42,43,44,45]
+		"enfants":[15,16,17],
+		"champignons":[2,3,38,39,40,41,42,43,44,45]
 	},
 	{
 		"id":"15",
 		"label":"Chapeau jaune-brun",
 		"parent":"14",
+		"enfants":[],
 		"champignons":[38,39]
 	},
 	{
 		"id":"16",
 		"label":"Chapeau bleu, vert, violet",
 		"parent":"14",
-		"champignons":[2,3,40,42]
+		"enfants":[],
+		"champignons":[2,3,40,41,42]
 	},
 	{
 		"id":"17",
 		"label":"Chapeau orange, rouge",
 		"parent":"14",
+		"enfants":[],
 		"champignons":[43,44,45]
 	},
 	{
 		"id":"18",
 		"label":"Russules compactes à port de lactaire blanc",
 		"parent":"13",
+		"enfants":[45,46],
 		"champignons":[46]
 	},
 	{
 		"id":"19",
 		"label":"Présence de lait",
 		"parent":"12",
+		"enfants":[20,23,24],
 		"champignons":[18,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61]
 	},
 	{
 		"id":"20",
 		"label":"Lait blanc immuable",
 		"parent":"19",
+		"enfants":[21,22],
 		"champignons":[47,48,49,50,51]
 	},
 	{
 		"id":"21",
 		"label":"Champignons de grande taille, blanc blanchâtres",
 		"parent":"20",
+		"enfants":[39,40],
 		"champignons":[47,48]
 	},
 	{
 		"id":"22",
 		"label":"Champignons de taille moyenne, beige-orangé, blanchâtre",
 		"parent":"20",
+		"enfants":[41,42],
 		"champignons":[49,50,51]
 	},
 	{
 		"id":"23",
 		"label":"Lait blanc se colorant...",
 		"parent":"19",
+		"enfants":[35,36,37,38],
 		"champignons":[52,53,54,55,56,57,58]
 	},
 	{
 		"id":"24",
 		"label":"Lait orangé ou rouge",
 		"parent":"19",
+		"enfants":[32,33,34],
 		"champignons":[18,59,60,61]
 	},
 	{
 		"id":"25",
 		"label":"Chair fibreuse (le pied se déchire à la torsion ou élastique)",
 		"parent":"11",
+		"enfants":[26,54,63,66,74,83],
 		"champignons":[1,5,6,7,8,9,10,11,12,13,17,19,20,62,63,64,65,66,67,68,69,70,72,73,74,75,76,79,80,81,82,83,84,86,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116]
 	},
 	{
 		"id":"26",
 		"label":"Chapeau blanc",
 		"parent":"25",
+		"enfants":[27,28],
 		"champignons":[6,7,8,9,10,11,13,62,63,79,82,89,90]
 	},
 	{
 		"id":"27",
 		"label":"Sporée sombre&nbsp;: ocre, rouille, pourpre, noire",
 		"parent":"26",
+		"enfants":[48,52,53],
 		"champignons":[8,11,13,62,63]
 	},
 	{
 		"id":"28",
 		"label":"Sporée claire&nbsp;: blanche ou rose",
 		"parent":"26",
+		"enfants":[50,51,99],
 		"champignons":[6,7,9,10,79,82,89,90]
 	},
 	{
 		"id":"29",
 		"label":"Champignons blancs jaunissant au toucher",
 		"parent":"52",
+		"enfants":[30,31],
 		"champignons":[11,62,63]
 	},
 	{
 		"id":"30",
 		"label":"Odeur désagréable",
 		"parent":"29",
+		"enfants":[],
 		"champignons":[11]
 	},
 	{
 		"id":"31",
 		"label":"Odeur agréable (anis)",
 		"parent":"29",
+		"enfants":[],
 		"champignons":[62,63]
 	},
 	{
 		"id":"32",
 		"label":"Lait orangé immuable",
 		"parent":"24",
+		"enfants":[],
 		"champignons":[59,60,61]
 	},
 	{
 		"id":"34",
 		"label":"Lait d&#8217;emblé rouge vineux",
 		"parent":"24",
+		"enfants":[],
 		"champignons":[18]
 	},
 	{
 		"id":"35",
 		"label":"...en jaune",
 		"parent":"23",
+		"enfants":[],
 		"champignons":[52,53]
 	},
 	{
 		"id":"36",
 		"label":"...en violet",
 		"parent":"23",
+		"enfants":[],
 		"champignons":[54]
 	},
 	{
 		"id":"37",
 		"label":"...en rose (lait ou chair)",
 		"parent":"23",
+		"enfants":[],
 		"champignons":[55,56]
 	},
 	{
 		"id":"38",
 		"label":"...en gris, vert, verdâtre",
 		"parent":"23",
+		"enfants":[],
 		"champignons":[57,58]
 	},
 	{
 		"id":"39",
 		"label":"Chapeau lisse, lames blanches serrées",
 		"parent":"21",
+		"enfants":[],
 		"champignons":[47]
 	},
 	{
 		"id":"40",
 		"label":"Chapeau velouté, lames blanches espacées",
 		"parent":"21",
+		"enfants":[],
 		"champignons":[48]
 	},
 	{
 		"id":"41",
 		"label":"Chapeau laineux",
 		"parent":"22",
+		"enfants":[],
 		"champignons":[49,50]
 	},
 	{
 		"id":"42",
 		"label":"Chapeau lisse",
 		"parent":"22",
+		"enfants":[43,44],
 		"champignons":[51]
 	},
 	{
 		"id":"44",
 		"label":"Chair plus ou moins agréable",
 		"parent":"42",
+		"enfants":[],
 		"champignons":[51]
 	},
 	{
 		"id":"46",
 		"label":"Champignons blancs, noircissant rapidement",
 		"parent":"18",
+		"enfants":[],
 		"champignons":[46]
 	},
 	{
 		"id":"47",
 		"label":"Lames libres, spores blanches, anneau et volve membraneuse en sac",
 		"parent":"99",
+		"enfants":[],
 		"champignons":[6,7,10]
 	},
 	{
 		"id":"48",
 		"label":"Lames plus ou moins libres, blanches / roses / noires plus ou moins déliquescentes. Anneau plus ou moins fugace",
 		"parent":"27",
+		"enfants":[107,108],
 		"champignons":[13]
 	},
 	{
 		"id":"49",
 		"label":"Champignons blancs dont la chair rosit",
 		"parent":"52",
+		"enfants":[],
 		"champignons":[8]
 	},
 	{
 		"id":"50",
 		"label":"Lames blanches, spores blanches",
 		"parent":"28",
+		"enfants":[103,104],
 		"champignons":[9,89,90]
 	},
 	{
 		"id":"51",
 		"label":"Lames subdécurrentes blanches ou roses, pied nu.",
 		"parent":"28",
+		"enfants":[105,106],
 		"champignons":[79,82]
 	},
 	{
 		"id":"52",
 		"label":"Lames libres pourpre, anneau fixe",
 		"parent":"27",
+		"enfants":[29,49],
 		"champignons":[8,11,62,63]
 	},
 	{
 		"id":"54",
 		"label":"Chapeau blanchâtre (crème, beige) à gris plus ou moins foncé",
 		"parent":"25",
+		"enfants":[56,57,58],
 		"champignons":[5,12,74,81,83,84,91,92,93,94,95,96,97,98,99,100]
 	},
 	{
 		"id":"55",
 		"label":"Lames échancrées",
 		"parent":"58",
+		"enfants":[111,114],
 		"champignons":[5,91,92,93,94,95,96,97]
 	},
 	{
 		"id":"56",
 		"label":"Spores claires roses, lames roses",
 		"parent":"54",
+		"enfants":[61,62],
 		"champignons":[83,84]
 	},
 	{
 		"id":"57",
 		"label":"Spores noires",
 		"parent":"54",
+		"enfants":[],
 		"champignons":[12]
 	},
 	{
 		"id":"58",
 		"label":"Spores claires blanches, lames blanches",
 		"parent":"54",
+		"enfants":[55,59,60],
 		"champignons":[5,74,81,91,92,93,94,95,96,97,98,99,100]
 	},
 	{
 		"id":"59",
 		"label":"Lames décurrentes",
 		"parent":"58",
+		"enfants":[],
 		"champignons":[81,98,99,100]
 	},
 	{
 		"id":"60",
 		"label":"Lames libres, volve en sac",
 		"parent":"58",
+		"enfants":[],
 		"champignons":[74]
 	},
 	{
 		"id":"61",
 		"label":"Lames échancrées, pied nu",
 		"parent":"56",
+		"enfants":[109,110],
 		"champignons":[83,84]
 	},
 	{
 		"id":"63",
 		"label":"Chapeau rose, lilas, bleu, violet",
 		"parent":"25",
+		"enfants":[64,65],
 		"champignons":[101]
 	},
 	{
 		"id":"64",
 		"label":"Sporée claire, blanche ou rose",
 		"parent":"63",
+		"enfants":[],
 		"champignons":[101]
 	},
 	{
 		"id":"66",
 		"label":"Chapeau jaune, vert, gris-vert, gris-jaune",
 		"parent":"25",
+		"enfants":[68,69],
 		"champignons":[1,5,67,70,76,91,92,102,103,104]
 	},
 	{
 		"id":"67",
 		"label":"Lames libres blanches à jaune pâle, anneau et volve",
 		"parent":"69",
+		"enfants":[],
 		"champignons":[1,67,70]
 	},
 	{
 		"id":"68",
 		"label":"Sporée sombre, pourpre ou ocre-rouille",
 		"parent":"66",
+		"enfants":[72,73],
 		"champignons":[104]
 	},
 	{
 		"id":"69",
 		"label":"Sporée claire, blanche",
 		"parent":"66",
+		"enfants":[67,70,71],
 		"champignons":[1,5,67,70,76,91,92,102,103]
 	},
 	{
 		"id":"70",
 		"label":"Lames échancrées, pied nu plein, unicolore",
 		"parent":"69",
+		"enfants":[115,116],
 		"champignons":[5,91,92,102,103]
 	},
 	{
 		"id":"71",
 		"label":"Lames subdécurrentes, armille ou pied nu",
 		"parent":"69",
+		"enfants":[117,118],
 		"champignons":[76]
 	},
 	{
 		"id":"72",
 		"label":"Sporée pourpre",
 		"parent":"68",
+		"enfants":[],
 		"champignons":[104]
 	},
 	{
 		"id":"74",
 		"label":"Chapeau orange, rouge",
 		"parent":"25",
+		"enfants":[75,76],
 		"champignons":[20,68,73,80,86,105,106]
 	},
 	{
 		"id":"75",
 		"label":"Sporée claire, blanche",
 		"parent":"74",
+		"enfants":[77,78,79],
 		"champignons":[68,73,80]
 	},
 	{
 		"id":"76",
 		"label":"Sporée sombre, pourpre ou ocre-rouille",
 		"parent":"74",
+		"enfants":[80,81,82],
 		"champignons":[20,86,105,106]
 	},
 	{
 		"id":"77",
 		"label":"Lames libres",
 		"parent":"75",
+		"enfants":[],
 		"champignons":[68,73]
 	},
 	{
 		"id":"78",
 		"label":"Lames décurrentes",
 		"parent":"75",
+		"enfants":[],
 		"champignons":[80]
 	},
 	{
 		"id":"80",
 		"label":"Sporée ocre-rouille, présence d&#8217;une cortine, poussant sur le sol",
 		"parent":"76",
+		"enfants":[],
 		"champignons":[20]
 	},
 	{
 		"id":"81",
 		"label":"Sporée ocre-rouille, absence de cortine, lignicoles",
 		"parent":"76",
+		"enfants":[],
 		"champignons":[86,105]
 	},
 	{
 		"id":"82",
 		"label":"Sporée pourpre, présence d&#8217;un cortine, lignicoles",
 		"parent":"76",
+		"enfants":[],
 		"champignons":[106]
 	},
 	{
 		"id":"83",
 		"label":"Chapeau couleur beige, rougeâtre, marron",
 		"parent":"25",
+		"enfants":[84,85,86],
 		"champignons":[17,19,64,65,66,69,72,75,83,84,86,93,107,108,109,110,111,112,113,114,115,116]
 	},
 	{
 		"id":"84",
 		"label":"Sporée claire, blanche",
 		"parent":"83",
+		"enfants":[87,88,89,90],
 		"champignons":[19,69,72,75,93,107,108,109,110,111]
 	},
 	{
 		"id":"85",
 		"label":"Sporée claire, rose",
 		"parent":"83",
+		"enfants":[91,92,93],
 		"champignons":[83,84]
 	},
 	{
 		"id":"86",
 		"label":"Sporée sombre, pourpre, noire ou ocre-rouille",
 		"parent":"83",
+		"enfants":[94,95,96],
 		"champignons":[17,64,65,66,86,112,113,114,115,116]
 	},
 	{
 		"id":"87",
 		"label":"Pied nu, robuste, port de tricholome, lames échancrées",
 		"parent":"84",
+		"enfants":[],
 		"champignons":[93,107,108]
 	},
 	{
 		"id":"88",
 		"label":"Pied nu, fragiles",
 		"parent":"84",
+		"enfants":[],
 		"champignons":[109]
 	},
 	{
 		"id":"89",
 		"label":"Pied avec anneau et volve, lames libres blanches, chapeau sans écaille",
 		"parent":"84",
+		"enfants":[],
 		"champignons":[69,72,75]
 	},
 	{
 		"id":"90",
 		"label":"Pied avec anneau coulissant ou fugace, lames libres blanches, chapeau avec écailles",
 		"parent":"84",
+		"enfants":[119,120,121],
 		"champignons":[19,110,111]
 	},
 	{
 		"id":"92",
 		"label":"Lames échancrées",
 		"parent":"85",
+		"enfants":[],
 		"champignons":[83,84]
 	},
 	{
 		"id":"94",
 		"label":"Sporée pourpre, anneau fixe, lames libres roses à pourpre, chapeau avec écailles",
 		"parent":"86",
+		"enfants":[],
 		"champignons":[64,65,66]
 	},
 	{
 		"id":"95",
 		"label":"Sporée noire, lames plus ou moins gris foncé, noir",
 		"parent":"86",
+		"enfants":[],
 		"champignons":[112]
 	},
 	{
 		"id":"96",
 		"label":"Sporée ocre-rouille, lames terreuses, absence de cortine",
 		"parent":"86",
+		"enfants":[97,98],
 		"champignons":[17,86,113,114,115,116]
 	},
 	{
 		"id":"97",
 		"label":"Champignons poussant sur le sol",
 		"parent":"96",
+		"enfants":[],
 		"champignons":[17,113]
 	},
 	{
 		"id":"98",
 		"label":"Champignons lignicoles",
 		"parent":"96",
+		"enfants":[],
 		"champignons":[86,114,115,116]
 	},
 	{
 		"id":"99",
 		"label":"Lames libres blanches ou roses avec ou sans anneau, avec ou sans volve en sac",
 		"parent":"28",
+		"enfants":[47,100,101,102],
 		"champignons":[6,7,10]
 	},
 	{
 		"id":"100",
 		"label":"Lames libres blanches (roses), spores blanches, anneau coulissant",
 		"parent":"99",
+		"enfants":[],
 		"champignons":[7]
 	},
 	{
 		"id":"103",
 		"label":"Lames échancrées, espèces robustes, trapues, pied nu",
 		"parent":"50",
+		"enfants":[],
 		"champignons":[9,89,90]
 	},
 	{
 		"id":"105",
 		"label":"Petits à moyens",
 		"parent":"51",
+		"enfants":[],
 		"champignons":[79,82]
 	},
 	{
 		"id":"107",
 		"label":"Lames déliquescentes",
 		"parent":"48",
+		"enfants":[],
 		"champignons":[13]
 	},
 	{
 		"id":"109",
 		"label":"Port de tricholome, espèce robuste",
 		"parent":"61",
+		"enfants":[],
 		"champignons":[84]
 	},
 	{
 		"id":"110",
 		"label":"Port de collybie, espèce moyenne",
 		"parent":"61",
+		"enfants":[],
 		"champignons":[83]
 	},
 	{
 		"id":"111",
 		"label":"Pied plein",
 		"parent":"55",
+		"enfants":[112,113],
 		"champignons":[5,91,92,94,95,96,97]
 	},
 	{
 		"id":"112",
 		"label":"Chapeau écailleux, gris",
 		"parent":"111",
+		"enfants":[],
 		"champignons":[94,95,96,97]
 	},
 	{
 		"id":"113",
 		"label":"Chapeau lisse, gris, jaunâtre",
 		"parent":"111",
+		"enfants":[],
 		"champignons":[5,91,92]
 	},
 	{
 		"id":"114",
 		"label":"Pied creux, lisse, cartilagineux",
 		"parent":"55",
+		"enfants":[],
 		"champignons":[93]
 	},
 	{
 		"id":"115",
 		"label":"Chapeau lisse, jaune",
 		"parent":"70",
+		"enfants":[],
 		"champignons":[102,103]
 	},
 	{
 		"id":"116",
 		"label":"Chapeau vergeté, gris, jaunâtre",
 		"parent":"70",
+		"enfants":[],
 		"champignons":[5,91,92]
 	},
 	{
 		"id":"117",
 		"label":"Lignicoles en touffe",
 		"parent":"71",
+		"enfants":[],
 		"champignons":[76]
 	},
 	{
 		"id":"119",
 		"label":"Champignons de grande taille",
 		"parent":"90",
+		"enfants":[],
 		"champignons":[110,111]
 	},
 	{
 		"id":"121",
 		"label":"Champignons de petite taille",
 		"parent":"90",
+		"enfants":[],
 		"champignons":[19]
 	}
 ]
