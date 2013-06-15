@@ -10,7 +10,11 @@ define([
 
 		initialize: function(){
 			this.hide();
+			this.contexte = "";
+			this.titre = "";
+			this.soustitre = "";
 			Backbone.on("settings:change", this.onSettings, this);
+			Backbone.on("critere:change", this.onCritere, this);
 			this.$el.css("top","auto");
 		},
 
@@ -19,7 +23,8 @@ define([
 			"click .liste": "onListe",
 			"click .diapo": "onDiapo",
 			"click .back": "onBackButton",
-			"click .cueillette": "onCueillette"
+			"click .cueillette": "onCueillette",
+			"click .show": "onShowButton"
 		},
 
 		onSettings: function(settings){
@@ -27,6 +32,13 @@ define([
 				this.$el.find(".grille").parent().addClass("on").siblings().removeClass("on");
 			else if(settings.liststyle === "liste")
 				this.$el.find(".liste").parent().addClass("on").siblings().removeClass("on");
+		},
+
+		onCritere: function(options){
+			if(options.display)
+				this.$el.find(".show").parent().show();
+			else
+				this.$el.find(".show").parent().hide();
 		},
 
 		onGrille: function(event){
@@ -55,21 +67,49 @@ define([
 			event.preventDefault();
 		},
 
+		onShowButton: function(event){
+			event.preventDefault();
+			Backbone.trigger("critere:show");
+		},
+
 		show: function(contexte){
-			this.$el.attr("class", "content-header");
-			this.$el.addClass("header-" + contexte);
-			this.$el.css("-webkit-transform","translate3d(0,0,0)")
+			if(contexte !== "champignon")
+				this.contexte = contexte;
+
+			this.$el.attr("class", "content-header")
+			.addClass("header-" + contexte)
+			.css("-webkit-transform","translate3d(0,0,0)")
 			.addClass("open");
+			this.render();
 		},
 
 		hide: function(){
-			this.$el.attr("class", "content-header");
-			this.$el.css("-webkit-transform","translate3d(0,-" + this.$el.outerHeight() + "px,0)")
+			this.$el.attr("class", "content-header")
+			.css("-webkit-transform","translate3d(0,-" + this.$el.outerHeight() + "px,0)")
 			.removeClass("open");
 		},
 
 		render: function() {
-			//$("." + this.liststyle).parent().addClass("on").siblings().removeClass("on");
+			switch(this.contexte){
+				case "tous":
+					this.titre = "Tous";
+					this.soustitre = "les champignons";
+					break;
+				case "determiner":
+					this.titre = "Aide";
+					this.soustitre = "à la détermination";
+					break;
+				default:
+					this.titre = "";
+					this.soustitre = "";
+					break;
+			}
+
+			this.$el.find(".show").parent().hide();
+
+			this.$el.find(".titre").text(this.titre);
+			this.$el.find(".sous-titre").text(this.soustitre);
+
 			return this;
 		}
 

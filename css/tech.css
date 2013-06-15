@@ -38,3 +38,7 @@
 .critere-on {
 	margin-top: 0;
 }
+
+.header-tous .determiner, .header-champignon .determiner {
+  display: none;
+}
