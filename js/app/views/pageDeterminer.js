@@ -5,8 +5,10 @@ define([
 	"mixins/pageMixin",
 	"text!templates/pageDeterminer.html",
 	"views/criteres",
-	"views/critereBox"
-], function($, _, Backbone, PageMixin, pageDeterminerTemplate, CriteresListView, CritereBox){
+	"views/critereBox",
+	"collections/champignons",
+	"views/champignons"
+], function($, _, Backbone, PageMixin, pageDeterminerTemplate, CriteresListView, CritereBox, ChampignonsCollection, ChampignonsListView){
 
 	var PageDeterminer = Backbone.View.extend({
 
@@ -15,6 +17,9 @@ define([
 
 		initialize: function(){
 			this.$el.hide();
+
+			this.resultatCollection = new ChampignonsCollection();
+			this.resultatView = new ChampignonsListView();
 
 			this.critereBox = new CritereBox();
 			this.critereBox.parent = this;
@@ -28,10 +33,16 @@ define([
 		setSelection: function(critere){
 			if(critere) {
 				this.critereBox.show(critere.get('label'));
-				if(critere.get('enfants').length === 0)
+				if(critere.get('enfants').length === 0) {
 					this.criteresListView.$el.hide();
-				else
+					this.resultatCollection.createSubset(critere.get("champignons"));
+					this.resultatView.collection = this.resultatCollection;
+					this.resultatView.render();
+					this.resultatView.$el.show();
+				} else {
 					this.criteresListView.$el.show();
+					this.resultatView.$el.hide();
+				}
 			} else {
 				this.criteresListView.$el.show();
 				this.critereBox.hide();
@@ -41,7 +52,10 @@ define([
 		render: function(){
 			this.$el.html(this.template());
 			this.criteresListView.render();
-			this.$el.find(".page-inner").append(this.critereBox.$el).append(this.criteresListView.$el);
+			this.$el.find(".page-inner")
+			.append(this.critereBox.$el)
+			.append(this.criteresListView.$el)
+			.append(this.resultatView.$el.hide());
 
 			return this;
 		}
