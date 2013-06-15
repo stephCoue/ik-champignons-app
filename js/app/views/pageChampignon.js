@@ -15,6 +15,7 @@ define([
 			this.currentFiche = 1;
 			this.swipable = true;
 			this.speed = 300;
+			this.sliderOffset = 0;
 			this.$slides = this.$el.find("#slides");
 			this.$slides.swipe({
 				triggerOnTouchEnd: true,
@@ -30,20 +31,26 @@ define([
 		},
 
 		onSwipeStatus: function(event, phase, direction, distance, fingers){
+
+			if(this.champignons.length > 1)
+				this.sliderOffset = $(window).width() * this.currentFiche;
+			else
+				this.sliderOffset = 0;
+
 			switch(phase){
 				case "move":
 					if ( (direction === "left" || direction === "right") && this.swipable){
 						if(direction === "left" && distance > 30)
-							this.scrollFiche( $(window).width() * this.currentFiche + distance, 0 );
+							this.scrollFiche( this.sliderOffset + distance, 0 );
 						else if(direction === "right" && distance > 30)
-							this.scrollFiche( $(window).width() * this.currentFiche - distance, 0 );
+							this.scrollFiche( this.sliderOffset - distance, 0 );
 					} else if(direction === "up" || direction === "down"){
 						if(distance > 30)
 							this.swipable = false;
 					}
 					break;
 				case "cancel":
-					this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
+					this.scrollFiche( this.sliderOffset, this.speed );
 					break;
 				case "end":
 					if( (distance > $(window).width() / 3) && this.swipable ){
@@ -52,9 +59,9 @@ define([
 						else if(direction == "right")
 							this.prevFiche();
 						else
-							this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
+							this.scrollFiche( this.sliderOffset, this.speed );
 					} else {
-						this.scrollFiche( $(window).width() * this.currentFiche, this.speed );
+						this.scrollFiche( this.sliderOffset, this.speed );
 					}
 					this.swipable = true;
 					break;
@@ -103,7 +110,8 @@ define([
 		},
 
 		onTransitionEnd: function(){
-			this.onChampignon(this.champignons[this.currentFiche]);
+			if(this.champignons.length > 1)
+				this.onChampignon(this.champignons[this.currentFiche]);
 		},
 
 		renderNext: function(){
@@ -150,8 +158,13 @@ define([
 				}, this);
 
 				// Application du décalage en css
+				if (this.champignons.length > 1)
+					this.sliderOffset = $(window).width() * this.currentFiche;
+				else
+					this.sliderOffset = 0;
+
 				this.$slides.css({
-					"-webkit-transform": "translate3d(-" + $(window).width() * this.currentFiche + "px, 0px, 0px)",
+					"-webkit-transform": "translate3d(-" + this.sliderOffset + "px, 0px, 0px)",
 					"-webkit-transition-duration": "0"
 				});
 
