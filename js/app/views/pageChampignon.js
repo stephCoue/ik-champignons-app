@@ -31,7 +31,6 @@ define([
 		},
 
 		onSwipeStatus: function(event, phase, direction, distance, fingers){
-
 			if(this.champignons.length > 1)
 				this.sliderOffset = $(window).width() * this.currentFiche;
 			else
@@ -109,7 +108,7 @@ define([
 			this.render();
 		},
 
-		onTransitionEnd: function(){
+		onTransitionEnd: function(event){
 			if(this.champignons.length > 1)
 				this.onChampignon(this.champignons[this.currentFiche]);
 		},
@@ -124,8 +123,8 @@ define([
 				this.$slides.prepend( new Fiche({model:this.champignons[0]}).render().$el );
 			// repositionnelent du slider
 			this.$slides.css({
-				"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)",
-				"-webkit-transition-duration": "0"
+				"-webkit-transition-duration": "0",
+				"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)"
 			});
 		},
 
@@ -139,13 +138,12 @@ define([
 				this.$slides.append( new Fiche({model:this.champignons[2]}).render().$el );
 			// repositionnelent du slider
 			this.$slides.css({
-				"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)",
-				"-webkit-transition-duration": "0"
+				"-webkit-transition-duration": "0",
+				"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)"
 			});
 		},
 
 		render: function() {
-
 			// Mise à jour de la largeur du slider
 			this.$slides.width($(window).width() * this.champignons.length);
 
@@ -164,8 +162,8 @@ define([
 					this.sliderOffset = 0;
 
 				this.$slides.css({
-					"-webkit-transform": "translate3d(-" + this.sliderOffset + "px, 0px, 0px)",
-					"-webkit-transition-duration": "0"
+					"-webkit-transition-duration": "0",
+					"-webkit-transform": "translate3d(-" + this.sliderOffset + "px, 0px, 0px)"
 				});
 
 			} else { // Si pas la première fois
@@ -178,8 +176,8 @@ define([
 						if(this.$slides.children().length === 3){
 							this.$slides.find(".slide:first-child").remove();
 							this.$slides.css({
-								"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)",
-								"-webkit-transition-duration": "0"
+								"-webkit-transition-duration": "0",
+								"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)"
 							});
 						}
 					}
