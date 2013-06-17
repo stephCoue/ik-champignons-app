@@ -32,7 +32,6 @@ define([
 			var currentItems = this.collection.getEnfants(this.currentId);
 
 			if(currentItems) {
-
 				this.$el.empty();
 			}
 
