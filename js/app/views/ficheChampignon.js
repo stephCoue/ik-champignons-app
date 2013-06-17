@@ -14,6 +14,15 @@ define([
 			this.render();
 		},
 
+		events: {
+			"click a.glossaire": "onTerme"
+		},
+
+		onTerme: function(event){
+			event.preventDefault();
+			Backbone.trigger("terme:selection", {terme: $(event.currentTarget).find("span").text()});
+		},
+
 		render: function(){
 			this.$el.html(this.template(this.model.toJSON()));
 			this.$el.width($(window).width());

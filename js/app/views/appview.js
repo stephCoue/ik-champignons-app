@@ -9,9 +9,10 @@ define([
 	"views/pageHome",
 	"views/pageTous",
 	"views/pageChampignon",
-	"views/pageDeterminer"
+	"views/pageDeterminer",
+	"views/popupTermeGlossaire"
 ],
-function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTous, PageChampignon, PageDeterminer){
+function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTous, PageChampignon, PageDeterminer, PopupTermeGlossaire){
 
 	var AppView = Backbone.View.extend({
 
@@ -24,6 +25,7 @@ function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTo
 			this.pageTous = new PageTous();
 			this.pageChampignon = new PageChampignon();
 			this.pageDeterminer = new PageDeterminer();
+			this.popupTermeGlossaire = new PopupTermeGlossaire();
 
 			// Barres
 			this.header = new Header();
@@ -47,6 +49,7 @@ function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTo
 		},
 
 		showPage: function(options){
+			this.popupTermeGlossaire.close();
 			switch(options.page){
 				case "home":
 					this.nextPage = this.pageHome;
