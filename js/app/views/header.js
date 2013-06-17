@@ -35,10 +35,13 @@ define([
 		},
 
 		onCritere: function(options){
-			if(options.display)
+			if(options.display){
 				this.$el.find(".show").parent().show();
-			else
+				this.$el.find(".show > .count").text(options.count);
+			} else {
 				this.$el.find(".show").parent().hide();
+				this.$el.find(".show > .count").text("");
+			}
 		},
 
 		onGrille: function(event){

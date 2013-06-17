@@ -43,7 +43,7 @@ define([
 					this.criteresListView.$el.show();
 					this.resultatView.$el.hide();
 				}
-				Backbone.trigger("critere:change", {display:true});
+				Backbone.trigger("critere:change", {display:true, count:this.currentCritere.get("count")});
 			} else {
 				this.currentCritere = null;
 				this.criteresListView.$el.show();
@@ -69,7 +69,7 @@ define([
 			this.$el.find(".page-inner")
 			.append(this.critereBox.$el)
 			.append(this.criteresListView.$el)
-			.append(this.resultatView.$el.hide());			
+			.append(this.resultatView.$el.hide());
 
 			return this;
 		}
