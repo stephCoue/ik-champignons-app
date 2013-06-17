@@ -2,7 +2,7 @@
     {
         "id": "63",
         "rubrique": ["31"],
-        "vignette":"img/vignettes/champignonon63.jpg",
+        "vignette":"img/vignettes/champignonon63.png",
         "nom": "Agaric des bois",
         "genre": "Agaricus",
         "espece": "Sylvicola",
@@ -21,7 +21,7 @@
     {
         "id": "64",
         "rubrique": ["94"],
-        "vignette":"img/vignettes/champignonon64.jpg",
+        "vignette":"img/vignettes/champignonon64.png",
         "nom": "Agaric des forêts",
         "genre": "Agaricus",
         "espece": "Silvaticus",
@@ -40,7 +40,7 @@
     {
         "id": "62",
         "rubrique": ["31"],
-        "vignette":"img/vignettes/champignonon62.jpg",
+        "vignette":"img/vignettes/champignonon62.png",
         "nom": "Agaric des jachères",
         "genre": "Agaricus",
         "espece": "Arvensis",
@@ -59,7 +59,7 @@
     {
         "id": "8",
         "rubrique": ["49"],
-        "vignette":"img/vignettes/champignonon8.jpg",
+        "vignette":"img/vignettes/champignonon8.png",
         "nom": "Agaric des prés",
         "genre": "Agaricus",
         "espece": "Campestris",
@@ -78,7 +78,7 @@
     {
         "id": "11",
         "rubrique": ["30"],
-        "vignette":"img/vignettes/champignonon11.jpg",
+        "vignette":"img/vignettes/champignonon11.png",
         "nom": "Agaric jaunissant",
         "genre": "Agaricus",
         "espece": "Xanthoderma",
@@ -97,7 +97,7 @@
     {
         "id": "65",
         "rubrique": ["94"],
-        "vignette":"img/vignettes/champignonon65.jpg",
+        "vignette":"img/vignettes/champignonon65.png",
         "nom": "Agaric radicant",
         "genre": "Agaricus",
         "espece": "Romagnesii",
@@ -116,7 +116,7 @@
     {
         "id": "66",
         "rubrique": ["94"],
-        "vignette":"img/vignettes/champignonon66.jpg",
+        "vignette":"img/vignettes/champignonon66.png",
         "nom": "Agaric sanguinolent",
         "genre": "Agaricus",
         "espece": "Haemorrhoidarius",
@@ -135,7 +135,7 @@
     {
         "id": "10",
         "rubrique": ["47"],
-        "vignette":"img/vignettes/champignonon10.jpg",
+        "vignette":"img/vignettes/champignonon10.png",
         "nom": "Amanite à volve rousse",
         "genre": "Amanita",
         "espece": "Proxima",
@@ -154,7 +154,7 @@
     {
         "id": "67",
         "rubrique": ["67"],
-        "vignette":"img/vignettes/champignonon67.jpg",
+        "vignette":"img/vignettes/champignonon67.png",
         "nom": "Amanite citrine",
         "genre": "Amanita",
         "espece": "Citrina",
@@ -173,7 +173,7 @@
     {
         "id": "68",
         "rubrique": ["77"],
-        "vignette":"img/vignettes/champignonon68.jpg",
+        "vignette":"img/vignettes/champignonon68.png",
         "nom": "Amanite des césars",
         "genre": "Amanita",
         "espece": "Caesarea",
@@ -192,7 +192,7 @@
     {
         "id": "69",
         "rubrique": ["89"],
-        "vignette":"img/vignettes/champignonon69.jpg",
+        "vignette":"img/vignettes/champignonon69.png",
         "nom": "Amanite épaisse",
         "genre": "Amanita",
         "espece": "Spissa",
@@ -211,7 +211,7 @@
     {
         "id": "70",
         "rubrique": ["67"],
-        "vignette":"img/vignettes/champignonon70.jpg",
+        "vignette":"img/vignettes/champignonon70.png",
         "nom": "Amanite jonquille",
         "genre": "Amanita",
         "espece": "Junquillea",
@@ -230,7 +230,7 @@
     {
         "id": "72",
         "rubrique": ["89"],
-        "vignette":"img/vignettes/champignonon72.jpg",
+        "vignette":"img/vignettes/champignonon72.png",
         "nom": "Amanite panthère",
         "genre": "Amanita",
         "espece": "Pantherina",
@@ -249,7 +249,7 @@
     {
         "id": "1",
         "rubrique": ["67"],
-        "vignette":"img/vignettes/champignonon1.jpg",
+        "vignette":"img/vignettes/champignonon1.png",
         "nom": "Amanite Phalloïde",
         "genre": "Amanita",
         "espece": "Phalloides",
@@ -268,7 +268,7 @@
     {
         "id": "6",
         "rubrique": ["47"],
-        "vignette":"img/vignettes/champignonon6.jpg",
+        "vignette":"img/vignettes/champignonon6.png",
         "nom": "Amanite printanière",
         "genre": "Amanita",
         "espece": "Verna",
@@ -287,7 +287,7 @@
     {
         "id": "73",
         "rubrique": ["77"],
-        "vignette":"img/vignettes/champignonon73.jpg",
+        "vignette":"img/vignettes/champignonon73.png",
         "nom": "Amanite tue-mouches",
         "genre": "Amanita",
         "espece": "Muscaria",
@@ -306,7 +306,7 @@
     {
         "id": "74",
         "rubrique": ["60"],
-        "vignette":"img/vignettes/champignonon74.jpg",
+        "vignette":"img/vignettes/champignonon74.png",
         "nom": "Amanite vaginée",
         "genre": "Amanita",
         "espece": "Vaginata",
@@ -325,7 +325,7 @@
     {
         "id": "75",
         "rubrique": ["89"],
-        "vignette":"img/vignettes/champignonon75.jpg",
+        "vignette":"img/vignettes/champignonon75.png",
         "nom": "Amanite vineuse",
         "genre": "Amanita",
         "espece": "Rubescens",
@@ -344,7 +344,7 @@
     {
         "id": "76",
         "rubrique": ["117"],
-        "vignette":"img/vignettes/champignonon76.jpg",
+        "vignette":"img/vignettes/champignonon76.png",
         "nom": "Armillaire couleur de miel",
         "genre": "Armillaria",
         "espece": "Mellea",
@@ -363,7 +363,7 @@
     {
         "id": "32",
         "rubrique": ["8"],
-        "vignette":"img/vignettes/champignonon32.jpg",
+        "vignette":"img/vignettes/champignonon32.png",
         "nom": "Bolet à chair jaune",
         "genre": "Xerocomus",
         "espece": "Chrysenteron",
@@ -382,7 +382,7 @@
     {
         "id": "22",
         "rubrique": ["10"],
-        "vignette":"img/vignettes/champignonon22.jpg",
+        "vignette":"img/vignettes/champignonon22.png",
         "nom": "Bolet à pied rouge",
         "genre": "Boletus",
         "espece": "Erythropus",
@@ -401,7 +401,7 @@
     {
         "id": "33",
         "rubrique": ["8"],
-        "vignette":"img/vignettes/champignonon33.jpg",
+        "vignette":"img/vignettes/champignonon33.png",
         "nom": "Bolet bai",
         "genre": "Xerocomus",
         "espece": "Badius",
@@ -420,7 +420,7 @@
     {
         "id": "35",
         "rubrique": ["9"],
-        "vignette":"img/vignettes/champignonon35.jpg",
+        "vignette":"img/vignettes/champignonon35.png",
         "nom": "Bolet châtain",
         "genre": "Gyroporus",
         "espece": "Castaneus",
@@ -439,7 +439,7 @@
     {
         "id": "34",
         "rubrique": ["8"],
-        "vignette":"img/vignettes/champignonon34.jpg",
+        "vignette":"img/vignettes/champignonon34.png",
         "nom": "Bolet de fiel (Chicotin)",
         "genre": "Tylopilus",
         "espece": "Felleus",
@@ -458,7 +458,7 @@
     {
         "id": "37",
         "rubrique": ["10"],
-        "vignette":"img/vignettes/champignonon37.jpg",
+        "vignette":"img/vignettes/champignonon37.png",
         "nom": "Bolet de Quélet",
         "genre": "Boletus",
         "espece": "Queletii",
@@ -477,7 +477,7 @@
     {
         "id": "30",
         "rubrique": ["7"],
-        "vignette":"img/vignettes/champignonon30.jpg",
+        "vignette":"img/vignettes/champignonon30.png",
         "nom": "Bolet des bouviers",
         "genre": "Suillus",
         "espece": "Bovinus",
@@ -496,7 +496,7 @@
     {
         "id": "24",
         "rubrique": ["7"],
-        "vignette":"img/vignettes/champignonon24.jpg",
+        "vignette":"img/vignettes/champignonon24.png",
         "nom": "Bolet élégant",
         "genre": "Suillus",
         "espece": "Grevillei",
@@ -515,7 +515,7 @@
     {
         "id": "31",
         "rubrique": ["8"],
-        "vignette":"img/vignettes/champignonon31.jpg",
+        "vignette":"img/vignettes/champignonon31.png",
         "nom": "Bolet poivré",
         "genre": "Chalciporus",
         "espece": "Piperatus",
@@ -534,7 +534,7 @@
     {
         "id": "21",
         "rubrique": ["10"],
-        "vignette":"img/vignettes/champignonon21.jpg",
+        "vignette":"img/vignettes/champignonon21.png",
         "nom": "Bolet satan",
         "genre": "Boletus",
         "espece": "Satanas",
@@ -553,7 +553,7 @@
     {
         "id": "36",
         "rubrique": ["9"],
-        "vignette":"img/vignettes/champignonon36.jpg",
+        "vignette":"img/vignettes/champignonon36.png",
         "nom": "Cèpe de Bordeaux",
         "genre": "Boletus",
         "espece": "Edulis",
@@ -572,7 +572,7 @@
     {
         "id": "29",
         "rubrique": ["4"],
-        "vignette":"img/vignettes/champignonon29.jpg",
+        "vignette":"img/vignettes/champignonon29.png",
         "nom": "Chanterelle (Girolle)",
         "genre": "Cantharellus",
         "espece": "Cibarius",
@@ -591,7 +591,7 @@
     {
         "id": "27",
         "rubrique": ["4"],
-        "vignette":"img/vignettes/champignonon27.jpg",
+        "vignette":"img/vignettes/champignonon27.png",
         "nom": "Clavaire chou-fleur",
         "genre": "Ramaria",
         "espece": "Botrytis",
@@ -610,7 +610,7 @@
     {
         "id": "26",
         "rubrique": ["4"],
-        "vignette":"img/vignettes/champignonon26.jpg",
+        "vignette":"img/vignettes/champignonon26.png",
         "nom": "Clavaire jolie",
         "genre": "Ramaria",
         "espece": "Formosa",
@@ -629,7 +629,7 @@
     {
         "id": "80",
         "rubrique": ["78"],
-        "vignette":"img/vignettes/champignonon80.jpg",
+        "vignette":"img/vignettes/champignonon80.png",
         "nom": "Clitocybe de l&#8217;olivier",
         "genre": "Omphalotus",
         "espece": "Olearius",
@@ -648,7 +648,7 @@
     {
         "id": "81",
         "rubrique": ["59"],
-        "vignette":"img/vignettes/champignonon81.jpg",
+        "vignette":"img/vignettes/champignonon81.png",
         "nom": "Clitocybe nébuleux",
         "genre": "Clitocybe",
         "espece": "Nebularis",
@@ -667,7 +667,7 @@
     {
         "id": "79",
         "rubrique": ["105"],
-        "vignette":"img/vignettes/champignonon79.jpg",
+        "vignette":"img/vignettes/champignonon79.png",
         "nom": "Clitocybes blancs",
         "genre": "Clitocybe",
         "espece": "Phyllophila, pityophila",
@@ -686,7 +686,7 @@
     {
         "id": "82",
         "rubrique": ["105"],
-        "vignette":"img/vignettes/champignonon82.jpg",
+        "vignette":"img/vignettes/champignonon82.png",
         "nom": "Clitopile petit prune (Meunier)",
         "genre": "Clitopilus",
         "espece": "Prunulus",
@@ -705,7 +705,7 @@
     {
         "id": "13",
         "rubrique": ["107"],
-        "vignette":"img/vignettes/champignonon13.jpg",
+        "vignette":"img/vignettes/champignonon13.png",
         "nom": "Coprin chevelu",
         "genre": "Coprinus",
         "espece": "Comatus",
@@ -724,7 +724,7 @@
     {
         "id": "112",
         "rubrique": ["95"],
-        "vignette":"img/vignettes/champignonon112.jpg",
+        "vignette":"img/vignettes/champignonon112.png",
         "nom": "Coprin micacé",
         "genre": "Coprinus",
         "espece": "Micaceus",
@@ -743,7 +743,7 @@
     {
         "id": "12",
         "rubrique": ["57"],
-        "vignette":"img/vignettes/champignonon12.jpg",
+        "vignette":"img/vignettes/champignonon12.png",
         "nom": "Coprin noir d&#8217;encre",
         "genre": "Coprinus",
         "espece": "Atramentarius",
@@ -762,7 +762,7 @@
     {
         "id": "20",
         "rubrique": ["80"],
-        "vignette":"img/vignettes/champignonon20.jpg",
+        "vignette":"img/vignettes/champignonon20.png",
         "nom": "Cortinaire couleur de rocou",
         "genre": "Cortinarius",
         "espece": "Orellanus",
@@ -781,7 +781,7 @@
     {
         "id": "83",
         "rubrique": ["92","110"],
-        "vignette":"img/vignettes/champignonon83.jpg",
+        "vignette":"img/vignettes/champignonon83.png",
         "nom": "Entolome en bouclier",
         "genre": "Entoloma",
         "espece": "Clypeatum",
@@ -800,7 +800,7 @@
     {
         "id": "84",
         "rubrique": ["92","109"],
-        "vignette":"img/vignettes/champignonon84.jpg",
+        "vignette":"img/vignettes/champignonon84.png",
         "nom": "Entolome livide",
         "genre": "Entoloma",
         "espece": "Lividum",
@@ -819,7 +819,7 @@
     {
         "id": "86",
         "rubrique": ["81","98"],
-        "vignette":"img/vignettes/champignonon86.jpg",
+        "vignette":"img/vignettes/champignonon86.png",
         "nom": "Galère marginée",
         "genre": "Galerina",
         "espece": "Marginata",
@@ -838,7 +838,7 @@
     {
         "id": "15",
         "rubrique": ["3"],
-        "vignette":"img/vignettes/champignonon15.jpg",
+        "vignette":"img/vignettes/champignonon15.png",
         "nom": "Gyromitre délicieux",
         "genre": "Gyromitra",
         "espece": "Esculenta",
@@ -857,7 +857,7 @@
     {
         "id": "106",
         "rubrique": ["82"],
-        "vignette":"img/vignettes/champignonon106.jpg",
+        "vignette":"img/vignettes/champignonon106.png",
         "nom": "Hypholome couleur de brique",
         "genre": "Hypholoma",
         "espece": "Sublaterritium",
@@ -876,7 +876,7 @@
     {
         "id": "104",
         "rubrique": ["72"],
-        "vignette":"img/vignettes/champignonon104.jpg",
+        "vignette":"img/vignettes/champignonon104.png",
         "nom": "Hypholome en touffes",
         "genre": "Hypholoma",
         "espece": "Fasciculare",
@@ -895,7 +895,7 @@
     {
         "id": "113",
         "rubrique": ["97"],
-        "vignette":"img/vignettes/champignonon113.jpg",
+        "vignette":"img/vignettes/champignonon113.png",
         "nom": "Inocybe à spores étoilées",
         "genre": "Inocybe",
         "espece": "Asterospora",
@@ -914,7 +914,7 @@
     {
         "id": "51",
         "rubrique": ["44"],
-        "vignette":"img/vignettes/champignonon51.jpg",
+        "vignette":"img/vignettes/champignonon51.png",
         "nom": "Lactaire à lait abondant (Vachotte)",
         "genre": "Lactarius",
         "espece": "Volemus",
@@ -933,7 +933,7 @@
     {
         "id": "52",
         "rubrique": ["35"],
-        "vignette":"img/vignettes/champignonon52.jpg",
+        "vignette":"img/vignettes/champignonon52.png",
         "nom": "Lactaire à lait jaune d’or",
         "genre": "Lactarius",
         "espece": "Chrysorrheus",
@@ -952,7 +952,7 @@
     {
         "id": "56",
         "rubrique": ["37"],
-        "vignette":"img/vignettes/champignonon56.jpg",
+        "vignette":"img/vignettes/champignonon56.png",
         "nom": "Lactaire couleur de poix",
         "genre": "Lactarius",
         "espece": "Picinus",
@@ -971,7 +971,7 @@
     {
         "id": "60",
         "rubrique": ["32"],
-        "vignette":"img/vignettes/champignonon60.jpg",
+        "vignette":"img/vignettes/champignonon60.png",
         "nom": "Lactaire de l&#8217;épicéa",
         "genre": "Lactarius",
         "espece": "Deterrimus",
@@ -990,7 +990,7 @@
     {
         "id": "61",
         "rubrique": ["32"],
-        "vignette":"img/vignettes/champignonon61.jpg",
+        "vignette":"img/vignettes/champignonon61.png",
         "nom": "Lactaire délicieux",
         "genre": "Lactarius",
         "espece": "Deliciosus",
@@ -1009,7 +1009,7 @@
     {
         "id": "59",
         "rubrique": ["32"],
-        "vignette":"img/vignettes/champignonon59.jpg",
+        "vignette":"img/vignettes/champignonon59.png",
         "nom": "Lactaire du sapin",
         "genre": "Lactarius",
         "espece": "Salmonicolor",
@@ -1028,7 +1028,7 @@
     {
         "id": "55",
         "rubrique": ["37"],
-        "vignette":"img/vignettes/champignonon55.jpg",
+        "vignette":"img/vignettes/champignonon55.png",
         "nom": "Lactaire fuligineux",
         "genre": "Lactarius",
         "espece": "Fuliginosus",
@@ -1047,7 +1047,7 @@
     {
         "id": "54",
         "rubrique": ["36"],
-        "vignette":"img/vignettes/champignonon54.jpg",
+        "vignette":"img/vignettes/champignonon54.png",
         "nom": "Lactaire humide",
         "genre": "Lactarius",
         "espece": "Uvidus",
@@ -1066,7 +1066,7 @@
     {
         "id": "58",
         "rubrique": ["38"],
-        "vignette":"img/vignettes/champignonon58.jpg",
+        "vignette":"img/vignettes/champignonon58.png",
         "nom": "Lactaire muqueux",
         "genre": "Lactarius",
         "espece": "Blennius",
@@ -1085,7 +1085,7 @@
     {
         "id": "57",
         "rubrique": ["38"],
-        "vignette":"img/vignettes/champignonon57.jpg",
+        "vignette":"img/vignettes/champignonon57.png",
         "nom": "Lactaire plombé",
         "genre": "Lactarius",
         "espece": "Necator",
@@ -1104,7 +1104,7 @@
     {
         "id": "47",
         "rubrique": ["39"],
-        "vignette":"img/vignettes/champignonon47.jpg",
+        "vignette":"img/vignettes/champignonon47.png",
         "nom": "Lactaire poivré",
         "genre": "Lactarius",
         "espece": "Piperatus",
@@ -1123,7 +1123,7 @@
     {
         "id": "50",
         "rubrique": ["41"],
-        "vignette":"img/vignettes/champignonon50.jpg",
+        "vignette":"img/vignettes/champignonon50.png",
         "nom": "Lactaire pubescent",
         "genre": "Lactarius",
         "espece": "Pubescens",
@@ -1142,7 +1142,7 @@
     {
         "id": "18",
         "rubrique": ["34"],
-        "vignette":"img/vignettes/champignonon18.jpg",
+        "vignette":"img/vignettes/champignonon18.png",
         "nom": "Lactaire sanguin (Roussillous des Catalans)",
         "genre": "Lactarius",
         "espece": "Sanguifluus",
@@ -1161,7 +1161,7 @@
     {
         "id": "53",
         "rubrique": ["35"],
-        "vignette":"img/vignettes/champignonon53.jpg",
+        "vignette":"img/vignettes/champignonon53.png",
         "nom": "Lactaire scrobiculé",
         "genre": "Lactarius",
         "espece": "Scrobiculatus",
@@ -1180,7 +1180,7 @@
     {
         "id": "49",
         "rubrique": ["41"],
-        "vignette":"img/vignettes/champignonon49.jpg",
+        "vignette":"img/vignettes/champignonon49.png",
         "nom": "Lactaire toisonné",
         "genre": "Lactarius",
         "espece": "Torminosus",
@@ -1199,7 +1199,7 @@
     {
         "id": "48",
         "rubrique": ["40"],
-        "vignette":"img/vignettes/champignonon48.jpg",
+        "vignette":"img/vignettes/champignonon48.png",
         "nom": "Lactaire velouté",
         "genre": "Lactarius",
         "espece": "Vellereus",
@@ -1218,7 +1218,7 @@
     {
         "id": "19",
         "rubrique": ["121"],
-        "vignette":"img/vignettes/champignonon19.jpg",
+        "vignette":"img/vignettes/champignonon19.png",
         "nom": "Lépiote brun rose",
         "genre": "Lepiota",
         "espece": "brunneoincarnata",
@@ -1237,7 +1237,7 @@
     {
         "id": "111",
         "rubrique": ["119"],
-        "vignette":"img/vignettes/champignonon111.jpg",
+        "vignette":"img/vignettes/champignonon111.png",
         "nom": "Lépiote déguenillée",
         "genre": "Macrolepiota",
         "espece": "Rhacodes",
@@ -1256,7 +1256,7 @@
     {
         "id": "110",
         "rubrique": ["119"],
-        "vignette":"img/vignettes/champignonon110.jpg",
+        "vignette":"img/vignettes/champignonon110.png",
         "nom": "Lépiote élevée",
         "genre": "Macrolepiota",
         "espece": "Procera",
@@ -1275,7 +1275,7 @@
     {
         "id": "7",
         "rubrique": ["47","100"],
-        "vignette":"img/vignettes/champignonon7.jpg",
+        "vignette":"img/vignettes/champignonon7.png",
         "nom": "Lépiote pudique",
         "genre": "Leucoagricus",
         "espece": "Leucothites",
@@ -1294,7 +1294,7 @@
     {
         "id": "109",
         "rubrique": ["88"],
-        "vignette":"img/vignettes/champignonon109.jpg",
+        "vignette":"img/vignettes/champignonon109.png",
         "nom": "Marasme des oréades (faux mousseron)",
         "genre": "Marasmius",
         "espece": "Oreades",
@@ -1313,7 +1313,7 @@
     {
         "id": "16",
         "rubrique": ["3"],
-        "vignette":"img/vignettes/champignonon16.jpg",
+        "vignette":"img/vignettes/champignonon16.png",
         "nom": "Morille ronde",
         "genre": "Morchella",
         "espece": "Rotunda",
@@ -1332,7 +1332,7 @@
     {
         "id": "23",
         "rubrique": ["7"],
-        "vignette":"img/vignettes/champignonon23.jpg",
+        "vignette":"img/vignettes/champignonon23.png",
         "nom": "Nonette voilée",
         "genre": "Suillus",
         "espece": "Luteus",
@@ -1351,7 +1351,7 @@
     {
         "id": "17",
         "rubrique": ["97"],
-        "vignette":"img/vignettes/champignonon17.jpg",
+        "vignette":"img/vignettes/champignonon17.png",
         "nom": "Paxille enroulé",
         "genre": "Paxillus",
         "espece": "Involutus",
@@ -1370,7 +1370,7 @@
     {
         "id": "28",
         "rubrique": ["4"],
-        "vignette":"img/vignettes/champignonon28.jpg",
+        "vignette":"img/vignettes/champignonon28.png",
         "nom": "Pézize couronnée",
         "genre": "Sarcophaera",
         "espece": "Crassa",
@@ -1389,7 +1389,7 @@
     {
         "id": "115",
         "rubrique": ["98"],
-        "vignette":"img/vignettes/champignonon115.jpg",
+        "vignette":"img/vignettes/champignonon115.png",
         "nom": "Pholiote changeante",
         "genre": "Kuehneromyces",
         "espece": "Mutabilis",
@@ -1408,7 +1408,7 @@
     {
         "id": "114",
         "rubrique": ["98"],
-        "vignette":"img/vignettes/champignonon114.jpg",
+        "vignette":"img/vignettes/champignonon114.png",
         "nom": "Pholiote du peuplier",
         "genre": "Agrcybe",
         "espece": "Aegerita",
@@ -1427,7 +1427,7 @@
     {
         "id": "116",
         "rubrique": ["98"],
-        "vignette":"img/vignettes/champignonon116.jpg",
+        "vignette":"img/vignettes/champignonon116.png",
         "nom": "Pholiote écailleuse",
         "genre": "Pholiota",
         "espece": "Squarrosa",
@@ -1446,7 +1446,7 @@
     {
         "id": "105",
         "rubrique": ["81"],
-        "vignette":"img/vignettes/champignonon105.jpg",
+        "vignette":"img/vignettes/champignonon105.png",
         "nom": "Pholiote remarquable",
         "genre": "Gymnopilus",
         "espece": "Spectabilis",
@@ -1465,7 +1465,7 @@
     {
         "id": "101",
         "rubrique": ["64"],
-        "vignette":"img/vignettes/champignonon101.jpg",
+        "vignette":"img/vignettes/champignonon101.png",
         "nom": "Pied bleu",
         "genre": "Lepista",
         "espece": "Nuda",
@@ -1484,7 +1484,7 @@
     {
         "id": "99",
         "rubrique": ["59"],
-        "vignette":"img/vignettes/champignonon99.jpg",
+        "vignette":"img/vignettes/champignonon99.png",
         "nom": "Pleurote corne d’abondance",
         "genre": "Pleurotus",
         "espece": "Cornucopiae",
@@ -1503,7 +1503,7 @@
     {
         "id": "98",
         "rubrique": ["59"],
-        "vignette":"img/vignettes/champignonon98.jpg",
+        "vignette":"img/vignettes/champignonon98.png",
         "nom": "Pleurote du Panicaut",
         "genre": "Pleurotus",
         "espece": "Eryngii",
@@ -1522,7 +1522,7 @@
     {
         "id": "100",
         "rubrique": ["59"],
-        "vignette":"img/vignettes/champignonon100.jpg",
+        "vignette":"img/vignettes/champignonon100.png",
         "nom": "Pleurote en huître",
         "genre": "Pleurotus",
         "espece": "Ostreatus",
@@ -1541,7 +1541,7 @@
     {
         "id": "40",
         "rubrique": ["16"],
-        "vignette":"img/vignettes/champignonon40.jpg",
+        "vignette":"img/vignettes/champignonon40.png",
         "nom": "Russule à lames inégales",
         "genre": "Russula",
         "espece": "Heterophylla",
@@ -1560,7 +1560,7 @@
     {
         "id": "38",
         "rubrique": ["15"],
-        "vignette":"img/vignettes/champignonon38.jpg",
+        "vignette":"img/vignettes/champignonon38.png",
         "nom": "Russule belette",
         "genre": "Russula",
         "espece": "Mustelina",
@@ -1579,7 +1579,7 @@
     {
         "id": "2",
         "rubrique": ["16"],
-        "vignette":"img/vignettes/champignonon2.jpg",
+        "vignette":"img/vignettes/champignonon2.png",
         "nom": "Russule charbonnière",
         "genre": "Russula",
         "espece": "Cyanoxantha",
@@ -1598,7 +1598,7 @@
     {
         "id": "43",
         "rubrique": ["17"],
-        "vignette":"img/vignettes/champignonon43.jpg",
+        "vignette":"img/vignettes/champignonon43.png",
         "nom": "Russule dorée",
         "genre": "Russula",
         "espece": "Aurea",
@@ -1617,7 +1617,7 @@
     {
         "id": "45",
         "rubrique": ["17"],
-        "vignette":"img/vignettes/champignonon45.jpg",
+        "vignette":"img/vignettes/champignonon45.png",
         "nom": "Russule émétique",
         "genre": "Russula",
         "espece": "Emetica",
@@ -1636,7 +1636,7 @@
     {
         "id": "44",
         "rubrique": ["17"],
-        "vignette":"img/vignettes/champignonon44.jpg",
+        "vignette":"img/vignettes/champignonon44.png",
         "nom": "Russule jolie",
         "genre": "Russula",
         "espece": "Lepida",
@@ -1655,7 +1655,7 @@
     {
         "id": "46",
         "rubrique": ["46"],
-        "vignette":"img/vignettes/champignonon46.jpg",
+        "vignette":"img/vignettes/champignonon46.png",
         "nom": "Russule noircissante",
         "genre": "Russula",
         "espece": "Nigricans",
@@ -1674,7 +1674,7 @@
     {
         "id": "39",
         "rubrique": ["15"],
-        "vignette":"img/vignettes/champignonon39.jpg",
+        "vignette":"img/vignettes/champignonon39.png",
         "nom": "Russule ocre et blanc",
         "genre": "Russula",
         "espece": "Ochroleuca",
@@ -1693,7 +1693,7 @@
     {
         "id": "42",
         "rubrique": ["16"],
-        "vignette":"img/vignettes/champignonon42.jpg",
+        "vignette":"img/vignettes/champignonon42.png",
         "nom": "Russule Sardoine",
         "genre": "Russula",
         "espece": "Drimeia",
@@ -1712,7 +1712,7 @@
     {
         "id": "3",
         "rubrique": ["16"],
-        "vignette":"img/vignettes/champignonon3.jpg",
+        "vignette":"img/vignettes/champignonon3.png",
         "nom": "Russule verdoyante",
         "genre": "Russula",
         "espece": "Virescens",
@@ -1731,7 +1731,7 @@
     {
         "id": "92",
         "rubrique": ["113","116"],
-        "vignette":"img/vignettes/champignonon92.jpg",
+        "vignette":"img/vignettes/champignonon92.png",
         "nom": "Tricholome à odeur de savon",
         "genre": "Tricholoma",
         "espece": "Saponaceum",
@@ -1750,7 +1750,7 @@
     {
         "id": "90",
         "rubrique": ["103"],
-        "vignette":"img/vignettes/champignonon90.jpg",
+        "vignette":"img/vignettes/champignonon90.png",
         "nom": "Tricholome acerbe",
         "genre": "Tricholoma",
         "espece": "Acerbum",
@@ -1769,7 +1769,7 @@
     {
         "id": "107",
         "rubrique": ["87"],
-        "vignette":"img/vignettes/champignonon107.jpg",
+        "vignette":"img/vignettes/champignonon107.png",
         "nom": "Tricholome agrégé",
         "genre": "Lyophillum",
         "espece": "Decastes",
@@ -1788,7 +1788,7 @@
     {
         "id": "89",
         "rubrique": ["103"],
-        "vignette":"img/vignettes/champignonon89.jpg",
+        "vignette":"img/vignettes/champignonon89.png",
         "nom": "Tricholome blanc",
         "genre": "Tricholoma",
         "espece": "Album",
@@ -1807,7 +1807,7 @@
     {
         "id": "9",
         "rubrique": ["103"],
-        "vignette":"img/vignettes/champignonon9.jpg",
+        "vignette":"img/vignettes/champignonon9.png",
         "nom": "Tricholome colombette",
         "genre": "Tricholoma",
         "espece": "Columbetta",
@@ -1826,7 +1826,7 @@
     {
         "id": "108",
         "rubrique": ["87"],
-        "vignette":"img/vignettes/champignonon108.jpg",
+        "vignette":"img/vignettes/champignonon108.png",
         "nom": "Tricholome couleur de vache",
         "genre": "Tricholoma",
         "espece": "Vaccinum",
@@ -1845,7 +1845,7 @@
     {
         "id": "93",
         "rubrique": ["87","114"],
-        "vignette":"img/vignettes/champignonon93.jpg",
+        "vignette":"img/vignettes/champignonon93.png",
         "nom": "Tricholome de la Saint-Georges",
         "genre": "Calocybe",
         "espece": "Gambosa",
@@ -1864,7 +1864,7 @@
     {
         "id": "91",
         "rubrique": ["113","116"],
-        "vignette":"img/vignettes/champignonon91.jpg",
+        "vignette":"img/vignettes/champignonon91.png",
         "nom": "Tricholome disjoint",
         "genre": "Tricholoma",
         "espece": "Sejunctum",
@@ -1883,7 +1883,7 @@
     {
         "id": "102",
         "rubrique": ["115"],
-        "vignette":"img/vignettes/champignonon102.jpg",
+        "vignette":"img/vignettes/champignonon102.png",
         "nom": "Tricholome équestre (Bidaou)",
         "genre": "Tricholoma",
         "espece": "Equestre",
@@ -1902,7 +1902,7 @@
     {
         "id": "5",
         "rubrique": ["113","116"],
-        "vignette":"img/vignettes/champignonon5.jpg",
+        "vignette":"img/vignettes/champignonon5.png",
         "nom": "Tricholome prétentieux",
         "genre": "Tricholoma",
         "espece": "portentosum",
@@ -1921,7 +1921,7 @@
     {
         "id": "103",
         "rubrique": ["115"],
-        "vignette":"img/vignettes/champignonon103.jpg",
+        "vignette":"img/vignettes/champignonon103.png",
         "nom": "Tricholome soufré",
         "genre": "Tricholoma",
         "espece": "Sulfureum",
@@ -1940,7 +1940,7 @@
     {
         "id": "96",
         "rubrique": ["112"],
-        "vignette":"img/vignettes/champignonon96.jpg",
+        "vignette":"img/vignettes/champignonon96.png",
         "nom": "Tricholome squameux",
         "genre": "Tricholoma",
         "espece": "Atrosquamosum",
@@ -1959,7 +1959,7 @@
     {
         "id": "97",
         "rubrique": ["112"],
-        "vignette":"img/vignettes/champignonon97.jpg",
+        "vignette":"img/vignettes/champignonon97.png",
         "nom": "Tricholome terreux",
         "genre": "Tricholoma",
         "espece": "Terreum",
@@ -1978,7 +1978,7 @@
     {
         "id": "94",
         "rubrique": ["112"],
-        "vignette":"img/vignettes/champignonon94.jpg",
+        "vignette":"img/vignettes/champignonon94.png",
         "nom": "Tricholome tigré",
         "genre": "Tricholoma",
         "espece": "Pardinum",
@@ -1997,7 +1997,7 @@
     {
         "id": "95",
         "rubrique": ["112"],
-        "vignette":"img/vignettes/champignonon95.jpg",
+        "vignette":"img/vignettes/champignonon95.png",
         "nom": "Tricholome vergeté",
         "genre": "Tricholoma",
         "espece": "Virgatum",

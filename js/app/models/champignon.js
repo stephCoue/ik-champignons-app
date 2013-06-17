@@ -16,7 +16,6 @@ define([
 			this.set({
 				"nomlatin": this.get('genre') + " " + this.get('espece').toLowerCase(),
 				"url": "#champignon"
-				//"url": "#champignon/" + this.id
 			});
 		}
 
