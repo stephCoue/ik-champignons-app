@@ -1,0 +1,63 @@
+/*
+  *   Bases Rules (reset, basic stuffs)
+  */
+
+global-reset()
+
+*
+  box-sizing: border-box
+
+
+
+/*  Variables */
+
+$primary = $LightGreen = #bbd029 || rgb(187,208,41); // green claire
+$institut  = $DarkGreen = #658833 || rgb(101,136,51); // green foncé
+$secondColor = $LightBrown = #e3d9c0 || rgb(227,217,192); // marron claire
+$titreColor = $DarkBrown = #534741 || rgb(83,71,65); // marron fonce
+$infoBulleNotification = $red = #d0470a || rgb(208,71,10); // rouge
+$grey  = #ada9a8
+$ombreHeaders = #8C572C
+
+
+/*  Commun */
+
+body
+  font-family: "scadabold"
+  -webkit-font-smoothing: antialiased
+  line-height: 1.2em
+  color: $titreColor // #534741
+
+a
+  text-decoration: none
+
+
+
+/*  UTILITAIRES */
+table
+  // display: table
+  width: 100%
+  clearfix()
+
+.cell
+  // display: table-cell
+  float: left
+
+.bouton
+  display: block
+
+hidetext()
+  font: 0/0 a
+  color: transparent
+  text-shadow: none
+  background-color: transparent
+  border: 0
+
+centerBlock()
+  margin: 0 auto
+
+
+
+
+
+

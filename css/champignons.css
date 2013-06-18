@@ -1,3 +1,9 @@
+@font-face{font-family:'fjalla_oneregular';src:url("fonts/fjallaone-regular-webfont.eot");src:url("fonts/fjallaone-regular-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/fjallaone-regular-webfont.woff") format('woff'),url("fonts/fjallaone-regular-webfont.ttf") format('truetype'),url("fonts/fjallaone-regular-webfont.svg#fjalla_oneregular") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'scadabold';src:url("fonts/scada-bold-webfont.eot");src:url("fonts/scada-bold-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/scada-bold-webfont.woff") format('woff'),url("fonts/scada-bold-webfont.ttf") format('truetype'),url("fonts/scada-bold-webfont.svg#scadabold") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'scadabold_italic';src:url("fonts/scada-bolditalic-webfont.eot");src:url("fonts/scada-bolditalic-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/scada-bolditalic-webfont.woff") format('woff'),url("fonts/scada-bolditalic-webfont.ttf") format('truetype'),url("fonts/scada-bolditalic-webfont.svg#scadabold_italic") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'sofiaregular';src:url("fonts/sofia-regular-webfont.eot");src:url("fonts/sofia-regular-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/sofia-regular-webfont.woff") format('woff'),url("fonts/sofia-regular-webfont.ttf") format('truetype'),url("fonts/sofia-regular-webfont.svg#sofiaregular") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'scadaregular';src:url("fonts/scada-regular-webfont.eot");src:url("fonts/scada-regular-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/scada-regular-webfont.woff") format('woff'),url("fonts/scada-regular-webfont.ttf") format('truetype'),url("fonts/scada-regular-webfont.svg#scadaregular") format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'scadaitalic';src:url("fonts/scada-italic-webfont.eot");src:url("fonts/scada-italic-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/scada-italic-webfont.woff") format('woff'),url("fonts/scada-italic-webfont.ttf") format('truetype'),url("fonts/scada-italic-webfont.svg#scadaitalic") format('svg');font-weight:normal;font-style:normal}
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline}
 body{line-height:1;color:#000;background:#fff}
 ol,ul{list-style:none}
@@ -5,12 +11,6 @@ table{border-collapse:separate;border-spacing:0;vertical-align:middle}
 caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
 a img{border:none}
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-@font-face{font-family:'fjalla_oneregular';src:url("fonts/fjallaone-regular-webfont.eot");src:url("fonts/fjallaone-regular-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/fjallaone-regular-webfont.woff") format('woff'),url("fonts/fjallaone-regular-webfont.ttf") format('truetype'),url("fonts/fjallaone-regular-webfont.svg#fjalla_oneregular") format('svg');font-weight:normal;font-style:normal}
-@font-face{font-family:'scadabold';src:url("fonts/scada-bold-webfont.eot");src:url("fonts/scada-bold-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/scada-bold-webfont.woff") format('woff'),url("fonts/scada-bold-webfont.ttf") format('truetype'),url("fonts/scada-bold-webfont.svg#scadabold") format('svg');font-weight:normal;font-style:normal}
-@font-face{font-family:'scadabold_italic';src:url("fonts/scada-bolditalic-webfont.eot");src:url("fonts/scada-bolditalic-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/scada-bolditalic-webfont.woff") format('woff'),url("fonts/scada-bolditalic-webfont.ttf") format('truetype'),url("fonts/scada-bolditalic-webfont.svg#scadabold_italic") format('svg');font-weight:normal;font-style:normal}
-@font-face{font-family:'sofiaregular';src:url("fonts/sofia-regular-webfont.eot");src:url("fonts/sofia-regular-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/sofia-regular-webfont.woff") format('woff'),url("fonts/sofia-regular-webfont.ttf") format('truetype'),url("fonts/sofia-regular-webfont.svg#sofiaregular") format('svg');font-weight:normal;font-style:normal}
-@font-face{font-family:'scadaregular';src:url("fonts/scada-regular-webfont.eot");src:url("fonts/scada-regular-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/scada-regular-webfont.woff") format('woff'),url("fonts/scada-regular-webfont.ttf") format('truetype'),url("fonts/scada-regular-webfont.svg#scadaregular") format('svg');font-weight:normal;font-style:normal}
-@font-face{font-family:'scadaitalic';src:url("fonts/scada-italic-webfont.eot");src:url("fonts/scada-italic-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/scada-italic-webfont.woff") format('woff'),url("fonts/scada-italic-webfont.ttf") format('truetype'),url("fonts/scada-italic-webfont.svg#scadaitalic") format('svg');font-weight:normal;font-style:normal}
 body{font-family:"scadabold";-webkit-font-smoothing:antialiased;line-height:1.2em;color:#534741}
 a{text-decoration:none}
 table{width:100%;zoom:1}
@@ -24,17 +24,29 @@ table:after{clear:both}
 .page-inner{margin:60px auto 70px}
 .page-home .page-inner{margin:0 auto}
 header,footer{width:100%}
-.page-inner h1{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background:url("images/logo-app.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center bottom;min-height:106px;margin:0 auto}
-.logo{min-height:100px;background:url("images/logo-ik-couleur.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center}
-.nav-main{font-size:120%;text-shadow:0 2px 2px #000;margin:4% auto;}
-.nav-main span{text-transform:uppercase;color:#bbd029;display:block;margin-bottom:.2em}
-.nav-main ul{width:90%;margin:0 auto}
-.nav-main li{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 0;border-image:url("images/nav-main-hr.png") 100% 0 0;border-width:5px;}
+.page-champignon > .currentSlide{position:absolute;top:0;width:100%;height:100%;overflow-y:scroll;background:url("images/paper-background.jpg") center}
+.sidebar{display:none}
+.page-determiner ul{margin:15% 6%}
+.on .bouton .picto{background-position-y:-30px}
+#critere-selection-box{height:100px;margin-bottom:20px;-webkit-transition:margin-top .2s linear}
+.critere-off{margin-top:-100px}
+.critere-on{margin-top:0}
+.header-tous .determiner,.header-champignon .determiner{display:none}
+.popup{position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.8);color:#fff}
+.popup dl{margin:70px 20px}
+.titre{color:#bbd029;text-transform:uppercase;display:block;font-size:20px}
+.page::-webkit-scrollbar,.page-champignon .slide::-webkit-scrollbar{display:none}
+.page-inner h1{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background:url("images/logo-app.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;min-height:106px}
+.logo{background:url("images/logo-ik-creme.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;min-height:110px}
+.nav-main{text-shadow:0 2px 2px #000;margin:1.2% auto;}
+.nav-main span{margin-bottom:.2em}
+.nav-main ul{width:290px;margin:0 auto}
+.nav-main li{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 0;border-image:url("images/nav-main-hr.png") 100% 0 0;border-width:4px;}
 .nav-main li:last-child{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;border-image:url("images/nav-main-hr.png") 100% 0 100% 0}
-.nav-main li:hover,.nav-main li:active{background:-webkit-linear-gradient(left,rgba(226,226,224,0) 2%,rgba(226,226,224,0.08) 3%,rgba(226,226,224,0.12) 16%,rgba(196,206,123,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(196,206,123,0.6) 75%,rgba(226,226,224,0.12) 90%,rgba(226,226,224,0.08) 97%,rgba(226,226,224,0) 98%);}
+.nav-main li:hover,.nav-main li:active{background:-webkit-linear-gradient(left,rgba(187,208,41,0) 2%,rgba(187,208,41,0.08) 3%,rgba(187,208,41,0.12) 16%,rgba(187,208,41,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(187,208,41,0.6) 75%,rgba(187,208,41,0.12) 90%,rgba(187,208,41,0.08) 97%,rgba(187,208,41,0) 98%);}
 .nav-main li:hover a,.nav-main li:active a,.nav-main li:hover span,.nav-main li:active span{color:#534741;text-shadow:0 1px 1px #fff}
-.nav-main a{color:#e3d9c0;padding:.4em 0;position:relative;padding-left:35%;}
-.nav-main a:before{content:"";display:block;position:absolute;background-image:url("images/sprite-menu-picto.png");background-repeat:no-repeat;background-position:0 0;width:57px;height:57px;left:9%;top:.2em}
+.nav-main a{color:#e3d9c0;padding:7px 0;position:relative;padding-left:101px;}
+.nav-main a:before{content:"";display:block;position:absolute;background-image:url("images/sprite-menu-picto.png");background-repeat:no-repeat;background-position:0 0;width:50px;height:50px;left:9%;top:.2em}
 .nav-main a.tous:before{background-position:-57px 0}
 .nav-main a.aide:before{background-position:-114px 0}
 .nav-main a.lecon:before{background-position:-171px 0}

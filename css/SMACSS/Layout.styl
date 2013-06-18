@@ -1,0 +1,43 @@
+/*
+  * Layout
+  */
+
+
+/* STRUCTURE */
+
+.viewport
+  position: fixed
+  width: 100%
+  height: 100%
+  opacity: 0
+  -webkit-transition: opacity .5s
+  background:  url('images/bois-brun-fonce.png')
+
+
+
+.content-main
+  width: 100%;
+
+.page
+  position: absolute
+  width: 100%
+  height: 100%
+  box-shadow: 0 0 20px rgba(0,0,0,0.5)
+  overflow-y: scroll
+  overflow-x: hidden
+  -webkit-overflow-scrolling: touch
+  -webkit-transition: -webkit-transform .2s ease
+  -webkit-transform-style: preserve-3d
+  -webkit-transform: translate3d(0,0,0)
+
+
+.page-inner
+  margin: 60px auto 70px
+
+.page-home .page-inner
+  margin: 0 auto
+
+header,
+footer
+  width: 100%;
+

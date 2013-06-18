@@ -1,0 +1,83 @@
+/*
+  *   Theme
+  */
+
+
+
+
+.page-inner
+  h1
+    hidetext()
+    background: url('images/logo-app.png');
+    background-repeat:no-repeat
+    background-size: contain
+    background-position: center
+    min-height: 106px
+
+
+.logo
+  background: url('images/logo-ik-creme.png');
+  background-repeat:no-repeat
+  background-size: contain
+  background-position: center
+  min-height:  110px
+
+
+
+
+.nav-main
+  text-shadow: 0 2px 2px #000
+  margin: 1.2% auto
+
+  span
+    margin-bottom: .2em
+  ul
+    width: 290px
+    centerBlock()
+  li
+    border-image:  url("images/nav-main-hr.png")  100% 0 0
+    border-width: 4px
+
+    &:last-child
+      border-image: url("images/nav-main-hr.png") 100% 0 100% 0
+
+    &:hover,
+    &:active
+      background: -webkit-linear-gradient(left, rgba($primary, 0) 2%,rgba($primary, .08) 3%,rgba($primary, .12) 16%,rgba($primary , .6) 32%,rgba($primary, .9) 50%,rgba($primary , .6) 75%,rgba($primary, .12) 90%,rgba($primary, .08) 97%, rgba($primary, 0) 98%)
+      & a,
+      & span
+        color: $titreColor
+        text-shadow: 0 1px 1px #fff
+
+  a
+    color: $secondColor
+    padding: 7px 0
+    position: relative
+    padding-left: 101px
+
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      background-image: url('images/sprite-menu-picto.png')
+      background-repeat: no-repeat
+      background-position: 0 0
+      width: 50px
+      height: 50px
+      left: 9%
+      top: 0.2em
+
+    &.tous:before
+      background-position: -57px 0
+    &.aide:before
+      background-position: -114px 0
+    &.lecon:before
+      background-position: -171px 0
+    &.infos:before
+      background-position: -228px 0
+
+
+
+
+
+

@@ -1,7 +1,9 @@
-.page::-webkit-scrollbar, .page-champignon .slide::-webkit-scrollbar {
+/*.page::-webkit-scrollbar, .page-champignon .slide::-webkit-scrollbar {
 	display: none;
 }
+*/
 
+/*
 .page-champignon > .currentSlide {
 	position: absolute;
 	top: 0;
@@ -22,9 +24,9 @@
 .on .bouton .picto {
 	background-position-y: -30px;
 }
-
+*/
 /*PAGE DETERMINER*/
-
+/*
 #critere-selection-box {
 	height: 100px;
 	margin-bottom: 20px;
@@ -42,9 +44,9 @@
 .header-tous .determiner, .header-champignon .determiner {
   display: none;
 }
-
+*/
 /*POPUP TERME DU GLOSSAIRE*/
-
+/*
 .popup {
 	position: fixed;
 	width: 100%;
@@ -55,4 +57,4 @@
 
 .popup dl {
 	margin: 70px 20px;
-}
+}*/
