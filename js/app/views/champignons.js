@@ -11,10 +11,11 @@ define([
 		tagName: "ul",
 		className: "liste-champignons",
 
-		initialize: function() {
+		initialize: function(options) {
+			console.log("ChampignonsListView : ", options);
 
-			this.collection = new ChampignonsCollection();
-			this.completeCollection = new ChampignonsCollection();
+			this.completeCollection = options.champignonsAll; //new ChampignonsCollection();
+			this.collection = options.champignonsSubset; //new ChampignonsCollection();
 
 			this.collection.on("reset", this.render, this);
 
@@ -23,6 +24,7 @@ define([
 			Backbone.on("onListe", this.onListe, this);
 
 			this.render();
+
 		},
 
 		onSettings: function(settings){

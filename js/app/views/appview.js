@@ -19,12 +19,12 @@ function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTo
 		el: $("#app-container"),
 
 		initialize: function(options){
-
 			// Pages
 			this.pageHome = new PageHome();
-			this.pageTous = new PageTous();
+			this.pageTous = new PageTous(options);
 			this.pageChampignon = new PageChampignon();
-			this.pageDeterminer = new PageDeterminer();
+			this.pageDeterminer = new PageDeterminer(options);
+			this.pageCueillette = null;
 			this.popupTermeGlossaire = new PopupTermeGlossaire();
 
 			// Barres

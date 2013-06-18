@@ -6,10 +6,8 @@ define([
 	var Champignon = Backbone.Model.extend({
 
 		defaults: {
-			nom: null,
-			genre: null,
-			espece: null,
-			selected: true
+			selected: true,
+			cueillette: false
 		},
 
 		initialize: function() {

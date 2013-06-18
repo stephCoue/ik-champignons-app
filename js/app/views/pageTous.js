@@ -2,20 +2,20 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
-	"collections/champignons",
 	"mixins/pageMixin",
 	"views/champignons",
 	"text!templates/pageTous.html"
-], function($, _, Backbone, ChampignonsCollection, PageMixin, ChampignonsListView, pageTousTemplate){
+], function($, _, Backbone, PageMixin, ChampignonsListView, pageTousTemplate){
 
 	var PageTous = Backbone.View.extend({
 
 		el: $("#tous"),
 		template: _.template(pageTousTemplate),
 
-		initialize: function() {
+		initialize: function(options) {
 			// Création de la vue de la liste des champignons
-			this.listView = new ChampignonsListView();
+			this.listView = new ChampignonsListView(options);
+			this.listView.collection.reset(options.champignonsAll.models);
 
 			// On se cache au départ !
 			this.$el.hide();

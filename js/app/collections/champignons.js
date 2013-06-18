@@ -10,7 +10,7 @@ define([
 		sort_key: "nom",
 
 		initialize: function() {
-			this.set(data);
+			//this.set(data);
 		},
 
 		comparator: function(item){
@@ -70,14 +70,15 @@ define([
 			return t;
 		},
 
-		createSubset: function(ids){
-			this.set(data);
+		getSubset: function(ids){
+			//this.set(data);
 			var t = [];
 			_.each(this.models, function(model){
 				if (_.contains(ids, parseInt(model.id, 10) ))
 					t.push(model);
 			});
-			this.set(t);
+			//this.set(t);
+			return t;
 		}
 
 	});
