@@ -12,10 +12,6 @@ define([
 
 		initialize: function(options){
 
-			// Chargement des données champignons
-			this.champignonsDataProvider = new ChampignonsCollection();
-			this.champignonsSubset = new ChampignonsCollection();
-
 			// référence sur l'application
 			this.app = options.app;
 
@@ -69,14 +65,23 @@ define([
 		},
 
 		onCueillette: function(){
-			console.log("onCueillette !");
-			// Trouver l'id du champignon qui est affiché
-			console.log(this.app.appView.pageChampignon.champignons[this.app.appView.pageChampignon.currentFiche]);
-			// Vérifier si ce champignon fait déjà parti de la cueillette
-			// Si oui, on l'enlève de la cueillette
-			// si non, on l'ajoute à la cueillette
-			// On met à jour la vue du champignon avec l'état de la cueillette
-			// On met à jour le bouton cueillette pour afficher le bon nombre de champignons cueillis
+			var currentChampignonId = this.app.champignonsProvider.current.id;
+			var savedCueillette = this.app.settings.get("cueillette");
+
+			if( _.indexOf(savedCueillette, currentChampignonId) > -1 ){
+				savedCueillette = _.without( savedCueillette,  currentChampignonId);
+			} else {
+				savedCueillette.push(currentChampignonId);
+			}
+
+			this.app.settings.set("cueillette", savedCueillette);
+			this.app.settings.save();
+
+			// Mise à jour de la collection
+			this.app.champignonsProvider.setCueillette(savedCueillette);
+
+			// Evenemnt envoyé pour la mise à jour du bouton cueillette
+			Backbone.trigger("settings:change", this.app.settings.toJSON());
 		}
 
 	});

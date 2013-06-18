@@ -12,10 +12,18 @@ define([
 
 		initialize: function(){
 			this.render();
+			this.listenTo(this.model, "change:cueillette", this.setCueillette);
 		},
 
 		events: {
 			"click a.glossaire": "onTerme"
+		},
+
+		setCueillette: function(){
+			if(this.model.get("cueillette"))
+				this.$el.find(".cueillette").addClass("cueillette-on");
+			else
+				this.$el.find(".cueillette").removeClass("cueillette-on");
 		},
 
 		onTerme: function(event){

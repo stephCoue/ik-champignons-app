@@ -1,6 +1,11 @@
 <div class="slide-inner">
 	<h2><%= nom %></h2>
 	<h3><%= nomlatin %></h3>
+	<% if(cueillette) { %>
+		<div class="cueillette cueillette-on"></div>
+	<% } else { %>
+		<div class="cueillette"></div>
+	<% } %>
 	<div class="diaporama">
 		<img src="<%= fullimage %>">
 	</div>

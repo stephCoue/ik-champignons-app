@@ -9,10 +9,6 @@ define([
 		model: Champignon,
 		sort_key: "nom",
 
-		initialize: function() {
-			//this.set(data);
-		},
-
 		comparator: function(item){
 			return item.get(this.sort_key);
 		},
@@ -79,6 +75,15 @@ define([
 			});
 			//this.set(t);
 			return t;
+		},
+
+		setCueillette: function(ids){
+			_.each(this.models, function(model){
+				if(_.contains(ids, model.id))
+					model.set("cueillette", true);
+				else
+					model.set("cueillette", false);
+			});
 		}
 
 	});

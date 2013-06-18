@@ -15,14 +15,19 @@ define([
 
 	App.addInitializer(function(){
 
-		// Chargement des données
-		this.champignonsProvider = new ChampignonsCollection();
-		this.champignonsProvider.set(ChampignonsData);
-		this.champignonsSubset = new ChampignonsCollection();
-
 		// Les préférences de l'utilisateur
 		this.settings = new Settings({id:1});
 		this.settings.fetch();
+
+		// Chargement des champignons
+		this.champignonsProvider = new ChampignonsCollection();
+		this.champignonsProvider.name = "tous";
+		this.champignonsProvider.set(ChampignonsData);
+		this.champignonsProvider.setCueillette(this.settings.get("cueillette"));
+
+		// Un proxy pour les sélectiosn de champignons
+		this.champignonsSubset = new ChampignonsCollection();
+		this.champignonsSubset.name = "subset";
 
 		// La vue générale de l'application
 		this.appView = new AppView({
