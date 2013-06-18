@@ -67,6 +67,7 @@ define([
 		},
 
 		getSubset: function(ids){
+			console.log("ids = ", ids);
 			//this.set(data);
 			var t = [];
 			_.each(this.models, function(model){

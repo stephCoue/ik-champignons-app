@@ -47,6 +47,11 @@ define([
 			this.app.appView.showPage({page:"determiner"});
 		},
 
+		cueillette: function(){
+			console.log("AppController : route cueillette");
+			this.app.appView.showPage({page:"cueillette"});
+		},
+
 		// Préférences
 
 		filterSave: function(sortkey){

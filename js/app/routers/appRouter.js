@@ -12,6 +12,7 @@ define([
 			"tous":"tous",
 			"champignon":"champignon",
 			"determiner":"determiner",
+			"cueillette":"cueillette",
 			"*action":"home"
 		}
 

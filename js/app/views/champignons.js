@@ -12,10 +12,8 @@ define([
 		className: "liste-champignons",
 
 		initialize: function(options) {
-			console.log("ChampignonsListView : ", options);
-
 			this.completeCollection = options.champignonsAll; //new ChampignonsCollection();
-			this.collection = options.champignonsSubset; //new ChampignonsCollection();
+			this.collection = new ChampignonsCollection();
 
 			this.collection.on("reset", this.render, this);
 
