@@ -11,8 +11,7 @@ define([
 		tagName: "ul",
 		className: "liste-champignons",
 
-		initialize: function(options) {
-			this.completeCollection = options.champignonsAll; //new ChampignonsCollection();
+		initialize: function() {
 			this.collection = new ChampignonsCollection();
 
 			this.collection.on("reset", this.render, this);
@@ -47,14 +46,6 @@ define([
 			this.collection.sort_key = sortkey;
 			this.collection.sort();
 			this.render();
-		},
-
-		search: function(searchString){
-			this.collection.reset( this.completeCollection.rechercher(searchString) );
-		},
-
-		clearSearch: function(){
-			this.collection.reset( this.completeCollection.models );
 		},
 
 		render: function(){

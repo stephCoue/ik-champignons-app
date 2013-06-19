@@ -25,20 +25,14 @@ define([
 		this.champignonsProvider.set(ChampignonsData);
 		this.champignonsProvider.setCueillette(this.settings.get("cueillette"));
 
-		// Un proxy pour les sélectiosn de champignons
-		this.champignonsSubset = new ChampignonsCollection();
-		this.champignonsSubset.name = "subset";
-
 		// La vue générale de l'application
 		this.appView = new AppView({
-			champignonsAll: this.champignonsProvider,
-			champignonsSubset: this.champignonsSubset
+			champignonsProvider: this.champignonsProvider
 		});
 
 		// Création du router et du controller associé
 		this.controller = new AppController({app:this});
 		this.router = new AppRouter({controller: this.controller});
-
 
 	});
 

@@ -13,9 +13,13 @@ define([
 		template: _.template(pageTousTemplate),
 
 		initialize: function(options) {
+
+			// Liste de tous les champignons
+			this.dataProvider = options.champignonsProvider;
+
 			// Création de la vue de la liste des champignons
-			this.listView = new ChampignonsListView(options);
-			this.listView.collection.reset(options.champignonsAll.models);
+			this.listView = new ChampignonsListView();
+			this.listView.collection.reset(this.dataProvider.models);
 
 			// On se cache au départ !
 			this.$el.hide();
@@ -38,25 +42,24 @@ define([
 
 			// Mise à jour de l'état des boutons
 			$(event.currentTarget).parent().addClass("on").siblings().removeClass("on");
-
-			//Backbone.trigger("filter", $(event.currentTarget).attr("href"));
 		},
 
 		search: function(event){
 			var searchString = $(".search input").val().toLowerCase();
+
 			if(searchString.length > 0)
 				this.$el.find(".search a").fadeIn(100);
 			else
 				this.$el.find(".search a").fadeOut(100);
 
-			this.listView.search(searchString);
+			this.listView.collection.reset( this.dataProvider.rechercher(searchString) );
 		},
 
 		clearSearch: function(event){
 			event.preventDefault();
 			$(".search input").val('');
 			this.$el.find(".search a").fadeOut(100);
-			this.listView.clearSearch();
+			this.listView.collection.reset(this.dataProvider.models);
 		},
 
 		render: function(){

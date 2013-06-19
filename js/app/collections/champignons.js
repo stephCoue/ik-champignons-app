@@ -27,8 +27,6 @@ define([
 
 		getNext: function(){
 			if( (_.indexOf(this.models, this.current) + 1) < this.models.length) {
-				//this.current = this.at(_.indexOf(this.models, this.current) + 1);
-				//return this.current;
 				return this.at(_.indexOf(this.models, this.current) + 1);
 			} else {
 				return null;
@@ -37,8 +35,6 @@ define([
 
 		getPrev: function(){
 			if( (_.indexOf(this.models, this.current) - 1) > -1) {
-				//this.current = this.at(_.indexOf(this.models, this.current) - 1);
-				//return this.current;
 				return this.at(_.indexOf(this.models, this.current) - 1);
 			} else {
 				return null;
@@ -67,14 +63,11 @@ define([
 		},
 
 		getSubset: function(ids){
-			console.log("ids = ", ids);
-			//this.set(data);
 			var t = [];
 			_.each(this.models, function(model){
 				if (_.contains(ids, parseInt(model.id, 10) ))
 					t.push(model);
 			});
-			//this.set(t);
 			return t;
 		},
 
