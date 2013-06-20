@@ -10,21 +10,22 @@ define([
 	"views/pageTous",
 	"views/pageChampignon",
 	"views/pageDeterminer",
+	"views/pageCueillette",
 	"views/popupTermeGlossaire"
 ],
-function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTous, PageChampignon, PageDeterminer, PopupTermeGlossaire){
+function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTous, PageChampignon, PageDeterminer, PageCueillette, PopupTermeGlossaire){
 
 	var AppView = Backbone.View.extend({
 
 		el: $("#app-container"),
 
 		initialize: function(options){
-
 			// Pages
 			this.pageHome = new PageHome();
-			this.pageTous = new PageTous();
+			this.pageTous = new PageTous(options);
 			this.pageChampignon = new PageChampignon();
-			this.pageDeterminer = new PageDeterminer();
+			this.pageDeterminer = new PageDeterminer(options);
+			this.pageCueillette = new PageCueillette(options);
 			this.popupTermeGlossaire = new PopupTermeGlossaire();
 
 			// Barres
@@ -70,6 +71,10 @@ function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTo
 					this.header.show("determiner");
 					this.footer.show("determiner");
 					break;
+				case "cueillette":
+					this.nextPage = this.pageCueillette;
+					this.header.show("tous");
+					this.footer.show("tous");
 			}
 
 			if(this.currentPage !== this.nextPage){

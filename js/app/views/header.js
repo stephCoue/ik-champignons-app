@@ -68,6 +68,7 @@ define([
 
 		onCueillette: function(event){
 			event.preventDefault();
+			Backbone.trigger("cueillette");
 		},
 
 		onShowButton: function(event){

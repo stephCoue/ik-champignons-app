@@ -9,10 +9,6 @@ define([
 		model: Champignon,
 		sort_key: "nom",
 
-		initialize: function() {
-			this.set(data);
-		},
-
 		comparator: function(item){
 			return item.get(this.sort_key);
 		},
@@ -31,8 +27,6 @@ define([
 
 		getNext: function(){
 			if( (_.indexOf(this.models, this.current) + 1) < this.models.length) {
-				//this.current = this.at(_.indexOf(this.models, this.current) + 1);
-				//return this.current;
 				return this.at(_.indexOf(this.models, this.current) + 1);
 			} else {
 				return null;
@@ -41,8 +35,6 @@ define([
 
 		getPrev: function(){
 			if( (_.indexOf(this.models, this.current) - 1) > -1) {
-				//this.current = this.at(_.indexOf(this.models, this.current) - 1);
-				//return this.current;
 				return this.at(_.indexOf(this.models, this.current) - 1);
 			} else {
 				return null;
@@ -70,14 +62,22 @@ define([
 			return t;
 		},
 
-		createSubset: function(ids){
-			this.set(data);
+		getSubset: function(ids){
 			var t = [];
 			_.each(this.models, function(model){
 				if (_.contains(ids, parseInt(model.id, 10) ))
 					t.push(model);
 			});
-			this.set(t);
+			return t;
+		},
+
+		setCueillette: function(ids){
+			_.each(this.models, function(model){
+				if(_.contains(ids, model.id))
+					model.set("cueillette", true);
+				else
+					model.set("cueillette", false);
+			});
 		}
 
 	});

@@ -15,10 +15,11 @@ define([
 		el: $("#determiner"),
 		template: _.template(pageDeterminerTemplate),
 
-		initialize: function(){
+		initialize: function(options){
 			this.$el.hide();
 
-			this.resultatCollection = new ChampignonsCollection();
+			this.champignonsProvider = options.champignonsProvider;
+
 			this.resultatView = new ChampignonsListView();
 
 			this.critereBox = new CritereBox();
@@ -55,10 +56,7 @@ define([
 
 		showResultatView: function(){
 			this.criteresListView.$el.hide();
-			this.resultatCollection.createSubset(this.currentCritere.get("champignons"));
-			this.resultatView.collection = this.resultatCollection;
-			this.resultatView.onListe();
-			this.resultatView.render();
+			this.resultatView.collection.reset(this.champignonsProvider.getSubset(this.currentCritere.get("champignons")));
 			this.resultatView.$el.show();
 		},
 

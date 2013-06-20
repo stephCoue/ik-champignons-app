@@ -6,16 +6,15 @@ define([
 	var Champignon = Backbone.Model.extend({
 
 		defaults: {
-			nom: null,
-			genre: null,
-			espece: null,
-			selected: true
+			selected: true,
+			cueillette: false
 		},
 
 		initialize: function() {
 			this.set({
 				"nomlatin": this.get('genre') + " " + this.get('espece').toLowerCase(),
-				"url": "#champignon"
+				"url": "#champignon",
+				"fullimage": "img/fullscreen/champignonon" + this.id + ".png"
 			});
 		}
 

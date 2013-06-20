@@ -9,7 +9,15 @@ define([
 		el: $("#footer"),
 
 		initialize: function(){
+			Backbone.on("settings:change", this.onSettings, this);
 			this.render();
+		},
+
+		onSettings: function(settings){
+			if(settings.cueillette.length > 0)
+				this.$el.find(".cueillette .count").text( settings.cueillette.length ).show();
+			else
+				this.$el.find(".cueillette .count").hide();
 		},
 
 		show: function(contexte){
