@@ -23,7 +23,6 @@ define([
 			"click .liste": "onListe",
 			"click .diapo": "onDiapo",
 			"click .back": "onBackButton",
-			"click .cueillette": "onCueillette",
 			"click .show": "onShowButton"
 		},
 
@@ -64,11 +63,6 @@ define([
 		onBackButton: function(event){
 			event.preventDefault();
 			window.history.go(-1);
-		},
-
-		onCueillette: function(event){
-			event.preventDefault();
-			Backbone.trigger("cueillette");
 		},
 
 		onShowButton: function(event){

@@ -16,7 +16,13 @@ define([
 		},
 
 		events: {
-			"click a.glossaire": "onTerme"
+			"click a.glossaire": "onTerme",
+			"click .cueillette": "onCueillette"
+		},
+
+		onCueillette: function(event){
+			event.preventDefault();
+			Backbone.trigger("cueillette");
 		},
 
 		setCueillette: function(){

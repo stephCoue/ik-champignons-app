@@ -42,6 +42,8 @@ header,footer{width:100%}
 .content-header .show:active{background-position:-250px -50px}
 .diaporama img{max-width:60%;margin:0 auto}
 .page-champignon .slide .diaporama{background-color:transparent}
+.slide .cueillette{right:0;top:50px;display:block;width:50px;height:50px;background:transparent url("images/cueillette.png") no-repeat}
+.slide .cueillette-on{background-position:0 -50px}
 .page::-webkit-scrollbar,.page-champignon .slide::-webkit-scrollbar{display:none}
 .page-inner h1{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background:url("images/logo-app.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;min-height:106px}
 .logo{background:url("images/logo-ik-creme.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;margin:0 auto;width:110px;height:100%}
