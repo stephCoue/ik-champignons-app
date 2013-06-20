@@ -18,8 +18,9 @@
   background: url('images/logo-ik-creme.png');
   background-repeat:no-repeat
   background-size: contain
-  background-position: center
-  min-height:  110px
+  centerBlock()
+  width: 110px
+  height: 100%
 
 header,
 footer
@@ -32,12 +33,11 @@ footer
 
 .nav-main
   text-shadow: 0 2px 2px #000
-  margin: 1.2% auto
 
   span
     margin-bottom: .2em
   ul
-    width: 290px
+    width: 90%
     centerBlock()
   li
     border-image:  url("images/nav-main-hr.png")  100% 0 0
@@ -46,7 +46,6 @@ footer
     &:last-child
       border-image: url("images/nav-main-hr.png") 100% 0 100% 0
 
-    &:hover,
     &:active
       background: -webkit-linear-gradient(left, rgba($primary, 0) 2%,rgba($primary, .05) 3%,rgba($primary, .12) 16%,rgba($primary , .6) 32%,rgba($primary, .9) 50%,rgba($primary , .6) 75%,rgba($primary, .12) 90%,rgba($primary, .05) 97%, rgba($primary, 0) 98%)
       & a,
