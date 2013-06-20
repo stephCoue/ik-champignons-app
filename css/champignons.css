@@ -40,6 +40,8 @@ header,footer{width:100%}
 .page::-webkit-scrollbar,.page-champignon .slide::-webkit-scrollbar{display:none}
 .page-inner h1{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background:url("images/logo-app.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;min-height:106px}
 .logo{background:url("images/logo-ik-creme.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;min-height:110px}
+header,footer{height:110px}
+footer{position:absolute;bottom:0}
 .nav-main{text-shadow:0 2px 2px #000;margin:1.2% auto;}
 .nav-main span{margin-bottom:.2em}
 .nav-main ul{width:290px;margin:0 auto}
