@@ -43,7 +43,7 @@
 
     &:hover,
     &:active
-      background: -webkit-linear-gradient(left, rgba($primary, 0) 2%,rgba($primary, .08) 3%,rgba($primary, .12) 16%,rgba($primary , .6) 32%,rgba($primary, .9) 50%,rgba($primary , .6) 75%,rgba($primary, .12) 90%,rgba($primary, .08) 97%, rgba($primary, 0) 98%)
+      background: -webkit-linear-gradient(left, rgba($primary, 0) 2%,rgba($primary, .05) 3%,rgba($primary, .12) 16%,rgba($primary , .6) 32%,rgba($primary, .9) 50%,rgba($primary , .6) 75%,rgba($primary, .12) 90%,rgba($primary, .05) 97%, rgba($primary, 0) 98%)
       & a,
       & span
         color: $titreColor
@@ -59,22 +59,23 @@
       content: ""
       display: block
       position: absolute
-      background-image: url('images/sprite-menu-picto.png')
+      width: 100px
+      height: 100px
       background-repeat: no-repeat
       background-position: 0 0
-      width: 50px
-      height: 50px
-      left: 9%
-      top: 0.2em
+      background-size: 50% auto
+      clip: rect(0,50px, 50px, 0)
+      left: 11%
+      top: 0.25em
 
     &.tous:before
-      background-position: -57px 0
+      background-image: url('images/icon-tous.png')
     &.aide:before
-      background-position: -114px 0
+      background-image: url('images/icon-aide.png')
     &.lecon:before
-      background-position: -171px 0
+      background-image: url('images/icon-lecon.png')
     &.infos:before
-      background-position: -228px 0
+      background-image: url('images/icon-infos.png')
 
 
 
