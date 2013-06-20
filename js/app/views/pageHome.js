@@ -24,6 +24,9 @@ define(["jquery",
 
 		render: function(){
 			this.$el.html(this.template());
+			var margintop = (( $(window).height() - ( $("header").height() + $("footer").height() ) ) - this.$el.find(".nav-main").height()) / 2;
+			this.$el.find(".nav-main").css("margin-top", margintop + "px");
+
 			return this;
 		}
 	});
