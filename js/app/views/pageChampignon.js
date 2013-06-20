@@ -22,7 +22,6 @@ define([
 				allowPageScroll:"vertical",
 				swipeStatus: function(){}
 			});
-			Backbone.on("onChampignon", this.onChampignon, this);
 		},
 
 		events: {

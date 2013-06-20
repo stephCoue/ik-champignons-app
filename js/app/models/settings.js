@@ -7,7 +7,7 @@ define([
 		localStorage: new Backbone.LocalStorage('champignons-settings'),
 
 		defaults: {
-			"liststyle":"grille",
+			"liststyle":"liste",
 			"sortkey":"nom",
 			"cueillette":[]
 		}

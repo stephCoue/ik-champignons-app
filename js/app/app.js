@@ -31,7 +31,7 @@ define([
 		});
 
 		// Création du router et du controller associé
-		this.controller = new AppController({app:this});
+		this.controller = new AppController({app:this, champignons:this.champignonsProvider});
 		this.router = new AppRouter({controller: this.controller});
 
 	});

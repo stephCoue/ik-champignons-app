@@ -10,7 +10,7 @@ define([
 			"":"home",
 			"home":"home",
 			"tous":"tous",
-			"champignon":"champignon",
+			"champignon/:id":"champignon",
 			"determiner":"determiner",
 			"cueillette":"cueillette",
 			"*action":"home"

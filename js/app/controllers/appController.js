@@ -15,6 +15,9 @@ define([
 			// référence sur l'application
 			this.app = options.app;
 
+			// La store des champignons
+			this.champignonsStore = options.champignons;
+
 			// Lecture des préférences
 			Backbone.trigger("settings:change", this.app.settings.toJSON());
 
@@ -37,8 +40,9 @@ define([
 			this.app.appView.showPage({page:"tous"});
 		},
 
-		champignon: function(){
-			console.log("AppController : route champignon");
+		champignon: function(id){
+			console.log("AppController : route champignon id : " + id);
+			this.app.appView.pageChampignon.onChampignon(this.champignonsStore.get(id));
 			this.app.appView.showPage({page:"champignon"});
 		},
 
@@ -74,7 +78,7 @@ define([
 			var savedCueillette = this.app.settings.get("cueillette");
 
 			if( _.indexOf(savedCueillette, currentChampignonId) > -1 ){
-				savedCueillette = _.without( savedCueillette,  currentChampignonId);
+				savedCueillette = _.without( savedCueillette, currentChampignonId);
 			} else {
 				savedCueillette.push(currentChampignonId);
 			}
