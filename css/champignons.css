@@ -39,16 +39,16 @@ header,footer{width:100%}
 .titre{color:#bbd029;text-transform:uppercase;display:block;font-size:20px}
 .page::-webkit-scrollbar,.page-champignon .slide::-webkit-scrollbar{display:none}
 .page-inner h1{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background:url("images/logo-app.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;min-height:106px}
-.logo{background:url("images/logo-ik-creme.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;min-height:110px}
+.logo{background:url("images/logo-ik-creme.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;margin:0 auto;width:110px;height:100%}
 header,footer{height:110px}
 footer{position:absolute;bottom:0}
-.nav-main{text-shadow:0 2px 2px #000;margin:1.2% auto;}
+.nav-main{text-shadow:0 2px 2px #000;}
 .nav-main span{margin-bottom:.2em}
-.nav-main ul{width:290px;margin:0 auto}
+.nav-main ul{width:90%;margin:0 auto}
 .nav-main li{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 0;border-image:url("images/nav-main-hr.png") 100% 0 0;border-width:4px;}
 .nav-main li:last-child{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;border-image:url("images/nav-main-hr.png") 100% 0 100% 0}
-.nav-main li:hover,.nav-main li:active{background:-webkit-linear-gradient(left,rgba(187,208,41,0) 2%,rgba(187,208,41,0.05) 3%,rgba(187,208,41,0.12) 16%,rgba(187,208,41,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(187,208,41,0.6) 75%,rgba(187,208,41,0.12) 90%,rgba(187,208,41,0.05) 97%,rgba(187,208,41,0) 98%);}
-.nav-main li:hover a,.nav-main li:active a,.nav-main li:hover span,.nav-main li:active span{color:#534741;text-shadow:0 1px 1px #fff}
+.nav-main li:active{background:-webkit-linear-gradient(left,rgba(187,208,41,0) 2%,rgba(187,208,41,0.05) 3%,rgba(187,208,41,0.12) 16%,rgba(187,208,41,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(187,208,41,0.6) 75%,rgba(187,208,41,0.12) 90%,rgba(187,208,41,0.05) 97%,rgba(187,208,41,0) 98%);}
+.nav-main li:active a,.nav-main li:active span{color:#534741;text-shadow:0 1px 1px #fff}
 .nav-main a{color:#e3d9c0;padding:7px 0;position:relative;padding-left:101px;}
 .nav-main a:before{content:"";display:block;position:absolute;width:100px;height:100px;background-repeat:no-repeat;background-position:0 0;-webkit-background-size:50% auto;-moz-background-size:50% auto;background-size:50% auto;clip:rect(0,50px,50px,0);left:11%;top:.25em}
 .nav-main a.tous:before{background-image:url("images/icon-tous.png")}
