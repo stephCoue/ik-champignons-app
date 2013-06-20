@@ -84,6 +84,7 @@ define([
 			.addClass("header-" + contexte)
 			.css("-webkit-transform","translate3d(0,0,0)")
 			.addClass("open");
+
 			this.render();
 		},
 
@@ -102,6 +103,10 @@ define([
 				case "determiner":
 					this.titre = "Aide";
 					this.soustitre = "à la détermination";
+					break;
+				case "cueillette":
+					this.titre = "Cueillette";
+					this.soustitre = "mes champignons";
 					break;
 				default:
 					this.titre = "";

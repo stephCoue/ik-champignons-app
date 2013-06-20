@@ -73,8 +73,8 @@ function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTo
 					break;
 				case "cueillette":
 					this.nextPage = this.pageCueillette;
-					this.header.show("tous");
-					this.footer.show("tous");
+					this.header.show("cueillette");
+					this.footer.show("cueillette");
 			}
 
 			if(this.currentPage !== this.nextPage){
