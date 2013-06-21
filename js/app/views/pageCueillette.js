@@ -17,11 +17,11 @@ define([
 			this.dataProvider = options.champignonsProvider;
 
 			// liste des champignons de la cueillette
-			this.collection = new Backbone.Collection();
+			this.collection = options.cueilletteSubset;
 			this.collection.set(this.dataProvider.where({"cueillette": true}));
 
 			// sous-vue de la liste
-			this.listView = new ChampignonsListView(options);
+			this.listView = new ChampignonsListView({collection:this.collection});
 
 			// Ecouteur sur les événements d'ajout ou de suppression de la cueillette
 			Backbone.on("settings:change", this.onSettings, this);

@@ -3,10 +3,9 @@ define([
 	"underscore",
 	"backbone",
 	"marionette",
-	"collections/champignons",
 	"collections/criteres",
 	"collections/termes"
-], function($, _, Backbone, Marionette, ChampignonsCollection, CriteresCollection, TermesCollection){
+], function($, _, Backbone, Marionette, CriteresCollection, TermesCollection){
 
 	var AppController = Marionette.Controller.extend({
 
@@ -16,7 +15,7 @@ define([
 			this.app = options.app;
 
 			// La store des champignons
-			this.champignonsStore = options.champignons;
+			this.champignonsStore = this.app.champignonsProvider;
 
 			// Lecture des préférences
 			Backbone.trigger("settings:change", this.app.settings.toJSON());
@@ -37,22 +36,26 @@ define([
 
 		tous: function(){
 			console.log("AppController : route tous");
+			this.app.currentSubset = this.app.tousSubset;
 			this.app.appView.showPage({page:"tous"});
 		},
 
 		champignon: function(id){
 			console.log("AppController : route champignon id : " + id);
+			this.app.appView.pageChampignon.collection = this.app.currentSubset;
 			this.app.appView.pageChampignon.onChampignon(this.champignonsStore.get(id));
 			this.app.appView.showPage({page:"champignon"});
 		},
 
 		determiner: function(){
 			console.log("AppController : route determiner");
+			this.app.currentSubset = this.app.determinerSubset;
 			this.app.appView.showPage({page:"determiner"});
 		},
 
 		cueillette: function(){
 			console.log("AppController : route cueillette");
+			this.app.currentSubset = this.app.cueilletteSubset;
 			this.app.appView.showPage({page:"cueillette"});
 		},
 

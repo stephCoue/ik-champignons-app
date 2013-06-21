@@ -23,7 +23,7 @@ function($, _, Backbone, touchswipe, fastclick, Header, Footer, PageHome, PageTo
 			// Pages
 			this.pageHome = new PageHome();
 			this.pageTous = new PageTous(options);
-			this.pageChampignon = new PageChampignon();
+			this.pageChampignon = new PageChampignon(options);
 			this.pageDeterminer = new PageDeterminer(options);
 			this.pageCueillette = new PageCueillette(options);
 			this.popupTermeGlossaire = new PopupTermeGlossaire();

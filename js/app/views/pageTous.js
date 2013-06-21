@@ -18,7 +18,7 @@ define([
 			this.dataProvider = options.champignonsProvider;
 
 			// Création de la vue de la liste des champignons
-			this.listView = new ChampignonsListView();
+			this.listView = new ChampignonsListView({collection: options.tousSubset});
 			this.listView.collection.reset(this.dataProvider.models);
 
 			// On se cache au départ !

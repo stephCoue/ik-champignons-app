@@ -11,8 +11,8 @@ define([
 		tagName: "ul",
 		className: "liste-champignons",
 
-		initialize: function() {
-			this.collection = new ChampignonsCollection();
+		initialize: function(options) {
+			this.collection = options.collection;
 
 			this.collection.on("reset", this.render, this);
 
@@ -53,7 +53,7 @@ define([
 			this.$el.empty();
 
 			_.each(this.collection.models, function(champignon){
-				var champignonItem = new ChampignonItem({model:champignon, collection:this.collection});
+				var champignonItem = new ChampignonItem({model:champignon});
 				this.$el.append(champignonItem.$el);
 			}, this);
 

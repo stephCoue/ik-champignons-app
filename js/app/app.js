@@ -25,13 +25,23 @@ define([
 		this.champignonsProvider.set(ChampignonsData);
 		this.champignonsProvider.setCueillette(this.settings.get("cueillette"));
 
+		// les collection pour les sélections de champignons
+		this.tousSubset = new ChampignonsCollection();
+		this.determinerSubset = new ChampignonsCollection();
+		this.cueilletteSubset = new ChampignonsCollection();
+		this.currentSubset = this.tousSubset;
+
 		// La vue générale de l'application
 		this.appView = new AppView({
-			champignonsProvider: this.champignonsProvider
+			champignonsProvider: this.champignonsProvider,
+			tousSubset: this.tousSubset,
+			determinerSubset: this.determinerSubset,
+			cueilletteSubset : this.cueilletteSubset,
+			currentSubset: this.currentSubset
 		});
 
 		// Création du router et du controller associé
-		this.controller = new AppController({app:this, champignons:this.champignonsProvider});
+		this.controller = new AppController({app:this});
 		this.router = new AppRouter({controller: this.controller});
 
 	});

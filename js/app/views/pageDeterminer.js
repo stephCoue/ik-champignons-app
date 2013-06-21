@@ -20,7 +20,7 @@ define([
 
 			this.champignonsProvider = options.champignonsProvider;
 
-			this.resultatView = new ChampignonsListView();
+			this.resultatView = new ChampignonsListView({collection: options.determinerSubset});
 
 			this.critereBox = new CritereBox();
 			this.critereBox.parent = this;
@@ -56,7 +56,7 @@ define([
 
 		showResultatView: function(){
 			this.criteresListView.$el.hide();
-			this.resultatView.collection.reset(this.champignonsProvider.getSubset(this.currentCritere.get("champignons")));
+			this.resultatView.collection.reset( this.champignonsProvider.getSubset(this.currentCritere.get("champignons")) );
 			this.resultatView.$el.show();
 		},
 
@@ -64,6 +64,7 @@ define([
 
 			this.$el.html(this.template());
 			this.criteresListView.render();
+
 			this.$el.find(".page-inner")
 			.append(this.critereBox.$el)
 			.append(this.criteresListView.$el)

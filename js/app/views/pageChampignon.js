@@ -10,8 +10,11 @@ define([
 
 		el: $("#champignon"),
 
-		initialize: function() {
+		initialize: function(options) {
 			this.$el.hide();
+
+			this.collection = options.currentSubset;
+
 			this.currentFiche = 1;
 			this.swipable = true;
 			this.speed = 300;
@@ -85,20 +88,20 @@ define([
 
 		onChampignon: function(champignon){
 			// Mise à jour de la sélection dans la collection
-			champignon.collection.current = champignon;
+			this.collection.current = champignon;
 
 			// Initialisation du tableau des champignons du slider
 			this.champignons = [];
 
 			// Remplissage du tableau
-			if(champignon.collection.getPrev())
-				this.champignons.push(champignon.collection.getPrev());
+			if(this.collection.getPrev())
+				this.champignons.push(this.collection.getPrev());
 			this.champignons.push(champignon);
-			if(champignon.collection.getNext())
-				this.champignons.push(champignon.collection.getNext());
+			if(this.collection.getNext())
+				this.champignons.push(this.collection.getNext());
 
 			// Mise à jour de l'index du slider
-			if(champignon.collection.indexOf(champignon) === champignon.collection.length - 1){
+			if(this.collection.indexOf(champignon) === this.collection.length - 1){
 				this.currentFiche = 1;
 			} else {
 				this.currentFiche = this.champignons.length - 2;
