@@ -21,12 +21,12 @@ table:after{clear:both}
 .viewport{position:fixed;width:100%;height:100%;opacity:0;filter:alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";-webkit-transition:opacity .5s;background:url("images/bois-brun-fonce.png")}
 .content-main{width:100%}
 .page{position:absolute;width:100%;height:100%;-webkit-box-shadow:0 0 20px rgba(0,0,0,0.5);box-shadow:0 0 20px rgba(0,0,0,0.5);overflow-y:scroll;overflow-x:hidden;-webkit-overflow-scrolling:touch;-webkit-transition:-webkit-transform .2s ease;-webkit-transform-style:preserve-3d;-webkit-transform:translate3d(0,0,0)}
-.page-inner{margin:60px auto 70px}
+.page-inner{margin:50px auto 60px;min-height:100%}
 .page-home .page-inner{margin:0 auto}
 header,footer{width:100%}
 .page-champignon > .currentSlide{position:absolute;top:0;width:100%;height:100%;overflow-y:scroll;background:url("images/paper-background.jpg") center}
 .sidebar{display:none}
-.page-determiner ul{margin:15% 6%}
+.page-determiner ul{margin:20px 0}
 .on .bouton .picto{background-position-y:-30px}
 #critere-selection-box{height:100px;margin-bottom:20px;-webkit-transition:margin-top .2s linear}
 .critere-off{margin-top:-100px}
@@ -37,6 +37,7 @@ header,footer{width:100%}
 .slide .cueillette{position:absolute;right:20px;top:70px;width:20px;height:20px;background-color:#bbb}
 .slide .cueillette-on{background-color:#f00}
 .titre{color:#bbd029;text-transform:uppercase;display:block;font-size:20px}
+.papier{background:#fff url("images/paper-background.jpg");-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto}
 .header-cueillette .tous,.header-cueillette .determiner{display:none}
 .content-header .show{background-position:-250px 0}
 .content-header .show:active{background-position:-250px -50px}
@@ -137,7 +138,6 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .familleChampignon{font-size:.5em;font-weight:100;padding-right:17px;text-align:right;}
 .grille .familleChampignon{padding-right:0}
 .nom span{display:inline-block;width:100%}
-.liste-champignons.liste{margin-bottom:4.8em;}
 .slide-inner h2,.slide-inner>h3{font-family:fjalla_oneregular;font-size:2em;line-height:1.2;text-align:center}
 .slide-inner>h3{font-family:"sofiaregular";font-size:1.5em;margin-bottom:.6em}
 .slide-inner >div{margin-bottom:.6em;}
