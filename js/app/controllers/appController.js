@@ -77,7 +77,7 @@ define([
 		},
 
 		onCueillette: function(){
-			var currentChampignonId = this.app.champignonsProvider.current.id;
+			var currentChampignonId = this.app.currentSubset.current.id;
 			var savedCueillette = this.app.settings.get("cueillette");
 
 			if( _.indexOf(savedCueillette, currentChampignonId) > -1 ){
