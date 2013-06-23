@@ -9,7 +9,6 @@ require.config({
 		marionette: "../libs/backbone.marionette.min",
 		fastclick: "../libs/fastclick",
 		transit: "../libs/jquery.transit.min",
-		iscroll: "../libs/iscroll",
 		text: "../libs/text",
 		json: "../libs/json"
 	},
