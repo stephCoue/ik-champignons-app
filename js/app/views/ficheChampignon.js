@@ -11,8 +11,8 @@ define([
 		className: "slide",
 
 		initialize: function(){
+			this.model.on("change", this.render, this);
 			this.render();
-			this.listenTo(this.model, "change:cueillette", this.setCueillette);
 		},
 
 		events: {

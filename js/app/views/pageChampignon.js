@@ -13,7 +13,9 @@ define([
 		initialize: function(options) {
 			this.$el.hide();
 
-			this.collection = options.currentSubset;
+			this.collection = options.currentSubset; // Le data provider
+			this.champignons = []; // Les modèles en cours (3 max)
+			this.fiches = []; // La liste des fiches (3 max)
 
 			this.currentFiche = 1;
 			this.swipable = true;
@@ -87,24 +89,36 @@ define([
 		},
 
 		onChampignon: function(champignon){
+			console.log("onChampignon", champignon.get("nom"), this.fiches);
 			// Mise à jour de la sélection dans la collection
 			this.collection.current = champignon;
 
 			// Initialisation du tableau des champignons du slider
 			this.champignons = [];
+			this.champignons.length = 0;
 
-			// Remplissage du tableau
-			if(this.collection.getPrev())
-				this.champignons.push(this.collection.getPrev());
-			this.champignons.push(champignon);
-			if(this.collection.getNext())
-				this.champignons.push(this.collection.getNext());
+			if(this.collection.models.length > 3){
 
-			// Mise à jour de l'index du slider
-			if(this.collection.indexOf(champignon) === this.collection.length - 1){
-				this.currentFiche = 1;
+				if(_.indexOf(this.collection.models, champignon) === 0){
+					this.champignons.push( this.collection.at(0) );
+					this.champignons.push( this.collection.at(1) );
+					this.champignons.push( this.collection.at(2) );
+					this.currentFiche = 0;
+				} else if(_.indexOf(this.collection.models, champignon) === this.collection.models.length - 1){
+					this.champignons.push( this.collection.at( this.collection.models.length - 3 ) );
+					this.champignons.push( this.collection.at( this.collection.models.length - 2 ) );
+					this.champignons.push( this.collection.at( this.collection.models.length - 1 ) );
+					this.currentFiche = 2;
+				} else {
+					this.champignons.push( this.collection.at(this.collection.indexOf(champignon) - 1) );
+					this.champignons.push( this.collection.at(this.collection.indexOf(champignon)) );
+					this.champignons.push( this.collection.at(this.collection.indexOf(champignon) + 1) );
+					this.currentFiche = 1;
+				}
+
 			} else {
-				this.currentFiche = this.champignons.length - 2;
+				this.champignons = this.collection.models;
+				this.currentFiche = _.indexOf(this.collection.models, champignon);
 			}
 
 			this.render();
@@ -115,89 +129,64 @@ define([
 				this.onChampignon(this.champignons[this.currentFiche]);
 		},
 
-		renderNext: function(){
-			// Suppression du premier enfant
-			this.$slides.find(".slide:first-child").remove();
-			// Ajout du dernier nouvel enfant
-			this.$slides.append( new Fiche({model:this.champignons[2]}).render().$el );
-			// Ajout du premier nouvel enfant
-			if(this.$slides.children().length < 3)
-				this.$slides.prepend( new Fiche({model:this.champignons[0]}).render().$el );
-			// repositionnelent du slider
-			this.$slides.css({
-				"-webkit-transition-duration": "0",
-				"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)"
+		updateFiches: function(){
+			console.log("-----\nupdateFiches()");
+			_.each(this.champignons, function(champignon){
+				console.log(champignon.get("nom"));
 			});
+
+			this.fiches[0].remove();
+			this.fiches[0] = new Fiche({model:this.champignons[0]});
+			this.$slides.prepend(this.fiches[0].$el);
+
+			this.fiches[1].remove();
+			this.fiches[1] = new Fiche({model:this.champignons[1]});
+			this.$slides.children().eq(0).after((this.fiches[1].$el));
+
+			if(this.champignons.length > 2){
+				this.fiches[2].remove();
+				this.fiches[2] = new Fiche({model:this.champignons[2]});
+				this.$slides.append(this.fiches[2].$el);
+			}
+
 		},
 
-		renderPrev: function(){
-			// Suppression du dernier enfant
-			this.$slides.find(".slide:last-child").remove();
-			// Ajout du premier nouvel enfant
-			this.$slides.prepend( new Fiche({model:this.champignons[0]}).render().$el );
-			// Ajout du dernier enfant
-			if(this.$slides.children().length < 3)
-				this.$slides.append( new Fiche({model:this.champignons[2]}).render().$el );
-			// repositionnelent du slider
+		gotoPage: function(page){
+
+			var xpos = 0;
+
+			if(page === 2) xpos = -$(window).width();
+			if(page === 3) xpos = -($(window).width() * 2);
+
 			this.$slides.css({
 				"-webkit-transition-duration": "0",
-				"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)"
+				"-webkit-transform": "translate3d(" + xpos + "px, 0px, 0px)"
 			});
+
 		},
 
 		render: function() {
-			// Mise à jour de la largeur du slider
-			this.$slides.width($(window).width() * this.champignons.length);
 
 			if(this.$slides.children().length === 0){ // Si c'est la première fois
 
+				// Mise à jour de la largeur du slider
+				this.$slides.width($(window).width() * this.champignons.length);
+
 				// ajout des nouvelles fiches dans le slider
-				_.each(this.champignons, function(champignon){
-					var fiche = new Fiche({model:champignon}).render();
-					this.$slides.append(fiche.$el);
+				_.each(this.champignons, function(champignon, i){
+					this.fiches[i] = new Fiche({model:champignon});
+					this.$slides.append(this.fiches[i].$el);
 				}, this);
 
 				// Application du décalage en css
-				if (this.champignons.length > 1)
-					this.sliderOffset = $(window).width() * this.currentFiche;
-				else
-					this.sliderOffset = 0;
+				this.gotoPage(this.currentFiche + 1);
 
-				this.$slides.css({
-					"-webkit-transition-duration": "0",
-					"-webkit-transform": "translate3d(-" + this.sliderOffset + "px, 0px, 0px)"
-				});
+			} else {
 
-			} else { // Si pas la première fois
-
-				if(this.champignons.length < 3){ // On est au début ou à la fin
-					if(this.currentFiche === 0){ // on est au début
-						if(this.$slides.position().left < 0)
-							this.renderPrev();
-					} else if(this.currentFiche === 1){ // On est à la fin
-						if(this.$slides.children().length === 3){
-							this.$slides.find(".slide:first-child").remove();
-							this.$slides.css({
-								"-webkit-transition-duration": "0",
-								"-webkit-transform": "translate3d(-" + $(window).width() + "px, 0px, 0px)"
-							});
-						}
-					}
-				} else { // on est au milieu
-					if(this.$slides.position().left < -$(window).width()){ // on a fait next
-						this.renderNext();
-					} else if(this.$slides.children().length === 3 && this.$slides.position().left === 0){ // on a fait prev
-						this.renderPrev();
-					} else if(this.$slides.children().length === 2 && this.$slides.position().left === -$(window).width()){
-						this.renderNext();
-					} else if(this.$slides.children().length === 2 && this.$slides.position().left === 0){
-						this.renderPrev();
-					}
-				}
+				this.updateFiches();
+				this.gotoPage(this.currentFiche + 1);
 
 			}
-
-			this.$slides.width($(window).width() * this.$slides.children().length);
 
 			return this;
 		}
