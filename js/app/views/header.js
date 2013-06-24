@@ -109,6 +109,8 @@ define([
 			}
 
 			this.$el.find(".show").parent().hide();
+			this.$el.find("h1>i").removeClass()
+								.addClass("picto picto-"+ this.contexte +"-active" );
 
 			this.$el.find(".titre").text(this.titre);
 			this.$el.find(".sous-titre").text(this.soustitre);

@@ -95,80 +95,9 @@
 
 
 
-
-
-
-/*CHAMPS RECHERCHE*/
-
-.search
-  position: relative
-  margin: 1px -10px
-  padding-top: 8px
-  .inner
-    margin: 0 10px
-    position: relative
-
-  input
-    display block
-    width: 97%
-    padding: 4px 5px;
-    margin: 0 auto;
-    border: 0 none;
-    border-radius: 4px;
-    font-size: 0.8em
-    padding-left: 30px
-
-    &:focus
-      outline-color: lighten($ombreHeaders, 70%)
-
-  .loupe
-    display block
-    width 22px
-    height 22px
-    position: absolute
-    background transparent url('images/search-21px.png') 0 0 no-repeat
-    left: 9px
-    top: 2px
-
-  .bouton
-    display: none;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 6px;
-    top: 50%;
-    margin-top: -15px;
-    background-image: url(images/close.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60%;
-    opacity: 0.3
-    &:active
-      opacity: 1
-
-
-/*  FILTRES */
-
-.filtres
-  margin: 0 6px
-  font-family: 'fjalla_oneregular'
-  .cell
-    width (100/3)%
-  a
-    display block
-    color lighten($titreColor, 60%)
-    padding 6px 0
-    text-align center
-    font-size .9em
-    text-transform uppercase
-
-  .on
-    a
-      color $titreColor
-
-
-
-
+.liste-champignons
+  .familleChampignon
+    display none
 
 
 /* VUE EN LIST */
@@ -194,12 +123,14 @@ a.inner
 
     &:last-child
       border-image: url("images/nav-main-hr.png") 100% 0 100% 0
+      padding-bottom 60px
 
 
 .activeClass
   &:active
-    background: -webkit-linear-gradient(left, rgba(#e2e2e0, 0) 2%,rgba(#e2e2e0, .08) 3%,rgba(#e2e2e0, .12) 16%,rgba(#c4ce7b , .6) 32%,rgba($primary, .9) 50%,rgba(#c4ce7b , .6) 75%,rgba(#e2e2e0, .12) 90%,rgba(#e2e2e0, .08) 97%, rgba(#e2e2e0, 0) 98%)
-    color: $titreColor
+    // background: -webkit-linear-gradient(left, rgba(#e2e2e0, 0) 2%,rgba(#e2e2e0, .08) 3%,rgba(#e2e2e0, .12) 16%,rgba(#c4ce7b , .6) 32%,rgba($primary, .9) 50%,rgba(#c4ce7b , .6) 75%,rgba(#e2e2e0, .12) 90%,rgba(#e2e2e0, .08) 97%, rgba(#e2e2e0, 0) 98%)
+    // color: $titreColor
+    background: -webkit-linear-gradient(left, rgba($primary, .01) 2%,rgba($primary, .05) 3%,rgba($primary, .12) 16%,rgba($primary , .6) 32%,rgba($primary, .9) 50%,rgba($primary , .6) 75%,rgba($primary, .12) 90%,rgba($primary, .05) 97%, rgba($primary, .01) 98%)
     text-shadow: 0 1px 1px #fff
 
 
@@ -245,6 +176,7 @@ a.inner
   line-height: 1.1em;
 }
 
+
 .grille li:nth-child(3n+4) {
   clear: left;
 }
@@ -256,9 +188,6 @@ a.inner
 .grille .inner {
   margin: 5%;
 }
-
-
-
 
 
 .text
@@ -283,7 +212,8 @@ a.inner
 
 
 .liste-champignons
-  &.liste
+  &.liste,
+  &.grille
     li
       @extend  .activeClass
 
@@ -380,4 +310,5 @@ a.inner
 .page-champignon .slide-inner {
   margin: 60px 10px;
 }
+
 

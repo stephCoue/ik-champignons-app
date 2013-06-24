@@ -171,6 +171,78 @@ footer
 
 
 
+/*CHAMPS RECHERCHE*/
+
+.search
+  position: relative
+  margin: 1px -10px
+  padding-top: 8px
+  .inner
+    margin: 0 10px
+    position: relative
+
+  input
+    display block
+    width: 97%
+    padding: 4px 5px;
+    margin: 0 auto;
+    border: 0 none;
+    border-radius: 4px;
+    font-size: 0.8em
+    padding-left: 30px
+
+    &:focus
+      outline-color: lighten($ombreHeaders, 70%)
+
+  .loupe
+    display block
+    width 22px
+    height 22px
+    position: absolute
+    background transparent url('images/search-21px.png') 0 0 no-repeat
+    left: 9px
+    top: 2px
+
+  .bouton
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 6px;
+    top: 50%;
+    margin-top: -15px;
+    background-image: url(images/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    opacity: 0.3
+    &:active
+      opacity: 1
+
+
+/*  FILTRES */
+
+.filtres
+  margin: 0 6px
+  font-family: 'fjalla_oneregular'
+  .cell
+    width (100/3)%
+  a
+    display block
+    color lighten($titreColor, 60%)
+    padding 6px 0
+    text-align center
+    font-size .9em
+    text-transform uppercase
+
+  .on
+    a
+      color $titreColor
+
+
+
+
+
 
 
 
