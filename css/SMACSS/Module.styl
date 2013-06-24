@@ -74,15 +74,27 @@
 
 
 
-
-
 /*  Titre */
 
 .titre
   color  $primary
   text-transform uppercase
   display block
-  font-size 20px
+  font-size 18px
+
+.sous-titre
+  font-size 14px
+  position: absolute
+  color $secondColor
+
+
+/*  Picto */
+
+.picto
+  width: 30px
+  height: 30px
+  display block
+
 
 /*FOND PAPIER*/
 
@@ -128,5 +140,44 @@
 .slide .cueillette-on {
   background-position: 0 -50px;
 }
+
+
+
+
+
+for className in home aide tous infos panier
+  .picto-{className},
+  .picto-{className}-active
+    background: url("images/icon-" + className + ".png" )
+    background-position 0 0
+    background-repeat:  no-repeat
+    background-size 100% auto
+    clip: rect(0,30px, 30px, 0)
+  .picto-{className}-active
+    background-position: 0 -30px
+
+
+
+.infoBulleNotification
+  position: absolute
+  width 16px
+  height 16px
+  line-height: 16px
+  display block
+  font-size: .8em
+  color: white
+  background  $infoBulleNotification
+  border 1px solid white
+  // padding 1px
+  text-shadow: 1px 1px 0px black;
+  border-radius 50%
+  top: 9%
+  left: 58%
+
+
+.count
+  @extend .infoBulleNotification
+
+
 
 

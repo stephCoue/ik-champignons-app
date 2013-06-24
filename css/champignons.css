@@ -21,7 +21,7 @@ table:after{clear:both}
 .viewport{position:fixed;width:100%;height:100%;opacity:0;filter:alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";-webkit-transition:opacity .5s;background:url("images/bois-brun-fonce.png")}
 .content-main{width:100%}
 .page{position:absolute;width:100%;height:100%;-webkit-box-shadow:0 0 20px rgba(0,0,0,0.5);box-shadow:0 0 20px rgba(0,0,0,0.5);overflow-y:scroll;overflow-x:hidden;-webkit-overflow-scrolling:touch;-webkit-transition:-webkit-transform .2s ease;-webkit-transform-style:preserve-3d;-webkit-transform:translate3d(0,0,0)}
-.page-inner{margin:50px auto 60px;min-height:100%}
+.page-inner{height:100%}
 .page-home .page-inner{margin:0 auto}
 header,footer{width:100%}
 .page-champignon > .currentSlide{position:absolute;top:0;width:100%;height:100%;overflow-y:scroll;background:url("images/paper-background.jpg") center}
@@ -36,7 +36,9 @@ header,footer{width:100%}
 .popup dl{margin:70px 20px}
 .slide .cueillette{position:absolute;right:20px;top:70px;width:20px;height:20px;background-color:#bbb}
 .slide .cueillette-on{background-color:#f00}
-.titre{color:#bbd029;text-transform:uppercase;display:block;font-size:20px}
+.titre{color:#bbd029;text-transform:uppercase;display:block;font-size:18px}
+.sous-titre{font-size:14px;position:absolute;color:#e3d9c0}
+.picto{width:30px;height:30px;display:block}
 .papier{background:#fff url("images/paper-background.jpg");-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto}
 .header-cueillette .tous,.header-cueillette .determiner{display:none}
 .content-header .show{background-position:-250px 0}
@@ -45,6 +47,17 @@ header,footer{width:100%}
 .page-champignon .slide .diaporama{background-color:transparent}
 .slide .cueillette{right:0;top:50px;display:block;width:50px;height:50px;background:transparent url("images/cueillette.png") no-repeat}
 .slide .cueillette-on{background-position:0 -50px}
+.picto-home,.picto-home-active{background:url("images/icon-home.png");background-position:0 0;background-repeat:no-repeat;-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto;clip:rect(0,30px,30px,0)}
+.picto-home-active{background-position:0 -30px}
+.picto-aide,.picto-aide-active{background:url("images/icon-aide.png");background-position:0 0;background-repeat:no-repeat;-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto;clip:rect(0,30px,30px,0)}
+.picto-aide-active{background-position:0 -30px}
+.picto-tous,.picto-tous-active{background:url("images/icon-tous.png");background-position:0 0;background-repeat:no-repeat;-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto;clip:rect(0,30px,30px,0)}
+.picto-tous-active{background-position:0 -30px}
+.picto-infos,.picto-infos-active{background:url("images/icon-infos.png");background-position:0 0;background-repeat:no-repeat;-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto;clip:rect(0,30px,30px,0)}
+.picto-infos-active{background-position:0 -30px}
+.picto-panier,.picto-panier-active{background:url("images/icon-panier.png");background-position:0 0;background-repeat:no-repeat;-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto;clip:rect(0,30px,30px,0)}
+.picto-panier-active{background-position:0 -30px}
+.infoBulleNotification,.count{position:absolute;width:16px;height:16px;line-height:16px;display:block;font-size:.8em;color:#fff;background:#d0470a;border:1px solid #fff;text-shadow:1px 1px 0 #000;-webkit-border-radius:50%;border-radius:50%;top:9%;left:58%}
 .page::-webkit-scrollbar,.page-champignon .slide::-webkit-scrollbar{display:none}
 .page-inner h1{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background:url("images/logo-app.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;min-height:106px}
 .logo{background:url("images/logo-ik-creme.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;margin:0 auto;width:110px;height:100%}
@@ -64,32 +77,21 @@ footer{position:absolute;bottom:0}
 .nav-main a.lecon:before{background-image:url("images/icon-lecon.png")}
 .nav-main a.infos:before{background-image:url("images/icon-infos.png")}
 [class*="content"]{background:transparent url("images/bois-brun-fonce.png")}
+[class*="header-"]{-webkit-box-shadow:0 1px 5px #8c572c;box-shadow:0 1px 5px #8c572c}
 .content-header{position:fixed;top:-100px;width:100%;height:50px;color:#e3d9c0;z-index:10;-webkit-transition:all .2s;}
-.content-header h1{margin:5px 10px;line-height:40px;text-align:left;font-size:.9em;position:relative;margin-left:3em;top:6px;}
-.content-header h1 .titre{color:#bbd029;position:absolute;text-transform:uppercase;top:-1em}
-.content-header .picto{position:absolute;background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat;left:-2.4em;top:-2px;}
-.content-header .picto:hover{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
-.content-footer{text-transform:uppercase;position:fixed;width:100%;height:60px;top:100%;z-index:10;padding-top:6px;-webkit-transition:all .2s linear;}
+.content-header h1{margin:11px 10px;line-height:40px;text-align:left;font-size:.9em;position:relative;margin-left:3em}
+.content-header .picto{position:absolute;left:-2.4em}
+.content-header .titre{position:absolute;top:-10px}
+.content-header .sous-titre{position:absolute;top:4px}
+.content-footer{text-transform:uppercase;position:fixed;width:100%;height:60px;top:100%;z-index:10;padding-top:7px;-webkit-transition:all .2s linear;}
 .content-footer.open{-webkit-box-shadow:0 -1px 5px #8c572c;box-shadow:0 -1px 5px #8c572c}
-.content-footer ul{width:100%}
-.content-footer a{display:block;color:#bbd029;padding:3px 0;white-space:nowrap;font-size:.7em;position:relative;}
-.content-footer a:active,.content-footer a:hover{color:#e3d9c0}
+.content-footer ul{width:90%;margin:0 auto}
+.content-footer a{display:block;color:#bbd029;padding:3px 0;white-space:nowrap;font-size:12px;position:relative;}
+.content-footer a:active{color:#e3d9c0}
 .content-footer .on a{color:#e3d9c0}
-.content-footer .cell{text-align:center;width:25%}
-.picto{width:30px;height:30px;display:block;margin:0 auto;background:transparent url("images/sprite-menu-picto-30px.png") 0 0 no-repeat;}
-.picto:hover,.picto:active,.on .picto,a:hover .picto,a:active .picto{background:transparent url("images/sprite-menu-picto-30px.png") 0 -30px no-repeat}
-.determiner a .picto{background:transparent url("images/sprite-menu-picto-30px.png") -60px 0 no-repeat;}
-.determiner a .picto:hover,.determiner a .picto:active{background:transparent url("images/sprite-menu-picto-30px.png") -60px -30px no-repeat}
-.determiner a:hover .picto,.determiner a:active .picto{background:transparent url("images/sprite-menu-picto-30px.png") -60px -30px no-repeat}
-.cueillette .picto{background:transparent url("images/sprite-menu-picto-30px.png") -150px 0 no-repeat;}
-.cueillette .picto:hover,.cueillette .picto:active{background:transparent url("images/sprite-menu-picto-30px.png") -150px -30px no-repeat}
-.cueillette a:hover .picto,.cueillette a:active .picto{background:transparent url("images/sprite-menu-picto-30px.png") -150px -30px no-repeat}
-.tous .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px 0 no-repeat;}
-.tous .picto:hover,.tous .picto:active{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
-.tous a:hover .picto,.tous a:active .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px -30px no-repeat}
-.tous .picto{background:transparent url("images/sprite-menu-picto-30px.png") -30px 0 no-repeat}
-.infoBulleNotification{position:absolute;width:16px;height:16px;line-height:16px;display:block;font-size:.8em;color:#fff;background:#d0470a;border:1px solid #fff;text-shadow:1px 1px 0 #000;-webkit-border-radius:50%;border-radius:50%;top:9%;left:58%}
-.header-tous{-webkit-box-shadow:0 1px 5px #8c572c;box-shadow:0 1px 5px #8c572c}
+.content-footer .cell{text-align:center;width:22%;}
+.content-footer .cell.cueillette{width:34%}
+.content-footer .picto{margin:0 auto}
 .header-on{top:0}
 .header-tous .champignons{display:none}
 .header-tous .tous{display:block}
