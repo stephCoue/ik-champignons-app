@@ -2,9 +2,10 @@ define([
 	"jquery",
 	"underscore",
 	"backbone",
+	"models/champignon",
 	"views/ficheChampignon",
 	"mixins/pageMixin"
-], function($, _, Backbone, Fiche, PageMixin){
+], function($, _, Backbone, Champignon, Fiche, PageMixin){
 
 	var PageChampignon = Backbone.View.extend({
 
@@ -89,9 +90,8 @@ define([
 		},
 
 		onChampignon: function(champignon){
-			console.log("onChampignon", champignon.get("nom"), this.fiches);
 			// Mise à jour de la sélection dans la collection
-			this.collection.current = champignon;
+			this.collection.current = this.collection.findWhere({id:champignon.id});
 
 			// Initialisation du tableau des champignons du slider
 			this.champignons = [];
@@ -99,21 +99,30 @@ define([
 
 			if(this.collection.models.length > 3){
 
-				if(_.indexOf(this.collection.models, champignon) === 0){
-					this.champignons.push( this.collection.at(0) );
-					this.champignons.push( this.collection.at(1) );
-					this.champignons.push( this.collection.at(2) );
+				var startIdx = 0;
+
+				if(_.indexOf(this.collection.models, this.collection.current) === 0){
+					startIdx = 0;
+					// this.champignons.push( new Champignon(_.clone(this.collection.at(0).attributes )) );
+					// this.champignons.push( new Champignon(_.clone(this.collection.at(1).attributes )) );
+					// this.champignons.push( new Champignon(_.clone(this.collection.at(2).attributes )) );
 					this.currentFiche = 0;
-				} else if(_.indexOf(this.collection.models, champignon) === this.collection.models.length - 1){
-					this.champignons.push( this.collection.at( this.collection.models.length - 3 ) );
-					this.champignons.push( this.collection.at( this.collection.models.length - 2 ) );
-					this.champignons.push( this.collection.at( this.collection.models.length - 1 ) );
+				} else if(_.indexOf(this.collection.models, this.collection.current) === this.collection.models.length - 1){
+					startIdx = this.collection.indexOf(this.collection.at( this.collection.models.length - 3 ));
+					// this.champignons.push( new Champignon(_.clone( this.collection.at( this.collection.models.length - 3 ).attributes )) );
+					// this.champignons.push( new Champignon(_.clone(this.collection.at( this.collection.models.length - 2 ).attributes )) );
+					// this.champignons.push( new Champignon(_.clone(this.collection.at( this.collection.models.length - 1 ).attributes )) );
 					this.currentFiche = 2;
 				} else {
-					this.champignons.push( this.collection.at(this.collection.indexOf(champignon) - 1) );
-					this.champignons.push( this.collection.at(this.collection.indexOf(champignon)) );
-					this.champignons.push( this.collection.at(this.collection.indexOf(champignon) + 1) );
+					startIdx = this.collection.indexOf(this.collection.current) - 1;
+					// this.champignons.push( new Champignon( _.clone( this.collection.at(this.collection.indexOf(this.collection.current) - 1).attributes ) ) );
+					// this.champignons.push( new Champignon(_.clone( this.collection.at(this.collection.indexOf(this.collection.current)).attributes ) ) );
+					// this.champignons.push( new Champignon( _.clone( this.collection.at(this.collection.indexOf(this.collection.current) + 1).attributes ) ) );
 					this.currentFiche = 1;
+				}
+
+				for (var i=startIdx; i < startIdx + 3; i++) {
+					this.champignons.push( new Champignon( _.clone(this.collection.at(i).attributes) ) );
 				}
 
 			} else {
@@ -130,25 +139,15 @@ define([
 		},
 
 		updateFiches: function(){
-			console.log("-----\nupdateFiches()");
-			_.each(this.champignons, function(champignon){
-				console.log(champignon.get("nom"));
-			});
 
-			this.fiches[0].remove();
-			this.fiches[0] = new Fiche({model:this.champignons[0]});
-			this.$slides.prepend(this.fiches[0].$el);
+			this.fiches[1].model.set( this.champignons[1].toJSON() );
+			this.gotoPage(this.currentFiche + 1);
 
-			this.fiches[1].remove();
-			this.fiches[1] = new Fiche({model:this.champignons[1]});
-			this.$slides.children().eq(0).after((this.fiches[1].$el));
+			this.fiches[0].model.set( this.champignons[0].toJSON() );
 
 			if(this.champignons.length > 2){
-				this.fiches[2].remove();
-				this.fiches[2] = new Fiche({model:this.champignons[2]});
-				this.$slides.append(this.fiches[2].$el);
+				this.fiches[2].model.set( this.champignons[2].toJSON() );
 			}
-
 		},
 
 		gotoPage: function(page){
@@ -184,7 +183,6 @@ define([
 			} else {
 
 				this.updateFiches();
-				this.gotoPage(this.currentFiche + 1);
 
 			}
 

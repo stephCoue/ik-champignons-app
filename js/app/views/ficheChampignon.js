@@ -23,13 +23,17 @@ define([
 		onCueillette: function(event){
 			event.preventDefault();
 			Backbone.trigger("cueillette");
+			this.setCueillette();
 		},
 
 		setCueillette: function(){
-			if(this.model.get("cueillette"))
-				this.$el.find(".cueillette").addClass("cueillette-on");
-			else
+			if(this.model.get("cueillette")){
+				this.model.set("cueillette", false);
 				this.$el.find(".cueillette").removeClass("cueillette-on");
+			} else {
+				this.model.set("cueillette", true);
+				this.$el.find(".cueillette").addClass("cueillette-on");
+			}
 		},
 
 		onTerme: function(event){
