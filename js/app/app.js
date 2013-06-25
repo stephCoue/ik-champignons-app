@@ -17,7 +17,6 @@ define([
 
 		// Les préférences de l'utilisateur
 		this.settings = new Settings({id:1});
-		this.settings.fetch();
 
 		// Chargement des champignons
 		this.champignonsProvider = new ChampignonsCollection();

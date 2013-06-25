@@ -24,7 +24,7 @@ define([
 			Backbone.on("filter", this.filterSave, this);
 			Backbone.on("onGrille", this.onGrille, this);
 			Backbone.on("onListe", this.onListe, this);
-			Backbone.on("cueillette", this.onCueillette, this);
+			Backbone.on("setCueillette", this.onCueillette, this);
 		},
 
 		// routes
@@ -73,7 +73,7 @@ define([
 
 		onListe: function(){
 			this.app.settings.set("liststyle", "liste");
-			this.app.settings.save();
+			//this.app.settings.save();
 		},
 
 		onCueillette: function(){

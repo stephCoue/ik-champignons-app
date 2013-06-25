@@ -11,6 +11,7 @@ define([
 		className: "slide",
 
 		initialize: function(){
+			Backbone.on("settings:change", this.setCueillette, this);
 			this.model.on("change", this.render, this);
 			this.render();
 		},
@@ -22,14 +23,14 @@ define([
 
 		onCueillette: function(event){
 			event.preventDefault();
-			Backbone.trigger("cueillette");
+			Backbone.trigger("setCueillette");
 		},
 
-		setCueillette: function(){
-			if(this.model.get("cueillette")){
-				this.$el.find(".cueillette").removeClass("cueillette-on");
-			} else {
+		setCueillette: function(settings){
+			if(_.indexOf(settings.cueillette, this.model.id) > -1){
 				this.$el.find(".cueillette").addClass("cueillette-on");
+			} else {
+				this.$el.find(".cueillette").removeClass("cueillette-on");
 			}
 		},
 

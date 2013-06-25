@@ -18,8 +18,10 @@ define([
 			this.champignons = []; // Les modèles en cours (3 max)
 			this.fiches = []; // La liste des fiches (3 max)
 
-			this.currentFiche = 1;
-			this.swipable = true;
+			this.collection.on("change", this.onCollectionChange, this);
+
+			this.currentFiche = 1; // Fiche par défaut (la 2e sur 3)
+			this.swipable = true; // idiot proof
 			this.speed = 300;
 			this.sliderOffset = 0;
 			this.$slides = this.$el.find("#slides");
@@ -33,6 +35,25 @@ define([
 		events: {
 			"swipeStatus #slides": "onSwipeStatus",
 			"webkitTransitionEnd #slides": "onTransitionEnd"
+		},
+
+		onCollectionChange: function(event){
+			var _this = this;
+			if(!event.changed.cueillette){
+				_.each(this.fiches, function(fiche){
+					if(fiche.model.id === event.id){
+						fiche.$el.fadeOut(300, function(){
+							fiche.remove();
+							_this.onChampignon(_this.collection.at(0));
+						});
+					} else {
+						fiche.$el.fadeOut(200, function(){
+							fiche.remove();
+						});
+					}
+				});
+			}
+
 		},
 
 		onSwipeStatus: function(event, phase, direction, distance, fingers){
@@ -104,21 +125,12 @@ define([
 
 				if(_.indexOf(this.collection.models, this.collection.current) === 0){
 					startIdx = 0;
-					// this.champignons.push( new Champignon(_.clone(this.collection.at(0).attributes )) );
-					// this.champignons.push( new Champignon(_.clone(this.collection.at(1).attributes )) );
-					// this.champignons.push( new Champignon(_.clone(this.collection.at(2).attributes )) );
 					this.currentFiche = 0;
 				} else if(_.indexOf(this.collection.models, this.collection.current) === this.collection.models.length - 1){
 					startIdx = this.collection.indexOf(this.collection.at( this.collection.models.length - 3 ));
-					// this.champignons.push( new Champignon(_.clone( this.collection.at( this.collection.models.length - 3 ).attributes )) );
-					// this.champignons.push( new Champignon(_.clone(this.collection.at( this.collection.models.length - 2 ).attributes )) );
-					// this.champignons.push( new Champignon(_.clone(this.collection.at( this.collection.models.length - 1 ).attributes )) );
 					this.currentFiche = 2;
 				} else {
 					startIdx = this.collection.indexOf(this.collection.current) - 1;
-					// this.champignons.push( new Champignon( _.clone( this.collection.at(this.collection.indexOf(this.collection.current) - 1).attributes ) ) );
-					// this.champignons.push( new Champignon(_.clone( this.collection.at(this.collection.indexOf(this.collection.current)).attributes ) ) );
-					// this.champignons.push( new Champignon( _.clone( this.collection.at(this.collection.indexOf(this.collection.current) + 1).attributes ) ) );
 					this.currentFiche = 1;
 				}
 
@@ -135,8 +147,13 @@ define([
 		},
 
 		onTransitionEnd: function(event){
-			if(this.champignons.length > 1)
+			if(this.champignons.length > 1){
 				this.onChampignon(this.champignons[this.currentFiche]);
+
+				_.each(this.fiches, function(fiche){
+					fiche.$el.scrollTop(0);
+				});
+			}
 		},
 
 		updateFiches: function(){
@@ -151,41 +168,40 @@ define([
 			}
 		},
 
-		gotoPage: function(page){
+		gotoPage: function(ficheIdx){
 
 			var xpos = 0;
 
-			if(page === 2) xpos = -$(window).width();
-			if(page === 3) xpos = -($(window).width() * 2);
-
-			// Mise à jour des images 
-			// _.each(this.fiches, function(fiche){
-			// 	if(_.indexOf(this.fiches, fiche) === this.currentFiche) fiche.renderImage();
-			// 	else fiche.removeImage();
-			// }, this);
+			if(ficheIdx === 2) xpos = -$(window).width();
+			if(ficheIdx === 3) xpos = -($(window).width() * 2);
 
 			this.$slides.css({
 				"-webkit-transition-duration": "0",
 				"-webkit-transform": "translate3d(" + xpos + "px, 0px, 0px)"
 			});
+		},
 
+		resetSlides: function(){
+			// Mise à jour de la largeur du slider
+			this.$slides.hide().width($(window).width() * this.champignons.length);
+
+			// ajout des nouvelles fiches dans le slider
+			_.each(this.champignons, function(champignon, i){
+				this.fiches[i] = new Fiche({model:champignon});
+				this.$slides.append(this.fiches[i].$el);
+			}, this);
+
+			this.$slides.fadeIn(200);
+
+			// Application du décalage en css
+			this.gotoPage(this.currentFiche + 1);
 		},
 
 		render: function() {
 
 			if(this.$slides.children().length === 0){ // Si c'est la première fois
 
-				// Mise à jour de la largeur du slider
-				this.$slides.width($(window).width() * this.champignons.length);
-
-				// ajout des nouvelles fiches dans le slider
-				_.each(this.champignons, function(champignon, i){
-					this.fiches[i] = new Fiche({model:champignon});
-					this.$slides.append(this.fiches[i].$el);
-				}, this);
-
-				// Application du décalage en css
-				this.gotoPage(this.currentFiche + 1);
+				this.resetSlides();
 
 			} else {
 
