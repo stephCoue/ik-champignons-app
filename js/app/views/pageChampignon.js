@@ -75,6 +75,7 @@ define([
 		scrollFiche: function(distance, duration){
 			var $slides = this.$el.find("#slides");
 			var delta = (distance<0 ? "" : "-") + Math.abs(distance).toString();
+
 			$slides.css("-webkit-transition-duration", (duration/1000).toFixed(1) + "s");
 			$slides.css("-webkit-transform", "translate3d(" + delta + "px,0px,0px)");
 		},
@@ -156,6 +157,12 @@ define([
 
 			if(page === 2) xpos = -$(window).width();
 			if(page === 3) xpos = -($(window).width() * 2);
+
+			// Mise à jour des images 
+			// _.each(this.fiches, function(fiche){
+			// 	if(_.indexOf(this.fiches, fiche) === this.currentFiche) fiche.renderImage();
+			// 	else fiche.removeImage();
+			// }, this);
 
 			this.$slides.css({
 				"-webkit-transition-duration": "0",

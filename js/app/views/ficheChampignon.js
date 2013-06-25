@@ -23,15 +23,12 @@ define([
 		onCueillette: function(event){
 			event.preventDefault();
 			Backbone.trigger("cueillette");
-			this.setCueillette();
 		},
 
 		setCueillette: function(){
 			if(this.model.get("cueillette")){
-				this.model.set("cueillette", false);
 				this.$el.find(".cueillette").removeClass("cueillette-on");
 			} else {
-				this.model.set("cueillette", true);
 				this.$el.find(".cueillette").addClass("cueillette-on");
 			}
 		},
@@ -39,6 +36,14 @@ define([
 		onTerme: function(event){
 			event.preventDefault();
 			Backbone.trigger("terme:selection", {terme: $(event.currentTarget).find("span").text()});
+		},
+
+		renderImage: function(){
+			this.$el.find(".diaporama img").eq(0).attr({"src": this.model.get("fullimage")});
+		},
+
+		removeImage: function(){
+			this.$el.find(".diaporama img").eq(0).attr({"src": "img/fullscreen/fake-champignon.png"});
 		},
 
 		render: function(){
