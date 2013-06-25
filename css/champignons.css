@@ -57,8 +57,9 @@ header,footer{width:100%}
 .picto-infos-active{background-position:0 -30px}
 .picto-cueillette,.picto-cueillette-active{background:url("images/icon-cueillette.png");background-position:0 0;background-repeat:no-repeat;-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto;clip:rect(0,30px,30px,0)}
 .picto-cueillette-active{background-position:0 -30px}
-.infoBulleNotification,.count{position:absolute;width:16px;height:16px;line-height:16px;display:block;font-size:.8em;color:#fff;background:#d0470a;border:1px solid #fff;text-shadow:1px 1px 0 #000;-webkit-border-radius:50%;border-radius:50%;top:9%;left:58%}
+.infoBulleNotification,.count{position:absolute;width:23px;height:23px;line-height:23px;display:block;font-size:1.29em;color:#fff;background:#d0470a;border:1.5px solid #fff;text-shadow:1px 1px 0 rgba(0,0,0,0.6);-webkit-border-radius:50%;border-radius:50%;top:2%;left:56%}
 .page::-webkit-scrollbar,.page-champignon .slide::-webkit-scrollbar{display:none}
+.page-inner{margin-top:50px;}
 .page-inner h1{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background:url("images/logo-app.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;min-height:106px}
 .logo{background:url("images/logo-ik-creme.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;margin:0 auto;width:110px;height:100%}
 header,footer{height:110px}
@@ -66,14 +67,14 @@ footer{position:absolute;bottom:0}
 .nav-main{text-shadow:0 2px 2px #000;}
 .nav-main span{margin-bottom:.2em}
 .nav-main ul{width:90%;margin:0 auto}
-.nav-main li{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 0;border-image:url("images/nav-main-hr.png") 100% 0 0;border-width:4px;}
+.nav-main li{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 0;border-image:url("images/nav-main-hr.png") 100% 0 0;border-width:4px;border-right:0;border-left:0;}
 .nav-main li:last-child{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;border-image:url("images/nav-main-hr.png") 100% 0 100% 0}
 .nav-main li:active{background:-webkit-linear-gradient(left,rgba(187,208,41,0) 2%,rgba(187,208,41,0.05) 3%,rgba(187,208,41,0.12) 16%,rgba(187,208,41,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(187,208,41,0.6) 75%,rgba(187,208,41,0.12) 90%,rgba(187,208,41,0.05) 97%,rgba(187,208,41,0) 98%);}
 .nav-main li:active a,.nav-main li:active span{color:#534741;text-shadow:0 1px 1px #fff}
 .nav-main a{color:#e3d9c0;padding:7px 0;position:relative;padding-left:101px;}
 .nav-main a:before{content:"";display:block;position:absolute;width:100px;height:100px;background-repeat:no-repeat;background-position:0 0;-webkit-background-size:50% auto;-moz-background-size:50% auto;background-size:50% auto;clip:rect(0,50px,50px,0);left:11%;top:.25em}
 .nav-main a.tous:before{background-image:url("images/icon-tous.png")}
-.nav-main a.aide:before{background-image:url("images/icon-aide.png")}
+.nav-main a.aide:before{background-image:url("images/icon-determiner.png")}
 .nav-main a.lecon:before{background-image:url("images/icon-lecon.png")}
 .nav-main a.infos:before{background-image:url("images/icon-infos.png")}
 [class*="content"]{background:transparent url("images/bois-brun-fonce.png")}
@@ -92,7 +93,7 @@ footer{position:absolute;bottom:0}
 .content-footer .cell{text-align:center;width:22%;}
 .content-footer .cell.cueillette{width:34%}
 .content-footer .picto{margin:0 auto}
-.search{position:relative;margin:1px -10px;padding-top:8px;}
+.search{position:relative;margin:1px -10px;padding-top:10px;}
 .search .inner{margin:0 10px;position:relative}
 .search input{display:block;width:97%;padding:4px 5px;margin:0 auto;border:0 none;-webkit-border-radius:4px;border-radius:4px;font-size:.8em;padding-left:30px;}
 .search input:focus{outline-color:#e8cbb5}
@@ -101,7 +102,7 @@ footer{position:absolute;bottom:0}
 .search .bouton:active{opacity:1;-ms-filter:none;filter:none}
 .filtres{margin:0 6px;font-family:'fjalla_oneregular';}
 .filtres .cell{width:33.333333333333336%}
-.filtres a{display:block;color:#bfb4ae;padding:6px 0;text-align:center;font-size:.9em;text-transform:uppercase}
+.filtres a{display:block;color:#bfb4ae;padding:6px 0;text-align:center;font-size:11px;text-transform:uppercase;margin-bottom:2px}
 .filtres .on a{color:#534741}
 .header-on{top:0}
 .header-tous .champignons{display:none}
@@ -124,10 +125,9 @@ footer{position:absolute;bottom:0}
 #tous,.slide{background:transparent url("images/paper-background.jpg") center center}
 a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .liste{margin:1% 0;}
-.liste li{width:90%;-webkit-border-image:url("images/nav-main-hr.png") 100% 0 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 0;border-image:url("images/nav-main-hr.png") 100% 0 0;border-width:2.2px;margin:0 auto;}
-.liste li:last-child{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;border-image:url("images/nav-main-hr.png") 100% 0 100% 0;padding-bottom:60px}
+.liste li{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 0;border-image:url("images/li-border-bottom.png") 100% 0 0;border-width:2px;border-right:0;border-left:0;margin:0 auto;clear:both;}
+.liste li:last-child{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;border-image:url("images/li-border-bottom.png") 100% 0 100% 0;padding-bottom:70px}
 .activeClass:active,.liste-champignons.liste li:active,.liste-champignons.grille li:active{background:-webkit-linear-gradient(left,rgba(187,208,41,0.01) 2%,rgba(187,208,41,0.05) 3%,rgba(187,208,41,0.12) 16%,rgba(187,208,41,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(187,208,41,0.6) 75%,rgba(187,208,41,0.12) 90%,rgba(187,208,41,0.05) 97%,rgba(187,208,41,0.01) 98%);text-shadow:0 1px 1px #fff}
-.liste li{clear:both}
 .liste .inner{margin:5px 0;display:table}
 .liste .vignette,.liste .textes{display:table-cell;vertical-align:middle}
 .liste .textes{padding-left:10px}
@@ -136,6 +136,7 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .grille li:nth-child(3n+4){clear:left}
 .grille li:last-child{margin-bottom:4.8em}
 .grille .inner{margin:5%}
+.grille .nom{text-align:center}
 .text{line-height:1.2}
 .nomLatinChampignon{font-family:"sofiaregular"}
 .familleChampignon{font-size:.5em;font-weight:100;padding-right:17px;text-align:right;}

@@ -116,14 +116,16 @@ a.inner
 .liste
   margin: 1% 0
   li
-    width: 90%
-    border-image:  url("images/nav-main-hr.png")  100% 0 0
-    border-width: 2.2px
+    border-image:  url("images/li-border-bottom.png")  100% 0 0
+    border-width: 2px
+    border-right 0
+    border-left 0
     centerBlock()
+    clear: both
 
     &:last-child
-      border-image: url("images/nav-main-hr.png") 100% 0 100% 0
-      padding-bottom 60px
+      border-image: url("images/li-border-bottom.png") 100% 0 100% 0
+      padding-bottom 70px
 
 
 .activeClass
@@ -139,12 +141,12 @@ a.inner
 
 /*VUE EN LISTE*/
 
-.liste li {
-  // border: 1px solid #aaa;
-  // border-width: 1px 0;
-  clear: both;
-  // margin-bottom: -1px;
-}
+// .liste li {
+//   // border: 1px solid #aaa;
+//   // border-width: 1px 0;
+//   // clear: both;
+//   // margin-bottom: -1px;
+// }
 
 .liste .inner {
   margin: 5px 0;
@@ -189,6 +191,9 @@ a.inner
   margin: 5%;
 }
 
+.grille
+  .nom
+    text-align center
 
 .text
   line-height 1.2
