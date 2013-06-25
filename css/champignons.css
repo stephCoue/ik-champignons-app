@@ -100,9 +100,10 @@ footer{position:absolute;bottom:0}
 .search .loupe{display:block;width:22px;height:22px;position:absolute;background:transparent url("images/search-21px.png") 0 0 no-repeat;left:9px;top:2px}
 .search .bouton{display:none;position:absolute;width:30px;height:30px;right:6px;top:50%;margin-top:-15px;background-image:url("images/close.png");background-repeat:no-repeat;background-position:center;-webkit-background-size:60%;-moz-background-size:60%;background-size:60%;opacity:.3;filter:alpha(opacity=30);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
 .search .bouton:active{opacity:1;-ms-filter:none;filter:none}
-.filtres{margin:0 6px;font-family:'fjalla_oneregular';}
-.filtres .cell{width:33.333333333333336%}
-.filtres a{display:block;color:#bfb4ae;padding:6px 0;text-align:center;font-size:11px;text-transform:uppercase;margin-bottom:2px}
+.filtres{font-family:'fjalla_oneregular';}
+.filtres .cell{margin-right:7px;}
+.filtres .cell:last-child{margin-right:0}
+.filtres a{display:block;color:#bfb4ae;padding:6px 0;text-align:center;font-size:14px;text-transform:uppercase;margin-bottom:2px}
 .filtres .on a{color:#534741}
 .header-on{top:0}
 .header-tous .champignons{display:none}
