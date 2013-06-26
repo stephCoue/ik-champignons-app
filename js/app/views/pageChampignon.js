@@ -46,7 +46,7 @@ define([
 
 			switch(phase){
 				case "move":
-					if ( (direction === "left" || direction === "right") && this.swipable){
+					if ( (direction === "left" || direction === "right") && this.swipable ){
 						if(direction === "left" && distance > 30)
 							this.scrollFiche( this.sliderOffset + distance, 0 );
 						else if(direction === "right" && distance > 30)

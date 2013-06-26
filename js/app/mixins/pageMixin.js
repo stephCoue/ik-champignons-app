@@ -14,6 +14,7 @@ define([
 			}
 
 			this.$el.transition({"-webkit-transform":"translate3d(0,0,0)"}, this.speed, 'ease');
+			this.$el.css({"-webkit-overflow-scrolling":"touch"});
 		},
 
 		pageClose: function(toleft){
@@ -27,6 +28,8 @@ define([
 					_this.$el.hide().find(".empty").children().remove();
 				});
 			}
+
+			this.$el.css({"-webkit-overflow-scrolling":"none"});
 		}
 
 	};
