@@ -18,7 +18,7 @@ table:before,table:after{content:"";display:table}
 table:after{clear:both}
 .cell{float:left}
 .bouton{display:block}
-.viewport{position:fixed;width:100%;height:100%;opacity:0;filter:alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";-webkit-transition:opacity .5s;background:url("images/bois-brun-fonce.png")}
+.viewport{position:fixed;width:100%;height:100%;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-webkit-transition:opacity .5s;background:url("images/bois-brun-fonce.png")}
 .content-main{width:100%}
 .page{position:absolute;width:100%;height:100%;-webkit-box-shadow:0 0 20px rgba(0,0,0,0.5);box-shadow:0 0 20px rgba(0,0,0,0.5);overflow-y:scroll;overflow-x:hidden;-webkit-transition:-webkit-transform .2s ease;-webkit-transform-style:preserve-3d;-webkit-transform:translate3d(0,0,0)}
 .page-inner{min-height:100%}
@@ -110,7 +110,7 @@ footer{position:absolute;bottom:0}
 .search input{display:block;width:97%;padding:4px 5px;margin:0 auto;border:0 none;-webkit-border-radius:4px;border-radius:4px;font-size:.8em;padding-left:30px;}
 .search input:focus{outline-color:#e8cbb5}
 .search .loupe{display:block;width:22px;height:22px;position:absolute;background:transparent url("images/search-21px.png") 0 0 no-repeat;left:9px;top:2px}
-.search .bouton{display:none;position:absolute;width:30px;height:30px;right:6px;top:50%;margin-top:-15px;background-image:url("images/close.png");background-repeat:no-repeat;background-position:center;-webkit-background-size:60%;-moz-background-size:60%;background-size:60%;opacity:.3;filter:alpha(opacity=30);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
+.search .bouton{display:none;position:absolute;width:30px;height:30px;right:6px;top:50%;margin-top:-15px;background-image:url("images/close.png");background-repeat:no-repeat;background-position:center;-webkit-background-size:60%;-moz-background-size:60%;background-size:60%;opacity:.3;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity=30);}
 .search .bouton:active{opacity:1;-ms-filter:none;filter:none}
 .filtres{font-family:'fjalla_oneregular';}
 .filtres .cell{margin-right:7px;}
@@ -118,7 +118,7 @@ footer{position:absolute;bottom:0}
 .filtres a{display:block;color:#bfb4ae;padding:6px 0;text-align:center;font-size:14px;text-transform:uppercase;margin-bottom:2px}
 .filtres .on a{color:#534741}
 .page-determiner{font-size:20px;font-family:"fjalla_oneregular";}
-.page-determiner ul{width:90%;margin:0 auto}
+.page-determiner .liste-criteres{width:90%;margin:0 auto}
 .page-determiner li{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 0;border-image:url("images/li-border-bottom.png") 100% 0 0;border-width:2px;border-right:0;border-left:0;text-shadow:0 1px 1px #fff;}
 .page-determiner li:last-child{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;border-image:url("images/li-border-bottom.png") 100% 0 100% 0}
 .critere{color:#534741;display:block;padding:20px 0}
@@ -137,9 +137,9 @@ footer{position:absolute;bottom:0}
 .liste-champignons .familleChampignon{display:none}
 #tous,.slide{background:transparent url("images/paper-background.jpg") center center}
 a.inner{color:#534741;font:120% 'fjalla_oneregular'}
-.liste{margin:1% 0;}
+.liste{margin:0 0 80px;}
 .liste li{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 0;border-image:url("images/li-border-bottom.png") 100% 0 0;border-width:2px;border-right:0;border-left:0;margin:0 auto;clear:both;}
-.liste li:last-child{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;border-image:url("images/li-border-bottom.png") 100% 0 100% 0;padding-bottom:70px}
+.liste li:last-child{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;border-image:url("images/li-border-bottom.png") 100% 0 100% 0}
 .activeClass:active,.liste-champignons.liste li:active,.liste-champignons.grille li:active{background:-webkit-linear-gradient(left,rgba(187,208,41,0.01) 2%,rgba(187,208,41,0.05) 3%,rgba(187,208,41,0.12) 16%,rgba(187,208,41,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(187,208,41,0.6) 75%,rgba(187,208,41,0.12) 90%,rgba(187,208,41,0.05) 97%,rgba(187,208,41,0.01) 98%);text-shadow:0 1px 1px #fff}
 .liste .inner{margin:5px 0;display:table}
 .liste .vignette,.liste .textes{display:table-cell;vertical-align:middle}

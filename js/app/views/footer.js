@@ -24,9 +24,11 @@ define([
 		show: function(contexte){
 			this.$el.find("." + contexte).addClass("on").siblings().removeClass("on");
 			var _this = this;
-			_this.$el.find(".cueillette .count").hide();
 			this.$el.transition({"y":"-" + _this.$el.outerHeight()}, function(){
-				_this.$el.find(".cueillette .count").fadeIn(100);
+				if(_this.settings && _this.settings.cueillette){
+					_this.$el.find(".cueillette .count").hide();
+					_this.$el.find(".cueillette .count").fadeIn(100);
+				}
 			});
 			this.$el.addClass("open");
 		},

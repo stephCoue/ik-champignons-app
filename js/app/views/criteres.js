@@ -9,6 +9,7 @@ define([
 	var CriteresListView = Backbone.View.extend({
 
 		tagName: "ul",
+		className: "liste-criteres",
 
 		initialize: function() {
 			this.currentId = "0",
