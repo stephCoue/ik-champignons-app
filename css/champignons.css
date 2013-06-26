@@ -26,7 +26,6 @@ table:after{clear:both}
 header,footer{width:100%}
 .page-champignon > .currentSlide{position:absolute;top:0;width:100%;height:100%;overflow-y:scroll;background:url("images/paper-background.jpg") center}
 .sidebar{display:none}
-.page-determiner ul{margin:20px 0}
 .on .bouton .picto{background-position-y:-30px}
 #critere-selection-box{height:100px;margin-bottom:20px;-webkit-transition:margin-top .2s linear}
 .critere-off{margin-top:-100px}
@@ -67,7 +66,10 @@ header,footer{width:100%}
 .picto-infos-active{background-position:0 -30px}
 .picto-cueillette,.picto-cueillette-active{background:url("images/icon-cueillette.png");background-position:0 0;background-repeat:no-repeat;-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto;clip:rect(0,30px,30px,0)}
 .picto-cueillette-active{background-position:0 -30px}
-.infoBulleNotification,.count{position:absolute;width:23px;height:23px;line-height:23px;display:block;font-size:1.29em;color:#fff;background:#d0470a;border:1.5px solid #fff;text-shadow:1px 1px 0 rgba(0,0,0,0.6);-webkit-border-radius:50%;border-radius:50%;top:2%;left:56%}
+.count-test,.content-footer .count,.critere .count{height:22px;line-height:10px;padding:6px;font-size:15px;text-align:center;color:#fff;background:#d0470a;border:1.5px solid #fff;text-shadow:1px 1px 0 rgba(0,0,0,0.6);-webkit-border-radius:14px;border-radius:14px;position:absolute}
+.content-footer .count{width:auto;top:2%;left:56%}
+.critere{position:relative;}
+.critere .count{right:0;top:50%;margin-top:-12.5px}
 .page::-webkit-scrollbar,.page-champignon .slide::-webkit-scrollbar{display:none}
 .page-inner{margin-top:50px;}
 .page-inner h1{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;background:url("images/logo-app.png");background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;background-position:center;min-height:106px}
@@ -80,7 +82,7 @@ footer{position:absolute;bottom:0}
 .nav-main li{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 0;border-image:url("images/nav-main-hr.png") 100% 0 0;border-width:4px;border-right:0;border-left:0;}
 .nav-main li:last-child{-webkit-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-moz-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;-o-border-image:url("images/nav-main-hr.png") 100% 0 100% 0;border-image:url("images/nav-main-hr.png") 100% 0 100% 0}
 .nav-main li:active{background:-webkit-linear-gradient(left,rgba(187,208,41,0) 2%,rgba(187,208,41,0.05) 3%,rgba(187,208,41,0.12) 16%,rgba(187,208,41,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(187,208,41,0.6) 75%,rgba(187,208,41,0.12) 90%,rgba(187,208,41,0.05) 97%,rgba(187,208,41,0) 98%);}
-.nav-main li:active a,.nav-main li:active span{color:#534741;text-shadow:0 1px 1px #fff}
+.nav-main li:active a,.nav-main li:active span{color:#534741}
 .nav-main a{color:#e3d9c0;padding:7px 0;position:relative;padding-left:101px;}
 .nav-main a:before{content:"";display:block;position:absolute;width:100px;height:100px;background-repeat:no-repeat;background-position:0 0;-webkit-background-size:50% auto;-moz-background-size:50% auto;background-size:50% auto;clip:rect(0,50px,50px,0);left:11%;top:.25em}
 .nav-main a.tous:before{background-image:url("images/icon-tous.png")}
@@ -115,6 +117,12 @@ footer{position:absolute;bottom:0}
 .filtres .cell:last-child{margin-right:0}
 .filtres a{display:block;color:#bfb4ae;padding:6px 0;text-align:center;font-size:14px;text-transform:uppercase;margin-bottom:2px}
 .filtres .on a{color:#534741}
+.page-determiner{font-size:20px;font-family:"fjalla_oneregular";}
+.page-determiner ul{width:90%;margin:0 auto}
+.page-determiner li{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 0;border-image:url("images/li-border-bottom.png") 100% 0 0;border-width:2px;border-right:0;border-left:0;text-shadow:0 1px 1px #fff;}
+.page-determiner li:last-child{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;border-image:url("images/li-border-bottom.png") 100% 0 100% 0}
+.critere{color:#534741;display:block;padding:20px 0}
+.libelle{width:79.69%;display:block}
 .header-on{top:0}
 .header-tous .champignons{display:none}
 .header-tous .tous{display:block}

@@ -54,7 +54,7 @@ footer
       & a,
       & span
         color: $titreColor
-        text-shadow: 0 1px 1px #fff
+      
 
   a
     color: $secondColor
@@ -245,6 +245,36 @@ footer
     a
       color $titreColor
 
+
+/*  PAGE DETERMINER */
+
+.page-determiner
+  font-size 20px
+  font-family "fjalla_oneregular"
+  ul
+    width 90%
+    margin 0 auto
+
+  li
+    border-image:  url("images/li-border-bottom.png")  100% 0 0
+    border-width: 2px
+    border-right 0
+    border-left 0
+    text-shadow: 0 1px 1px #fff
+    // centerBlock()
+    // clear: both
+
+    &:last-child
+      border-image: url("images/li-border-bottom.png") 100% 0 100% 0
+
+.critere
+  color $titreColor
+  display block
+  padding: 20px 0
+
+.libelle
+  width  79.69%
+  display block
 
 
 
