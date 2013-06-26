@@ -42,18 +42,17 @@ define([
 			if(!event.changed.cueillette){
 				_.each(this.fiches, function(fiche){
 					if(fiche.model.id === event.id){
-						fiche.$el.fadeOut(300, function(){
+						fiche.$el.transition({ opacity: 0 }, 200, function(){
 							fiche.remove();
-							_this.onChampignon(_this.collection.at(0));
 						});
 					} else {
-						fiche.$el.fadeOut(200, function(){
+						fiche.$el.transition({opacity: 0}, 250, function(){
 							fiche.remove();
+							_this.onChampignon(_this.collection.at(0));
 						});
 					}
 				});
 			}
-
 		},
 
 		onSwipeStatus: function(event, phase, direction, distance, fingers){

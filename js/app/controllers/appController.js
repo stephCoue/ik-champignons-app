@@ -73,7 +73,7 @@ define([
 
 		onListe: function(){
 			this.app.settings.set("liststyle", "liste");
-			//this.app.settings.save();
+			this.app.settings.save();
 		},
 
 		onCueillette: function(){
