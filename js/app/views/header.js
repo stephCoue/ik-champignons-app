@@ -15,6 +15,7 @@ define([
 			this.soustitre = "";
 			Backbone.on("settings:change", this.onSettings, this);
 			Backbone.on("critere:change", this.onCritere, this);
+			Backbone.on("onChampignon", this.onChampignon, this);
 			this.$el.css("top","auto");
 		},
 
@@ -23,7 +24,8 @@ define([
 			"click .liste": "onListe",
 			"click .diapo": "onDiapo",
 			"click .back": "onBackButton",
-			"click .show": "onShowButton"
+			"click .show": "onShowButton",
+			"click .cueillette": "onCueillette"
 		},
 
 		onSettings: function(settings){
@@ -41,6 +43,13 @@ define([
 				this.$el.find(".show").parent().hide();
 				this.$el.find(".show > .count").text("");
 			}
+		},
+
+		onChampignon: function(champignon){
+			if( champignon.get("cueillette") )
+				this.$el.find(".champignons .cueillette").parent().addClass("on");
+			else
+				this.$el.find(".champignons .cueillette").parent().removeClass("on");
 		},
 
 		onGrille: function(event){
@@ -68,6 +77,15 @@ define([
 		onShowButton: function(event){
 			event.preventDefault();
 			Backbone.trigger("critere:show");
+		},
+
+		onCueillette: function(event){
+			event.preventDefault();
+			Backbone.trigger("setCueillette");
+			if(this.$el.find(".champignons .cueillette").parent().hasClass("on"))
+				this.$el.find(".champignons .cueillette").parent().removeClass("on");
+			else
+				this.$el.find(".champignons .cueillette").parent().addClass("on");
 		},
 
 		show: function(contexte){

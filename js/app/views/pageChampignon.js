@@ -3,9 +3,10 @@ define([
 	"underscore",
 	"backbone",
 	"models/champignon",
+	"collections/champignons",
 	"views/ficheChampignon",
 	"mixins/pageMixin"
-], function($, _, Backbone, Champignon, Fiche, PageMixin){
+], function($, _, Backbone, Champignon, ChampignonsCollection, Fiche, PageMixin){
 
 	var PageChampignon = Backbone.View.extend({
 
@@ -14,11 +15,11 @@ define([
 		initialize: function(options) {
 			this.$el.hide();
 
-			this.collection = options.currentSubset; // Le data provider
+			this.collection = new ChampignonsCollection();
+			this.collection.set(options.currentSubset.models); // Le data provider
+
 			this.champignons = []; // Les modèles en cours (3 max)
 			this.fiches = []; // La liste des fiches (3 max)
-
-			this.collection.on("change", this.onCollectionChange, this);
 
 			this.currentFiche = 1; // Fiche par défaut (la 2e sur 3)
 			this.swipable = true; // idiot proof
@@ -35,24 +36,6 @@ define([
 		events: {
 			"swipeStatus #slides": "onSwipeStatus",
 			"webkitTransitionEnd #slides": "onTransitionEnd"
-		},
-
-		onCollectionChange: function(event){
-			var _this = this;
-			if(!event.changed.cueillette){
-				_.each(this.fiches, function(fiche){
-					if(fiche.model.id === event.id){
-						fiche.$el.transition({ opacity: 0 }, 200, function(){
-							fiche.remove();
-						});
-					} else {
-						fiche.$el.transition({opacity: 0}, 250, function(){
-							fiche.remove();
-							_this.onChampignon(_this.collection.at(0));
-						});
-					}
-				});
-			}
 		},
 
 		onSwipeStatus: function(event, phase, direction, distance, fingers){
@@ -207,6 +190,8 @@ define([
 				this.updateFiches();
 
 			}
+
+			Backbone.trigger("onChampignon", this.collection.current);
 
 			return this;
 		}
