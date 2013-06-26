@@ -9,6 +9,7 @@ define([
 	var ChampignonItem = Backbone.View.extend({
 
 		tagName: "li",
+		className: "champignon-item",
 		template: _.template( champignonTemplate ),
 
 		initialize: function(){

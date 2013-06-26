@@ -109,16 +109,40 @@
 
 /*#HEADER*/
 
+/*BOUTONS HEADER*/
+
+.content-header {
+  overflow: hidden;
+}
+
+.content-header .table {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.content-header .bouton {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  background: transparent url(images/header-icon-set.png) no-repeat left center;
+}
+
+.content-header .grille { background-position: -40px 0; }
+.content-header .on .grille { background-position: -40px -40px; }
+
+.content-header .liste { background-position: 0 0; }
+.content-header .on .liste { background-position: 0 -40px; }
+
+.content-header .show { background-position: -120px -40px; }
+.content-header .show:active { background-position: -120px -40px; }
+
+.content-header .cueillette { background-position: -200px 0; }
+.content-header .on .cueillette { background-position: -200px -40px; }
+
 .header-cueillette .tous, .header-cueillette .determiner {
   display: none;
-}
-
-.content-header .show {
-  background-position: -250px 0;
-}
-
-.content-header .show:active {
-  background-position: -250px -50px;
 }
 
 /*FICHE CHAMPIGNON*/
