@@ -14,15 +14,20 @@ define([
 		},
 
 		onSettings: function(settings){
+			this.settings = settings;
 			if(settings.cueillette.length > 0)
-				this.$el.find(".cueillette .count").text( settings.cueillette.length ).show();
+				this.$el.find(".cueillette .count").text( settings.cueillette.length ).css("display","block");
 			else
-				this.$el.find(".cueillette .count").hide();
+				this.$el.find(".cueillette .count").css("display","none");
 		},
 
 		show: function(contexte){
 			this.$el.find("." + contexte).addClass("on").siblings().removeClass("on");
-			this.$el.css("-webkit-transform","translate3d(0,-" + this.$el.outerHeight() + "px,0)");
+			var _this = this;
+			_this.$el.find(".cueillette .count").hide();
+			this.$el.transition({"y":"-" + _this.$el.outerHeight()}, function(){
+				_this.$el.find(".cueillette .count").fadeIn(100);
+			});
 			this.$el.addClass("open");
 		},
 
