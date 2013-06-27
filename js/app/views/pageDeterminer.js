@@ -40,11 +40,12 @@ define([
 				this.critereBox.show(critere.get('label'));
 				if(critere.get('enfants').length === 0) {
 					this.showResultatView();
+					Backbone.trigger("critere:change", {display:false});
 				} else {
 					this.criteresListView.$el.show();
 					this.resultatView.$el.hide();
+					Backbone.trigger("critere:change", {display:true, count:this.currentCritere.get("count")});
 				}
-				Backbone.trigger("critere:change", {display:true, count:this.currentCritere.get("count")});
 			} else {
 				this.currentCritere = null;
 				this.criteresListView.$el.show();

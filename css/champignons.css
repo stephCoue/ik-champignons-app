@@ -127,9 +127,10 @@ footer{position:absolute;bottom:0}
 .libelle{width:79.69%;display:block}
 .header-on{top:0}
 .header-tous .champignons{display:none}
-.header-tous .tous{display:block}
+.header-tous .tous,.header-cueillette .tous{display:block}
 .header-champignon .champignons{display:block}
 .header-champignon .tous{display:none}
+.header-cueillette .champignons{display:none}
 .header-tous li + li a{background-position:-50px 0}
 .header-tous li + li + li a{background-position:-100px 0}
 .header-tous .on a{background-position:0 -50px}

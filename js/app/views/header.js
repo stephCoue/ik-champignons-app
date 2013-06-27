@@ -78,6 +78,8 @@ define([
 		onShowButton: function(event){
 			event.preventDefault();
 			Backbone.trigger("critere:show");
+			this.$el.find(".show").parent().hide();
+			this.$el.find(".show > .count").text("");
 		},
 
 		onCueillette: function(event){
