@@ -13,8 +13,8 @@
 	<% if(description.hymenium.length > 0) { %>
 	<div class="hymenium">
 		<h3>
-			<% if(typeof(lames) !== "undefined") { %> Lames <% } %>
-			<% if(typeof(pores) !== "undefined") { %> Pores <% } %>
+			<% if(organisation === "Champignons à lames") { %> Lames <% } %>
+			<% if(organisation === "Champignons à tubes") { %> Pores <% } %>
 		</h3>
 		<%= description.hymenium %>
 	</div>
