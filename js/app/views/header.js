@@ -13,6 +13,7 @@ define([
 			this.contexte = "";
 			this.titre = "";
 			this.soustitre = "";
+			this.lien = "#home";
 			Backbone.on("settings:change", this.onSettings, this);
 			Backbone.on("critere:change", this.onCritere, this);
 			Backbone.on("onChampignon", this.onChampignon, this);
@@ -89,8 +90,12 @@ define([
 		},
 
 		show: function(contexte){
-			if(contexte !== "champignon")
+			if(contexte !== "champignon"){
 				this.contexte = contexte;
+				this.lien = "#home";
+			} else {
+				this.lien = "#" + this.contexte;
+			}
 
 			this.$el.attr("class", "content-header")
 			.addClass("header-" + contexte)
@@ -127,11 +132,12 @@ define([
 			}
 
 			this.$el.find(".show").parent().hide();
-			this.$el.find("h1>i").removeClass()
-								.addClass("picto picto-"+ this.contexte +"-active" );
+			this.$el.find("h1>i").removeClass().addClass("picto picto-"+ this.contexte +"-active" );
 
 			this.$el.find(".titre").text(this.titre);
 			this.$el.find(".sous-titre").text(this.soustitre);
+
+			this.$el.find(".back-button").attr("href", this.lien);
 
 			return this;
 		}

@@ -18,7 +18,7 @@ table:before,table:after{content:"";display:table}
 table:after{clear:both}
 .cell{float:left}
 .bouton{display:block}
-.viewport{position:fixed;width:100%;height:100%;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-webkit-transition:opacity .5s;background:url("images/bois-brun-fonce.png")}
+.viewport{position:fixed;width:100%;height:100%;opacity:0;filter:alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";-webkit-transition:opacity .5s;background:url("images/bois-brun-fonce.png")}
 .content-main{width:100%}
 .page{position:absolute;width:100%;height:100%;-webkit-box-shadow:0 0 20px rgba(0,0,0,0.5);box-shadow:0 0 20px rgba(0,0,0,0.5);overflow-y:scroll;overflow-x:hidden;-webkit-transition:-webkit-transform .2s ease;-webkit-transform-style:preserve-3d;-webkit-transform:translate3d(0,0,0)}
 .page-inner{min-height:100%}
@@ -43,6 +43,8 @@ header,footer{width:100%}
 .content-header{overflow:hidden}
 .content-header .table{position:absolute;top:5px;right:10px}
 .content-header .bouton{display:block;width:40px;height:40px;margin:0;background:transparent url("images/header-icon-set.png") no-repeat left center}
+.content-header .back-button{background-position:-160px 0;margin-top:5px}
+.content-header .back-button:active{background-position:-160px -40px}
 .content-header .grille{background-position:-40px 0}
 .content-header .on .grille{background-position:-40px -40px}
 .content-header .liste{background-position:0 0}
@@ -92,7 +94,7 @@ footer{position:absolute;bottom:0}
 [class*="content"]{background:transparent url("images/bois-brun-fonce.png")}
 [class*="header-"]{-webkit-box-shadow:0 1px 5px #8c572c;box-shadow:0 1px 5px #8c572c}
 .content-header{position:fixed;top:-100px;width:100%;height:50px;color:#e3d9c0;z-index:10;-webkit-transition:all .2s;}
-.content-header h1{margin:11px 10px;line-height:40px;text-align:left;font-size:.9em;position:relative;margin-left:3em}
+.content-header h1{position:absolute;left:30px;top:10px;width:200px;line-height:40px;text-align:left;font-size:.9em;margin-left:3em}
 .content-header .picto{position:absolute;left:-2.4em}
 .content-header .titre{position:absolute;top:-10px}
 .content-header .sous-titre{position:absolute;top:4px}
@@ -110,7 +112,7 @@ footer{position:absolute;bottom:0}
 .search input{display:block;width:97%;padding:4px 5px;margin:0 auto;border:0 none;-webkit-border-radius:4px;border-radius:4px;font-size:.8em;padding-left:30px;}
 .search input:focus{outline-color:#e8cbb5}
 .search .loupe{display:block;width:22px;height:22px;position:absolute;background:transparent url("images/search-21px.png") 0 0 no-repeat;left:9px;top:2px}
-.search .bouton{display:none;position:absolute;width:30px;height:30px;right:6px;top:50%;margin-top:-15px;background-image:url("images/close.png");background-repeat:no-repeat;background-position:center;-webkit-background-size:60%;-moz-background-size:60%;background-size:60%;opacity:.3;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity=30);}
+.search .bouton{display:none;position:absolute;width:30px;height:30px;right:6px;top:50%;margin-top:-15px;background-image:url("images/close.png");background-repeat:no-repeat;background-position:center;-webkit-background-size:60%;-moz-background-size:60%;background-size:60%;opacity:.3;filter:alpha(opacity=30);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
 .search .bouton:active{opacity:1;-ms-filter:none;filter:none}
 .filtres{font-family:'fjalla_oneregular';}
 .filtres .cell{margin-right:7px;}
