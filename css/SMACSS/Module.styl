@@ -222,13 +222,22 @@ for className in home determiner tous infos cueillette
 // .count
 //   @extend .infoBulleNotification
 
-.content-footer,
+.content-footer
 .content-header
   .count
     @extend .count-test
     // min-width 22px
     top: 2%
     left: 56%
+
+.header-determiner
+  .voir
+    position relative
+    margin-right 19px
+    &>.count
+      @extend .count-test
+      top 3%
+      left 56%
 
 .critere
   position: relative

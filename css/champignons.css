@@ -68,8 +68,10 @@ header,footer{width:100%}
 .picto-infos-active{background-position:0 -30px}
 .picto-cueillette,.picto-cueillette-active{background:url("images/icon-cueillette.png");background-position:0 0;background-repeat:no-repeat;-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto;clip:rect(0,30px,30px,0)}
 .picto-cueillette-active{background-position:0 -30px}
-.count-test,.content-footer .count,.content-header .count,.critere .count{height:22px;line-height:10px;padding:6px;display:block;font-size:15px;font-family:scadabold;text-align:center;color:#fff;background:#d0470a;border:1.5px solid #fff;text-shadow:1px 1px 0 rgba(0,0,0,0.6);-webkit-border-radius:14px;border-radius:14px;position:absolute}
+.count-test,.content-footer .count,.content-header .count,.header-determiner .voir>.count,.critere .count{height:22px;line-height:10px;padding:6px;display:block;font-size:15px;font-family:scadabold;text-align:center;color:#fff;background:#d0470a;border:1.5px solid #fff;text-shadow:1px 1px 0 rgba(0,0,0,0.6);-webkit-border-radius:14px;border-radius:14px;position:absolute}
 .content-footer .count,.content-header .count{top:2%;left:56%}
+.header-determiner .voir{position:relative;margin-right:19px;}
+.header-determiner .voir>.count{top:3%;left:56%}
 .critere{position:relative;}
 .critere .count{right:0;top:50%;margin-top:-12.5px}
 .page::-webkit-scrollbar,.page-champignon .slide::-webkit-scrollbar{display:none}
