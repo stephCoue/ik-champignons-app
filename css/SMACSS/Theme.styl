@@ -201,6 +201,7 @@ footer
 
     &:focus
       outline-color: lighten($ombreHeaders, 70%)
+      border-color: $primary
 
   .loupe
     display block
@@ -235,19 +236,32 @@ input::-webkit-input-placeholder {
 
 .filtres
   font-family: 'fjalla_oneregular'
-  .cell
-    // width (100/3)%
-    margin-right 7px
-    &:last-child
-      margin-right 0
+  font-size: 1em
+  .table
+    width: 100%;
+    display: table
+    .cell
+      display: table-cell
+      margin: 0
+      width: 45%
+      text-align: left
+      + .cell
+        width: 33%
+        text-align: center
+        + .cell
+          text-align: right
+          width: 22%
   a
     display block
     color lighten($titreColor, 60%)
-    padding 6px 0
-    text-align center
-    font-size 14px
+    padding 10px 0
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: clip ellipsis
     text-transform uppercase
-    margin-bottom 2px
+    margin: 6px 0
+  a:active
+      color: $primary
 
   .on
     a

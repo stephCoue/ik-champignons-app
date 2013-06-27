@@ -110,15 +110,18 @@ footer{position:absolute;bottom:0}
 .search{position:relative;margin:1px -10px;padding-top:10px;}
 .search .inner{margin:0 10px;position:relative}
 .search input{display:block;width:100%;padding:4px 5px;margin:0 auto;padding-left:30px;border:2px solid #a8a29f;-webkit-border-radius:4px;border-radius:4px;font-size:1.2em;font-family:scadabold;color:#534741;-webkit-box-shadow:inset 0 0 6px rgba(140,87,44,0.5);box-shadow:inset 0 0 6px rgba(140,87,44,0.5);}
-.search input:focus{outline-color:#e8cbb5}
+.search input:focus{outline-color:#e8cbb5;border-color:#bbd029}
 .search .loupe{display:block;width:22px;height:22px;position:absolute;background:transparent url("images/search-21px.png") 0 0 no-repeat;left:5px;top:4px}
 .search .bouton{display:none;position:absolute;width:30px;height:30px;right:0;top:50%;margin-top:-15px;background-image:url("images/close.png");background-repeat:no-repeat;background-position:center;-webkit-background-size:60%;-moz-background-size:60%;background-size:60%;opacity:.3;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity=30);}
 .search .bouton:active{opacity:1;-ms-filter:none;filter:none}
 input::-webkit-input-placeholder{color:rgba(0,0,0,0.2)}
-.filtres{font-family:'fjalla_oneregular';}
-.filtres .cell{margin-right:7px;}
-.filtres .cell:last-child{margin-right:0}
-.filtres a{display:block;color:#bfb4ae;padding:6px 0;text-align:center;font-size:14px;text-transform:uppercase;margin-bottom:2px}
+.filtres{font-family:'fjalla_oneregular';font-size:1em;}
+.filtres .table{width:100%;display:table;}
+.filtres .table .cell{display:table-cell;margin:0;width:45%;text-align:left;}
+.filtres .table .cell + .cell{width:33%;text-align:center;}
+.filtres .table .cell + .cell + .cell{text-align:right;width:22%}
+.filtres a{display:block;color:#bfb4ae;padding:10px 0;white-space:nowrap;overflow:hidden;-o-text-overflow:clip ellipsis;text-overflow:clip ellipsis;text-transform:uppercase;margin:6px 0}
+.filtres a:active{color:#bbd029}
 .filtres .on a{color:#534741}
 .page-determiner{font-size:20px;font-family:"fjalla_oneregular";}
 .page-determiner .liste-criteres{width:90%;margin:0 auto}
