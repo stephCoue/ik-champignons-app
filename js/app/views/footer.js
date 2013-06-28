@@ -40,6 +40,7 @@ define([
 		},
 
 		render: function(){
+			this.$el.css("-webkit-transform", "translate3d(0, 0, 0)");
 			return this;
 		}
 

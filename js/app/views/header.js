@@ -17,7 +17,8 @@ define([
 			Backbone.on("settings:change", this.onSettings, this);
 			Backbone.on("critere:change", this.onCritere, this);
 			Backbone.on("onChampignon", this.onChampignon, this);
-			this.$el.css("top","auto");
+			this.$el.css("top", "0");
+			this.hide();
 		},
 
 		events: {

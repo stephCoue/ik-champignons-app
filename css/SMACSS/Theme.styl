@@ -23,14 +23,6 @@
   width: 110px
   height: 100%
 
-header,
-footer
-  height 110px
-
-footer
-  position: absolute
-  bottom  0
-
 
 .nav-main
   text-shadow: 0 2px 2px #000
@@ -87,7 +79,6 @@ footer
 
 
 [class*="content"]
-  background: transparent url('images/bois-brun-fonce.png')
 
 
 [class*="header-"]
@@ -99,12 +90,12 @@ footer
 
 .content-header
   position: fixed
-  top: -100px
   width: 100%
   height: 50px
   color:  $secondColor
   z-index: 10;
   -webkit-transition: all .2s
+  background: transparent url('images/bois-brun-fonce.png')
 
   h1
     position: absolute
@@ -142,6 +133,7 @@ footer
   z-index: 10;
   padding-top 7px
   -webkit-transition: all .2s linear
+  background: transparent url('images/bois-brun-fonce.png')
   &.open
     box-shadow 0 -1px 5px $ombreHeaders
 
@@ -205,12 +197,12 @@ footer
 
   .loupe
     display block
-    width 22px
-    height 22px
+    width 21px
+    height 21px
     position: absolute
     background transparent url('images/search-21px.png') 0 0 no-repeat
-    left: 5px
-    top: 4px
+    left: 6px
+    top: 6px
 
   .bouton
     display: none;
