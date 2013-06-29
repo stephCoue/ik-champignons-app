@@ -103,7 +103,8 @@ define([
 			this.$el.attr("class", "content-header")
 			.addClass("header-" + contexte)
 			.css("-webkit-transform","translate3d(0,0,0)")
-			.addClass("open");
+			.addClass("open")
+			.show();
 
 			this.render();
 		},
@@ -111,7 +112,8 @@ define([
 		hide: function(){
 			this.$el.attr("class", "content-header")
 			.css("-webkit-transform","translate3d(0,-" + this.$el.outerHeight() + "px,0)")
-			.removeClass("open");
+			.removeClass("open")
+			.hide();
 		},
 
 		render: function() {

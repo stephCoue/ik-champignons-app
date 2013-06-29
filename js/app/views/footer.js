@@ -24,7 +24,7 @@ define([
 		show: function(contexte){
 			this.$el.find("." + contexte).addClass("on").siblings().removeClass("on");
 			var _this = this;
-			this.$el.transition({"y":"-" + _this.$el.outerHeight()}, function(){
+			this.$el.show().transition({"y":"-" + _this.$el.outerHeight()}, function(){
 				if(_this.settings && _this.settings.cueillette){
 					_this.$el.find(".cueillette .count").hide();
 					_this.$el.find(".cueillette .count").fadeIn(100);
@@ -36,7 +36,7 @@ define([
 		hide: function(){
 			this.$el.find("li.on").removeClass("on");
 			this.$el.css("-webkit-transform","translate3d(0,0,0)");
-			this.$el.removeClass("open");
+			this.$el.removeClass("open").hide();
 		},
 
 		render: function(){
