@@ -154,22 +154,25 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .liste .vignette,.liste .textes{display:table-cell;vertical-align:middle}
 .liste .textes{padding-left:10px;padding-right:50px}
 .liste .vignette{width:24%}
-.comestibilite-icon{display:block;position:absolute;right:0;top:50%;margin-top:-20px;width:40px;height:40px;background:transparent url("images/toxique-icon-set.png") no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover}
-.toxique1{background-position-x:20%}
-.toxique2{background-position-x:40%}
-.toxique3{background-position-x:60%}
-.toxique4{background-position-x:80%}
+.comestibilite-icon{display:block;position:absolute;right:5px;top:50%;margin-top:-20px;width:40px;height:40px;background:transparent url("images/toxique-icon-set.png") no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover}
+.mortel{background-position-x:0%}
+.toxique2{background-position-x:20%}
+.toxique3{background-position-x:40%}
+.toxique4{background-position-x:60%}
+.toxique5{background-position-x:80%}
 .comestible{background-position-x:100%}
+.grille .comestibilite-icon{display:none}
 .grille li{width:33.33%;float:left;font-size:.8em;line-height:1.1em}
 .grille li:nth-child(3n+4){clear:left}
 .grille li:last-child{margin-bottom:4.8em}
 .grille .inner{margin:5%}
 .grille .nom{text-align:center}
 .text{line-height:1.2}
-.nomLatinChampignon{font-family:"sofiaregular"}
+.nomLatinChampignon{font-family:"sofiaregular";line-height:1.2em}
 .familleChampignon{font-size:.5em;font-weight:100;padding-right:17px;text-align:right;}
 .grille .familleChampignon{padding-right:0}
 .nom span{display:inline-block;width:100%}
+.nom .nomChampignon{margin-bottom:.2em}
 .slide-inner h2,.slide-inner>h3{font-family:fjalla_oneregular;font-size:2em;line-height:1.2;text-align:center}
 .slide-inner>h3{font-family:"sofiaregular";font-size:1.5em;margin-bottom:.6em}
 .slide-inner >div{margin-bottom:.6em;}

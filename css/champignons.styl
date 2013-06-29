@@ -144,7 +144,7 @@ a.inner
 .comestibilite-icon {
   display: block;
   position: absolute;
-  right: 0;
+  right: 5px;
   top: 50%;
   margin-top: -20px;
   width: 40px;
@@ -153,12 +153,16 @@ a.inner
   background-size: cover;
 }
 
-.toxique1 { background-position-x: 20%; }
-.toxique2 { background-position-x: 40%; }
-.toxique3 { background-position-x: 60%; }
-.toxique4 { background-position-x: 80%; }
+.mortel { background-position-x: 0%; }
+.toxique2 { background-position-x: 20%; }
+.toxique3 { background-position-x: 40%; }
+.toxique4 { background-position-x: 60%; }
+.toxique5 { background-position-x: 80%; }
 .comestible { background-position-x: 100%; }
 
+.grille .comestibilite-icon {
+  display none
+}
 
 /*VUE EN GRILLE*/
 
@@ -191,6 +195,7 @@ a.inner
 
 .nomLatinChampignon
   font-family "sofiaregular"
+  line-height 1.2em
 
 .familleChampignon
   font-size: .5em
@@ -205,6 +210,8 @@ a.inner
   span
     display: inline-block
     width:100%
+  .nomChampignon
+    margin-bottom: 0.2em;
 
 
 .liste-champignons
