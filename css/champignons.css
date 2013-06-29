@@ -150,10 +150,16 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .liste li{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 0;border-image:url("images/li-border-bottom.png") 100% 0 0;border-width:2px;border-right:0;border-left:0;margin:0 auto;clear:both;}
 .liste li:last-child{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;border-image:url("images/li-border-bottom.png") 100% 0 100% 0}
 .activeClass:active,.liste-champignons.liste li:active,.liste-champignons.grille li:active{background:-webkit-linear-gradient(left,rgba(187,208,41,0.01) 2%,rgba(187,208,41,0.05) 3%,rgba(187,208,41,0.12) 16%,rgba(187,208,41,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(187,208,41,0.6) 75%,rgba(187,208,41,0.12) 90%,rgba(187,208,41,0.05) 97%,rgba(187,208,41,0.01) 98%);text-shadow:0 1px 1px #fff}
-.liste .inner{margin:5px 0;display:table}
+.liste .inner{position:relative;margin:5px 0;display:table}
 .liste .vignette,.liste .textes{display:table-cell;vertical-align:middle}
-.liste .textes{padding-left:10px}
+.liste .textes{padding-left:10px;padding-right:50px}
 .liste .vignette{width:24%}
+.comestibilite-icon{display:block;position:absolute;right:0;top:50%;margin-top:-20px;width:40px;height:40px;background:transparent url("images/toxique-icon-set.png") no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover}
+.toxique1{background-position-x:20%}
+.toxique2{background-position-x:40%}
+.toxique3{background-position-x:60%}
+.toxique4{background-position-x:80%}
+.comestible{background-position-x:100%}
 .grille li{width:33.33%;float:left;font-size:.8em;line-height:1.1em}
 .grille li:nth-child(3n+4){clear:left}
 .grille li:last-child{margin-bottom:4.8em}
