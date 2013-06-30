@@ -18,7 +18,7 @@ table:before,table:after{content:"";display:table}
 table:after{clear:both}
 .cell{float:left}
 .bouton{display:block}
-.viewport{position:fixed;width:100%;height:100%;opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-webkit-transition:opacity .5s}
+.viewport{position:fixed;width:100%;height:100%;opacity:0;filter:alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";-webkit-transition:opacity .5s}
 .content-main{width:100%;height:100%}
 .page{position:absolute;width:100%;height:100%;-webkit-box-shadow:0 0 20px rgba(0,0,0,0.5);box-shadow:0 0 20px rgba(0,0,0,0.5);overflow-y:scroll;overflow-x:hidden;-webkit-transition:-webkit-transform .2s ease;-webkit-transform-style:preserve-3d;-webkit-transform:translate3d(0,0,0)}
 .page-inner{min-height:100%}
@@ -59,6 +59,7 @@ header,footer{width:100%}
 .page-champignon .slide .diaporama{background-color:transparent}
 .slide .cueillette{right:0;top:50px;display:block;width:50px;height:50px;background:transparent url("images/cueillette.png") no-repeat}
 .slide .cueillette-on{background-position:0 -50px}
+.activeClass:active,li > .critere:active,.liste-champignons.liste li:active,.liste-champignons.grille li:active{background:-webkit-linear-gradient(left,rgba(187,208,41,0.01) 2%,rgba(187,208,41,0.05) 3%,rgba(187,208,41,0.12) 16%,rgba(187,208,41,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(187,208,41,0.6) 75%,rgba(187,208,41,0.12) 90%,rgba(187,208,41,0.05) 97%,rgba(187,208,41,0.01) 98%);text-shadow:0 1px 1px #fff}
 .picto-home,.picto-home-active{background:url("images/icon-home.png");background-position:0 0;background-repeat:no-repeat;-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto;clip:rect(0,30px,30px,0)}
 .picto-home-active{background-position:0 -30px}
 .picto-determiner,.picto-determiner-active{background:url("images/icon-determiner.png");background-position:0 0;background-repeat:no-repeat;-webkit-background-size:100% auto;-moz-background-size:100% auto;background-size:100% auto;clip:rect(0,30px,30px,0)}
@@ -94,7 +95,7 @@ footer{position:absolute;bottom:0}
 .nav-main a.aide:before{background-image:url("images/icon-determiner.png")}
 .nav-main a.lecon:before{background-image:url("images/icon-lecon.png")}
 .nav-main a.infos:before{background-image:url("images/icon-infos.png")}
-[class*="content"],[class*="header-"]{-webkit-box-shadow:0 1px 5px #8c572c;box-shadow:0 1px 5px #8c572c}
+[class*="header-"]{-webkit-box-shadow:0 1px 5px #8c572c;box-shadow:0 1px 5px #8c572c}
 .content-header{position:fixed;width:100%;height:50px;color:#e3d9c0;z-index:10;-webkit-transition:all .2s;background:transparent url("images/bois-brun-fonce.png");}
 .content-header h1{position:absolute;left:30px;top:10px;width:200px;line-height:40px;text-align:left;font-size:.9em;margin-left:3em}
 .content-header .picto{position:absolute;left:-2.4em}
@@ -114,7 +115,7 @@ footer{position:absolute;bottom:0}
 .search input{display:block;width:100%;padding:4px 5px;margin:0 auto;padding-left:30px;border:2px solid #a8a29f;-webkit-border-radius:4px;border-radius:4px;font-size:1.2em;font-family:scadabold;color:#534741;-webkit-box-shadow:inset 0 0 6px rgba(140,87,44,0.5);box-shadow:inset 0 0 6px rgba(140,87,44,0.5);}
 .search input:focus{outline-color:#e8cbb5;border-color:#bbd029}
 .search .loupe{display:block;width:21px;height:21px;position:absolute;background:transparent url("images/search-21px.png") 0 0 no-repeat;left:6px;top:6px}
-.search .bouton{display:none;position:absolute;width:30px;height:30px;right:0;top:50%;margin-top:-15px;background-image:url("images/close.png");background-repeat:no-repeat;background-position:center;-webkit-background-size:60%;-moz-background-size:60%;background-size:60%;opacity:.3;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter:alpha(opacity=30);}
+.search .bouton{display:none;position:absolute;width:30px;height:30px;right:0;top:50%;margin-top:-15px;background-image:url("images/close.png");background-repeat:no-repeat;background-position:center;-webkit-background-size:60%;-moz-background-size:60%;background-size:60%;opacity:.3;filter:alpha(opacity=30);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
 .search .bouton:active{opacity:1;-ms-filter:none;filter:none}
 input::-webkit-input-placeholder{color:rgba(0,0,0,0.2)}
 .filtres{font-family:'fjalla_oneregular';font-size:1em;}
@@ -129,7 +130,7 @@ input::-webkit-input-placeholder{color:rgba(0,0,0,0.2)}
 .page-determiner .liste-criteres{width:90%;margin:0 auto}
 .page-determiner li{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 0;border-image:url("images/li-border-bottom.png") 100% 0 0;border-width:2px;border-right:0;border-left:0;text-shadow:0 1px 1px #fff;}
 .page-determiner li:last-child{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;border-image:url("images/li-border-bottom.png") 100% 0 100% 0}
-.critere{color:#534741;display:block;padding:20px 0}
+.critere{color:#534741;display:block;padding:20px 0;}
 .libelle{width:79.69%;display:block}
 .header-on{top:0}
 .header-tous .champignons{display:none}
@@ -174,6 +175,7 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .nom span{display:inline-block;width:100%}
 .nom .nomChampignon{margin-bottom:.2em}
 .slide-inner h2,.slide-inner>h3{font-family:fjalla_oneregular;font-size:2em;line-height:1.2;text-align:center}
+.slide-inner p{font-family:"scadaregular"}
 .slide-inner>h3{font-family:"sofiaregular";font-size:1.5em;margin-bottom:.6em}
 .slide-inner >div{margin-bottom:.6em;}
 .slide-inner >div>h3{color:#658833;text-transform:uppercase}
@@ -187,4 +189,3 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .page-champignon .slides{height:100%;-webkit-transition-property:-webkit-transform;-webkit-transition-timing-function:ease-out;-webkit-transform:translate3d(0,0,0)}
 .page-champignon .slide{height:100%;overflow-y:scroll;float:left;-webkit-transform:translate3d(0,0,0)}
 .page-champignon .slide-inner{margin:0 10px;padding:60px 0 80px;text-shadow:1px 2px 0 #fff}
-.slide-inner p{font-family:"scadaregular"}

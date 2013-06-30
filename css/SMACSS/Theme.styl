@@ -85,7 +85,7 @@ footer
 
 
 
-[class*="content"]
+// [class*="content"]
 
 
 [class*="header-"]
@@ -292,6 +292,9 @@ input::-webkit-input-placeholder {
   color $titreColor
   display block
   padding: 20px 0
+  li > &
+    @extend .activeClass
+
 
 .libelle
   width  79.69%
