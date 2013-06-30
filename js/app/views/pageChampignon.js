@@ -141,7 +141,7 @@ define([
 		updateFiches: function(){
 
 			this.fiches[1].model.set( this.champignons[1].toJSON() );
-			this.gotoPage(this.currentFiche + 1);
+			this.gotoFiche(this.currentFiche);
 
 			this.fiches[0].model.set( this.champignons[0].toJSON() );
 
@@ -150,20 +150,15 @@ define([
 			}
 		},
 
-		gotoPage: function(ficheIdx){
-
-			var xpos = 0;
-
-			if(ficheIdx === 2) xpos = -$(window).width();
-			if(ficheIdx === 3) xpos = -($(window).width() * 2);
+		gotoFiche: function(ficheIdx){
 
 			this.$slides.css({
 				"-webkit-transition-duration": "0",
-				"-webkit-transform": "translate3d(" + xpos + "px, 0px, 0px)"
+				"-webkit-transform": "translate3d(" + -($(window).width() * ficheIdx) + "px, 0px, 0px)"
 			});
 		},
 
-		resetSlides: function(){
+		resetFiches: function(){
 			// Mise à jour de la largeur du slider
 			this.$slides.hide().width($(window).width() * this.champignons.length);
 
@@ -176,14 +171,14 @@ define([
 			this.$slides.fadeIn(200);
 
 			// Application du décalage en css
-			this.gotoPage(this.currentFiche + 1);
+			this.gotoFiche(this.currentFiche);
 		},
 
 		render: function() {
 
 			if(this.$slides.children().length === 0){ // Si c'est la première fois
 
-				this.resetSlides();
+				this.resetFiches();
 
 			} else {
 
