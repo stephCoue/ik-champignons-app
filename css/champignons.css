@@ -132,6 +132,9 @@ input::-webkit-input-placeholder{color:rgba(0,0,0,0.2)}
 .page-determiner li:last-child{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;border-image:url("images/li-border-bottom.png") 100% 0 100% 0}
 .critere{color:#534741;display:block;padding:20px 0;}
 .libelle{width:79.69%;display:block}
+[id="critere-selection-box"]{background:#bbd029;color:#fff;text-shadow:0 1px 1px #000;-webkit-box-shadow:0 1px 5px #8c572c;box-shadow:0 1px 5px #8c572c;position:relative;}
+[id="critere-selection-box"] p{padding-left:50px}
+[id="critere-selection-box"] .back-btn{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;display:block;width:40px;height:40px;position:absolute;background:transparent url("images/header-icon-set.png") -160px -40px no-repeat}
 .header-on{top:0}
 .header-tous .champignons{display:none}
 .header-tous .tous,.header-cueillette .tous{display:block}
