@@ -25,7 +25,7 @@ define([
 			this.$el.find("." + contexte).addClass("on").siblings().removeClass("on");
 			var _this = this;
 			this.$el.show().transition({"y":"-" + _this.$el.outerHeight()}, function(){
-				if(_this.settings && _this.settings.cueillette){
+				if(_this.settings && _this.settings.cueillette.length > 0){
 					_this.$el.find(".cueillette .count").hide();
 					_this.$el.find(".cueillette .count").fadeIn(100);
 				}
