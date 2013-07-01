@@ -275,9 +275,11 @@ input::-webkit-input-placeholder {
   .liste-criteres
     width 90%
     margin 0 auto
+    line-height 1.2
+
   .critere-off
     &+.liste-criteres
-      margin-top 70px
+      margin-top 65px
 
   li
     border-image:  url("images/li-border-bottom.png")  100% 0 0
@@ -285,14 +287,13 @@ input::-webkit-input-placeholder {
     border-right 0
     border-left 0
     text-shadow: 0 1px 1px #fff
-
     &:last-child
       border-image: url("images/li-border-bottom.png") 100% 0 100% 0
 
 .critere
   color $titreColor
   display block
-  padding: 20px 0
+  padding: .6em 0
   li > &
     @extend .activeClass
 
@@ -304,9 +305,11 @@ input::-webkit-input-placeholder {
 [id="critere-selection-box"]
   background $primary
   color #fff
-  text-shadow: 0 1px 1px #000
+  width 100%
+  // text-shadow: 0 1px 1px rgba(#000, .2)
   box-shadow 0 1px 5px $ombreHeaders
   position: relative
+  line-height 1.2
 
   p
     padding 15px 22px 15px 50px
