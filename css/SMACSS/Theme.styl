@@ -275,15 +275,16 @@ input::-webkit-input-placeholder {
   .liste-criteres
     width 90%
     margin 0 auto
+  .critere-off
+    &+.liste-criteres
+      margin-top 70px
 
   li
     border-image:  url("images/li-border-bottom.png")  100% 0 0
-    border-width: 2px
+    border-width: 1.9px
     border-right 0
     border-left 0
     text-shadow: 0 1px 1px #fff
-    // centerBlock()
-    // clear: both
 
     &:last-child
       border-image: url("images/li-border-bottom.png") 100% 0 100% 0
@@ -308,7 +309,8 @@ input::-webkit-input-placeholder {
   position: relative
 
   p
-    padding-left 50px
+    padding 15px 22px 15px 50px
+
 
   .back-btn
     hidetext()
@@ -316,6 +318,8 @@ input::-webkit-input-placeholder {
     width 40px
     height 40px
     position absolute
+    margin-top -20px
+    top 50%
     background: transparent url('images/header-icon-set.png') -160px -40px no-repeat
 
 
