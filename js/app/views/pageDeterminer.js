@@ -3,17 +3,16 @@ define([
 	"underscore",
 	"backbone",
 	"mixins/pageMixin",
-	"text!templates/pageDeterminer.html",
 	"views/criteres",
 	"views/critereBox",
 	"collections/champignons",
 	"views/champignons"
-], function($, _, Backbone, PageMixin, pageDeterminerTemplate, CriteresListView, CritereBox, ChampignonsCollection, ChampignonsListView){
+], function($, _, Backbone, PageMixin, CriteresListView, CritereBox, ChampignonsCollection, ChampignonsListView){
 
 	var PageDeterminer = Backbone.View.extend({
 
 		el: $("#determiner"),
-		template: _.template(pageDeterminerTemplate),
+		template: _.template('<div class="page-inner papier"></div>'),
 
 		initialize: function(options){
 			this.$el.hide();
