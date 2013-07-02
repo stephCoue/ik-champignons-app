@@ -110,8 +110,8 @@ footer{position:absolute;bottom:0}
 .content-footer .cell{text-align:center;width:22%;}
 .content-footer .cell.cueillette{width:34%}
 .content-footer .picto{margin:0 auto}
-.search{position:relative;margin:1px -10px;padding-top:10px;}
-.search .inner{margin:0 10px;position:relative}
+.search{position:relative;margin:0 -3.1%;padding-top:.8em;}
+.search .inner{margin:0 3.1%;position:relative}
 .search input{display:block;width:100%;padding:4px 5px;margin:0 auto;padding-left:30px;border:2px solid #a8a29f;-webkit-border-radius:4px;border-radius:4px;font-size:1.2em;font-family:scadabold;color:#534741;-webkit-box-shadow:inset 0 0 6px rgba(140,87,44,0.5);box-shadow:inset 0 0 6px rgba(140,87,44,0.5);}
 .search input:focus{outline-color:#e8cbb5;border-color:#bbd029}
 .search .loupe{display:block;width:21px;height:21px;position:absolute;background:transparent url("images/search-21px.png") 0 0 no-repeat;left:6px;top:6px}
@@ -128,7 +128,7 @@ input::-webkit-input-placeholder{color:rgba(0,0,0,0.2)}
 .filtres .on a{color:#534741}
 .page-determiner{font-size:20px;font-family:"fjalla_oneregular";}
 .page-determiner .liste-criteres{width:90%;margin:0 auto;line-height:1.2}
-.page-determiner .critere-off+.liste-criteres{margin-top:65px}
+.page-determiner .critere-off+.liste-criteres{margin-top:19%}
 .page-determiner li{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 0;border-image:url("images/li-border-bottom.png") 100% 0 0;border-width:1.9px;border-right:0;border-left:0;text-shadow:0 1px 1px #fff;}
 .page-determiner li:last-child{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;border-image:url("images/li-border-bottom.png") 100% 0 100% 0}
 .critere{color:#534741;display:block;padding:.6em 0;}
@@ -150,8 +150,8 @@ input::-webkit-input-placeholder{color:rgba(0,0,0,0.2)}
 .header-determiner .tous,.header-determiner .champignons{display:none}
 .liste-champignons .familleChampignon{display:none}
 #tous,.slide{background:transparent url("images/paper-background.jpg") center center}
-a.inner{color:#534741;font:120% 'fjalla_oneregular'}
-.liste{margin:0 0 80px;}
+a.inner{color:#534741;font:120% 'fjalla_oneregular';display:block}
+.liste{margin:0 0 23%;}
 .liste li{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 0;border-image:url("images/li-border-bottom.png") 100% 0 0;border-width:2px;border-right:0;border-left:0;margin:0 auto;clear:both;}
 .liste li:last-child{-webkit-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-moz-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;-o-border-image:url("images/li-border-bottom.png") 100% 0 100% 0;border-image:url("images/li-border-bottom.png") 100% 0 100% 0}
 .activeClass:active,.liste-champignons.liste li:active,.liste-champignons.grille li:active{background:-webkit-linear-gradient(left,rgba(187,208,41,0.01) 2%,rgba(187,208,41,0.05) 3%,rgba(187,208,41,0.12) 16%,rgba(187,208,41,0.6) 32%,rgba(187,208,41,0.9) 50%,rgba(187,208,41,0.6) 75%,rgba(187,208,41,0.12) 90%,rgba(187,208,41,0.05) 97%,rgba(187,208,41,0.01) 98%);text-shadow:0 1px 1px #fff}
@@ -159,7 +159,7 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .liste .vignette,.liste .textes{display:table-cell;vertical-align:middle}
 .liste .textes{padding-left:10px;padding-right:50px}
 .liste .vignette{width:24%}
-.comestibilite-icon{display:block;position:absolute;right:5px;top:50%;margin-top:-20px;width:40px;height:40px;background:transparent url("images/toxique-icon-set.png") no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover}
+.comestibilite-icon{display:block;position:absolute;right:0;top:50%;margin-top:-20px;width:40px;height:40px;background:transparent url("images/toxique-icon-set.png") no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover}
 .mortel{background-position-x:0%}
 .toxique2{background-position-x:20%}
 .toxique3{background-position-x:40%}
@@ -167,9 +167,9 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .toxique5{background-position-x:80%}
 .comestible{background-position-x:100%}
 .grille .comestibilite-icon{display:none}
-.grille li{width:33.33%;float:left;font-size:.8em;line-height:1.1em}
+.grille li{width:33.33%;float:left;font-size:.8em;line-height:1.1em;border:0}
 .grille li:nth-child(3n+4){clear:left}
-.grille li:last-child{margin-bottom:4.8em}
+.grille li:last-child{margin-bottom:24%}
 .grille .inner{margin:5%}
 .grille .nom{text-align:center}
 .text{line-height:1.2}
@@ -186,8 +186,7 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular'}
 .page-champignon .page-inner{margin:60px 10px}
 .page-champignon .diaporama{width:100%;margin-bottom:10px;background-color:#fff}
 .page-champignon .diaporama img{display:block;margin:0 auto}
-.page-tous .page-inner{margin:50px 10px}
-.liste-champignons a{display:block}
+.page-tous .page-inner{margin:14.9% 3.1%}
 .vignette img{max-width:100%;height:auto}
 .page-champignon{overflow-y:hidden}
 .page-champignon .slides{height:100%;-webkit-transition-property:-webkit-transform;-webkit-transition-timing-function:ease-out;-webkit-transform:translate3d(0,0,0)}
