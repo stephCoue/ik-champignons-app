@@ -32,6 +32,7 @@ header,footer{width:100%}
 .critere-off{margin-top:-100px}
 .critere-on{margin-top:0}
 .header-tous .determiner,.header-champignon .determiner{display:none}
+.glossaire{border-bottom:1px dotted;color:inherit}
 .popup{position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.8);color:#fff}
 .popup dl{margin:70px 20px}
 .page-champignon .slides{-webkit-box-shadow:0 0 30px rgba(0,0,0,0.75);box-shadow:0 0 30px rgba(0,0,0,0.75)}
@@ -113,7 +114,7 @@ footer{position:absolute;bottom:0}
 .search{position:relative;margin:0 -3.1%;padding-top:.8em;}
 .search .inner{margin:0 3.1%;position:relative}
 .search input{display:block;width:100%;padding:4px 5px;margin:0 auto;padding-left:30px;border:2px solid #a8a29f;-webkit-border-radius:4px;border-radius:4px;font-size:1.2em;font-family:scadabold;color:#534741;-webkit-box-shadow:inset 0 0 6px rgba(140,87,44,0.5);box-shadow:inset 0 0 6px rgba(140,87,44,0.5);}
-.search input:focus{outline-color:#e8cbb5;border-color:#bbd029}
+.search input:focus{outline-color:#d2e166;border-color:#bbd029}
 .search .loupe{display:block;width:21px;height:21px;position:absolute;background:transparent url("images/search-21px.png") 0 0 no-repeat;left:6px;top:6px}
 .search .bouton{display:none;position:absolute;width:30px;height:30px;right:0;top:50%;margin-top:-15px;background-image:url("images/close.png");background-repeat:no-repeat;background-position:center;-webkit-background-size:60%;-moz-background-size:60%;background-size:60%;opacity:.3;filter:alpha(opacity=30);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
 .search .bouton:active{opacity:1;-ms-filter:none;filter:none}
@@ -148,7 +149,6 @@ input::-webkit-input-placeholder{color:rgba(0,0,0,0.2)}
 .header-tous li + .on a{background-position:-50px -50px}
 .header-tous li + li + .on a{background-position:-100px -50px}
 .header-determiner .tous,.header-determiner .champignons{display:none}
-.liste-champignons .familleChampignon{display:none}
 #tous,.slide{background:transparent url("images/paper-background.jpg") center center}
 a.inner{color:#534741;font:120% 'fjalla_oneregular';display:block}
 .liste{margin:0 0 23%;}
@@ -169,8 +169,10 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular';display:block}
 .grille .comestibilite-icon{display:none}
 .grille li{width:33.33%;float:left;font-size:.8em;line-height:1.1em;border:0}
 .grille li:nth-child(3n+4){clear:left}
-.grille li:last-child{margin-bottom:24%}
 .grille .inner{margin:5%}
+.grille{zoom:1;}
+.grille:before,.grille:after{content:"";display:table}
+.grille:after{clear:both}
 .grille .nom{text-align:center}
 .text{line-height:1.2}
 .nomLatinChampignon{font-family:"sofiaregular";line-height:1.2em}
@@ -178,6 +180,9 @@ a.inner{color:#534741;font:120% 'fjalla_oneregular';display:block}
 .grille .familleChampignon{padding-right:0}
 .nom span{display:inline-block;width:100%}
 .nom .nomChampignon{margin-bottom:.2em}
+.page-determiner .liste-champignons{margin:0 2%}
+.liste-champignons.liste,.liste-champignons.grille{margin-bottom:60px;}
+.liste-champignons .familleChampignon{display:none}
 .slide-inner h2,.slide-inner>h3{font-family:fjalla_oneregular;font-size:2em;line-height:1.2;text-align:center}
 .slide-inner p{font-family:"scadaregular"}
 .slide-inner>h3{font-family:"sofiaregular";font-size:1.5em;margin-bottom:.6em}

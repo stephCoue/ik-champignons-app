@@ -68,12 +68,6 @@
 }
 
 
-
-.liste-champignons
-  .familleChampignon
-    display none
-
-
 /* VUE EN LIST */
 
 // #tous .page-inner,
@@ -181,7 +175,7 @@ a.inner
 }
 
 .grille li:last-child {
-  margin-bottom 24%;
+  // margin-bottom 24%;
 }
 
 .grille .inner {
@@ -189,6 +183,7 @@ a.inner
 }
 
 .grille
+  clearfix()
   .nom
     text-align center
 
@@ -217,10 +212,16 @@ a.inner
 
 
 .liste-champignons
+  .page-determiner &
+    margin: 0 2%
   &.liste,
   &.grille
+    margin-bottom 60px
     li
       @extend  .activeClass
+
+  .familleChampignon
+    display none
 
 
 
@@ -273,11 +274,7 @@ a.inner
   margin: 14.9% 3.1%
 }
 
-/*LISTES DE CHAMPIGNONS*/
 
-// .liste-champignons a {
-//   display: block;
-// }
 
 
 .vignette img {
